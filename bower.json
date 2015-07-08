@@ -21,7 +21,6 @@
     "tests"
   ],
   "devDependencies": {
-    "bootstrap": "~3.3.4",
     "waypoints": "~3.1.1",
     "velocity": "~1.2.2",
     "fullpage.js": "~2.6.5",
