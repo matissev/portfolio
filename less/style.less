@@ -1,0 +1,50 @@
+@import (css) "../libs/normalize.css/normalize.css";
+@import (css) "../libs/fullpage.js/jquery.fullPage.css";
+
+@import "imports/fonts";
+@import "imports/sprite";
+@import "imports/utilities";
+
+/* Grid */
+/* 5% | (5.575% | 2.1%) * 11 | 5.575% | 5% */
+
+@margin : 5%;
+@gutter : 2.1%;
+@column : 5.575%;
+
+@header-text : lekton, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@current-text : aller, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+.font-rendering() {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	font-smooth: always;
+}
+
+@color1 : white;
+@color2 : black;
+
+body {
+	font-family: @header-text;
+	font-weight: normal;
+}
+
+h2 {
+	margin: 0;
+	font-size: 30px;
+}
+
+.section {
+	padding-top: 59px;
+}
+
+.svg-common() {
+	background: url(../img/sprite.svg) no-repeat;
+	background-size: 141px 132px;
+}
+
+@import "imports/home";
+@import "imports/nav";
+@import "imports/project";
+@import "imports/other";

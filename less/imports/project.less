@@ -1,0 +1,125 @@
+.projects.on-projects .tags, .projects.on-projects .project-details {
+	position: fixed;
+	top: 59px;
+
+	h2, .lead, a.read-more, tags .span {
+		text-shadow: 0 0 1px @color1;
+		-webkit-text-stroke: 0.2px;
+		text-stroke: 0.2px;
+	}
+
+	h2 small {
+		float: left;
+		text-shadow: 0 0 1px #414753;
+		-webkit-text-stroke: 0.2px;
+		text-stroke: 0.2px;
+	}
+}
+
+.projects:not(.on-projects) .project-details, .projects:not(.on-projects) .tags {
+	h2, .lead, a.read-more, tags .span {
+		text-shadow: 0;
+		-webkit-text-stroke: 0px;
+		text-stroke: 0px;
+	}
+
+	h2 small {
+		float: left;
+		text-shadow: 0;
+		-webkit-text-stroke: 0px;
+		text-stroke: 0px;
+	}
+}
+
+.project-details {
+	position: absolute;
+	width: @gutter * 4 + @column * 3;
+	left: @margin + @column;
+	padding: 24px @gutter 20px @gutter;
+	box-sizing: border-box;
+	border: 1px solid white;
+
+	time {
+		display: inline-block;
+		background: white;
+		font-size: 12px;
+		width: 80px;
+		height: 17px;
+		text-align: center;
+		border-radius: 2px;
+		color: darken(desaturate(red, 20%), 40%);
+	}
+
+	h2 {
+		line-height: 36px;
+		margin: 12px 0 0 0;
+		color: white;
+		display: inline-block;
+		
+		small {
+			font-family: @header-text;
+			font-weight: normal;
+			margin: 0;
+			font-size: 30px;
+			color: #414753;
+		}
+	}
+
+	p, a {
+		font-family: @current-text;
+		font-size: 12px;
+		color: white;
+	}
+
+	p { margin-top: 26px; }
+}
+
+.tags {
+	position: absolute;
+	width: @gutter * 6 + @column * 7;
+	right: @margin;
+	font-size: 12px;
+	color: white;
+
+	span {
+		width: ((@gutter * 100 / 51.265) * 2) + ((@column * 100 / 51.265) * 3);
+		display: inline-block;
+		line-height: 7px;
+		text-align: center;
+		float: right;
+		margin-right: (@gutter * 100 / 51.265) + (@column * 100 / 51.265);
+	}
+
+	&:before, &:after {
+		position: absolute;
+		content: "";
+		display: block;
+		height: 0px;
+		border-bottom: 1px solid white;
+		width: 100px;
+	}
+
+	&:before {
+		width: ((@gutter * 100 / 52.3) * 3) + ((@column * 100 / 52.3) * 3);
+		left: 0;
+		top: 0;
+	}
+
+	&:after {
+		width: (@gutter * 100 / 51.265) + (@column * 100 / 51.265);
+		right: 0;
+		top: 0;
+	}
+}
+
+.project1 {
+	background: darken(desaturate(red, 20%), 30%);
+}
+
+.project2 {
+	background: darken(desaturate(blue, 20%), 30%);
+}
+
+.project3 {
+	background: darken(desaturate(green, 40%), 5%);
+}

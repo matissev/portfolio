@@ -1,0 +1,91 @@
+nav {
+	z-index: 2;
+	position: fixed;
+	font-size: 12px;
+	left: @margin;
+	top: 141px;
+
+	.link, .about {
+		color: @color2;
+	}
+
+	.link {
+		text-decoration: none;
+		display: inline-block;
+		float: left;
+		line-height: 6px;
+		clear: both;
+
+		&:not(:last-child) {
+			margin-bottom: 22px;
+		}
+	}
+
+	#worklink {
+		cursor: default;
+	}
+
+	.worktab {
+		display: inline-block;
+		width: 100%;
+		margin-left: 36px;
+	}
+
+	.about {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		padding-top: 26px;
+	}
+
+	.about:before {
+		position: absolute;
+		top: 0;
+		content: "------------";
+		display: inline-block;
+		clear: both;
+		float: left;
+		line-height: 6px;
+	}
+
+	#nav-toggle-button {
+		cursor: pointer;
+		position: absolute;
+		display: none;
+		margin-bottom: 23px;
+		width: 21px;
+		height: 9px;
+		fill: @color1;
+		transition: fill 0.5s linear;
+	}
+}
+
+nav.on-projects, nav.on-others {
+	#nav-toggle-button {
+		position: relative;
+	}
+}
+
+nav.on-projects {
+	.link, .about {
+		color: @color1;
+	}
+}
+
+nav.on-others {
+	#nav-toggle-button {
+		fill: @color2;
+	}
+}
+
+nav.folded {
+	#worklink {
+		cursor: pointer;
+	}
+
+	.worktab {
+		width: 0px;
+		height: 0px;
+		overflow: hidden;
+	}
+}

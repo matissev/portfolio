@@ -1,0 +1,31 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "authors": [
+    "matissev"
+  ],
+  "description": "Mon portfolio personnel",
+  "main": "index.jade",
+  "keywords": [
+    "portfolio",
+    "matissev"
+  ],
+  "license": "MIT",
+  "homepage": "matissev.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs/",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.4",
+    "waypoints": "~3.1.1",
+    "velocity": "~1.2.2",
+    "fullpage.js": "~2.6.5",
+    "jquery": "~2.1.4",
+    "normalize.css": "~3.0.3"
+  }
+}

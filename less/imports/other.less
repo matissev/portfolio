@@ -1,0 +1,27 @@
+.other {
+	.container {
+		width: @gutter * 10 + @column * 11;
+		float: right;
+		margin-right: @margin;
+		position: relative;
+
+		h2 {
+			position: relative;
+			top: -10px;
+			width: ((@gutter * 100 / 82.325) * 1) + ((@column * 100 / 82.325) * 2);
+			line-height: 36px;
+			font-weight: normal;
+		}
+
+		&:after {
+			position: absolute;
+			content: "";
+			display: block;
+			height: 0;
+			width: ((@gutter * 100 / 82.325) * 8) + ((@column * 100 / 82.325) * 9);
+			border-bottom: 1px solid black;
+			top: 0;
+			right: 0;
+		}
+	}
+}
