@@ -21,7 +21,7 @@ function toggleNav(overrideDuration) {
 		$('.nav-links .about').velocity({
 			paddingTop: navAboutPaddingTop
 		}, {
-			duration: navAboutPaddingTop
+			duration: currentDuration
 		});
 	} else {
 		navLinksMarginBottom = $.Velocity.hook($('.nav-links .link'), "marginBottom");
