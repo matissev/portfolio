@@ -60,48 +60,47 @@
 @media (-webkit-max-device-pixel-ratio: 2), (max-resolution: 192dpi) { 
     .safari-font-fix {
         nav .link,
-        nav.about {
+        nav .about {
             text-shadow: 0 0 1px fade(@colorB, 50%);
-            -webkit-text-stroke: 0px;
-            text-stroke: 0px;
         }
 
         nav.on-projects .link,
         nav.on-projects .about,
-        .projects .tags {
+        .projects .tags,
+        .projects .lead {
             text-shadow: 0 0 1px @colorA;
-            -webkit-text-stroke: 0.2px;
-            text-stroke: 0.2px;
+            -webkit-font-smoothing: subpixel-antialiased;
         }
     }
 
     .chrome-font-fix {
         nav .link,
-        nav.about {
+        nav .about {
             -webkit-font-smoothing: antialiased;
             -webkit-text-stroke: 0.15px;
             text-stroke: 0.15px;
         }
 
         nav.on-projects .link,
-        nav.on-projects .about,
-        .projects .tags {
+        nav.on-projects .about {
             -webkit-font-smoothing: subpixel-antialiased;
             -webkit-text-stroke: 0px;
             text-stroke: 0px;
-        }   
+        }
     }
 
     .moz-font-fix {
         nav .link,
-        nav.about {
+        nav .about {
+            -moz-osx-font-smoothing: grayscale;
             text-shadow: 0 0 1px fade(@colorB, 30%);
         }
 
         nav.on-projects .link,
         nav.on-projects .about,
         .projects .tags {
+            -moz-osx-font-smoothing: unset;
             text-shadow: 0;
-        }   
+        }
     }
 }

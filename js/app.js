@@ -18,6 +18,10 @@ function afterSectionLoad(anchorLink, index) {
 		}
 	}
 
+	if (index === 1) {
+		updateProjects.show(0);
+	}
+
 
 	/* Unfold nav on #projects(1,2,3) and #other */
 
@@ -45,7 +49,9 @@ function onSectionLeave(index, nextIndex, direction) {
 		addClass(nav, 'on-others');
 		removeClass(nav, 'on-projects');
 
-	} else if (nextIndex === 1) {
+	}
+
+	if (nextIndex === 1) {
 		worklink.onclick = function() {
 			window.location.hash = 'project1';
 		};
@@ -56,14 +62,17 @@ function onSectionLeave(index, nextIndex, direction) {
 		removeClass(nav, 'on-projects');
 		addClass(nav, 'on-home');
 
-	} else if (index === 5 && direction === 'up' && nextIndex !== 1) {
+	}
+
+	if (index === 5 && direction === 'up' && nextIndex !== 1) {
 		removeClass(nav, 'on-others');
 		addClass(nav, 'on-projects');
 
-	} else if (index === 1 && direction === 'down') {
+	}
+
+	if (index === 1 && direction === 'down') {
 		worklink.onclick = null;
 		updateNav.onProjects();
-
 	}
 
 
@@ -78,10 +87,11 @@ function onSectionLeave(index, nextIndex, direction) {
 	}
 
 
-
-	if (nextIndex !== 1) {
-		updateNav.close();
+	if (nextIndex !== 1 && navOpened == true) {
+		updateNav.close(300);
 		navOpened = false;
+
+		updateProjects.show(300);
 	}
 }
 

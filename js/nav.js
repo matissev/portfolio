@@ -17,7 +17,8 @@ updateNav = {
 				opacity: 1
 			}, {
 				duration: currentDuration,
-				display: 'block'	
+				display: 'block',
+				delay: 200
 			});
 		}
 
@@ -27,14 +28,16 @@ updateNav = {
 			$('.nav-links .link').velocity({
 				marginBottom: navLinksMarginBottom
 			}, {
-				duration: currentDuration
+				duration: currentDuration,
+				delay: 200
 			});
 			
 			$('.nav-links .about').velocity("finish");
 			$('.nav-links .about').velocity({
 				paddingTop: navAboutPaddingTop
 			}, {
-				duration: currentDuration
+				duration: currentDuration,
+				delay: 200
 			});
 		}
 
@@ -45,6 +48,7 @@ updateNav = {
 				rotateX: 180
 			}, {
 				duration: currentDuration,
+				delay: 200
 			});
 		}
 	},

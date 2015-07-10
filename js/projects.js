@@ -38,8 +38,26 @@ updateProjects = {
 
 		translateAndShow($('.project3 h2, .project3 .lead'), currentDuration);
 		translateAndHideTop($('.project1 h2, .project1 .lead, .project2 h2, .project2 .lead'), currentDuration);
+	},
+
+	show: function(overrideDuration, overrideDelay) {
+		currentDuration = overrideDuration ? overrideDuration : slideTransitionDuration;
+
+		if (overrideDuration === 0) {
+			$.Velocity.hook($('.projects .project-details, .projects .tags'), "opacity", 1);
+			$.Velocity.hook($('.projects .project-details, .projects .tags'), "display", "block");
+		} else {
+			currentDelay = overrideDelay ? overrideDelay : 250;
+			showProjects($('.projects .project-details, .projects .tags'), currentDuration, currentDelay);
+		}
+	},
+
+	hide: function(overrideDuration) {
+		currentDuration = overrideDuration ? overrideDuration : slideTransitionDuration;
+
+		hideProjects($('.projects .project-details, .projects .tags'), currentDuration);
 	}
-}
+};
 
 function rotateAndShow(ele, d) {
 	if ($.Velocity.hook(ele, "rotateX") !== 0) {
@@ -83,7 +101,7 @@ function translateAndShow(ele, d) {
 			translateY: 0,
 			opacity: 1
 		}, {
-			duration: d,
+			duration: d/2,
 			visibility: 'visible'
 		});
 	}
@@ -95,7 +113,7 @@ function translateAndHideTop(ele, d) {
 			translateY: -20,
 			opacity: 0
 		}, {
-			duration: d,
+			duration: d/2,
 			visibility: 'hidden'
 		});
 	}
@@ -107,8 +125,31 @@ function translateAndHideBottom(ele, d) {
 			translateY: 20,
 			opacity: 0
 		}, {
-			duration: d,
+			duration: d/2,
 			visibility: 'hidden'
+		});
+	}
+}
+
+function showProjects(ele, duration, delay) {
+	if ($.Velocity.hook(ele, "opacity") !== 1) {
+		ele.velocity({
+			opacity: 1
+		}, {
+			duration: duration,
+			delay: delay,
+			display: 'block'
+		});
+	}
+}
+
+function hideProjects(ele, d) {
+	if ($.Velocity.hook(ele, "opacity") !== 0) {
+		ele.velocity({
+			opacity: 0
+		}, {
+			duration: d,
+			display: 'none'
 		});
 	}
 }
