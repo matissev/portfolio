@@ -59,31 +59,33 @@
 
 @media (-webkit-max-device-pixel-ratio: 2), (max-resolution: 192dpi) { 
     .safari-font-fix {
-        .link, .about {
-            text-shadow: 0 0 1px fade(@color2, 50%);
+        nav .link,
+        nav.about {
+            text-shadow: 0 0 1px fade(@colorB, 50%);
             -webkit-text-stroke: 0px;
             text-stroke: 0px;
-        }           
-    }
+        }
 
-    .safari-font-fix.on-projects {
-        .link, .about {
-            text-shadow: 0 0 1px @color1;
+        nav.on-projects .link,
+        nav.on-projects .about,
+        .projects .tags {
+            text-shadow: 0 0 1px @colorA;
             -webkit-text-stroke: 0.2px;
             text-stroke: 0.2px;
-        }           
+        }
     }
 
     .chrome-font-fix {
-        .link, .about {
+        nav .link,
+        nav.about {
             -webkit-font-smoothing: antialiased;
             -webkit-text-stroke: 0.15px;
             text-stroke: 0.15px;
-        }   
-    }
+        }
 
-    .chrome-font-fix.on-projects {
-        .link, .about {
+        nav.on-projects .link,
+        nav.on-projects .about,
+        .projects .tags {
             -webkit-font-smoothing: subpixel-antialiased;
             -webkit-text-stroke: 0px;
             text-stroke: 0px;
@@ -91,13 +93,14 @@
     }
 
     .moz-font-fix {
-        .link, .about {
-            text-shadow: 0 0 1px fade(@color2, 30%);
-        }   
-    }
+        nav .link,
+        nav.about {
+            text-shadow: 0 0 1px fade(@colorB, 30%);
+        }
 
-    .moz-font-fix.on-projects {
-        .link, .about {
+        nav.on-projects .link,
+        nav.on-projects .about,
+        .projects .tags {
             text-shadow: 0;
         }   
     }

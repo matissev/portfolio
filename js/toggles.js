@@ -1,11 +1,13 @@
 /* --------------------- NAV TOGGLE */
 
-navToggled = true;
-navTranslated = false;
-navToggleDisplayed = false;
-navToggleRotated = false;
+navOpened = false;
 
 navToggleButton.onclick = function(){
-	toggleNav(300);
-	rotateNavToggle(300);
+	if (navOpened) {
+		updateNav.close(300);
+	} else {
+		updateNav.open(300);
+	}
+
+	navOpened = !navOpened;
 };

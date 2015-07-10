@@ -13,7 +13,7 @@ function removeClass(element, className) {
 
 function addClass(element, className) {
     if (element && !hasClass(element,className)) {
-        element.className += '  '+className;
+        element.className += '  '+ className + '  ';
     }
 }
 
@@ -30,4 +30,18 @@ function isChrome() {
 
 function isFirefox() {
 	return navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+}
+
+/* Font Fix */
+
+if (isSafari()) {
+    addClass(body, 'safari-font-fix');
+}
+
+if (isChrome()) {
+    addClass(body, 'chrome-font-fix');
+}
+
+if (isFirefox()) {
+    addClass(body, 'moz-font-fix');
 }

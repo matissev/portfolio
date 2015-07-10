@@ -3,10 +3,11 @@ nav {
 	position: fixed;
 	font-size: 12px;
 	left: @margin;
-	top: 141px;
+	top: 140px;
 
 	.link, .about {
-		color: @color2;
+		transition: color 0.7s linear;
+		color: @colorB;
 	}
 
 	.link {
@@ -21,13 +22,14 @@ nav {
 		}
 	}
 
-	#worklink {
+	.worklink {
 		cursor: default;
 	}
 
 	.worktab {
 		display: inline-block;
 		width: 100%;
+		height: auto;
 		margin-left: 36px;
 	}
 
@@ -48,44 +50,39 @@ nav {
 		line-height: 6px;
 	}
 
-	#nav-toggle-button {
+	.nav-toggle-button {
 		cursor: pointer;
 		position: absolute;
 		display: none;
 		margin-bottom: 23px;
 		width: 21px;
 		height: 9px;
-		fill: @color1;
-		transition: fill 0.5s linear;
-	}
-}
-
-nav.on-projects, nav.on-others {
-	#nav-toggle-button {
-		position: relative;
+		fill: @colorA;
+		transition: fill 0.7s linear;
 	}
 }
 
 nav.on-projects {
 	.link, .about {
-		color: @color1;
+		transition: color 0.7s linear;
+		color: @colorA;
 	}
 }
 
 nav.on-others {
-	#nav-toggle-button {
-		fill: @color2;
+	.nav-toggle-button {
+		fill: @colorB;
 	}
 }
 
-nav.folded {
-	#worklink {
+nav.on-home {
+	.worklink {
 		cursor: pointer;
 	}
 
 	.worktab {
-		width: 0px;
-		height: 0px;
 		overflow: hidden;
+		height: 0px;
+		width: 0;
 	}
 }
