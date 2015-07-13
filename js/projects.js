@@ -44,18 +44,18 @@ updateProjects = {
 		currentDuration = overrideDuration ? overrideDuration : slideTransitionDuration;
 
 		if (overrideDuration === 0) {
-			$.Velocity.hook($('.projects .project-details, .projects .tags'), "opacity", 1);
-			$.Velocity.hook($('.projects .project-details, .projects .tags'), "display", "block");
+			$.Velocity.hook($('.projects .project-details, .projects .tags, .others .container'), "opacity", 1);
+			$.Velocity.hook($('.projects .project-details, .projects .tags, .others .container'), "display", "block");
 		} else {
 			currentDelay = overrideDelay ? overrideDelay : 250;
-			showProjects($('.projects .project-details, .projects .tags'), currentDuration, currentDelay);
+			showProjects($('.projects .project-details, .projects .tags, .others .container'), currentDuration, currentDelay);
 		}
 	},
 
 	hide: function(overrideDuration) {
 		currentDuration = overrideDuration ? overrideDuration : slideTransitionDuration;
 
-		hideProjects($('.projects .project-details, .projects .tags'), currentDuration);
+		hideProjects($('.projects .project-details, .projects .tags, .others .container'), currentDuration);
 	}
 };
 

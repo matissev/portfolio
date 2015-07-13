@@ -1,50 +1,48 @@
 .project-details {
+	box-sizing: border-box;
 	backface-visibility: hidden;
 	position: absolute;
 	width: @gutter * 4 + @column * 3;
 	left: @margin + @column;
-	padding: 24px @gutter 20px @gutter;
-	box-sizing: border-box;
-	border: 1px solid white;
+	padding: 29px @gutter 25px @gutter;
+	border: 1px solid @colorA;
 
 	time {
 		backface-visibility: hidden;
 		display: inline-block;
-		background: white;
-		font-size: 12px;
+		background: @colorA;
+		font: @font-size-xs @header-text;
 		width: 80px;
 		height: 17px;
 		text-align: center;
 		border-radius: 2px;
+		line-height: 20px;
 		transform-origin: 50% 50% 9px;
 	}
 
 	h2 {
 		backface-visibility: hidden;
 		line-height: 36px;
-		margin: 12px 0 0 0;
-		color: white;
+		margin-top: 20px;
+		color: @colorA;
 		display: inline-block;
 		
 		small {
 			backface-visibility: hidden;
-			font-family: @header-text;
 			font-weight: normal;
 			margin: 0;
-			font-size: 30px;
+			font-size: @font-size-l;
 			float: left;
 		}
 	}
 
-	p, a {
-		font-family: @current-text;
-		font-size: 12px;
-		color: white;
+	.lead, a {
+		color: @colorA;
 	}
 
-	p { margin-top: 26px; }
-
 	.lead {
+		margin: 20px 0 25px 0;
+		line-height: 18px;
 		backface-visibility: hidden;
 	}
 }
@@ -53,8 +51,8 @@
 	position: absolute;
 	width: @gutter * 6 + @column * 7;
 	right: @margin;
-	font-size: 12px;
-	color: white;
+	font: @font-size-xs @header-text;
+	color: @colorA;
 
 	span {
 		width: ((@gutter * 100 / 51.265) * 2) + ((@column * 100 / 51.265) * 3);
@@ -72,7 +70,7 @@
 		content: "";
 		display: block;
 		height: 0px;
-		border-bottom: 1px solid white;
+		border-bottom: 1px solid @colorA;
 		width: 100px;
 	}
 
@@ -92,6 +90,10 @@
 .projects.on-projects .tags, .projects.on-projects .project-details {
 	position: fixed;
 	top: 59px;
+}
+
+.projects.active .project-details, .projects.active .tags {
+	z-index: 4;
 }
 
 .project1 {

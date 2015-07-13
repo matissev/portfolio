@@ -60,7 +60,9 @@
 @media (-webkit-max-device-pixel-ratio: 2), (max-resolution: 192dpi) { 
     .safari-font-fix {
         nav .link,
-        nav .about {
+        nav .about,
+        .home .activity,
+        .home .language {
             text-shadow: 0 0 1px fade(@colorB, 50%);
         }
 
@@ -71,29 +73,41 @@
             text-shadow: 0 0 1px @colorA;
             -webkit-font-smoothing: subpixel-antialiased;
         }
+
+        .project-details {
+            -webkit-font-smoothing: antialiased;
+        }
     }
 
     .chrome-font-fix {
         nav .link,
-        nav .about {
+        nav .about,
+        .home .activity,
+        .home .language {
             -webkit-font-smoothing: antialiased;
-            -webkit-text-stroke: 0.15px;
-            text-stroke: 0.15px;
+            // -webkit-text-stroke: 0.10px;
+            // text-stroke: 0.10px;
         }
 
         nav.on-projects .link,
         nav.on-projects .about {
             -webkit-font-smoothing: subpixel-antialiased;
-            -webkit-text-stroke: 0px;
-            text-stroke: 0px;
+            // -webkit-text-stroke: 0px;
+            // text-stroke: 0px;
+        }
+
+        .project-details h2, .project-details a {
+            -webkit-font-smoothing: antialiased;
         }
     }
 
     .moz-font-fix {
         nav .link,
-        nav .about {
+        nav .about,
+        .home .activity,
+        .home .language {
             -moz-osx-font-smoothing: grayscale;
-            text-shadow: 0 0 1px fade(@colorB, 30%);
+            text-shadow: 0 0 1px fade(@colorB, 20%);
         }
 
         nav.on-projects .link,
@@ -101,6 +115,10 @@
         .projects .tags {
             -moz-osx-font-smoothing: unset;
             text-shadow: 0;
+        }
+
+        .project-details h2, .project-details a {
+            -moz-osx-font-smoothing: grayscale;
         }
     }
 }

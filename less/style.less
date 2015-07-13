@@ -1,9 +1,17 @@
+/* Libraries and helpers */
+
 @import (css) "../libs/normalize.css/normalize.css";
 @import (css) "../libs/fullpage.js/jquery.fullPage.css";
 
 @import "imports/fonts";
 @import "imports/sprite";
 @import "imports/utilities";
+
+.svg-common() {
+	background: url(../img/sprite.svg) no-repeat;
+	background-size: 141px 132px;
+}
+
 
 /* Grid */
 /* 5% | (5.575% | 2.1%) * 11 | 5.575% | 5% */
@@ -12,15 +20,8 @@
 @gutter : 2.1%;
 @column : 5.575%;
 
-@header-text : lekton, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-@current-text : aller, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-.font-rendering() {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
-	font-smooth: always;
-}
+/* Colors */
 
 @colorA : white;
 @colorB : black;
@@ -34,26 +35,57 @@
 @color3-a : white; /*#414753;*/
 @color3-b : darken(desaturate(green, 40%), 5%);
 
+
+/* Fonts */
+
+@header-text : lekton, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@current-text : aller, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+@font-size-xs : 12px;
+@font-size-s : 13px;
+@font-size-m : 18px;
+@font-size-l : 30px;
+
+.font-rendering() {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	font-smooth: always;
+}
+
+
+/* General styles */
+
 body {
-	font-family: @header-text;
-	font-weight: normal;
+	font: normal @font-size-s @current-text;
+	color: @colorB;
+}
+
+h1, h2, h3, h4, h5 {
+	font: bold @font-size-m @header-text;
+	margin: 0;
 }
 
 h2 {
-	margin: 0;
-	font-size: 30px;
+	font-size: @font-size-l;
+}
+
+h3, h4, h5 {
+	font-weight: normal;
+}
+
+a {
+	color: @colorB;
 }
 
 .section {
 	padding-top: 59px;
 }
 
-.svg-common() {
-	background: url(../img/sprite.svg) no-repeat;
-	background-size: 141px 132px;
-}
+
+/* Styles imports */
 
 @import "imports/home";
 @import "imports/nav";
-@import "imports/project";
-@import "imports/other";
+@import "imports/projects";
+@import "imports/others";

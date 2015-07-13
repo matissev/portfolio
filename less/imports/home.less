@@ -5,11 +5,8 @@ header {
 
 	h1 {
 		display: inline-block;
-		margin: 0;
-		font-weight: bold;
 
 		.name {
-			font-size: 18px;
 			line-height: 9px;
 			display: inline-block;
 			float: left;
@@ -17,7 +14,7 @@ header {
 
 		.activity {
 			font-weight: normal;
-			font-size: 12px;
+			font-size: @font-size-s;
 			line-height: 6px;
 			margin-top: 13px;
 			display: inline-block;
@@ -29,12 +26,8 @@ header {
 	.language {
 		display: inline-block;
 		float: right;
-		font-size: 12px;
-		line-height: 13px;
-
-		a {
-			color: @colorB;
-		}
+		font: @font-size-s @header-text;
+		line-height: 12px;
 
 		abbr {
 			border-bottom: none;
