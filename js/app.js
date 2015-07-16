@@ -87,7 +87,7 @@ function onSectionLeave(index, nextIndex, direction) {
 	}
 
 
-	if (nextIndex !== 1 && navOpened == true) {
+	if (nextIndex !== 1 && navOpened === true) {
 		updateNav.close(300);
 		navOpened = false;
 

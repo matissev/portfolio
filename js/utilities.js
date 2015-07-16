@@ -32,6 +32,7 @@ function isFirefox() {
 	return navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 }
 
+
 /* Font Fix */
 
 if (isSafari()) {

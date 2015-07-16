@@ -11,7 +11,7 @@
 		backface-visibility: hidden;
 		display: inline-block;
 		background: @colorA;
-		font: @font-size-xs @header-text;
+		font: @font-size-xs @heading-text;
 		width: 80px;
 		height: 17px;
 		text-align: center;
@@ -27,12 +27,11 @@
 		color: @colorA;
 		display: inline-block;
 		
-		small {
+		span {
 			backface-visibility: hidden;
 			font-weight: normal;
 			margin: 0;
 			font-size: @font-size-l;
-			float: left;
 		}
 	}
 
@@ -51,7 +50,7 @@
 	position: absolute;
 	width: @gutter * 6 + @column * 7;
 	right: @margin;
-	font: @font-size-xs @header-text;
+	font: @font-size-xs @heading-text;
 	color: @colorA;
 
 	span {
@@ -99,7 +98,7 @@
 .project1 {
 	background: @color1-b;
 
-	h2 small {
+	h2 span {
 		color: @color1-a;
 	}
 
@@ -111,7 +110,7 @@
 .project2 {
 	background: @color2-b;
 
-	h2 small {
+	h2 span {
 		color: @color2-a;
 	}
 
@@ -123,7 +122,7 @@
 .project3 {
 	background: @color3-b;
 
-	h2 small {
+	h2 span {
 		color: @color3-a;
 	}
 

@@ -1,10 +1,10 @@
 /* --------------------- DOM SELECTORS */
 
-body = $('body')[0];
+body = document.querySelector('body');
 
-nav = $('.nav')[0];
-worklink = $('.worklink')[0];
-navToggleButton = $('.nav-toggle-button')[0];
+nav = document.querySelector('.nav');
+worklink = document.querySelector('.worklink');
+navToggleButton = document.querySelector('.nav-toggle-button');
 
-projects = $('.projects');
-tags = $('.tags');
+projects = document.querySelectorAll('.projects');
+tags = document.querySelectorAll('.tags');
