@@ -1,4 +1,7 @@
 .others {
+	max-height: 100%;
+	overflow: scroll;
+	
 	.other-projects-container {
 		width: @gutter * 10 + @column * 11;
 		float: right;
@@ -87,7 +90,7 @@
 		position: relative;
 
 		figcaption {
-			display: none;
+			.assistive-hide()
 		}
 
 		figure {
@@ -132,9 +135,7 @@
 				}
 
 				.label {
-					position: absolute;
-					clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-					clip: rect(1px, 1px, 1px, 1px);
+					.assistive-hide()
 				}
 			}
 		}

@@ -8,6 +8,8 @@ worklink.onclick = function() {
 function afterSectionLoad(anchorLink, index) {
 	var loadedSection = $(this);
 
+	if(index === numberOfItems)listenScroll();
+
 
 	/* Stick projects on the top on #projects(1,2,3) */
 
@@ -32,6 +34,11 @@ function afterSectionLoad(anchorLink, index) {
 
 function onSectionLeave(index, nextIndex, direction) {
 	var leavingSection = $(this);
+
+
+	if (index === 5 && direction === 'up') {
+		reenableScroll();
+	}
 
 
 	/* Unstick projects off the top and change nav color on #projects(1,2,3) */
@@ -107,6 +114,8 @@ $(document).ready(function() {
 		loopBottom: false,
 		scrollBar: false,
 		css3: false,
+		recordHistory: false,
+		autoScrolling: true,
 		scrollingSpeed: slideTransitionDuration,
 		anchors:['home', 'project1', 'project2', 'project3', 'other'],
 		afterLoad: function(anchorLink, index){
