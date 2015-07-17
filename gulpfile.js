@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 	sequence = require('run-sequence'),
 	plumber = require('gulp-plumber'),
 	notify = require('gulp-notify'),
-	filter = require('gulp-filter'),
+	gulpif = require('gulp-if'),
 	run = require('gulp-run'),
 
 	jade = require('gulp-jade'),
@@ -112,7 +112,6 @@ gulp.task('images', function(){
 });
 
 gulp.task('spritesheet', function() {
-	var svgFilter = filter('**/*.svg');
 	return gulp.src('img/sprite/**/*.svg', {cwd: '.'})
 		.pipe(plumber())
 		.pipe(spritesheet({
@@ -143,8 +142,7 @@ gulp.task('spritesheet', function() {
 			}
 		})).on('error', function(error){ console.log(error); })
 		.pipe(gulp.dest('.'))
-		.pipe(svgFilter)
-		.pipe(svg2png())
+		.pipe(gulpif('*.svg', svg2png()))
 		.pipe(gulp.dest('.'));
 });
 
@@ -187,20 +185,27 @@ gulp.task('jade-dist', function() {
 });
 
 gulp.task('js-dist', ['jade-dist'], function() {
-	var assets = useref.assets({searchPath: '.'});
-	var htmlFilter = filter('**/*.html');
-	var jsFilter = filter('**/*.js');
+	var assets = useref.assets({searchPath: '../'});
 
 	return gulp.src(['build/**/*.html'])
 		.pipe(assets)
 		.pipe(assets.restore())
 		.pipe(useref())
-		.pipe(htmlFilter)
-		.pipe(htmlmin())
-		.pipe(htmlFilter.restore())
-		.pipe(jsFilter)
-		.pipe(uglify())
-		.pipe(jsFilter.restore())
+		.pipe(gulpif('*.js', uglify()))
+		.pipe(htmlmin({
+			removeComments: true,
+			removeCommentsFromCDATA: true,
+			removeCDATASectionsFromCDATA: true,
+			collapseBooleanAttributes: true,
+			removeAttributeQuotes: true,
+			removeRedundantAttributes: true,
+			useShortDoctype: true,
+			removeEmptyAttributes: true,
+			removeOptionalTags: true,
+			minifyJS: true,
+			minifyCSS: true,
+			collapseWhitespace: true
+		}))
 		.pipe(gulp.dest('build'));
 });
 
