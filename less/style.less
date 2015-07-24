@@ -3,7 +3,6 @@
 @import (less) "../libs/normalize.css/normalize.css";
 @import (less) "../libs/fullpage.js/jquery.fullPage.css";
 @import (less) "../libs/photoswipe/dist/photoswipe.css";
-@import (less) "../libs/photoswipe/dist/default-skin/default-skin.css";
 
 @import "imports/fonts";
 @import "imports/sprite";
@@ -89,39 +88,9 @@ a {
 }
 
 
-/* Gallery custom styles */
-
-.pswp__ui--fit .pswp__top-bar {
-	background: transparent;
-}
-
-.pswp__ui--fit .pswp__caption {
-	background: rgba(0,0,0,0.5);
-	padding: 10px 0;
-}
-
-.pswp__caption {
-	text-align: center;
-	margin-top: 10px;
-}
-
-.pswp__caption__center {
-	display: inline-block;
-	text-align: left;
-	margin: 0 auto;
-	max-width: 80%;
-	line-height: 21px;
-	font-size: @font-size-s;
-}
-
-.pswp__caption__center,
-.pswp__counter {
-	color: @colorA;
-}
-
-
 /* Styles imports */
 
+@import "imports/photoswipe";
 @import "imports/home";
 @import "imports/nav";
 @import "imports/projects";

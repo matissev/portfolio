@@ -9,6 +9,7 @@ var gulp = require('gulp'),
 	run = require('gulp-run'),
 
 	jade = require('gulp-jade'),
+	htmlvalidator = require('gulp-w3cjs'),
 	htmlmin = require('gulp-minify-html'),
 
 	less = require('gulp-less'),
@@ -61,9 +62,12 @@ gulp.task('clean', function (callback) {
 /* ____________________________________________________________________________________ WATCH */
 
 gulp.task('jade', function() {
-	return gulp.src(['**/*.jade', '!**/includes/*.jade'])
+	return gulp.src(['**/*.jade', '!**/partials/*.jade', '!node_modules/**/*.jade', '!libs/**/*.jade'])
 		.pipe(plumber({errorHandler: onError}))
-		.pipe(jade())
+		.pipe(jade({
+			pretty: true,
+			basedir: './'
+		}))
 		.pipe(gulp.dest('build'))
 		.pipe(reload({stream:true}));
 });
@@ -183,8 +187,12 @@ gulp.task('less-dist', ['spritesheet'], function(){
 });
 
 gulp.task('jade-dist', function() {
-	return gulp.src(['**/*.jade', '!**/includes/*.jade'])
-		.pipe(jade({pretty: true}))
+	return gulp.src(['**/*.jade', '!**/partials/*.jade', '!node_modules/**/*.jade', '!libs/**/*.jade'])
+		.pipe(jade({
+			pretty: true,
+			basedir: './'
+		}))
+		.pipe(htmlvalidator())
 		.pipe(gulp.dest('.'));
 });
 
@@ -241,6 +249,6 @@ gulp.task('images-dist', function(){
 gulp.task('dist', function(callback) {
 	sequence(
 		'clean',
-		['clean-html', 'images-dist', 'less-dist', 'fonts', 'medias', 'php'],
+		['clean-html', 'less-dist', 'images-dist', 'fonts', 'medias', 'php'],
 	callback);
 });

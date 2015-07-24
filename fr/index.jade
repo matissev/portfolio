@@ -1,7 +1,16 @@
 doctype html
-html(lang="fr" class="")
+html(lang="en")
 	head
-		include ../includes/head
+		include /partials/head
 	body
-		include ../includes/nav
-		include ../includes/scripts
+		include /partials/nav
+
+		#fullpage
+			include /partials/home
+			include /partials/project1
+			include /partials/project2
+			include /partials/project3
+			include /partials/others
+
+		include /partials/photoswipe
+		include /partials/scripts

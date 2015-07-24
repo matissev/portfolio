@@ -9,24 +9,25 @@ function listenScroll(){
     $.fn.fullpage.setAllowScrolling(false);
     $.fn.fullpage.setMouseWheelScrolling(false);
     $('.others').on('scroll.fix', scrollHandler);
-}
 
-function scrollHandler(){
     /* If the user don't scroll down, allow him to scroll back on previous section */
     if (hasScrollDown === false) {
         detectScrollOnTop();
     }
+}
 
+function scrollHandler(){
     /* If the user scrolls down, reset the timer */
     if ($('.others').scrollTop() > fixThreshold && timerActive === false) {
     	clearTimeout(thresholdDelay);
-    	timerActive = true;
         hasScrollDown = true;
+        window.removeEventListener('mousewheel');
 	}
 
     /* If the user scrolls back to the top, launch the timer */
     if($('.others').scrollTop() < fixThreshold && hasScrollDown === true) {
-        thresholdDelay = setTimeout(detectScrollOnTop, 400);
+        timerActive = true;
+        thresholdDelay = setTimeout(detectScrollOnTop, 600);
     }
 }
 
@@ -37,11 +38,11 @@ function detectScrollOnTop() {
     /* Bind a listener on mousewheel direction. */
     window.addEventListener('mousewheel', function(e){
         /* If it goes up when the user is on the top, go back to previous section */
-        if (e.wheelDelta >= 0 && $('.others').scrollTop() < fixThreshold && timerActive === false) {
+        if (e.wheelDelta >= 100 && $('.others').scrollTop() < fixThreshold && timerActive === false) {
             reenableScroll();
             return;
         }
-    })
+    }, false);
 }
 
 function reenableScroll() {
@@ -50,5 +51,6 @@ function reenableScroll() {
     $(window).off('scroll.fix');
     clearTimeout(thresholdDelay);
     timerActive = false;
+    hasScrollDown = false;
     return;
 }
