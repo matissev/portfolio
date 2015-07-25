@@ -1,0 +1,15 @@
+- var majorProjects = projects.majors;
+- var n = 0;
+
+each project, index in majorProjects
+	- n++;
+	article.section.projects(class='project'+n)
+		header.project-details
+			time(datetime=project.date) #{project.explicitDate}
+			h2 #{project.title}<br>
+				span #{project.subtitle}
+			p.lead #{project.lead}
+			a.read-more(href="#") Read more...
+
+		.tags
+			span(class='tags'+n) #{project.tags}

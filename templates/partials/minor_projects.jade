@@ -1,0 +1,26 @@
+each minorProject in minorProjects
+	article.other-project
+		if minorProject.gallery
+			.article-media.gallery(itemscope='' itemtype='http://schema.org/ImageGallery')
+				- var i = 0;
+				each image in minorProject.gallery
+					- i++;
+					figure(itemprop='associatedMedia' itemscope='' itemtype='http://schema.org/ImageObject')
+						a(href=image.url data-size=image.size itemprop='contentUrl')
+							if i === 1
+								img.thumbnail(src=minorProject.thumbnail.url alt=minorProject.thumbnail.alt)
+								.gallery-toggle
+									.icon-gallery
+									.photos-indicator #[span.number-of-photos ?!] #[span.label photos available]
+						figcaption(itemprop='caption description') #{image.caption}
+
+		if minorProject.playerUrl
+			.article-media.player
+				iframe(src=minorProject.playerUrl)
+
+		.article-media.text
+			header
+				h3 #{minorProject.title}
+				time(datetime=minorProject.date) #{minorProject.explicitDate}
+			if minorProject.text
+				p #{minorProject.text}

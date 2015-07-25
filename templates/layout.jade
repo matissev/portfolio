@@ -1,5 +1,9 @@
+- var main = data.main;
+- var projects = data.projects;
+- var ui = data.ui;
+
 doctype html
-html(lang="en")
+html(lang="#{lang}")
 	head
 		include partials/head
 	body
@@ -7,9 +11,7 @@ html(lang="en")
 
 		#fullpage
 			include partials/home
-			include partials/project1
-			include partials/project2
-			include partials/project3
+			include partials/major_projects
 			include partials/others
 
 		include partials/photoswipe
