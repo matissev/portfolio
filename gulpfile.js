@@ -71,7 +71,7 @@ gulp.task('jade', function() {
 		.pipe(jade({
 			pretty: true,
 			basedir: './',
-			data: data = JSON.parse(fs.readFileSync('data/data.json', { encoding: 'utf8' }))
+			data: JSON.parse(fs.readFileSync('data/data.json', { encoding: 'utf8' }))
 		}))
 		.pipe(gulp.dest('build'))
 		.pipe(reload({stream:true}));
@@ -209,10 +209,10 @@ gulp.task('jade-dist', function() {
 		.pipe(jade({
 			pretty: true,
 			basedir: './',
-			data: data = JSON.parse(fs.readFileSync('data/data.json', { encoding: 'utf8' }))
+			data: JSON.parse(fs.readFileSync('data/data.json', { encoding: 'utf8' }))
 		}))
 		.pipe(htmlvalidator())
-		.pipe(gulp.dest('.'));
+		.pipe(gulp.dest('static'));
 });
 
 gulp.task('js-dist', ['jade-dist'], function() {
@@ -261,7 +261,11 @@ gulp.task('images-dist', function(){
 				{ removeEmptyAttrs: true }
 			]
 		}))
-		.pipe(gulp.dest('build/img'))
+		.pipe(gulp.dest('build/img'));
+});
+
+gulp.task('optimize-images', ['images-dist'], function() {
+	gulp.src('.')
 		.pipe(run('imageOptim -j -a -q -d build/img/'));
 });
 
@@ -269,6 +273,6 @@ gulp.task('dist', function(callback) {
 	sequence(
 		'clean',
 		'json',
-		['clean-html', 'less-dist', 'images-dist', 'fonts', 'medias', 'php'],
+		['clean-html', 'less-dist', 'optimize-images', 'fonts', 'medias', 'php'],
 	callback);
 });
