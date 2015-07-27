@@ -29,12 +29,15 @@
 
 @color1-a : white; /* OLD COLOR : 414753 */ /* H2 SMALL COLOR */
 @color1-b : darken(desaturate(red, 20%), 30%); /* CURRENT TEXT COLOR */
+@cover-image1 : "/img/2500x700.png";
 
 @color2-a : white; /* OLD COLOR : 414753 */ /* H2 SMALL COLOR */
 @color2-b : darken(desaturate(blue, 20%), 30%); /* CURRENT TEXT COLOR */
+@cover-image2 : "/img/2500x700.png";
 
 @color3-a : white; /* OLD COLOR : 414753 */ /* H2 SMALL COLOR */
 @color3-b : darken(desaturate(green, 40%), 5%); /* CURRENT TEXT COLOR */
+@cover-image3 : "/img/2500x700.png";
 
 
 /* Fonts */
@@ -83,8 +86,38 @@ a {
 	color: @colorB;
 }
 
-.section {
+.section, section.about {
 	padding-top: 59px;
+}
+
+
+/* Grid style */
+
+.grid {
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0 @margin;
+	z-index: 1000;
+
+	.grid-gutter, .grid-column {
+		height: 100%;
+		display: inline-block;
+		float: left;
+	}
+
+	.grid-gutter {
+		width: @gutter;
+	}
+
+	.grid-column {
+		width: @column;
+		background: blue;
+		opacity: 0.3;
+	}
 }
 
 
@@ -93,5 +126,7 @@ a {
 @import "imports/photoswipe";
 @import "imports/home";
 @import "imports/nav";
-@import "imports/projects";
+@import "imports/major-projects";
 @import "imports/others";
+@import "imports/minor-projects";
+@import "imports/about";

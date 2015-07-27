@@ -1,6 +1,12 @@
 - var main = data.main;
-- var projects = data.projects;
+
 - var ui = data.ui;
+- var nav = ui.nav;
+- var about = ui.about;
+- var photoswipe = ui.photoswipe;
+
+- var projects = data.projects;
+- var majorProjects = projects.majors;
 
 doctype html
 html(lang="#{lang}")
@@ -14,5 +20,8 @@ html(lang="#{lang}")
 			include partials/major_projects
 			include partials/others
 
+		include partials/about
+
 		include partials/photoswipe
 		include partials/scripts
+		include helpers/grid

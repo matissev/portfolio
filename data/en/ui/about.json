@@ -1,0 +1,25 @@
+{
+	"title": "About",
+	"form": {
+		"title": "Contact Me",
+		"name": {
+			"label": "Name",
+			"placeholder": "Name"
+		},
+		"email": {
+			"label": "Email",
+			"placeholder": "Email"
+		},
+		"subject": {
+			"label": "Subject",
+			"placeholder": "Subject"
+		},
+		"message": {
+			"label": "Message",
+			"placeholder": "Leave your message here"	
+		},
+		"buttonText": "Send",
+		"successText": "Your message has been sent, thank you.",
+		"failureText": "Your message could not be sent, please verify your email address."
+	}
+}

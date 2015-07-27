@@ -5,5 +5,9 @@
 	"date": "2015-01",
 	"explicitDate": "January 2015",
 	"lead": "Quisque eu diam at tellus auctor euismod. Ut dapibus, justo et iaculis dictum, felis justo condimentum ipsum, in auctor sem erat non lectus.",
-	"content": "This is the content"
+	"content": "This is the content",
+	"coverImage": {
+		"url": "/img/1080x720.jpg",
+		"alt": "My cool cover image"
+	}
 }

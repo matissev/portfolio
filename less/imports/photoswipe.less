@@ -120,7 +120,7 @@
 .pswp__button--arrow--right:before {
   content: '';
   top: 35px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: fade(@colorB, 30%);
   height: 30px;
   width: 32px;
   position: absolute; }
@@ -147,7 +147,7 @@
 
 .pswp__share-modal {
   display: block;
-  background: rgba(0, 0, 0, 0.5);
+  background: fade(@colorB, 50%);
   width: 100%;
   height: 100%;
   top: 0;
@@ -167,14 +167,14 @@
 .pswp__share-tooltip {
   z-index: 1620;
   position: absolute;
-  background: #FFF;
+  background: @colorA;
   top: 56px;
   border-radius: 2px;
   display: block;
   width: auto;
   right: 44px;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2px 5px fade(@colorB, 25%);
+          box-shadow: 0 2px 5px fade(@colorB, 25%);
   -webkit-transform: translateY(6px);
       -ms-transform: translateY(6px);
           transform: translateY(6px);
@@ -185,13 +185,13 @@
   .pswp__share-tooltip a {
     display: block;
     padding: 8px 12px;
-    color: #000;
+    color: @colorB;
     text-decoration: none;
     font-size: 14px;
     line-height: 18px; }
     .pswp__share-tooltip a:hover {
       text-decoration: none;
-      color: #000; }
+      color: @colorB; }
     .pswp__share-tooltip a:first-child {
       /* round corners on the first/last list item */
       border-radius: 2px 2px 0 0; }
@@ -218,20 +218,20 @@ a.pswp__share--facebook:before {
   top: -12px;
   right: 15px;
   border: 6px solid transparent;
-  border-bottom-color: #FFF;
+  border-bottom-color: @colorA;
   -webkit-pointer-events: none;
   -moz-pointer-events: none;
   pointer-events: none; }
 
 a.pswp__share--facebook:hover {
   background: #3E5C9A;
-  color: #FFF; }
+  color: @colorA; }
   a.pswp__share--facebook:hover:before {
     border-bottom-color: #3E5C9A; }
 
 a.pswp__share--twitter:hover {
   background: #55ACEE;
-  color: #FFF; }
+  color: @colorA; }
 
 a.pswp__share--pinterest:hover {
   background: #CCC;
@@ -355,7 +355,7 @@ a.pswp__share--download:hover {
           box-sizing: border-box;
   width: 14px;
   height: 14px;
-  border: 2px solid #FFF;
+  border: 2px solid @colorA;
   border-radius: 50%;
   border-left-color: transparent;
   border-bottom-color: transparent;
@@ -447,7 +447,7 @@ a.pswp__share--download:hover {
 
 .pswp__top-bar,
 .pswp__caption {
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: fade(@colorB, 50%); }
 
 /* pswp__ui--fit class is added when main image "fits" between top bar and bottom bar (caption) */
 .pswp__ui--fit .pswp__top-bar {

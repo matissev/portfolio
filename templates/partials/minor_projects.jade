@@ -1,17 +1,24 @@
+- var i = 0;
+
 each minorProject in minorProjects
 	article.other-project
 		if minorProject.gallery
 			.article-media.gallery(itemscope='' itemtype='http://schema.org/ImageGallery')
-				- var i = 0;
-				each image in minorProject.gallery
+				each image in minorProject.gallery.images
 					- i++;
 					figure(itemprop='associatedMedia' itemscope='' itemtype='http://schema.org/ImageObject')
 						a(href=image.url data-size=image.size itemprop='contentUrl')
 							if i === 1
-								img.thumbnail(src=minorProject.thumbnail.url alt=minorProject.thumbnail.alt)
+								img.thumbnail(src=minorProject.gallery.thumbnail.url alt=minorProject.gallery.thumbnail.alt)
 								.gallery-toggle
 									.icon-gallery
-									.photos-indicator #[span.number-of-photos ?!] #[span.label photos available]
+									.photos-indicator #[span.number-of-photos #{minorProject.gallery.images.length}]
+										span.label
+											if minorProject.gallery.images.length > 1
+												|  photos
+											else
+												|  photo
+											|  available
 						figcaption(itemprop='caption description') #{image.caption}
 
 		if minorProject.playerUrl
