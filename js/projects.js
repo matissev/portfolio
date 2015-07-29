@@ -149,7 +149,7 @@ function hideProjects(ele, d) {
 			opacity: 0
 		}, {
 			duration: d,
-			display: 'none'
+			display: 'hidden'
 		});
 	}
 }

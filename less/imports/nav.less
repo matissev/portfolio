@@ -6,7 +6,7 @@ nav {
 	left: @margin;
 	top: 140px;
 
-	.link, .about {
+	.link, .about-nav-block {
 		backface-visibility: hidden;
 		transition: color 0.7s linear;
 		color: @colorB;
@@ -35,17 +35,18 @@ nav {
 		margin-left: 36px;
 	}
 
-	.about {
+	.about-nav-block {
 		position: relative;
 		display: inline-block;
 		width: 100%;
 		padding-top: 26px;
 	}
 
-	.about:before {
+	.about-nav-block:before {
 		position: absolute;
 		top: 0;
 		left: 0;
+		white-space: nowrap;
 		content: "------------";
 		display: inline-block;
 		clear: both;
@@ -66,7 +67,7 @@ nav {
 }
 
 nav.on-projects {
-	.link, .about {
+	.link, .about-nav-block {
 		transition: color 0.7s linear;
 		color: @colorA;
 	}

@@ -3,28 +3,31 @@ section.others {
 	overflow: scroll;
 	
 	.other-projects-container {
-		width: @gutter * 10 + @column * 11;
+		.calculate-width(11, 10, false, false);
+		width: @width;
 		float: right;
 		margin-right: @margin;
 		position: relative;
 		margin-bottom: 28px;
 
 		h2 {
+			.calculate-width(2, 1, 11, 10);
+			width: @width;
 			position: relative;
 			top: -11px;
 			float: left;
-			width: ((@gutter * 100 / 82.325) * 1) + ((@column * 100 / 82.325) * 2);
 			line-height: 36px;
 			height: 62px;
 			font-weight: normal;
 		}
 
 		&:after {
+			.calculate-width(9, 8, 11, 10);
+			width: @width;
 			position: absolute;
 			content: "";
 			display: block;
 			height: 0;
-			width: ((@gutter * 100 / 82.325) * 8) + ((@column * 100 / 82.325) * 9);
 			border-bottom: 1px solid @colorB;
 			top: 0;
 			right: 0;
@@ -33,13 +36,15 @@ section.others {
 
 
 	.little-projects-column {
-		width: ((@gutter * 100 / 82.325) * 2) + ((@column * 100 / 82.325) * 3);
+		.calculate-width(3, 2, 11, 10);
+		width: @width;
 		float: left;
 		margin-top: 20px;
 	}
 
 	.normal-projects-column {
-		width: ((@gutter * 100 / 82.325) * 8) + ((@column * 100 / 82.325) * 8);
+		.calculate-width(8, 8, 11, 10);
+		width: @width;
 		float: right;
 		column-count: 2;
 		column-width: 50%;

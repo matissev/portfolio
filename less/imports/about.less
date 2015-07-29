@@ -1,5 +1,6 @@
 section.about {
 	position: fixed;
+	opacity: 0;
 	top: 0;
 	left: 0;
 	z-index: 4;
@@ -9,74 +10,141 @@ section.about {
 	color: @colorA;
 
 	.about-container {
+		.calculate-width(11, 10, false, false);
+		width: @width;
 		position: relative;
-		width: @gutter * 10 + @column * 11;
 		float: right;
 		margin-right: @margin;
 
 		h2 {
+			.calculate-width(2, 1, 11, 10);
+			width: @width;
 			position: relative;
 			top: -11px;
 			float: left;
-			width: ((@gutter * 100 / 82.325) * 1) + ((@column * 100 / 82.325) * 2);
 			line-height: 36px;
 			font-weight: normal;
 		}
 	}
 
-	.about-content {
-		width: ((@gutter * 100 / 82.325) * 8) + ((@column * 100 / 82.325) * 9);
-		height: 500px; // TEMPORARY
-		background: purple; // TEMPORARY
-		float: right;
-		border-top: 1px solid @colorA;
+	.icon-close {
+		position: relative;
+		top: -5px;
+		float: left;
+		margin-left: @margin;
+		cursor: pointer;
+	}
+}
+
+.about .about-content {
+	.calculate-width(9, 8, 11, 10);
+	width: @width;
+	float: right;
+	border-top: 1px solid @colorA;
+	padding-top: 114px;
+	font: normal @font-size-m @heading-text;
+
+	h3 {
 		font: normal @font-size-m @heading-text;
+		margin-bottom: 12px;
+	}
+}
 
-		form {
-			width: 400px;
+.about form {
+	.calculate-width(5, 4, 9, 8);
+	width: @width;
+	float: left;
 
-			input, textarea, button {
-				font: normal @font-size-s @current-text;
-				float: left;
-				clear: both;
-				box-sizing: border-box;
-				border: none;
-				padding: 0 15px;
-				margin-bottom: 21px;
-				line-height: 33px;
-			}
+	h3 {
+		padding-left: 15px;
+	}
 
-			input, textarea {
-				width: 100%;
-			}
+	input, textarea, button {
+		font: normal @font-size-s @current-text;
+		float: left;
+		clear: both;
+		box-sizing: border-box;
+		border: none;
+		padding: 0 15px;
+		margin-bottom: 21px;
+	}
 
-			input {
-				height: 30px;
-			}
+	input, textarea {
+		box-sizing: border-box;
+		color: @colorB;
+		transition: border-left 0.2s ease-out;
 
-			textarea {
-				height: 210px;
-			}
-
-			::-webkit-input-placeholder {
-			   color: fade(@colorB, 50%);
-			}
-
-			:-moz-placeholder {
-			   color: fade(@colorB, 50%);
-			}
-
-			::-moz-placeholder {
-			   color: fade(@colorB, 50%);
-			}
-
-			:-ms-input-placeholder {
-			   color: fade(@colorB, 50%);
-			}
-
-			label {
-				.assistive-hide()
-			}
+		&:focus {
+			outline: none;
+			border-left: 5px solid fade(@colorB, 40%);
 		}
 	}
+
+	input {
+		.calculate-width(4, 3, 5, 4);
+		width: @width;
+		padding-top: 2px;
+		height: 30px;
+	}
+
+	textarea {
+		resize: none;
+		width: 100%;
+		padding-top: 8px;
+		height: 210px;
+	}
+
+	button {
+		height: 30px;
+		.calculate-width(1, 0, 5, 4);
+		width: @width;
+		background: fade(@colorA, 20%);
+
+		&:active {
+			background: fade(@colorB, 20%);
+		}
+	}
+
+	label span {
+		.assistive-hide()
+	}
+
+	::-webkit-input-placeholder {
+	   color: fade(@colorB, 50%);
+	}
+
+	:-moz-placeholder {
+	   color: fade(@colorB, 50%);
+	}
+
+	::-moz-placeholder {
+	   color: fade(@colorB, 50%);
+	}
+
+	:-ms-input-placeholder {
+	   color: fade(@colorB, 50%);
+	}
+}
+
+.about .social-links, .about .resume {
+	text-align: center;
+
+	& {
+		.calculate-width(2, 1, 9, 8);
+		width: @width;
+	} & {
+		.calculate-width(1, 1, 9, 8);
+		margin-right: @width;
+	}
+	
+	float: right;
+
+	a {
+		margin: 3px;
+		display: inline-block;
+	}
+}
+
+.about .resume {
+	margin-top: 99px;
 }

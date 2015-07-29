@@ -1,16 +1,34 @@
-section.about
+section.about.hidden
+	.icon-close.about-close-button
 	.about-container
 		h2 #{about.title}
 		.about-content
-			form(action='mail.php', method='post', onsubmit='return checkrequired(this)')
-				label(for='name') #{about.form.name.label}
-				input#name(placeholder=about.form.name.placeholder name='requiredfullname', type='text', value='', required='')
-				label(for='email') #{about.form.email.label}
-				input#email(placeholder=about.form.email.placeholder name='requiredemail', type='email', value='', required='')
-				label(for='subject') #{about.form.subject.label}
-				input#subject(placeholder=about.form.subject.placeholder name='requiredsujet', type='text', value='', required='')
-				label(for='message') #{about.form.message.label}
-				textarea#message(placeholder=about.form.message.placeholder name='requiredmessage', required='')
+			form(action='mail.php' method='post' onsubmit='return checkrequired(this)' autocomplete='on')
+				h3 #{about.form.title}
+				label(for='name') 
+					span #{about.form.name.label}
+					input#name(placeholder=about.form.name.placeholder name='requiredfullname' type='text' value='' required)
+				label(for='email') 
+					span #{about.form.email.label}
+					input#email(placeholder=about.form.email.placeholder name='requiredemail' type='email' value='' required)
+				label(for='subject') 
+					span #{about.form.subject.label}
+					input#subject(placeholder=about.form.subject.placeholder name='requiredsubject' type='text' value='' required)
+				label(for='message') 
+					span #{about.form.message.label}
+					textarea#message(placeholder=about.form.message.placeholder name='requiredmessage' required='')
 				button(type='submit') #{about.form.buttonText}
 				//- p#merci #{about.form.successText}
 				//- p#failure #{about.form.failureText}
+
+			.social-links
+				h3 #{about.social.title}
+				.links-container
+					a.icon-linkedin(href=about.social.linkedin)
+					a.icon-github(href=about.social.github)
+					a.icon-soundcloud(href=about.social.soundcloud)
+					a.icon-twitter(href=about.social.twitter)
+
+			.resume
+				h3 #{about.resume.title}
+				a.icon-download-resume(href=about.resume.link)

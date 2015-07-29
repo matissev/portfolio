@@ -1,11 +1,12 @@
 .project-details {
+	.calculate-width(3, 4, false, false);
+	width: @width;
+	left: @margin + @column;
+	padding: 29px @gutter 25px @gutter;
 	z-index: 2;
 	box-sizing: border-box;
 	backface-visibility: hidden;
 	position: absolute;
-	width: @gutter * 4 + @column * 3;
-	left: @margin + @column;
-	padding: 29px @gutter 25px @gutter;
 	border: 1px solid @colorA;
 
 	time {
@@ -48,22 +49,28 @@
 }
 
 .tags {
+	.calculate-width(7, 6, false, false);
+	width: @width;
 	z-index: 2;
 	position: absolute;
-	width: @gutter * 6 + @column * 7;
 	right: @margin;
 	font: @font-size-xs @heading-text;
 	color: @colorA;
 
 	span {
-		width: ((@gutter * 100 / 51.265) * 2) + ((@column * 100 / 51.265) * 3);
+		& {
+			.calculate-width(3, 2, 7, 6);
+			width: @width;
+		} & {
+			.calculate-width(1, 1, 7, 6);
+			margin-right: @width;
+		}
 		display: inline-block;
 		line-height: 7px;
 		text-align: center;
 		float: right;
 		transform-origin: 50% 50% 32px;
 		backface-visibility: hidden;
-		margin-right: (@gutter * 100 / 51.265) + (@column * 100 / 51.265);
 	}
 
 	&:before, &:after {
@@ -71,20 +78,20 @@
 		content: "";
 		display: block;
 		height: 0px;
+		top: 0;
 		border-bottom: 1px solid @colorA;
-		width: 100px;
 	}
 
 	&:before {
-		width: ((@gutter * 100 / 52.3) * 3) + ((@column * 100 / 52.3) * 3);
+		.calculate-width(3, 3, 7, 6);
+		width: @width;
 		left: 0;
-		top: 0;
 	}
 
 	&:after {
-		width: (@gutter * 100 / 51.265) + (@column * 100 / 51.265);
+		.calculate-width(1, 1, 7, 6);
+		width: @width;
 		right: 0;
-		top: 0;
 	}
 }
 

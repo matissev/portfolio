@@ -1,9 +1,8 @@
-- var i = 0;
-
 each minorProject in minorProjects
 	article.other-project
 		if minorProject.gallery
 			.article-media.gallery(itemscope='' itemtype='http://schema.org/ImageGallery')
+				- var i = 0;
 				each image in minorProject.gallery.images
 					- i++;
 					figure(itemprop='associatedMedia' itemscope='' itemtype='http://schema.org/ImageObject')

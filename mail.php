@@ -3,7 +3,7 @@
 $TO = "m.vrignaud@lecolededesign.com";
 $name = $_REQUEST["requiredfullname"];
 $email = $_REQUEST["requiredemail"];
-$sujet = $_REQUEST["requiredsujet"];
+$subject = $_REQUEST["requiredsubject"];
 $message = $_REQUEST["requiredmessage"];
 
 $h  = "From: " . $name . " <" . $email . ">" ;
@@ -33,7 +33,7 @@ if ($mailcheck==FALSE)
 }
 else
 {
-  mail($TO, $sujet, $message, $h);
+  mail($TO, $subject, $message, $h);
   Header("Location: contact.html#thanks");
 }
 ?>

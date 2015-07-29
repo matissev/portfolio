@@ -1,7 +1,7 @@
 {
 	"title": "About",
 	"form": {
-		"title": "Contact Me",
+		"title": "Contact me",
 		"name": {
 			"label": "Name",
 			"placeholder": "Name"
@@ -16,10 +16,21 @@
 		},
 		"message": {
 			"label": "Message",
-			"placeholder": "Leave your message here"	
+			"placeholder": "Leave your message here..."	
 		},
 		"buttonText": "Send",
 		"successText": "Your message has been sent, thank you.",
 		"failureText": "Your message could not be sent, please verify your email address."
+	},
+	"social": {
+		"title": "Follow me",
+		"linkedin": "#",
+		"github": "#",
+		"twitter": "#",
+		"soundcloud": "#"
+	},
+	"resume": {
+		"title": "Download my resume",
+		"link": "#"
 	}
 }

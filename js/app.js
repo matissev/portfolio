@@ -1,19 +1,19 @@
 /* --------------------- LAYOUT CHANGES BY SECTIONS */
 
-worklink.onclick = function() {
-	window.location.hash = 'project1';
-};
-
+fullpageIndex = null;
 
 function afterSectionLoad(anchorLink, index) {
 	var loadedSection = $(this);
 
-	if(index === numberOfItems)listenScroll();
+	fullpageIndex = index;
+
+	if(index === numberOfItems)
+		listenScroll();
 
 
 	/* Stick projects on the top on #projects(1,2,3) */
 
-	if (anchorLink === 'project1' || anchorLink === 'project2' || anchorLink === 'project3') {
+	if (index === 2 || index === 3 || index === 4) {
 		addClass(nav, 'on-projects');
 		for(i = 0; i <= projects.length; i++) {
 			addClass(projects[i], 'on-projects');
@@ -27,7 +27,7 @@ function afterSectionLoad(anchorLink, index) {
 
 	/* Unfold nav on #projects(1,2,3) and #other */
 
-	if (anchorLink === 'project1' || anchorLink === 'project2' || anchorLink === 'project3' || anchorLink === 'other') {
+	if (index === 2 || index === 3 || index === 4 || index === 5) {
 		removeClass(nav, 'on-home');
 	}
 }
@@ -62,6 +62,7 @@ function onSectionLeave(index, nextIndex, direction) {
 		worklink.onclick = function() {
 			window.location.hash = 'project1';
 		};
+
 		updateNav.onHome();
 		navOpened = false;
 
@@ -78,6 +79,7 @@ function onSectionLeave(index, nextIndex, direction) {
 	}
 
 	if (index === 1 && direction === 'down') {
+		console.log('shit ' + index + direction)
 		worklink.onclick = null;
 		updateNav.onProjects();
 	}

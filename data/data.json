@@ -8,7 +8,7 @@
             "about": {
                 "title": "About",
                 "form": {
-                    "title": "Contact Me",
+                    "title": "Contact me",
                     "name": {
                         "label": "Name",
                         "placeholder": "Name"
@@ -23,11 +23,22 @@
                     },
                     "message": {
                         "label": "Message",
-                        "placeholder": "Leave your message here"
+                        "placeholder": "Leave your message here..."
                     },
                     "buttonText": "Send",
                     "successText": "Your message has been sent, thank you.",
                     "failureText": "Your message could not be sent, please verify your email address."
+                },
+                "social": {
+                    "title": "Follow me",
+                    "linkedin": "#",
+                    "github": "#",
+                    "twitter": "#",
+                    "soundcloud": "#"
+                },
+                "resume": {
+                    "title": "Download my resume",
+                    "link": "#"
                 }
             },
             "nav": {
@@ -98,6 +109,81 @@
                 },
                 "normal": {
                     "p1_partons": {
+                        "title": "Partons OST",
+                        "date": "2014-06",
+                        "explicitDate": "June 2014",
+                        "playerUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/148589564&auto_play=false&hide_related=true&theme_color=FFFFFF&show_comments=false&show_user=false&show_reposts=false&visual=true&download=false&sharing=false",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia impedit voluptatem minus sit, necessitatibus alias eos, cumque nam, eveniet tempore rem sed aliquid quasi, voluptate. Sit facilis sequi, ducimus ratione.",
+                        "gallery": {
+                            "thumbnail": {
+                                "url": "/img/270x180.jpg",
+                                "alt": "little image"
+                            },
+                            "images": [
+                                {
+                                    "url": "/img/1060x720.jpg",
+                                    "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptas doloribus maiores est illum similique et minima, tenetur aliquam eos nisi.",
+                                    "size": "1260x720"
+                                },
+                                {
+                                    "url": "/img/1080x720.jpg",
+                                    "caption": "Long image description 2",
+                                    "size": "1280x720"
+                                }
+                            ]
+                        }
+                    },
+                    "p2_partons": {
+                        "title": "Partons OST",
+                        "date": "2014-06",
+                        "explicitDate": "June 2014",
+                        "playerUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/148589564&auto_play=false&hide_related=true&theme_color=FFFFFF&show_comments=false&show_user=false&show_reposts=false&visual=true&download=false&sharing=false",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia impedit voluptatem minus sit, necessitatibus alias eos, cumque nam, eveniet tempore rem sed aliquid quasi, voluptate. Sit facilis sequi, ducimus ratione.",
+                        "gallery": {
+                            "thumbnail": {
+                                "url": "/img/270x180.jpg",
+                                "alt": "little image"
+                            },
+                            "images": [
+                                {
+                                    "url": "/img/1060x720.jpg",
+                                    "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptas doloribus maiores est illum similique et minima, tenetur aliquam eos nisi.",
+                                    "size": "1260x720"
+                                },
+                                {
+                                    "url": "/img/1080x720.jpg",
+                                    "caption": "Long image description 2",
+                                    "size": "1280x720"
+                                }
+                            ]
+                        }
+                    },
+                    "p3_partons": {
+                        "title": "Partons OST",
+                        "date": "2014-06",
+                        "explicitDate": "June 2014",
+                        "playerUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/148589564&auto_play=false&hide_related=true&theme_color=FFFFFF&show_comments=false&show_user=false&show_reposts=false&visual=true&download=false&sharing=false",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia impedit voluptatem minus sit, necessitatibus alias eos, cumque nam, eveniet tempore rem sed aliquid quasi, voluptate. Sit facilis sequi, ducimus ratione.",
+                        "gallery": {
+                            "thumbnail": {
+                                "url": "/img/270x180.jpg",
+                                "alt": "little image"
+                            },
+                            "images": [
+                                {
+                                    "url": "/img/1060x720.jpg",
+                                    "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptas doloribus maiores est illum similique et minima, tenetur aliquam eos nisi.",
+                                    "size": "1260x720"
+                                },
+                                {
+                                    "url": "/img/1080x720.jpg",
+                                    "caption": "Long image description 2",
+                                    "size": "1280x720"
+                                }
+                            ]
+                        }
+                    },
+                    "p4_partons": {
                         "title": "Partons OST",
                         "date": "2014-06",
                         "explicitDate": "June 2014",
