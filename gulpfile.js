@@ -18,11 +18,10 @@ var gulp = require('gulp'),
 	prefixer = require('gulp-autoprefixer'),
 	sourcemaps = require('gulp-sourcemaps'),
 
-	useref = require('gulp-useref'),
+	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify'),
 
 	jsonTree = require("gulp-json-tree"),
-	jsonFormat = require('gulp-json-format'),
 	replace = require('gulp-replace'),
 
 	imagemin = require('gulp-imagemin'),
@@ -46,9 +45,8 @@ var reload = server.reload;
 
 var onError = function(err) {
 	notify.onError({
-		title: 'Gulp',
-		subtitle: 'Failure!',
-		message: 'Error: <%= error.message %>',
+		title: 'Compilation error',
+		message: '<%= error.message %>',
 		sound: 'Tink'
 	})(err);
 	
@@ -89,8 +87,13 @@ gulp.task('less', function(){
 });
 
 gulp.task('js', function(){
-	return gulp.src(['js/**/*.js'])
+	var scripts = JSON.parse(fs.readFileSync('js/_compile.json', { encoding: 'utf8' }));
+
+	return gulp.src(scripts.src)
 		.pipe(plumber({errorHandler: onError}))
+		.pipe(sourcemaps.init())
+		.pipe(concat(scripts.name))
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('build/js'))
 		.pipe(reload({stream:true}));
 });
@@ -107,13 +110,7 @@ gulp.task('json', function(){
 			filename: 'data.json'
 		}))
 		.pipe(replace('.json', ''))
-		.pipe(jsonFormat(4))
     	.pipe(gulp.dest('data'));
-});
-
-gulp.task('libs', function(){
-	return gulp.src(['libs/**/*'])
-		.pipe(gulp.dest('build/libs'));
 });
 
 gulp.task('medias', function(){
@@ -177,7 +174,7 @@ gulp.task('make', function(callback) {
 	sequence(
 		'clean',
 		'json',
-		['css', 'images', 'fonts', 'medias', 'libs', 'jade', 'js', 'php'],
+		['css', 'images', 'fonts', 'medias', 'jade', 'js', 'php'],
 		'server',
 	callback);
 });
@@ -185,7 +182,7 @@ gulp.task('make', function(callback) {
 gulp.task('default', ['make'], function() {
 	gulp.watch(['static/**/*.jade', 'templates/**/*.jade', 'data/data.json'], ['jade']);
 	gulp.watch('less/**/*.less', ['less']);
-	gulp.watch('js/**/*.js', ['js']);
+	gulp.watch(['js/**/*.js', 'js/_compile.json'], ['js']);
 	gulp.watch(['data/**/*.json', '!data/data.json'], ['json']);
 });
 
@@ -212,22 +209,6 @@ gulp.task('jade-dist', function() {
 			data: JSON.parse(fs.readFileSync('data/data.json', { encoding: 'utf8' }))
 		}))
 		.pipe(htmlvalidator())
-		.pipe(gulp.dest('static'));
-});
-
-gulp.task('js-dist', ['jade-dist'], function() {
-	var assets = useref.assets();
-
-	return gulp.src('static/**/*.html')
-		.pipe(assets)
-		.pipe(gulpif('*.js', uglify()))
-		.pipe(assets.restore())
-		.pipe(useref())
-		.pipe(gulp.dest('build'));
-});
-
-gulp.task('minify-html', ['js-dist'], function(callback) {
-	return gulp.src('build/**/*.html')
 		.pipe(htmlmin({
 			removeComments: true,
 			removeCommentsFromCDATA: true,
@@ -245,8 +226,13 @@ gulp.task('minify-html', ['js-dist'], function(callback) {
 		.pipe(gulp.dest('build'));
 });
 
-gulp.task('clean-html', ['minify-html'], function(callback) {
-	del('static/**/*.html', callback);
+gulp.task('js-dist', function() {
+	var scripts = JSON.parse(fs.readFileSync('js/_compile.json', { encoding: 'utf8' }));
+
+	return gulp.src(scripts.src)
+		.pipe(concat(scripts.name))
+		.pipe(uglify())
+		.pipe(gulp.dest('build/js'));
 });
 
 gulp.task('images-dist', function(){
@@ -265,14 +251,25 @@ gulp.task('images-dist', function(){
 });
 
 gulp.task('optimize-images', ['images-dist'], function() {
-	gulp.src('.')
+	return gulp.src('.')
 		.pipe(run('imageOptim -j -a -q -d build/img/'));
+});
+
+gulp.task('done', function() {
+	return gulp.src('.')
+		.pipe(run('open -a iterm'))
+		.pipe(notify({
+			title: 'Compilation complete',
+			message: 'Your distribution folder is now ready',
+			sound: 'Tink'
+		}));
 });
 
 gulp.task('dist', function(callback) {
 	sequence(
 		'clean',
 		'json',
-		['clean-html', 'less-dist', 'optimize-images', 'fonts', 'medias', 'php'],
+		['less-dist', 'jade-dist', 'js-dist', 'optimize-images', 'fonts', 'medias', 'php'],
+		'done',
 	callback);
 });

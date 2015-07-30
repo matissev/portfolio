@@ -211,4 +211,4 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 };
 
 // execute above function
-initPhotoSwipeFromDOM('article.other-project .article-media.gallery');
+initPhotoSwipeFromDOM('article.minor-project .article-media.gallery');

@@ -5,10 +5,10 @@ navOpened = false;
 navToggleButton.onclick = function(){
 	if (navOpened) {
 		updateNav.close(300);
-		updateProjects.show(300);
+		updateMajorProjectsRoll.show(300);
 	} else {
 		updateNav.open(300);
-		updateProjects.hide(300);
+		updateMajorProjectsRoll.hide(300);
 	}
 
 	navOpened = !navOpened;
@@ -30,11 +30,24 @@ aboutOpenButton.onclick = function(){
 };
 
 aboutCloseButton.onclick = function(){
-	updateAbout.close(300);
+	updateAbout.close(200);
 
     $.fn.fullpage.setAllowScrolling(true);
     $.fn.fullpage.setMouseWheelScrolling(true);
 };
+
+
+/* --------------------- MAJOR PROJECT TOGGLE */
+
+function majorProjectToggle(i) {
+    majorProjectButton[i].addEventListener('click', function() {
+       updateMajorProjects.open();
+    }, false);
+}
+
+for (i = 0; i < majorProjectButton.length; i++) {
+	majorProjectToggle(i);
+}
 
 
 /* --------------------- WORK LINK */

@@ -2,7 +2,7 @@ slideTransitionDuration = 600;
 
 /* Put nav links margin in cache */
 navLinksMarginBottom = $.Velocity.hook($('.nav-links .link'), "marginBottom");
-navAboutPaddingTop = $.Velocity.hook($('.nav-links .about'), "paddingTop");
+navAboutPaddingTop = $.Velocity.hook($('.nav-links .about-nav-block'), "paddingTop");
 
 updateNav = {
 	open: function(overrideDuration) {
@@ -32,8 +32,8 @@ updateNav = {
 				delay: 200
 			});
 			
-			$('.nav-links .about').velocity("finish");
-			$('.nav-links .about').velocity({
+			$('.nav-links .about-nav-block').velocity("finish");
+			$('.nav-links .about-nav-block').velocity({
 				paddingTop: navAboutPaddingTop
 			}, {
 				duration: currentDuration,
@@ -74,7 +74,7 @@ updateNav = {
 				duration: currentDuration
 			});
 
-			$('.nav-links .about').velocity({
+			$('.nav-links .about-nav-block').velocity({
 				paddingTop: 10
 			}, {
 				duration: currentDuration
@@ -145,8 +145,8 @@ updateNav = {
 				duration: currentDuration
 			});
 
-			$('.nav-links .about').velocity("finish");
-			$('.nav-links .about').velocity({
+			$('.nav-links .about-nav-block').velocity("finish");
+			$('.nav-links .about-nav-block').velocity({
 				paddingTop: navAboutPaddingTop
 			}, {
 				duration: currentDuration
@@ -195,7 +195,7 @@ updateNav = {
 				duration: currentDuration
 			});
 
-			$('.nav-links .about').velocity({
+			$('.nav-links .about-nav-block').velocity({
 				paddingTop: 10
 			}, {
 				duration: currentDuration

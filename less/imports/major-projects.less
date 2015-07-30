@@ -1,4 +1,32 @@
-.project-details {
+.majors {
+	position: relative;
+	overflow: hidden;
+	vertical-align: middle;
+
+	.cover-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transition: height 1s ease;
+
+		img {
+			// pointer-events: none;
+			// position: absolute;
+			// top: -9999%;
+			// bottom: -9999%;
+			// left: -9999%;
+			// right: -9999%;
+			// margin: auto;
+			// min-width: 100%;
+			// min-height: 100%;
+			.assistive-hide()
+		}
+	}
+}
+
+.majors .project-details {
 	.calculate-width(3, 4, false, false);
 	width: @width;
 	left: @margin + @column;
@@ -48,7 +76,7 @@
 	}
 }
 
-.tags {
+.majors .tags {
 	.calculate-width(7, 6, false, false);
 	width: @width;
 	z-index: 2;
@@ -95,44 +123,16 @@
 	}
 }
 
-.projects {
-	position: relative;
-	overflow: hidden;
-	vertical-align: middle;
-
-	.cover-image {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		transition: height 1s ease;
-
-		img {
-			// pointer-events: none;
-			// position: absolute;
-			// top: -9999%;
-			// bottom: -9999%;
-			// left: -9999%;
-			// right: -9999%;
-			// margin: auto;
-			// min-width: 100%;
-			// min-height: 100%;
-			.assistive-hide()
-		}
-	}
-}
-
-.projects.on-projects .tags, .projects.on-projects .project-details {
+.majors.on-majors .tags, .majors.on-majors .project-details {
 	position: fixed;
 	top: 59px;
 }
 
-.projects.active .project-details, .projects.active .tags {
+.majors.active .project-details, .majors.active .tags {
 	z-index: 4;
 }
 
-.project1 {
+.major-project1 {
 	.cover-image {
 		background: @color1-b url(@cover-image1) center center;
 		background-size: cover;
@@ -147,7 +147,7 @@
 	}
 }
 
-.project2 {
+.major-project2 {
 	.cover-image {
 		background: @color2-b url(@cover-image2) center center;
 		background-size: cover;
@@ -162,7 +162,7 @@
 	}
 }
 
-.project3 {
+.major-project3 {
 	.cover-image {
 		background: @color3-b url(@cover-image3) center center;
 		background-size: cover;

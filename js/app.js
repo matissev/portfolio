@@ -14,14 +14,14 @@ function afterSectionLoad(anchorLink, index) {
 	/* Stick projects on the top on #projects(1,2,3) */
 
 	if (index === 2 || index === 3 || index === 4) {
-		addClass(nav, 'on-projects');
+		addClass(nav, 'on-majors');
 		for(i = 0; i <= projects.length; i++) {
-			addClass(projects[i], 'on-projects');
+			addClass(projects[i], 'on-majors');
 		}
 	}
 
 	if (index === 1) {
-		updateProjects.show(0);
+		updateMajorProjectsRoll.show(0);
 	}
 
 
@@ -45,7 +45,7 @@ function onSectionLeave(index, nextIndex, direction) {
 
 	if ((index !== 1 && index !== 5) && (nextIndex == 1 || nextIndex == 5)) {
 		for(i = 0; i <= projects.length; i++) {
-			removeClass(projects[i], 'on-projects');
+			removeClass(projects[i], 'on-majors');
 		}
 	}
 
@@ -53,8 +53,8 @@ function onSectionLeave(index, nextIndex, direction) {
 	/* Nav color change */
 
 	if (nextIndex === 5) {
-		addClass(nav, 'on-others');
-		removeClass(nav, 'on-projects');
+		addClass(nav, 'on-minors');
+		removeClass(nav, 'on-majors');
 
 	}
 
@@ -66,33 +66,32 @@ function onSectionLeave(index, nextIndex, direction) {
 		updateNav.onHome();
 		navOpened = false;
 
-		removeClass(nav, 'on-others');
-		removeClass(nav, 'on-projects');
+		removeClass(nav, 'on-minors');
+		removeClass(nav, 'on-majors');
 		addClass(nav, 'on-home');
 
 	}
 
 	if (index === 5 && direction === 'up' && nextIndex !== 1) {
-		removeClass(nav, 'on-others');
-		addClass(nav, 'on-projects');
+		removeClass(nav, 'on-minors');
+		addClass(nav, 'on-majors');
 
 	}
 
 	if (index === 1 && direction === 'down') {
-		console.log('shit ' + index + direction)
 		worklink.onclick = null;
 		updateNav.onProjects();
 	}
 
 
 	if (nextIndex === 2) {
-		updateProjects.onFirst();
+		updateMajorProjectsRoll.onFirst();
 
 	} else if (nextIndex === 3) {
-		updateProjects.onSecond();
+		updateMajorProjectsRoll.onSecond();
 
 	} else if (nextIndex === 4) {
-		updateProjects.onThird();
+		updateMajorProjectsRoll.onThird();
 	}
 
 
@@ -100,7 +99,7 @@ function onSectionLeave(index, nextIndex, direction) {
 		updateNav.close(300);
 		navOpened = false;
 
-		updateProjects.show(300);
+		updateMajorProjectsRoll.show(300);
 	}
 }
 

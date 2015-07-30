@@ -1,0 +1,22 @@
+{
+	"name": "script.js",
+	"src": [
+		"libs/jquery/dist/jquery.js",
+		"libs/fullpage.js/jquery.fullPage.js",
+		"libs/velocity/velocity.js",
+		"libs/photoswipe/dist/photoswipe.js",
+		
+		"js/elements.js",
+		"js/utilities.js",
+		"js/toggles.js",
+		"js/nav.js",
+		"js/about.js",
+		"js/major-projects-roll.js",
+		"js/major-projects-article.js",
+		"js/section-scroll.js",
+		"js/app.js",
+		"js/photoswipe-options.js",
+		"js/photoswipe-domparser.js",
+		"js/form.js"
+	]
+}

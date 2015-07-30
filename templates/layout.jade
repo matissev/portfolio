@@ -9,7 +9,7 @@
 - var majorProjects = projects.majors;
 
 doctype html
-html(lang="#{lang}")
+html(lang=main.lang)
 	head
 		include partials/head
 	body
@@ -17,8 +17,8 @@ html(lang="#{lang}")
 
 		#fullpage
 			include partials/home
-			include partials/major_projects
-			include partials/others
+			include partials/major-projects
+			include partials/minors
 
 		include partials/about
 

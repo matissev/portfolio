@@ -1,0 +1,9 @@
+section.section.minors
+	.minor-projects-container
+		h2 Some other projects
+		.normal-minor-projects-column
+			- var minorProjects = projects.minors.normal;
+			include minor-projects
+		.little-minor-projects-column
+			- var minorProjects = projects.minors.little;
+			include minor-projects
