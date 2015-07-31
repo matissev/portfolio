@@ -3,15 +3,20 @@
 navOpened = false;
 
 navToggleButton.onclick = function(){
-	if (navOpened) {
-		updateNav.close(300);
-		updateMajorProjectsRoll.show(300);
+	if (openedMajorProjectIndex !== null) {
+		updateMajorProjectsArticle.close();
+		openedMajorProjectIndex = null;
 	} else {
-		updateNav.open(300);
-		updateMajorProjectsRoll.hide(300);
-	}
+		if (navOpened) {
+			updateNav.close(300);
+			updateMajorProjectsRoll.show(300);
+		} else {
+			updateNav.open(300);
+			updateMajorProjectsRoll.hide(300);
+		}
 
-	navOpened = !navOpened;
+		navOpened = !navOpened;
+	}
 };
 
 
@@ -25,24 +30,27 @@ aboutOpenButton.onclick = function(){
 		navOpened = false;
 	}
 
-    $.fn.fullpage.setAllowScrolling(false);
-    $.fn.fullpage.setMouseWheelScrolling(false);
+	$.fn.fullpage.setAllowScrolling(false);
+	$.fn.fullpage.setMouseWheelScrolling(false);
 };
 
 aboutCloseButton.onclick = function(){
 	updateAbout.close(200);
 
-    $.fn.fullpage.setAllowScrolling(true);
-    $.fn.fullpage.setMouseWheelScrolling(true);
+	$.fn.fullpage.setAllowScrolling(true);
+	$.fn.fullpage.setMouseWheelScrolling(true);
 };
 
 
 /* --------------------- MAJOR PROJECT TOGGLE */
 
+openedMajorProjectIndex = null;
+
 function majorProjectToggle(i) {
-    majorProjectButton[i].addEventListener('click', function() {
-       updateMajorProjects.open();
-    }, false);
+	majorProjectButton[i].addEventListener('click', function() {
+		openedMajorProjectIndex = i;
+		updateMajorProjectsArticle.open();
+	}, false);
 }
 
 for (i = 0; i < majorProjectButton.length; i++) {

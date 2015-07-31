@@ -134,7 +134,8 @@ function translateAndHideBottom(ele, d) {
 function showProjects(ele, duration, delay) {
 	if ($.Velocity.hook(ele, "opacity") !== 1) {
 		ele.velocity({
-			opacity: 1
+			opacity: 1,
+			height: 'auto'
 		}, {
 			duration: duration,
 			delay: delay,
@@ -146,7 +147,8 @@ function showProjects(ele, duration, delay) {
 function hideProjects(ele, d) {
 	if ($.Velocity.hook(ele, "opacity") !== 0) {
 		ele.velocity({
-			opacity: 0
+			opacity: 0,
+			height: 'auto'
 		}, {
 			duration: d,
 			display: 'hidden'

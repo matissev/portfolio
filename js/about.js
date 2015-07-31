@@ -12,12 +12,23 @@ updateAbout = {
 			}
 		});
 
+
+		$('.about-close-button').velocity({
+			rotateZ: '90deg'
+		}, {
+			duration: currentDuration,
+			easing: 'easeOutSine',
+			delay: 150
+		});
+
+
 		$('.about-container').velocity({
 			opacity: 1,
 		}, {
 			duration: currentDuration,
 			delay: 300
 		});
+
 
 		$('section.home header, .nav-toggle-button, .nav-links, .minor-projects-container, .majors .project-details, .majors .tags').velocity({
 			opacity: 0
@@ -42,6 +53,14 @@ updateAbout = {
 			complete: function() {
 				addClass(aboutPage, 'hidden');
 			}
+		});
+
+		$('.about-close-button').velocity({
+			rotateZ: '0deg'
+		}, {
+			duration: currentDuration,
+			easing: 'easeInCubic',
+			delay: 150
 		});
 
 		$('.about-container').velocity({

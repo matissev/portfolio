@@ -31,7 +31,7 @@ var gulp = require('gulp'),
 /* ____________________________________________________________________________________ SERVER */
 
 gulp.task('server', function() {
-	server.init(null, {
+	return server.init(null, {
 		server: {
 			baseDir: 'build'
 		},
@@ -57,7 +57,7 @@ var onError = function(err) {
 /* ____________________________________________________________________________________ CLEAN */
 
 gulp.task('clean', function (callback) {
-	del(['build/**/*'], callback);
+	return del(['build/**/*'], callback);
 });
 
 

@@ -15,8 +15,8 @@ function afterSectionLoad(anchorLink, index) {
 
 	if (index === 2 || index === 3 || index === 4) {
 		addClass(nav, 'on-majors');
-		for(i = 0; i <= projects.length; i++) {
-			addClass(projects[i], 'on-majors');
+		for(i = 0; i <= majorProjects.length; i++) {
+			addClass(majorProjects[i], 'on-majors');
 		}
 	}
 
@@ -44,8 +44,8 @@ function onSectionLeave(index, nextIndex, direction) {
 	/* Unstick projects off the top and change nav color on #projects(1,2,3) */
 
 	if ((index !== 1 && index !== 5) && (nextIndex == 1 || nextIndex == 5)) {
-		for(i = 0; i <= projects.length; i++) {
-			removeClass(projects[i], 'on-majors');
+		for(i = 0; i <= majorProjects.length; i++) {
+			removeClass(majorProjects[i], 'on-majors');
 		}
 	}
 

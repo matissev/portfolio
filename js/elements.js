@@ -11,6 +11,6 @@ aboutOpenButton = document.querySelector('.about-open-button');
 aboutCloseButton = document.querySelector('.about-close-button');
 hiddenElementsOnAbout = document.querySelectorAll('section.home header, nav, .minor-projects-container, .majors .project-details, .majors .tags');
 
-projects = document.querySelectorAll('.majors');
+majorProjects = document.querySelectorAll('.majors');
 majorProjectButton = document.querySelectorAll('.majors .read-more');
 tags = document.querySelectorAll('.majors .tags');
