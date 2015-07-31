@@ -48,7 +48,7 @@ updateMajorProjectsArticle = {
 			height: minProjectDetailsHeight
 		}, {
 			duration: currentDuration/2,
-			delay: currentDuration/2,
+			delay: currentDuration/3,
 			easing: 'easeOutCubic',
 			complete: function() {
 				$.Velocity.hook($(majorProjectClass + '.project-details'), 'height', 'auto');
@@ -71,8 +71,6 @@ updateMajorProjectsArticle = {
 			complete: function() {
 				for (i = 0; i < majorProjects.length; i++) {
 					addClass(majorProjects[i], 'on-majors');
-					$.fn.fullpage.setAllowScrolling(true);
-					$.fn.fullpage.setMouseWheelScrolling(true);
 				}
 			}
 		});
@@ -102,10 +100,12 @@ updateMajorProjectsArticle = {
 			height: maxProjectDetailsHeight
 		}, {
 			duration: currentDuration/2,
-			delay: currentDuration/2,
+			delay: currentDuration/4,
 			easing: 'easeOutCubic',
 			complete: function() {
 				$.Velocity.hook($(majorProjectClass + '.project-details'), 'height', 'auto');
+				$.fn.fullpage.setAllowScrolling(true);
+				$.fn.fullpage.setMouseWheelScrolling(true);
 			}
 		});
 	}
