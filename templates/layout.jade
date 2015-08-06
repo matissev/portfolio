@@ -8,16 +8,22 @@
 - var projects = data.projects;
 - var majorProjects = projects.majors;
 
+- var lang = null;
+each language in languages
+	if language.abbr === languages.selected
+		- lang = language.abbr;
+
 doctype html
-html(lang=main.lang)
+html(lang=lang)
 	head
 		include partials/head
 	body
+		include partials/loader
 		include partials/nav
 
 		#fullpage
 			include partials/home
-			include partials/major-projects
+			include partials/majors
 			include partials/minors
 
 		include partials/about

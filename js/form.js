@@ -1,9 +1,9 @@
-function checkrequired(which) {
+contactForm.addEventListener('submit', function() {
 	var pass = true;
 	
 	if (document.images) {		
-		for (i = 0; i < which.length; i++) {		
-			var tempobj = which.elements[i];
+		for (i = 0; i < this.length; i++) {		
+			var tempobj = this.elements[i];
 			if (tempobj.name.substring(0,8) === "required") {		
 				if (((tempobj.type === "text" || tempobj.type=="textarea") && tempobj.value === '') || (tempobj.type.toString().charAt(0) === "s" && tempobj.selectedIndex === -1)) {
 					pass = false;
@@ -20,4 +20,4 @@ function checkrequired(which) {
 	} else {
 		return true;
 	}
-}
+});

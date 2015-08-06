@@ -1,16 +1,35 @@
-- var i = 0;
+p.lead-in-article
 
-each project in majorProjects
-	- i++;
-	article.section.majors(class='major-project'+i)
-		header.project-details
-			time(datetime=project.date) #{project.explicitDate}
-			h2 #{project.title}<br>
-				span #{project.subtitle}
-			p.lead #{project.lead}
-			a.read-more(href="#") Read more...
+if project.relatedLinks
+	aside.related-links
+		dl
+			each list in project.relatedLinks
+				dt #{list.name}
+				each link in list.links
+					dd #[a(href=link.url) #{link.name}]
 
-		.tags
-			span(class='tags'+i) #{project.tags}
 
-		div.cover-image #[img(alt=project.coverImage.alt src=project.coverImage.url)]
+if project.content
+	each media in project.content
+		case media.type
+			when 'text'
+				div.text-content
+					each paragraph in media.paragraphs
+						p #{paragraph}
+			when 'image'
+				figure(class=media.size + "-media")
+					a(href=media.url target="_blank")
+						img(src=media.url alt=media.alt)
+					if media.caption
+						figcaption #{media.caption}
+			when 'video'
+				figure(class=media.size + "-media")
+					.video-wrapper
+						iframe(src=media.url allowfullscreen)
+					if media.caption
+						figcaption #{media.caption}
+footer
+	section.share-this
+		h3 Share this
+		a.icon-facebook-share(href="#" title="On Facebook")
+		a.icon-twitter-share(href="#" title="On Twitter")

@@ -1,10 +1,15 @@
 {
 	"title": "Feed Me Crystals",
 	"subtitle": "Holographic arena game",
-	"tags": "sound - interaction - 3D - graphism",
+	"tags": [
+		"sound",
+		"interaction",
+		"3D",
+		"graphism"
+	],
 	"date": "2015-01",
 	"explicitDate": "January 2015",
-	"lead": "Quisque eu diam at tellus auctor euismod. Ut dapibus, justo et iaculis dictum, felis justo condimentum ipsum, in auctor sem erat non lectus.",
+	"lead": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio inventore culpa atque, distinctio est recusandae tempore dicta quis adipisci explicabo soluta possimus, iusto cum aspernatur! Magni esse iusto id aliquid!",
 	"content": "This is the content",
 	"coverImage": {
 		"url": "/img/1080x720.jpg",

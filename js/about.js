@@ -30,10 +30,11 @@ updateAbout = {
 		});
 
 
-		$('section.home header, .nav-toggle-button, .nav-links, .minor-projects-container, .majors .project-details, .majors .tags').velocity({
+		$('section.home header, .nav-toggle-button, .minor-projects-container, .majors .project-details, .majors .tags').velocity({
 			opacity: 0
 		}, {
 			duration: currentDuration,
+			display: 'none',
 			complete: function() {
 				for (i = 0; i < hiddenElementsOnAbout.length; i++) {
 					addClass(hiddenElementsOnAbout[i], 'hidden');
@@ -69,11 +70,12 @@ updateAbout = {
 			duration: currentDuration,
 		});
 
-		$('section.home header, .nav-toggle-button, .nav-links, .minor-projects-container, .majors .project-details, .majors .tags').velocity({
+		$('section.home header, .nav-toggle-button, .minor-projects-container, .majors .project-details, .majors .tags').velocity({
 			opacity: 1
 		}, {
 			duration: currentDuration,
 			delay: 300,
+			display: 'block',
 			begin: function() {
 				for (i = 0; i < hiddenElementsOnAbout.length; i++) {
 					removeClass(hiddenElementsOnAbout[i], 'hidden');

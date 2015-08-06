@@ -62,7 +62,7 @@ nav {
 		width: 21px;
 		height: 9px;
 		fill: @colorA;
-		transition: fill 0.7s linear;
+		transition: fill 0.2s linear;
 	}
 }
 
@@ -73,8 +73,9 @@ nav.on-majors {
 	}
 }
 
-nav.on-minors {
+nav.on-minors, nav.change-color {
 	.nav-toggle-button {
+		transition: fill 0.7s linear;
 		fill: @colorB;
 	}
 }

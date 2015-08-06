@@ -1,0 +1,9 @@
+[{
+	"name": "English",
+	"abbr": "en",
+	"url": "/index.html"
+}, {
+	"name": "Français",
+	"abbr": "fr",
+	"url": "/fr/index.html"
+}]

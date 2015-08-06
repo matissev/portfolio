@@ -1,18 +1,19 @@
 updateMajorProjectsArticle = {
 	open: function(overrideDuration) {
+		$.fn.fullpage.setAllowScrolling(false);
+
 		currentDuration = overrideDuration ? overrideDuration : slideTransitionDuration;
 		var majorProjectClass = '.major-project' + (openedMajorProjectIndex + 1) + ' ';
 
-		$.fn.fullpage.setAllowScrolling(false);
-		$.fn.fullpage.setMouseWheelScrolling(false);
+		majorProjects[openedMajorProjectIndex].addEventListener("scroll", navButtonColorChanger, false);
 
-		maxProjectDetailsHeight = majorProjects[openedMajorProjectIndex].querySelector('.project-details').offsetHeight;
-		minProjectDetailsHeight = getProjectDetailsHeight(openedMajorProjectIndex);
+		maxProjectDetailsHeight = getProjectDetailsHeight(openedMajorProjectIndex, 'max');
+		minProjectDetailsHeight = getProjectDetailsHeight(openedMajorProjectIndex, 'min');
 
-		$.Velocity.hook($(majorProjectClass + '.project-details'), 'height', maxProjectDetailsHeight + 'px');
+		var leadText = majorProjects[openedMajorProjectIndex].querySelector('.lead').innerHTML;
+		majorProjects[openedMajorProjectIndex].querySelector('.lead-in-article').innerHTML = leadText;
 
-
-		$(majorProjectClass + '.cover-image').velocity({
+		$(majorProjectClass + 'header').velocity({
 			height: '66.666%'
 		}, {
 			duration: currentDuration,
@@ -21,6 +22,15 @@ updateMajorProjectsArticle = {
 				for (i = 0; i < majorProjects.length; i++) {
 					removeClass(majorProjects[i], 'on-majors');
 				}
+				
+				addClass(majorProjects[openedMajorProjectIndex], 'opened');
+				$.Velocity.hook($(majorProjectClass + '.project-details'), 'scaleY', '0.999999999');
+				$.Velocity.hook($(majorProjectClass + '.cover-image'), 'scaleY', '0.999999999');
+				$.Velocity.hook($(majorProjectClass + '.project-details'), 'height', maxProjectDetailsHeight + 'px');
+			},
+			complete: function() {
+				majorProjects[openedMajorProjectIndex].querySelector('.project-details').removeAttribute('style');
+				majorProjects[openedMajorProjectIndex].querySelector('.cover-image').removeAttribute('style');
 			}
 		});
 
@@ -35,7 +45,7 @@ updateMajorProjectsArticle = {
 		});
 
 
-		$(majorProjectClass + '.lead, ' + majorProjectClass + '.read-more').velocity({
+		$(majorProjectClass + '.project-details .lead, ' + majorProjectClass + '.project-details .read-more').velocity({
 			opacity: 0
 		}, {
 			duration: currentDuration/2,
@@ -49,29 +59,58 @@ updateMajorProjectsArticle = {
 		}, {
 			duration: currentDuration/2,
 			delay: currentDuration/3,
-			easing: 'easeOutCubic',
-			complete: function() {
-				$.Velocity.hook($(majorProjectClass + '.project-details'), 'height', 'auto');
-			}
+			easing: 'easeOutCubic'
 		});
 
 	},
 
 	close: function(overrideDuration) {
 		currentDuration = overrideDuration ? overrideDuration : slideTransitionDuration;
-		var majorProjectClass = '.major-project' + (openedMajorProjectIndex + 1) + ' ';
+		var index = openedMajorProjectIndex;
 
-		$.Velocity.hook($(majorProjectClass + '.project-details'), 'height', minProjectDetailsHeight + 'px');
+		var majorProjectClass = '.major-project' + (index + 1) + ' ';
+		minProjectDetailsHeight = getProjectDetailsHeight(index, 'min');
+		var offsetScroll = majorProjects[index].scrollTop;
 
-		$(majorProjectClass + '.cover-image').velocity({
-			height: '100%'
+
+		$(majorProjectClass + 'header').velocity({
+			height: '100%',
+			translateY: offsetScroll
 		}, {
 			duration: currentDuration,
 			easing: 'easeOutQuart',
+			begin: function() {
+				majorProjects[openedMajorProjectIndex].removeEventListener("scroll", navButtonColorChanger, false);
+				var majorProjectHeaderHeight = majorProjects[index].querySelector('header').offsetHeight;
+				var scrolledHeight = offsetScroll - majorProjectHeaderHeight;
+				if (scrolledHeight > 0)
+					$.Velocity.hook($(majorProjectClass + 'header'), 'translateY', scrolledHeight + 'px');
+				else
+					$.Velocity.hook($(majorProjectClass + 'header'), 'translateY', '0px');
+
+				majorProjects[index].style.pointerEvents = 'none';
+
+				removeClass(nav, 'change-color');
+
+				$.Velocity.hook($(majorProjectClass + '.project-details'), 'scaleY', '0.999999999');
+				$.Velocity.hook($(majorProjectClass + '.cover-image'), 'scaleY', '0.999999999');
+				$.Velocity.hook($(majorProjectClass + '.project-details'), 'height', minProjectDetailsHeight + 'px');
+			},
 			complete: function() {
+				majorProjects[index].scrollTop = 0;
+				majorProjects[index].querySelector('header').removeAttribute('style');
+				majorProjects[index].querySelector('.project-details').removeAttribute('style');
+				majorProjects[openedMajorProjectIndex].querySelector('.cover-image').removeAttribute('style');
+
+				majorProjects[index].style.pointerEvents = '';
+
+				removeClass(majorProjects[index], 'opened');
 				for (i = 0; i < majorProjects.length; i++) {
 					addClass(majorProjects[i], 'on-majors');
 				}
+
+				$.fn.fullpage.setAllowScrolling(true);
+				openedMajorProjectIndex = null;
 			}
 		});
 
@@ -86,13 +125,13 @@ updateMajorProjectsArticle = {
 		});
 
 
-		$(majorProjectClass + '.lead, ' + majorProjectClass + '.read-more').velocity({
+		$(majorProjectClass + '.project-details .lead, ' + majorProjectClass + '.project-details .read-more').velocity({
 			opacity: 1
 		}, {
 			duration: currentDuration/2,
 			easing: 'easeInCubic',
 			display: 'block',
-			delay: currentDuration/2
+			delay: currentDuration/3
 		});
 
 
@@ -100,24 +139,25 @@ updateMajorProjectsArticle = {
 			height: maxProjectDetailsHeight
 		}, {
 			duration: currentDuration/2,
-			delay: currentDuration/4,
-			easing: 'easeOutCubic',
-			complete: function() {
-				$.Velocity.hook($(majorProjectClass + '.project-details'), 'height', 'auto');
-				$.fn.fullpage.setAllowScrolling(true);
-				$.fn.fullpage.setMouseWheelScrolling(true);
-			}
+			easing: 'easeOutCubic'
 		});
 	}
 };
 
-function getProjectDetailsHeight(index) {
+function getProjectDetailsHeight(index, mode) {
 	var totalSize = 0;
 
 	var innerElements = [
 		majorProjects[index].querySelector('.project-details h2'),
 		majorProjects[index].querySelector('.project-details time')
 	];
+
+	if (mode === 'max') {
+		innerElements.push(
+			majorProjects[index].querySelector('.project-details .lead'),
+			majorProjects[index].querySelector('.project-details .read-more')
+		);
+	}
 
 	var containerElement = majorProjects[index].querySelector('.project-details');
 
@@ -127,7 +167,8 @@ function getProjectDetailsHeight(index) {
 		innerElements[i].marginBottom = window.getComputedStyle(innerElements[i]).getPropertyValue('margin-bottom');
 		innerElements[i].marginBottom = parseInt(innerElements[i].marginBottom, 10);
 		
-		var totalSize = totalSize + innerElements[i].offsetHeight + innerElements[i].marginTop + innerElements[i].marginBottom;	
+		totalSize = totalSize + innerElements[i].offsetHeight + innerElements[i].marginTop + innerElements[i].marginBottom;	
+		console.log(totalSize);
 	}
 
 	containerElement.borderTop = window.getComputedStyle(containerElement).getPropertyValue('border-top');
@@ -143,4 +184,17 @@ function getProjectDetailsHeight(index) {
 	totalSize = totalSize + containerElement.paddingTop + containerElement.paddingBottom + containerElement.borderTop + containerElement.borderBottom;
 
 	return totalSize;
+}
+
+function navButtonColorChanger() {
+	var index = openedMajorProjectIndex;
+	var scrolledHeight = majorProjects[index].scrollTop;
+	var navPositionTop = parseInt(window.getComputedStyle(majorProjects[index].querySelector('.project-details')).getPropertyValue('top'));
+	var majorProjectHeaderHeight = majorProjects[index].querySelector('header').offsetHeight;
+
+	if (scrolledHeight > majorProjectHeaderHeight - navPositionTop) {
+		addClass(nav, 'change-color');
+	} else if (scrolledHeight < majorProjectHeaderHeight - navPositionTop - 20) {
+		removeClass(nav, 'change-color');
+	}
 }

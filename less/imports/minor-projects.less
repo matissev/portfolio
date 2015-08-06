@@ -12,7 +12,7 @@
 .minor-project {
 	display: inline-block;
 	box-sizing: border-box;
-	border: 1px solid black;
+	border: 1px solid @colorB;
 	margin-bottom: 28px;
 
 	.article-media {
@@ -24,13 +24,8 @@
 			width: 100%;
 		}
 
-		iframe {
-			overflow: hidden;
-			border: none; 
-		}
-
 		&:not(:last-child) {
-			border-bottom: 1px solid black;
+			border-bottom: 1px solid @colorB;
 		}
 	}
 
@@ -76,7 +71,7 @@
 			margin-top: -22.5px;
 			border-radius: 100%;
 			opacity: 0;
-			background: black;
+			background: @colorB;
 			transition: opacity 0.2s ease-in;
 
 			.icon-gallery {

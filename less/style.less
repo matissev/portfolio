@@ -3,6 +3,7 @@
 @import (less) "../libs/normalize.css/normalize.css";
 @import (less) "../libs/fullpage.js/jquery.fullPage.css";
 @import (less) "../libs/photoswipe/dist/photoswipe.css";
+@import "imports/photoswipe";
 
 @import "imports/fonts";
 @import "imports/sprite";
@@ -47,8 +48,9 @@
 
 @font-size-xs : 12px;
 @font-size-s : 13px;
-@font-size-m : 18px;
-@font-size-l : 30px;
+@font-size-m : 15px;
+@font-size-l : 18px;
+@font-size-xl : 30px;
 
 .font-rendering() {
 	-webkit-font-smoothing: antialiased;
@@ -70,15 +72,15 @@ h1, h2, h3, h4, h5 {
 }
 
 h1, h2 {
-	font: bold @font-size-m @heading-text;
+	font: bold @font-size-l @heading-text;
 }
 
 h2 {
-	font-size: @font-size-l;
+	font-size: @font-size-xl;
 }
 
 h3, h4, h5 {
-	font: bold @font-size-m @current-text;
+	font: bold @font-size-l @current-text;
 	font-size: @font-size-s;
 }
 
@@ -86,10 +88,14 @@ a {
 	color: @colorB;
 }
 
-.section, section.about {
+section.home, section.minors, section.about {
 	padding-top: 59px;
 }
 
+iframe {
+	border: none;
+	overflow: hidden;
+}
 
 /* Grid style */
 
@@ -124,9 +130,9 @@ a {
 
 /* Styles imports */
 
-@import "imports/photoswipe";
 @import "imports/home";
 @import "imports/nav";
+@import "imports/majors";
 @import "imports/major-projects";
 @import "imports/minors";
 @import "imports/minor-projects";

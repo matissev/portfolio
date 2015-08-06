@@ -7,8 +7,7 @@ hasScrollDown = false;
 
 function listenScroll(){
     $.fn.fullpage.setAllowScrolling(false);
-    $.fn.fullpage.setMouseWheelScrolling(false);
-    $('.minors').on('scroll.fix', scrollHandler);
+    minorProjects.addEventListener("scroll", scrollHandler);
 
     /* If the user don't scroll down, allow him to scroll back on previous section */
     if (hasScrollDown === false) {
@@ -18,37 +17,39 @@ function listenScroll(){
 
 function scrollHandler(){
     /* If the user scrolls down, reset the timer */
-    if ($('.minors').scrollTop() > fixThreshold && timerActive === false) {
+    if (minorProjects.scrollTop > fixThreshold && timerActive === false) {
     	clearTimeout(thresholdDelay);
         hasScrollDown = true;
-        window.removeEventListener('mousewheel');
+        minorProjects.removeEventListener("scroll", scrollHandler);
 	}
 
     /* If the user scrolls back to the top, launch the timer */
-    if($('.minors').scrollTop() < fixThreshold && hasScrollDown === true) {
+    if(minorProjects.scrollTop < fixThreshold && hasScrollDown === true) {
         timerActive = true;
         thresholdDelay = setTimeout(detectScrollOnTop, 600);
     }
 }
 
 function detectScrollOnTop() {
-    /* When the function launches, set the timer's status to off */
-    timerActive = false;
-
     /* Bind a listener on mousewheel direction. */
-    window.addEventListener('mousewheel', function(e){
+    minorProjects.addEventListener('mousewheel', function(event){
+        /* When the function launches, set the timer's status to off */
+        timerActive = false;
+
         /* If it goes up when the user is on the top, go back to previous section */
-        if (e.wheelDelta >= 100 && $('.minors').scrollTop() < fixThreshold && timerActive === false) {
+        if (event.wheelDelta >= 100 && minorProjects.scrollTop < fixThreshold && timerActive === false) {
             reenableScroll();
             return;
         }
     }, false);
 }
 
+
+
 function reenableScroll() {
     $.fn.fullpage.setAllowScrolling(true);
-    $.fn.fullpage.setMouseWheelScrolling(true);
-    $(window).off('scroll.fix');
+    minorProjects.removeEventListener("scroll", scrollHandler, false);
+    minorProjects.removeEventListener('mousewheel', detectScrollOnTop, false);
     clearTimeout(thresholdDelay);
     timerActive = false;
     hasScrollDown = false;

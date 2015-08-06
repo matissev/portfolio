@@ -5,6 +5,9 @@ section.section.home
 			small.activity #{main.activity}
 
 		span.language
-			abbr(title="English") EN
-			a(href="fr/index.html")
-				abbr(title="Français") FR
+			each language in languages
+				if language.abbr === languages.selected
+					abbr(title=language.name) #{language.abbr}
+				else
+					a(href=language.url)
+						abbr(title=language.name) #{language.abbr}

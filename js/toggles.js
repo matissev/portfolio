@@ -5,7 +5,6 @@ navOpened = false;
 navToggleButton.onclick = function(){
 	if (openedMajorProjectIndex !== null) {
 		updateMajorProjectsArticle.close();
-		openedMajorProjectIndex = null;
 	} else {
 		if (navOpened) {
 			updateNav.close(300);

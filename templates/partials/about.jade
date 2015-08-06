@@ -3,18 +3,18 @@ section.about.hidden
 	.about-container
 		h2 #{about.title}
 		.about-content
-			form(action='mail.php' method='post' onsubmit='return checkrequired(this)' autocomplete='on')
+			form.contact-form(action='/mail.php' method='post' autocomplete='on')
 				h3 #{about.form.title}
-				label(for='name') 
+				label(for='name')
 					span #{about.form.name.label}
 					input#name(placeholder=about.form.name.placeholder name='requiredfullname' type='text' value='' required)
-				label(for='email') 
+				label(for='email')
 					span #{about.form.email.label}
 					input#email(placeholder=about.form.email.placeholder name='requiredemail' type='email' value='' required)
-				label(for='subject') 
+				label(for='subject')
 					span #{about.form.subject.label}
 					input#subject(placeholder=about.form.subject.placeholder name='requiredsubject' type='text' value='' required)
-				label(for='message') 
+				label(for='message')
 					span #{about.form.message.label}
 					textarea#message(placeholder=about.form.message.placeholder name='requiredmessage' required='')
 				button(type='submit') #{about.form.buttonText}
@@ -24,10 +24,10 @@ section.about.hidden
 			.social-links
 				h3 #{about.social.title}
 				.links-container
-					a.icon-linkedin(href=about.social.linkedin)
-					a.icon-github(href=about.social.github)
-					a.icon-soundcloud(href=about.social.soundcloud)
-					a.icon-twitter(href=about.social.twitter)
+					a.icon-linkedin(href=about.social.linkedin.url title=about.social.linkedin.title)
+					a.icon-github(href=about.social.github.url title=about.social.github.title)
+					a.icon-soundcloud(href=about.social.soundcloud.url title=about.social.soundcloud.title)
+					a.icon-twitter(href=about.social.twitter.url title=about.social.twitter.title)
 
 			.resume
 				h3 #{about.resume.title}

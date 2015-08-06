@@ -1,6 +1,8 @@
 {
 	"name": "script.js",
 	"src": [
+		"js/loader.js",
+
 		"libs/jquery/dist/jquery.js",
 		"libs/fullpage.js/jquery.fullPage.js",
 		"libs/velocity/velocity.js",
@@ -17,6 +19,7 @@
 		"js/app.js",
 		"js/photoswipe-options.js",
 		"js/photoswipe-domparser.js",
-		"js/form.js"
+		"js/form.js",
+		"js/mail.js"
 	]
 }

@@ -1,9 +1,10 @@
-
 updateMajorProjectsRoll = {
 	onFirst: function(overrideDuration) {
 		currentDuration = overrideDuration ? overrideDuration : slideTransitionDuration;
 
 		rotateAndShow($('.tags1, .major-project1 time'), currentDuration);
+
+		changeHeight($('.majors .project-details'), currentDuration, 0);
 
 		rotateAndHideBottom($('.tags2, .tags3'), 30, currentDuration);
 		rotateAndHideBottom($('.major-project2 time, .major-project3 time'), 90, currentDuration);
@@ -16,6 +17,8 @@ updateMajorProjectsRoll = {
 		currentDuration = overrideDuration ? overrideDuration : slideTransitionDuration;
 
 		rotateAndShow($('.tags2, .major-project2 time'), currentDuration);
+
+		changeHeight($('.majors .project-details'), currentDuration, 1);
 
 		rotateAndHideTop($('.tags1'), 30, currentDuration);
 		rotateAndHideBottom($('.tags3'), 30, currentDuration);
@@ -32,6 +35,8 @@ updateMajorProjectsRoll = {
 		currentDuration = overrideDuration ? overrideDuration : slideTransitionDuration;
 
 		rotateAndShow($('.tags3, .major-project3 time, .major-project3 time small'), currentDuration);
+
+		changeHeight($('.majors .project-details'), currentDuration, 2);
 
 		rotateAndHideTop($('.tags1, .tags2'), 30, currentDuration);
 		rotateAndHideTop($('.major-project1 time, .major-project2 time'), 90, currentDuration);
@@ -152,4 +157,23 @@ function hideProjects(ele, d) {
 			display: 'none'
 		});
 	}
+}
+
+function changeHeight(ele, d, index) {
+	var majorProjectClass = '.major-project' + (index + 1) + ' ';
+
+	ele.velocity({
+		height: getProjectDetailsHeight(index, 'max')
+	}, {
+		begin: function() {
+			$.Velocity.hook($(majorProjectClass + '.project-details'), 'scaleY', '0.999999999');
+			$.Velocity.hook($(majorProjectClass + '.project-details .read-more'), 'position', 'absolute');
+			$.Velocity.hook($(majorProjectClass + '.project-details .read-more'), 'bottom', '25px');
+		},
+		complete: function() {
+			majorProjects[index].querySelector('.project-details').removeAttribute('style');
+			majorProjects[index].querySelector('.project-details .read-more').removeAttribute('style');
+		},
+		duration: d/2
+	});
 }

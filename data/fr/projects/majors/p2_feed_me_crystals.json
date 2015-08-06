@@ -1,13 +1,14 @@
 {
-	"title": "Vino",
-	"subtitle": "Vineyard activity watcher",
+	"title": "Feed Me Crystals",
+	"subtitle": "Holographic arena game",
 	"tags": [
+		"sound",
 		"interaction",
-		"object",
-		"service"
+		"3D",
+		"graphism"
 	],
-	"date": "2015-05",
-	"explicitDate": "May 2015",
+	"date": "2015-01",
+	"explicitDate": "January 2015",
 	"lead": "Quisque eu diam at tellus auctor euismod. Ut dapibus, justo et iaculis dictum, felis justo condimentum ipsum, in auctor sem erat non lectus.",
 	"content": "This is the content",
 	"coverImage": {

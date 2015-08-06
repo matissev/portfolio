@@ -5,10 +5,9 @@ fullpageIndex = null;
 function afterSectionLoad(anchorLink, index) {
 	var loadedSection = $(this);
 
-	fullpageIndex = index;
-
-	if(index === numberOfItems)
+	if(index === numberOfItems) {
 		listenScroll();
+	}
 
 
 	/* Stick projects on the top on #projects(1,2,3) */
@@ -35,6 +34,8 @@ function afterSectionLoad(anchorLink, index) {
 function onSectionLeave(index, nextIndex, direction) {
 	var leavingSection = $(this);
 
+	fullpagePreviousIndex = index;
+	fullpageIndex = nextIndex;
 
 	if (index === 5 && direction === 'up') {
 		reenableScroll();
