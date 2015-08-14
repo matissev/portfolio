@@ -3,7 +3,7 @@ section.about.hidden
 	.about-container
 		h2 #{about.title}
 		.about-content
-			form.contact-form(action='/mail.php' method='post' autocomplete='on')
+			form.contact-form(action='/mail.php' onsubmit='return checkrequired(this)' autocomplete='on')
 				h3 #{about.form.title}
 				label(for='name')
 					span #{about.form.name.label}

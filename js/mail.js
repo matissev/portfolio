@@ -1,5 +1,3 @@
-
-
 function ajaxPost (form, callback) {
     var url = form.action,
         xhr = new XMLHttpRequest();

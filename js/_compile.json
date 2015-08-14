@@ -19,7 +19,7 @@
 		"js/app.js",
 		"js/photoswipe-options.js",
 		"js/photoswipe-domparser.js",
-		"js/form.js",
-		"js/mail.js"
+		"js/mail.js",
+		"js/form.js"
 	]
 }
