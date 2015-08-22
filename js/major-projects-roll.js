@@ -143,7 +143,7 @@ function showProjects(ele, duration, delay) {
 		}, {
 			duration: duration,
 			delay: delay,
-			display: 'block'
+			visibility: 'visible'
 		});
 	}
 }
@@ -154,7 +154,8 @@ function hideProjects(ele, d) {
 			opacity: 0
 		}, {
 			duration: d,
-			display: 'none'
+			queue: false,
+			visibility: 'hidden'
 		});
 	}
 }
@@ -165,6 +166,7 @@ function changeHeight(ele, d, index) {
 	ele.velocity({
 		height: getProjectDetailsHeight(index, 'max')
 	}, {
+		queue: false,
 		begin: function() {
 			$.Velocity.hook($(majorProjectClass + '.project-details'), 'scaleY', '0.999999999');
 			$.Velocity.hook($(majorProjectClass + '.project-details .read-more'), 'position', 'absolute');

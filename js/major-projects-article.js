@@ -5,7 +5,7 @@ updateMajorProjectsArticle = {
 		currentDuration = overrideDuration ? overrideDuration : slideTransitionDuration;
 		var majorProjectClass = '.major-project' + (openedMajorProjectIndex + 1) + ' ';
 
-		majorProjects[openedMajorProjectIndex].addEventListener("scroll", navButtonColorChanger, false);
+		majorProjects[openedMajorProjectIndex].addEventListener("scroll", articleScrollHandler, false);
 
 		maxProjectDetailsHeight = getProjectDetailsHeight(openedMajorProjectIndex, 'max');
 		minProjectDetailsHeight = getProjectDetailsHeight(openedMajorProjectIndex, 'min');
@@ -80,7 +80,7 @@ updateMajorProjectsArticle = {
 			duration: currentDuration,
 			easing: 'easeOutQuart',
 			begin: function() {
-				majorProjects[openedMajorProjectIndex].removeEventListener("scroll", navButtonColorChanger, false);
+				majorProjects[openedMajorProjectIndex].removeEventListener("scroll", articleScrollHandler, false);
 				var majorProjectHeaderHeight = majorProjects[index].querySelector('header').offsetHeight;
 				var scrolledHeight = offsetScroll - majorProjectHeaderHeight;
 				if (scrolledHeight > 0)
@@ -168,7 +168,6 @@ function getProjectDetailsHeight(index, mode) {
 		innerElements[i].marginBottom = parseInt(innerElements[i].marginBottom, 10);
 		
 		totalSize = totalSize + innerElements[i].offsetHeight + innerElements[i].marginTop + innerElements[i].marginBottom;	
-		console.log(totalSize);
 	}
 
 	containerElement.borderTop = window.getComputedStyle(containerElement).getPropertyValue('border-top');
@@ -186,15 +185,25 @@ function getProjectDetailsHeight(index, mode) {
 	return totalSize;
 }
 
-function navButtonColorChanger() {
+function articleScrollHandler() {
 	var index = openedMajorProjectIndex;
 	var scrolledHeight = majorProjects[index].scrollTop;
 	var navPositionTop = parseInt(window.getComputedStyle(majorProjects[index].querySelector('.project-details')).getPropertyValue('top'));
 	var majorProjectHeaderHeight = majorProjects[index].querySelector('header').offsetHeight;
+	var majorProjectHeight = majorProjects[index].scrollHeight;
 
+	// Change nav button color
 	if (scrolledHeight > majorProjectHeaderHeight - navPositionTop) {
 		addClass(nav, 'change-color');
 	} else if (scrolledHeight < majorProjectHeaderHeight - navPositionTop - 20) {
 		removeClass(nav, 'change-color');
 	}
+
+	var absoluteScrolledHeight = scrolledHeight + majorProjects[index].offsetHeight;
+
+	// Close article when the article is fully scrolled
+	if (absoluteScrolledHeight === majorProjectHeight){
+		updateMajorProjectsArticle.close();
+	}
+
 }

@@ -23,18 +23,21 @@ It uses gulp to build up the dist folder
 - Next Article Button
 - Page switch buttons
 - CSS3 translates
-- Replace links by buttons
 - Audio Player
 - Video Player
 - Ajax article
 
 ### Done
 
+- ~~Font-fix bug on retina~~
+- ~~Outlines not inset on imgs (set it to 1px solid)~~
 - ~~Fluid height article roll~~
 - ~~UI Database (json)~~
 - ~~Tags in database and strong~~
 - ~~Loader~~
 - ~~Cover image scale 1.000001 on height transition (or 0.999999)~~
+- ~~Project-details height transition bug on nav scroll~~
+- ~~Tags space after dash~~
 
 
 For the fluid article Roll :
