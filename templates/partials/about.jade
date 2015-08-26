@@ -3,7 +3,7 @@ section.about.hidden
 	.about-container
 		h2 #{about.title}
 		.about-content
-			form.contact-form(action='/mail.php' onsubmit='return checkrequired(this)' autocomplete='on')
+			form.contact-form(action='/mail.php' onsubmit='return validateForm(this);' autocomplete='on')
 				h3 #{about.form.title}
 				label(for='name')
 					span #{about.form.name.label}
@@ -16,10 +16,16 @@ section.about.hidden
 					input#subject(placeholder=about.form.subject.placeholder name='requiredsubject' type='text' value='' required)
 				label(for='message')
 					span #{about.form.message.label}
-					textarea#message(placeholder=about.form.message.placeholder name='requiredmessage' required='')
-				button(type='submit') #{about.form.buttonText}
-				//- p#merci #{about.form.successText}
-				//- p#failure #{about.form.failureText}
+					textarea#message(placeholder=about.form.message.placeholder name='requiredmessage' required)
+				button(type='submit')
+					span.button-text #{about.form.buttonText}
+					.mail-loader
+				.result-box
+					p.result-message.success #{about.form.resultMessages.success}
+					p.result-message.error.invalid-email #{about.form.resultMessages.invalidEmail}
+					p.result-message.error.missing-fields #{about.form.resultMessages.missingFields}
+					p.result-message.error.invalid-caracters #{about.form.resultMessages.invalidCaracters}
+					p.result-message.failure #{about.form.resultMessages.failure}
 
 			.social-links
 				h3 #{about.social.title}

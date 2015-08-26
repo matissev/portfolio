@@ -44,8 +44,6 @@ function detectScrollOnTop() {
     }, false);
 }
 
-
-
 function reenableScroll() {
     $.fn.fullpage.setAllowScrolling(true);
     minorProjects.removeEventListener("scroll", scrollHandler, false);

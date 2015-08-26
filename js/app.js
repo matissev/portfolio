@@ -1,6 +1,6 @@
 /* --------------------- LAYOUT CHANGES BY SECTIONS */
 
-fullpageIndex = null;
+fullpageIndex = 1;
 
 function afterSectionLoad(anchorLink, index) {
 	var loadedSection = $(this);

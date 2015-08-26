@@ -35,6 +35,7 @@ aboutOpenButton.onclick = function(){
 
 aboutCloseButton.onclick = function(){
 	updateAbout.close(200);
+	updateMajorProjectsRoll.show(300);
 
 	$.fn.fullpage.setAllowScrolling(true);
 	$.fn.fullpage.setMouseWheelScrolling(true);

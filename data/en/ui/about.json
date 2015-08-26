@@ -19,8 +19,13 @@
 			"placeholder": "Leave your message here..."	
 		},
 		"buttonText": "Send",
-		"successText": "Your message has been sent, thank you.",
-		"failureText": "Your message could not be sent, please verify your email address."
+		"resultMessages": {
+			"success": "Your message has been sent, thank you.",
+			"failure": "Error : Your message could not be sent, please try again later.",
+			"invalidEmail": "Error : Please enter a valid email address.",
+			"invalidCaracters": "Error : Email contains invalid characters.",
+			"missingFields": "Error : Every field is required"
+		}
 	},
 	"social": {
 		"title": "Follow me",

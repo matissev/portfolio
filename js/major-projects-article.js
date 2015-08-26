@@ -203,7 +203,7 @@ function articleScrollHandler() {
 
 	// Close article when the article is fully scrolled
 	if (absoluteScrolledHeight === majorProjectHeight){
-		updateMajorProjectsArticle.close();
+		// updateMajorProjectsArticle.close();
 	}
 
 }

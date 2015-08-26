@@ -17,18 +17,19 @@ It uses gulp to build up the dist folder
 
 ### Todo
 
-- PHP mail without redirection (with AJAX)
-- Share buttons
-- Responsive
 - Next Article Button
 - Page switch buttons
 - CSS3 translates
+- Ajax article
+- Responsive
+- Share buttons
 - Audio Player
 - Video Player
-- Ajax article
 
 ### Done
 
+- ~~Fix bug on about open when on projects~~
+- ~~PHP mail without redirection (with AJAX)~~
 - ~~Font-fix bug on retina~~
 - ~~Outlines not inset on imgs (set it to 1px solid)~~
 - ~~Fluid height article roll~~

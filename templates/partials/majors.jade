@@ -3,19 +3,20 @@
 each project in majorProjects
 	- i++;
 	article.section.majors(class='major-project'+i)
-		header
-			.project-details
-				time(datetime=project.date) #{project.explicitDate}
-				h2 #{project.title}<br>
-					span.subtitle #{project.subtitle}
-				p.lead #{project.lead}
-				a.read-more(href="#") Read more...
+		.major-project-container
+			header
+				.project-details
+					time(datetime=project.date) #{project.explicitDate}
+					h2 #{project.title}<br>
+						span.subtitle #{project.subtitle}
+					p.lead #{project.lead}
+					a.read-more(href="#") Read more...
 
-			aside.tags
-				ul.tag-list(class='tags'+i)
-					each tag in project.tags
-						li #[strong #{tag}]
+				aside.tags
+					ul.tag-list(class='tags'+i)
+						each tag in project.tags
+							li #[strong #{tag}]
 
-			div.cover-image #[img(alt=project.coverImage.alt src=project.coverImage.url)]
+				div.cover-image #[img(alt=project.coverImage.alt src=project.coverImage.url)]
 
-		include major-projects
+			include major-projects

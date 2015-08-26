@@ -1,29 +1,129 @@
-function ajaxPost (form, callback) {
+function validateForm(form) {
+    event.preventDefault();
+    var savedResults = [];
+    
+    var emailFilter  = /^[^@]+@[^@.]+\.[^@]*\w\w$/,
+        illegalChars = /[\(\)\\<\>\,\;\:\\\"\[\]]/,
+        isValid = true;
+    //Do we have an error ?
+    if (form.name.value === '' || form.email.value === '' || form.subject.value === '' || form.message.value === '') {
+        savedResults.push('missing-fields');
+        isValid = false;
+    }
+
+    if (!emailFilter.test(form.email.value.replace(/^\s+|\s+$/, '')) && form.email.value) { //test for illegal chars
+        savedResults.push('invalid-email');
+        isValid = false;
+    }
+
+    if (form.email.value.match(illegalChars)) {
+        savedResults.push('invalid-caracters');
+        isValid = false;
+    }
+
+    if (isValid) {
+        ajaxPost(form, savedResults);
+    } else {
+        notifyRequestState(savedResults);
+        return false;
+    }
+}
+
+function ajaxPost(form, savedResults) {
     var url = form.action,
-        xhr = new XMLHttpRequest();
+        xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP"),
+        params = [],
+        response;
 
-    //This is a bit tricky, [].fn.call(form.elements, ...) allows us to call .fn
-    //on the form's elements, even though it's not an array. Effectively
-    //Filtering all of the fields on the form
-    var params = [].filter.call(form.elements, function(el) {
-        //Allow only elements that don't have the 'checked' property
-        //Or those who have it, and it's checked for them.
-        return typeof(el.checked) === 'undefined' || el.checked;
-        //Practically, filter out checkboxes/radios which aren't checekd.
-    })
-    .filter(function(el) { return !!el.name; }) //Nameless elements die.
-    .filter(function(el) { return el.disabled; }) //Disabled elements die.
-    .map(function(el) {
-        //Map each field into a name=value string, make sure to properly escape!
-        return encodeURIComponent(el.name) + '=' + encodeURIComponent(el.value);
-    }).join('&'); //Then join all the strings by &
+    // Building up the request...
+    for (var i = 0, name, value; i < form.elements.length; i++) {
+        name = encodeURIComponent(form.elements[i].name);
+        value = encodeURIComponent(form.elements[i].value);
+        params.push(name + '=' + value);
+    }
+    params = params.join('&');
 
-    xhr.open("POST", url);
-    xhr.setRequestHeader("Content-type", "application/x-form-urlencoded");
+    // Recording the response
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 1) {
+            addClass(contactForm, 'loading');
+        } else if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                checkResponse(xhr.responseText, savedResults);
+            } else {
+                savedResults.push('failure');
+            }
 
-    //.bind ensures that this inside of the function is the XHR object.
-    xhr.onload = callback.bind(xhr); 
+            notifyRequestState(savedResults);
+        }
+    };
 
-    //All preperations are clear, send the request!
+    // Opening the connection
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+
+    //All preparations are clear, send the request!
     xhr.send(params);
+}
+
+function checkResponse(response, savedResults) {
+    if (response === 'success') {
+        savedResults.push('success');
+    } else if (response === 'invalid-email') {
+        savedResults.push('invalid-email');
+    } else {
+        savedResults.push('failure');
+    }
+}
+
+function notifyRequestState(savedResults){
+    var resultMessages = contactForm.querySelectorAll('.result-message');
+    var fields = contactForm.querySelectorAll('input, textarea');
+
+    for (i = 0; i < resultMessages.length; i++) {
+        removeClass(resultMessages[i], 'show');
+    }
+
+    for (i = 0; i < savedResults.length; i++) {
+        if (savedResults[i] === 'missing-fields' || savedResults[i] === 'invalid-email' || savedResults[i] === 'invalid-caracters') {
+            addClass(contactForm.querySelector('.result-message.' + savedResults[i]), 'show');
+        }
+
+        if (savedResults[i] === 'missing-fields') {
+            for (u = 0; u < fields.length; u++) {
+                if (fields[u].value === '') {
+                    addClass(fields[u], 'invalid');
+                } else {
+                    removeClass(fields[u], 'invalid');
+                }
+            }
+        }
+
+        if (savedResults[i] === 'invalid-email' || savedResults[i] === 'invalid-caracters') {
+            addClass(contactForm.querySelector('#email'), 'invalid');
+        }
+
+        if (savedResults[i] === 'success' || savedResults[i] === 'failure') {
+            for (u = 0; u < fields.length; u++) {
+                removeClass(fields[u], 'invalid');
+            }
+
+            killLoader(savedResults[i]);
+        }
+    }
+}
+
+function killLoader(result) {
+    var fields = contactForm.querySelectorAll('input, textarea');
+
+    setTimeout(function() {
+        removeClass(contactForm, 'loading');
+        addClass(contactForm.querySelector('.result-message.' + result), 'show');
+
+        if (result === 'success') {
+            for (i = 0; i < fields.length; i++) {
+                fields[i].value = '';
+            }
+        }
+    }, 1000);
 }

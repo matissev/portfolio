@@ -66,18 +66,26 @@ section.about {
 		clear: both;
 		box-sizing: border-box;
 		border: none;
-		padding: 0 15px;
 		margin-bottom: 21px;
 	}
 
 	input, textarea {
-		box-sizing: border-box;
+		padding: 0 15px;
 		color: @colorB;
-		transition: border-left 0.2s ease-out;
+		transition: border-left 0.2s ease-out 0.1s, background 0.4s ease;
+		border-left: 0px solid transparent;
 
 		&:focus {
 			outline: none;
 			border-left: 5px solid fade(@colorB, 40%);
+
+			&.invalid {
+				border-left: 5px solid @color-error;								
+			}
+		}
+
+		&.invalid {
+			border-left: 5px solid darken(fade(@color-error, 70%), 15%);
 		}
 	}
 
@@ -96,13 +104,51 @@ section.about {
 	}
 
 	button {
+		position: relative;
+		padding: 0;
 		height: 30px;
+		line-height: 32px;
+		min-width: 60px;
 		.calculate-width(1, 0, 5, 4);
 		width: @width;
 		background: fade(@colorA, 20%);
+		transition: width 0.3s ease-out;
 
 		&:active {
 			background: fade(@colorB, 20%);
+		}
+
+		.button-text {
+			transition: opacity 0.3s ease-out 0.1s;
+			opacity: 1;
+		}
+
+		.mail-loader {
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: inline;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			opacity: 0;
+			transition: opacity 0.2s ease-in;
+
+			&:after {
+				display: inline-block;
+				content: "";
+				position: relative;
+				bottom: 4px;
+				left: -3px;
+				width: 6px;
+				height: 6px;
+				border-radius: 100% 0 0 0;
+				border-top: 1px solid fade(white, 80%);
+				border-left: 1px solid fade(white, 80%);
+				transform: translateZ(0);
+				transform-origin: 100% 100%;
+				animation: sending-mail 0.8s infinite linear;
+			}
 		}
 	}
 
@@ -125,6 +171,73 @@ section.about {
 	:-ms-input-placeholder {
 	   color: fade(@colorB, 50%);
 	}
+
+	.result-box {
+		float: right;
+		.calculate-width(4, 3, 5, 4);
+		width: @width;
+	}
+
+	.result-message {
+		display: none;
+		padding: 3px 7px 2px 9px;
+		margin: 0;
+		line-height: 30px;
+		white-space: nowrap;
+		font: normal @font-size-s @current-text;
+		opacity: 0;
+
+		&.success {
+			background: fade(@color-success, 40%);
+		}
+
+		&.error {
+			background: fade(@color-error, 40%);
+		}
+
+		&.failure {
+			background: fade(@color-failure, 40%);
+		}
+
+		&.show {
+			opacity: 1;
+			display: inline;
+			animation: show-message 0.5s ease-out forwards;
+		}
+	}
+
+	&.loading {
+		textarea, input {
+			pointer-events: none;
+			background: lighten(@colorB, 85%);
+		}
+
+		button {
+			.button-text {
+				opacity: 0;
+				transition: opacity 0.2s ease-in;
+			}
+
+			.mail-loader {
+				opacity: 1;
+				transition: opacity 0.3s ease-out 0.2s;
+			}
+		}
+	}
+}
+
+@keyframes sending-mail {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes show-message {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 .about .social-links, .about .resume {

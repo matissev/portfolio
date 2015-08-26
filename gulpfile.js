@@ -99,7 +99,7 @@ gulp.task('js', function(){
 });
 
 gulp.task('php', function(){
-	return gulp.src(['*.php'])
+	return gulp.src(['**/*.php', '!node_modules/**/*.php', '!build/**/*.php', '!libs/**/*.php'])
 		.pipe(gulp.dest('build'));
 });
 
@@ -184,6 +184,7 @@ gulp.task('default', ['make'], function() {
 	gulp.watch('less/**/*.less', ['less']);
 	gulp.watch(['js/**/*.js', 'js/_compile.json'], ['js']);
 	gulp.watch(['data/**/*.json', '!data/data.json'], ['json']);
+	gulp.watch(['**/*.php', '!node_modules/**/*.php', '!build/**/*.php', '!libs/**/*.php'], ['php']);
 });
 
 
@@ -259,7 +260,7 @@ gulp.task('done', function() {
 	return gulp.src('.')
 		.pipe(run('open -a iterm'))
 		.pipe(notify({
-			title: 'Compilation complete',
+			title: 'Compilation completed',
 			message: 'Your distribution folder is now ready',
 			sound: 'Tink'
 		}));

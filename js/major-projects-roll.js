@@ -143,6 +143,7 @@ function showProjects(ele, duration, delay) {
 		}, {
 			duration: duration,
 			delay: delay,
+			queue: false,
 			visibility: 'visible'
 		});
 	}
