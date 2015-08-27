@@ -4,12 +4,6 @@
 	vertical-align: middle;
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 
-	.major-project-container {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-	}
-
 	.cover-image {
 		position: relative;
 		width: 100%;
@@ -38,27 +32,23 @@
 
 	&.on-majors {
 		position: static;
-	}
 
-	&.on-majors .tags, &.on-majors .project-details {
-		position: fixed;
-		margin-top: 0;
+		.tags, .project-details {
+			position: fixed;
+			margin-top: 0;
+		}
 	}
 
 	&.active .project-details, &.active .tags {
 		z-index: 4;
 	}
 
-	&:not(.active).on-majors .project-details .read-more {
-		.assistive-hide();
-	}
+	&:not(.active).on-majors .project-details {
+		border: 1px solid transparent;
 
-	&.active .project-details {
-		border: 1px solid @colorA;
-	}
-
-	&:not(.on-majors) .project-details {
-		border: 1px solid @colorA;
+		.read-more {
+			.assistive-hide();
+		}
 	}
 
 	&.opened {
@@ -85,7 +75,7 @@
 	box-sizing: border-box;
 	backface-visibility: hidden;
 	position: absolute;
-	border: 1px solid transparent;
+	border: 1px solid @colorA;
 
 	time {
 		backface-visibility: hidden;

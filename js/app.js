@@ -60,10 +60,6 @@ function onSectionLeave(index, nextIndex, direction) {
 	}
 
 	if (nextIndex === 1) {
-		worklink.onclick = function() {
-			window.location.hash = 'project1';
-		};
-
 		updateNav.onHome();
 		navOpened = false;
 

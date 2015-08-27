@@ -1,0 +1,13 @@
+{
+	"header": {
+		"moreText": "Read more..."
+	},
+	"footer": {
+		"share": {
+			"header": "Share This",
+			"facebookTitle": "On Facebook",
+			"twitterTitle": "On Twitter"
+		},
+		"closeArticleText": "Close the article"
+	}
+}

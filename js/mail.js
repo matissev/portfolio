@@ -108,12 +108,12 @@ function notifyRequestState(savedResults){
                 removeClass(fields[u], 'invalid');
             }
 
-            killLoader(savedResults[i]);
+            killFormLoader(savedResults[i]);
         }
     }
 }
 
-function killLoader(result) {
+function killFormLoader(result) {
     var fields = contactForm.querySelectorAll('input, textarea');
 
     setTimeout(function() {

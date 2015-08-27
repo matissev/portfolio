@@ -91,3 +91,31 @@ nav.on-home {
 		width: 0;
 	}
 }
+
+.page-switches {
+	display: none;
+	width: @column;
+	position: fixed;
+	z-index: 5;
+	margin-left: @column + @gutter + @margin;
+	bottom: 89px;
+
+	button {
+		appearance: none;
+		border: none;
+		padding: 0;
+		background: transparent;
+		display: block;
+		width: 100%;
+
+		svg {
+			display: block;
+			stroke: @colorA;
+			width: 100%;
+		}
+
+		&:first-child {
+			margin-bottom: 70px;
+		}
+	}
+}

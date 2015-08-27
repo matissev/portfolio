@@ -208,8 +208,11 @@ section.about {
 
 	&.loading {
 		textarea, input {
-			pointer-events: none;
 			background: lighten(@colorB, 85%);
+		}
+
+		textarea, input, button {
+			pointer-events: none;
 		}
 
 		button {

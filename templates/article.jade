@@ -1,0 +1,21 @@
+- var main = data.main;
+
+- var ui = data.ui;
+- var nav = ui.nav;
+- var about = ui.about;
+- var photoswipe = ui.photoswipe;
+
+- var projects = data.projects;
+- var majorProjects.majors = projects.majors.p1_broadcaster;
+
+- var lang = null;
+each language in languages
+	if language.abbr === languages.selected
+		- lang = language.abbr;
+
+doctype html
+html(lang=lang)
+	head
+		include partials/head
+	body
+		include partials/majors

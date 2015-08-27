@@ -58,6 +58,19 @@ for (i = 0; i < majorProjectButton.length; i++) {
 }
 
 
+var closeArticleButton = document.querySelectorAll('.close-article-button');
+
+function closeArticleToggle(i) {
+	closeArticleButton[i].addEventListener('click', function() {
+		updateMajorProjectsArticle.close();
+	}, false);
+}
+
+for (i = 0; i < closeArticleButton.length; i++) {
+	closeArticleToggle(i);
+}
+
+
 /* --------------------- WORK LINK */
 
 worklink.onclick = function() {

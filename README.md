@@ -9,7 +9,7 @@ Copy/Past this in your shell
 
 	npm install
 
-It uses gulp to build up the dist folder
+It uses gulp to build up the output folder
 
 	gulp
 
@@ -17,17 +17,18 @@ It uses gulp to build up the dist folder
 
 ### Todo
 
-- Next Article Button
-- Page switch buttons
-- CSS3 translates
 - Ajax article
 - Responsive
 - Share buttons
 - Audio Player
 - Video Player
 
+- Page switch buttons
+- CSS3 translates
+
 ### Done
 
+- ~~Next Article Button (or close?)~~
 - ~~Fix bug on about open when on projects~~
 - ~~PHP mail without redirection (with AJAX)~~
 - ~~Font-fix bug on retina~~
