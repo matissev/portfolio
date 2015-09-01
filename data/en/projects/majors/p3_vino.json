@@ -13,5 +13,96 @@
 	"coverImage": {
 		"url": "/img/majors/vino/cover.jpg",
 		"alt": "Presentation picture of Vino"
-	}
+	},
+
+
+
+	"relatedLinks": [{
+		"name": "Collaborators",
+		"links": [{
+			"name": "Pierre-Emmanuel Moëc",
+			"url": "http://pierre-emmanuelm.com"
+		}, {
+			"name": "Manon Lequillec",
+			"url": "http://www.manonlequillec.com"
+		}]
+	}],
+
+
+
+	"content": [{
+		"type": "text",
+		"paragraphs": [
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
+			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+		]
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/vino/1.jpg",
+		"caption": "Holalala c'est une belle caption. Je parle beaucoup vous savez c'est cool d'être ici et de tester ça.",
+		"alt": "Hello Hello"
+	}, {
+		"type": "text",
+		"paragraphs": [
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
+			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+		]
+	}, {
+		"type": "image",
+		"size": "medium",
+		"url": "/img/majors/vino/2.jpg",
+		"caption": "This is a fucking caption bitch.",
+		"alt": "Hello Hello"
+	}, {
+		"type": "text",
+		"paragraphs": [
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
+			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
+			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+		]
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/vino/3.jpg",
+		"caption": "This is a fucking caption bitch.",
+		"alt": "Hello Hello"
+	}, {
+		"type": "text",
+		"paragraphs": [
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
+			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
+			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+		]
+	}, {
+		"type": "image",
+		"size": "medium",
+		"url": "/img/majors/vino/4.jpg",
+		"caption": "This is a fucking caption bitch.",
+		"alt": "Hello Hello"
+	}, {
+		"type": "text",
+		"paragraphs": [
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
+			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
+			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+		]
+	}, {
+		"type": "image",
+		"size": "large",
+		"url": "/img/1080x720.jpg",
+		"caption": "Holalala c'est une belle caption. Je parle beaucoup vous savez c'est cool d'être ici et de tester ça.",
+		"alt": "Hello Hello"
+	}, {
+		"type": "text",
+		"paragraphs": [
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
+			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
+			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+		]
+	}]
 }
