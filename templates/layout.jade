@@ -8,6 +8,8 @@
 - var projects = data.projects;
 - var majorProjects = projects.majors;
 
+- var template = 'layout';
+
 - var lang = null;
 each language in languages
 	if language.abbr === languages.selected
@@ -17,7 +19,9 @@ doctype html
 html(lang=lang)
 	head
 		include partials/head
+		+head()
 	body
+		.media-queries
 		include partials/loader
 		include partials/nav
 

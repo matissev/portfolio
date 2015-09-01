@@ -1,4 +1,6 @@
 p.lead-in-article
+	if (template === 'article')
+		| #{project.lead}
 
 if project.relatedLinks
 	aside.related-links
@@ -29,8 +31,11 @@ if project.content
 					if media.caption
 						figcaption #{media.caption}
 footer
-	section.share-this
-		h3 Share this
-		a.icon-facebook-share(href="#" title="On Facebook")
-		a.icon-twitter-share(href="#" title="On Twitter")
-	a.close-article-button(href="#") #{ui.article.footer.closeArticleText}
+	//- section.share-this
+	//- 	h3 Share this
+	//- 	a.icon-facebook-share(href="#" title="On Facebook")
+	//- 	a.icon-twitter-share(href="#" title="On Twitter")
+	if (template === 'layout')
+		a.close-article-button(href="#") #{ui.article.footer.closeArticleText}
+	else if (template === 'article')
+		a.close-article-button(href="index.html") #{ui.article.footer.backToSiteText}

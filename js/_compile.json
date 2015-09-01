@@ -1,12 +1,15 @@
-{
+[{
 	"name": "script.js",
 	"src": [
 		"js/loader.js",
 
+		"libs/isMobile/isMobile.js",
+		"libs/retina.js/dist/retina.js",
 		"libs/jquery/dist/jquery.js",
 		"libs/fullpage.js/jquery.fullPage.js",
 		"libs/velocity/velocity.js",
 		"libs/photoswipe/dist/photoswipe.js",
+		"libs/smooth-scroll/dist/js/smooth-scroll.js",
 		
 		"js/elements.js",
 		"js/utilities.js",
@@ -21,4 +24,10 @@
 		"js/photoswipe-domparser.js",
 		"js/mail.js"
 	]
-}
+}, {
+	"name": "picture-polyfill.js",
+	"src": [
+		"js/picture-element.js",
+		"libs/picturefill/picturefill.js"
+	]
+}]

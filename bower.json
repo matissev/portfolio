@@ -20,14 +20,15 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
-    "waypoints": "~3.1.1",
-    "velocity": "~1.2.2",
-    "fullpage.js": "~2.6.5",
-    "jquery": "~2.1.4",
-    "normalize.css": "~3.0.3"
-  },
   "dependencies": {
-    "photoswipe": "~4.1.0"
+    "fullpage.js": "~2.6.5",
+    "isMobile": "~0.3.9",
+    "jquery": "~2.1.4",
+    "normalize.css": "~3.0.3",
+    "photoswipe": "~4.1.0",
+    "picturefill": "~2.3.1",
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#~7.0.2",
+    "velocity": "~1.2.2",
+    "waypoints": "~3.1.1"
   }
 }

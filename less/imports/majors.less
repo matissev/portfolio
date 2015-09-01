@@ -3,6 +3,7 @@
 	overflow: hidden;
 	vertical-align: middle;
 	-ms-overflow-style: -ms-autohiding-scrollbar;
+	-webkit-overflow-scrolling: touch;
 
 	.cover-image {
 		position: relative;
@@ -20,7 +21,6 @@
 			margin: auto;
 			min-width: 100%;
 			min-height: 100%;
-			.assistive-hide()
 		}
 	}
 
@@ -44,7 +44,7 @@
 	}
 
 	&:not(.active).on-majors .project-details {
-		border: 1px solid transparent;
+		background: transparent;
 
 		.read-more {
 			.assistive-hide();
@@ -75,12 +75,17 @@
 	box-sizing: border-box;
 	backface-visibility: hidden;
 	position: absolute;
-	border: 1px solid @colorA;
+	background: fade(@colorB, 50%);
+	transition: width 0.2s ease-out;
+
+	h2, time, .lead, .read-more {
+		float: left;
+		clear: both;
+	}
 
 	time {
 		backface-visibility: hidden;
 		display: inline-block;
-		background: @colorA;
 		font: @font-size-xs @heading-text;
 		min-width: 80px;
 		height: 17px;
@@ -88,6 +93,8 @@
 		border-radius: 2px;
 		line-height: 20px;
 		transform-origin: 50% 50% 9px;
+		border: 1px solid @colorA;
+		color: @colorA;
 	}
 
 	h2 {
@@ -115,9 +122,14 @@
 		backface-visibility: hidden;
 	}
 
+	.read-more {
+		display: block;
+	}
+
 }
 
 .majors .tags {
+	// filter: drop-shadow(0px 0px 2px fade(@colorB, 20%));
 	.calculate-width(7, 6, false, false);
 	top: 59px;
 	width: @width;
@@ -126,6 +138,7 @@
 	right: @margin;
 	font: @font-size-xs @heading-text;
 	color: @colorA;
+	transition: width 0.2s ease-out;
 
 	ul.tag-list {
 		& {
@@ -150,6 +163,7 @@
 
 			strong {
 				font-weight: normal;
+				// filter: drop-shadow(0px 0px 2px fade(@colorB, 30%));
 			}
 
 			&:not(:last-child):after {
@@ -181,46 +195,31 @@
 }
 
 .major-project1 {
-	.cover-image {
-		background: @color1-b url(@cover-image1) center center;
-		background-size: cover;
-	}
-
 	h2 .subtitle {
 		color: @color1-a;
 	}
 
-	time {
-		color: @color1-b;
+	.lead-in-article {
+		color: @color1-b
 	}
 }
 
 .major-project2 {
-	.cover-image {
-		background: @color2-b url(@cover-image2) center center;
-		background-size: cover;
-	}
-
 	h2 .subtitle {
 		color: @color2-a;
 	}
 
-	time {
-		color: @color2-b;
+	.lead-in-article {
+		color: @color2-b
 	}
 }
 
 .major-project3 {
-	.cover-image {
-		background: @color3-b url(@cover-image3) center center;
-		background-size: cover;
-	}
-
 	h2 .subtitle {
 		color: @color3-a;
 	}
 
-	time {
-		color: @color3-b;
+	.lead-in-article {
+		color: @color3-b
 	}
 }

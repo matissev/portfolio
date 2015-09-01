@@ -11,7 +11,7 @@
 	"lead": "Quisque eu diam at tellus auctor euismod. Ut dapibus, justo et iaculis dictum, felis justo condimentum ipsum, in auctor sem erat non lectus.",
 	"content": "This is the content",
 	"coverImage": {
-		"url": "/img/1080x720.jpg",
-		"alt": "My cool cover image"
+		"url": "/img/majors/vino/cover.jpg",
+		"alt": "Presentation picture of Vino"
 	}
 }

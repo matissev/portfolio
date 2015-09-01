@@ -2,6 +2,7 @@ section.minors {
 	background: @colorA;
 	max-height: 100%;
 	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 	
 	.minor-projects-container {
 		.calculate-width(11, 10, false, false);
@@ -12,26 +13,13 @@ section.minors {
 		margin-bottom: 28px;
 
 		h2 {
-			.calculate-width(2, 1, 11, 10);
+			.calculate-width(3, 2, 11, 10);
 			width: @width;
 			position: relative;
 			top: -11px;
 			float: left;
 			line-height: 36px;
-			height: 62px;
 			font-weight: normal;
-		}
-
-		&:after {
-			.calculate-width(9, 8, 11, 10);
-			width: @width;
-			position: absolute;
-			content: "";
-			display: block;
-			height: 0;
-			border-bottom: 1px solid @colorB;
-			top: 0;
-			right: 0;
 		}
 	}
 
@@ -40,7 +28,7 @@ section.minors {
 		.calculate-width(3, 2, 11, 10);
 		width: @width;
 		float: left;
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 
 	.normal-minor-projects-column {

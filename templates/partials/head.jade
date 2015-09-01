@@ -1,6 +1,12 @@
-title #{main.name} | #{main.activity}
-meta(charset="utf-8")
-link(rel="stylesheet" type="text/css" href="/css/loader.css")
-link(rel="stylesheet" type="text/css" href="/css/style.css")
-link(rel="icon" href="img/favicon.ico")
-meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')
+mixin head
+	title #{main.name} | #{main.activity}
+	meta(charset="utf-8")
+	if block
+		block
+	else
+		link(rel="stylesheet" type="text/css" href="/css/loader.css")
+		link(rel="stylesheet" type="text/css" href="/css/style.css")
+	script(type="text/javascript" src="/js/script.js" async)
+	script(type="text/javascript" src="/js/picture-polyfill.js" async)
+	link(rel="icon" href="img/favicon.ico")
+	meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')

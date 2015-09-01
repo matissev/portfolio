@@ -1,9 +1,6 @@
 /* Libraries and helpers */
 
 @import (less) "../libs/normalize.css/normalize.css";
-@import (less) "../libs/fullpage.js/jquery.fullPage.css";
-@import (less) "../libs/photoswipe/dist/photoswipe.css";
-@import "imports/photoswipe";
 
 @import "imports/fonts";
 @import "imports/sprite";
@@ -32,14 +29,17 @@
 @color-error : orange;
 @color-failure : red;
 
-@color1-a : #f2183d; /* OLD COLOR : 414753 */ /* H2 SMALL COLOR */
-@color1-b : desaturate(darken(@color1-a, 35%), 20%); /* CURRENT TEXT COLOR */
+@color1-a : white; /* OLD COLOR : 414753 */ /* H2 SMALL COLOR */
+@color1-b : darken(desaturate(red, 20%), 30%); /* CURRENT TEXT COLOR */
+@cover-image1 : "/img/2500x700.png";
 
 @color2-a : white; /* OLD COLOR : 414753 */ /* H2 SMALL COLOR */
-@color2-b : desaturate(darken(@color2-a, 60%), 30%); /* CURRENT TEXT COLOR */
+@color2-b : darken(desaturate(blue, 20%), 30%); /* CURRENT TEXT COLOR */
+@cover-image2 : "/img/2500x700.png";
 
-@color3-a : #aaaef2; /* OLD COLOR : 414753 */ /* H2 SMALL COLOR */
-@color3-b : desaturate(darken(@color3-a, 60%), 40%); /* CURRENT TEXT COLOR */
+@color3-a : white; /* OLD COLOR : 414753 */ /* H2 SMALL COLOR */
+@color3-b : darken(desaturate(green, 40%), 5%); /* CURRENT TEXT COLOR */
+@cover-image3 : "/img/2500x700.png";
 
 
 /* Fonts */
@@ -131,11 +131,11 @@ iframe {
 
 /* Styles imports */
 
-@import "imports/home";
-@import "imports/nav";
 @import "imports/majors";
 @import "imports/major-projects";
-@import "imports/minors";
-@import "imports/minor-projects";
-@import "imports/about";
-@import "imports/mobile";
+
+.majors header {
+	width: 100%;
+	display: block;
+	height: 400px;
+}

@@ -17,6 +17,8 @@ It uses gulp to build up the output folder
 
 ### Todo
 
+- active class after section load on major (project-detail transparency bug fix)
+- Retina images via picturefill.js
 - Ajax article
 - Responsive
 - Share buttons

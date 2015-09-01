@@ -104,8 +104,8 @@ function onSectionLeave(index, nextIndex, direction) {
 /* --------------------- FULLPAGE INITIALIZE */
 
 $(document).ready(function() {
-	'use strict';
-	
+	var autoScroll = isMobile.any ? false : true;
+
 	$('#fullpage').fullpage({
 		verticalCentered: false,
 		loopTop: false,
@@ -113,7 +113,7 @@ $(document).ready(function() {
 		scrollBar: false,
 		css3: false,
 		recordHistory: false,
-		autoScrolling: true,
+		autoScrolling: autoScroll,
 		scrollingSpeed: slideTransitionDuration,
 		anchors:['home', 'project1', 'project2', 'project3', 'other'],
 		afterLoad: function(anchorLink, index){

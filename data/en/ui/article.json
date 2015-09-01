@@ -8,6 +8,7 @@
 			"facebookTitle": "On Facebook",
 			"twitterTitle": "On Twitter"
 		},
-		"closeArticleText": "Close the article"
+		"closeArticleText": "Close the article",
+		"backToSiteText": "Go back to the website"
 	}
 }

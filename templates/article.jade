@@ -1,12 +1,20 @@
 - var main = data.main;
 
 - var ui = data.ui;
-- var nav = ui.nav;
-- var about = ui.about;
-- var photoswipe = ui.photoswipe;
 
 - var projects = data.projects;
-- var majorProjects.majors = projects.majors.p1_broadcaster;
+- var majorProjects = projects.majors;
+
+- var storedProject;
+- for (project in majorProjects) {
+- 	if (project === articleName) {
+- 		eval('storedProject = majorProjects.' + project + ';');
+- 	}
+- }
+- majorProjects = {};
+- eval('majorProjects.' + articleName + ' = storedProject;');
+
+- var template = 'article';
 
 - var lang = null;
 each language in languages
@@ -17,5 +25,7 @@ doctype html
 html(lang=lang)
 	head
 		include partials/head
+		+head()
+			link(rel="stylesheet" type="text/css" href="/css/article.css")
 	body
 		include partials/majors

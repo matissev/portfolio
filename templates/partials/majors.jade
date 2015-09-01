@@ -6,10 +6,12 @@ each project in majorProjects
 		header
 			.project-details
 				time(datetime=project.date) #{project.explicitDate}
-				h2 #{project.title}<br>
+				h2 #{project.title}
+					br
 					span.subtitle #{project.subtitle}
-				p.lead #{project.lead}
-				a.read-more(href="#") #{ui.article.header.moreText}
+				if (template === 'layout')
+					p.lead #{project.lead}
+					a.read-more(href="#") #{ui.article.header.moreText}
 
 			aside.tags
 				ul.tag-list(class='tags'+i)

@@ -67,7 +67,7 @@ gulp.task('jade', function() {
 	return gulp.src(['static/**/*.jade'])
 		.pipe(plumber({errorHandler: onError}))
 		.pipe(jade({
-			pretty: true,
+			// pretty: true,
 			basedir: './',
 			data: JSON.parse(fs.readFileSync('data/data.json', { encoding: 'utf8' }))
 		}))
@@ -89,13 +89,23 @@ gulp.task('less', function(){
 gulp.task('js', function(){
 	var scripts = JSON.parse(fs.readFileSync('js/_compile.json', { encoding: 'utf8' }));
 
-	return gulp.src(scripts.src)
-		.pipe(plumber({errorHandler: onError}))
-		.pipe(sourcemaps.init())
-		.pipe(concat(scripts.name))
-		.pipe(sourcemaps.write())
-		.pipe(gulp.dest('build/js'))
-		.pipe(reload({stream:true}));
+	// return gulp.src(scripts.src)
+	// 	.pipe(plumber({errorHandler: onError}))
+	// 	.pipe(sourcemaps.init())
+	// 	.pipe(concat(scripts.name))
+	// 	.pipe(sourcemaps.write())
+	// 	.pipe(gulp.dest('build/js'))
+	// 	.pipe(reload({stream:true}));
+
+	return scripts.forEach(function(obj){
+		return gulp.src(obj.src)
+			.pipe(plumber({errorHandler: onError}))
+			.pipe(sourcemaps.init())
+			.pipe(concat(obj.name))
+			.pipe(sourcemaps.write())
+			.pipe(gulp.dest('build/js'))
+			.pipe(reload({stream:true}));
+	});
 });
 
 gulp.task('php', function(){
@@ -110,7 +120,7 @@ gulp.task('json', function(){
 			filename: 'data.json'
 		}))
 		.pipe(replace('.json', ''))
-    	.pipe(gulp.dest('data'));
+		.pipe(gulp.dest('data'));
 });
 
 gulp.task('medias', function(){
@@ -205,7 +215,6 @@ gulp.task('less-dist', ['spritesheet'], function(){
 gulp.task('jade-dist', function() {
 	return gulp.src('static/**/*.jade')
 		.pipe(jade({
-			pretty: true,
 			basedir: './',
 			data: JSON.parse(fs.readFileSync('data/data.json', { encoding: 'utf8' }))
 		}))
@@ -230,10 +239,12 @@ gulp.task('jade-dist', function() {
 gulp.task('js-dist', function() {
 	var scripts = JSON.parse(fs.readFileSync('js/_compile.json', { encoding: 'utf8' }));
 
-	return gulp.src(scripts.src)
-		.pipe(concat(scripts.name))
-		.pipe(uglify())
-		.pipe(gulp.dest('build/js'));
+    return scripts.forEach(function(obj){
+		return gulp.src(obj.src)
+			.pipe(concat(obj.name))
+			.pipe(uglify())
+			.pipe(gulp.dest('build/js'));
+    });
 });
 
 gulp.task('images-dist', function(){
