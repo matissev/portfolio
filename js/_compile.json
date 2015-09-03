@@ -10,6 +10,7 @@
 		"libs/velocity/velocity.js",
 		"libs/photoswipe/dist/photoswipe.js",
 		"libs/smooth-scroll/dist/js/smooth-scroll.js",
+		"libs/video.js/dist/video-js/video.js",
 		
 		"js/elements.js",
 		"js/utilities.js",

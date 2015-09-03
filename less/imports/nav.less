@@ -64,7 +64,6 @@ nav {
 		height: 9px;
 		padding: 10px;
 		fill: @colorA;
-		// filter: drop-shadow(0px 0px 5px fade(@colorB, 20%));
 		transition: fill 0.2s linear;
 	}
 }
@@ -80,6 +79,9 @@ nav.on-minors, nav.change-color {
 	.nav-toggle-button {
 		transition: fill 0.7s linear;
 		fill: @colorB;
+		stroke: white;
+		stroke-width: 1px;
+		stroke-alignment: outside;
 	}
 }
 

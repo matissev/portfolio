@@ -12,7 +12,7 @@
 	"lead": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio inventore culpa atque, distinctio est recusandae tempore dicta quis adipisci explicabo soluta possimus, iusto cum aspernatur! Magni esse iusto id aliquid!",
 	"content": "This is the content",
 	"coverImage": {
-		"url": "/img/1080x720.jpg",
-		"alt": "My cool cover image"
+		"url": "/img/majors/feed-me-crystals/cover.jpg",
+		"alt": "Presentation picture of Feed Me Crystals"
 	}
 }
