@@ -3,16 +3,139 @@
 	"subtitle": "Holographic arena game",
 	"tags": [
 		"sound",
-		"interaction",
-		"3D",
+		"3D game",
 		"graphism"
 	],
 	"date": "2015-01",
-	"explicitDate": "January 2015",
-	"lead": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio inventore culpa atque, distinctio est recusandae tempore dicta quis adipisci explicabo soluta possimus, iusto cum aspernatur! Magni esse iusto id aliquid!",
-	"content": "This is the content",
+	"explicitDate": "Janvier 2015",
+	"lead": "Original et immersif, Feed Me Crystals est un jeu d'arène multijoueur dont le but est de récupérer le maximum de cristaux avant le temps imparti, tout en évitant de les perdre en route. Ce projet, combinant sound design et univers graphique innove quand au gameplay : on joue sur un hologramme 3D.",
 	"coverImage": {
 		"url": "/img/majors/feed-me-crystals/cover.jpg",
 		"alt": "Presentation picture of Feed Me Crystals"
-	}
+	},
+
+
+
+	"relatedContent": [{
+		"name": "Collaborators",
+		"items": [{
+			"name": "Pierre-Emmanuel Moëc",
+			"url": "http://pierre-emmanuelm.com"
+		}]
+	}, {
+		"name": "Logiciels utilisés",
+		"items": [{
+			"name": "3ds Max"
+		}, {
+			"name": "Ableton Live"
+		}, {
+			"name": "Unity 5"
+		}, {
+			"name": "Photoshop"
+		}]
+
+	}],
+
+
+
+	"content": [{
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
+				"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+			]
+		}]
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/feed-me-crystals/map_rough.jpg",
+		"caption": "This is the Map",
+		"alt": "Photo of the map"
+	}, {
+		"type": "image",
+		"size": "medium",
+		"url": "/img/majors/feed-me-crystals/map.jpg",
+		"caption": "This is the Map",
+		"alt": "Photo of the map"
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
+				"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+			]
+		}]
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/feed-me-crystals/la_foreuse_rough.jpg",
+		"caption": "This is La Foreuse, a barely kind protagonist.",
+		"alt": "Photo of the caracter La Foreuse"
+	}, {
+		"type": "image",
+		"size": "large",
+		"url": "/img/majors/feed-me-crystals/la_foreuse.jpg",
+		"caption": "This is La Foreuse, a barely kind protagonist.",
+		"alt": "Photo of the caracter La Foreuse"
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
+				"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+			]
+		}]
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/feed-me-crystals/glork_rough.jpg",
+		"caption": "This is Glork, the mountain man.",
+		"alt": "Photo of the caracter Glork"
+	}, {
+		"type": "image",
+		"size": "large",
+		"url": "/img/majors/feed-me-crystals/glork.jpg",
+		"caption": "This is Glork, the mountain man.",
+		"alt": "Photo of the caracter Glork"
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
+				"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+			]
+		}]
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/feed-me-crystals/rat_rough.jpg",
+		"caption": "This is Rat, the ennemy.",
+		"alt": "Photo of the caracter Rat"
+	}, {
+		"type": "image",
+		"size": "large",
+		"url": "/img/majors/feed-me-crystals/rat.jpg",
+		"caption": "This is Rat, the ennemy.",
+		"alt": "Photo of the caracter Rat"
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
+				"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+			]
+		}]
+	}, {
+		"type": "image",
+		"size": "medium",
+		"url": "/img/majors/feed-me-crystals/storyboard.jpg",
+		"caption": "Cinématique d'introduction",
+		"alt": "Dessin"
+	}]
 }

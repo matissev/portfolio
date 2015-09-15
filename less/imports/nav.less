@@ -63,8 +63,17 @@ nav {
 		width: 21px;
 		height: 9px;
 		padding: 10px;
-		fill: @colorA;
-		transition: fill 0.2s linear;
+
+		.triangle {
+			fill: @colorA;
+			transition: fill 0.2s linear;
+		}
+
+		.stroke {
+			fill: transparent;
+			stroke: transparent;
+			transition: stroke 0.2s linear;	
+		}
 	}
 }
 
@@ -77,11 +86,15 @@ nav.on-majors {
 
 nav.on-minors, nav.change-color {
 	.nav-toggle-button {
-		transition: fill 0.7s linear;
-		fill: @colorB;
-		stroke: white;
-		stroke-width: 1px;
-		stroke-alignment: outside;
+		.triangle {
+			transition: fill 0.7s linear;
+			fill: @colorB;
+		}
+
+		.stroke {
+			transition: stroke 0.7s linear;
+			stroke: @colorA;
+		}
 	}
 }
 

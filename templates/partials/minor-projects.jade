@@ -11,22 +11,26 @@ each minorProject in minorProjects
 								img.thumbnail(src=minorProject.gallery.thumbnail.url alt=minorProject.gallery.thumbnail.alt)
 								.gallery-toggle
 									.icon-gallery
-									.photos-indicator #[span.number-of-photos #{minorProject.gallery.images.length}]
+									.photos-indicator #[span.number-of-photos !{minorProject.gallery.images.length}]
 										span.label
 											if minorProject.gallery.images.length > 1
 												|  photos
 											else
 												|  photo
 											|  available
-						figcaption(itemprop='caption description') #{image.caption}
+						figcaption(itemprop='caption description') !{image.caption}
 
-		//- if minorProject.playerUrl
-		//- 	.article-media.player
-		//- 		iframe(src=minorProject.playerUrl)
+		if minorProject.audioUrl
+			.article-media.audio-player
+				iframe(src=minorProject.audioUrl+"&auto_play=false&hide_related=true&theme_color=FFFFFF&show_comments=false&show_user=false&show_reposts=false&visual=true&download=false&sharing=false")
+
+		if minorProject.videoUrl
+			.article-media.video-player
+				iframe(src=minorProject.videoUrl+"?rel=0&amp;showinfo=0" allowfullscreen)
 
 		.article-media.text
 			header
-				h3 #{minorProject.title}
-				time(datetime=minorProject.date) #{minorProject.explicitDate}
+				h3 !{minorProject.title}
+				time(datetime=minorProject.date) !{minorProject.explicitDate}
 			if minorProject.text
-				p #{minorProject.text}
+				p !{minorProject.text}

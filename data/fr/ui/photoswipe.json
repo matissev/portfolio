@@ -1,8 +1,8 @@
 {
-	"close": "Close (Esc)",
-	"previous": "Previous (arrow left)",
-	"next": "Close (Esc)",
-	"share": "Share",
-	"zoom": "Zoom in/out",
-	"fullscreen": "Toggle fullscreen"
+	"close": "Fermer (Esc)",
+	"previous": "Précédente (flèche gauche)",
+	"next": "Suivante (flèche droite)",
+	"share": "Partager",
+	"zoom": "Zoom/Dézoom",
+	"fullscreen": "Plein écran"
 }

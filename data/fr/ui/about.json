@@ -1,48 +1,53 @@
 {
-	"title": "About",
+	"title": "À propos",
 	"form": {
-		"title": "Contact me",
+		"title": "Contactez-moi",
 		"name": {
-			"label": "Name",
-			"placeholder": "Name"
+			"label": "Nom",
+			"placeholder": "Nom"
 		},
 		"email": {
 			"label": "Email",
 			"placeholder": "Email"
 		},
 		"subject": {
-			"label": "Subject",
-			"placeholder": "Subject"
+			"label": "Sujet",
+			"placeholder": "Sujet"
 		},
 		"message": {
 			"label": "Message",
-			"placeholder": "Leave your message here..."	
+			"placeholder": "Laissez votre message ici..."	
 		},
-		"buttonText": "Send",
-		"successText": "Your message has been sent, thank you.",
-		"failureText": "Your message could not be sent, please verify your email address."
+		"buttonText": "Envoyer",
+		"resultMessages": {
+			"success": "Votre message a été envoyé, merci.",
+			"failure": "Erreur : Votre message n’a pas pu être envoyé, veuillez réessayer plus tard.",
+			"invalidEmail": "Erreur : Veuillez entrer une adresse email valide.",
+			"invalidCaracters": "Erreur : L’email contient des caractères invalides.",
+			"missingFields": "Erreur : Tous les champs sont requis."
+		}
 	},
 	"social": {
-		"title": "Follow me",
+		"title": "Suivez-moi",
 		"linkedin": {
 			"url": "#",
-			"title": "On LinkedIn"
+			"title": "sur LinkedIn"
 		},
 		"github": {
 			"url": "#",
-			"title": "On Github"
+			"title": "sur Github"
 		},
 		"twitter": {
 			"url": "#",
-			"title": "On Twitter"
+			"title": "sur Twitter"
 		},
 		"soundcloud": {
 			"url": "#",
-			"title": "On Soundcloud"
+			"title": "sur Soundcloud"
 		}
 	},
 	"resume": {
-		"title": "Download my resume",
+		"title": "Téléchargez mon <abbr title=\"Curriculum vitæ\">CV</abbr>",
 		"link": "#"
 	}
 }

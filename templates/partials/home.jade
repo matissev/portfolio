@@ -1,13 +1,13 @@
 section.section.home
 	header
 		h1
-			span.name #{main.name}
-			small.activity #{main.activity}
+			span.name !{main.name}
+			small.activity !{main.activity}
 
 		span.language
 			each language in languages
 				if language.abbr === languages.selected
-					abbr(title=language.name) #{language.abbr}
+					abbr(title=language.name) !{language.abbr}
 				else
 					a(href=language.url)
-						abbr(title=language.name) #{language.abbr}
+						abbr(title=language.name) !{language.abbr}

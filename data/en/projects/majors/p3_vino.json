@@ -2,14 +2,12 @@
 	"title": "Vino",
 	"subtitle": "Vineyard activity watcher",
 	"tags": [
-		"interaction",
-		"object",
+		"connected object",
 		"service"
 	],
 	"date": "2015-05",
-	"explicitDate": "May 2015",
-	"lead": "Quisque eu diam at tellus auctor euismod. Ut dapibus, justo et iaculis dictum, felis justo condimentum ipsum, in auctor sem erat non lectus.",
-	"content": "This is the content",
+	"explicitDate": "Mai 2015",
+	"lead": "Les facteurs de pertes de production d'une vigne sont importants : maladies, stress hydrique, climat... Vino est un objet connecté permettant d'observer l'évolution des plants afin de prévenir des complications, tout en économisant des ressources.",
 	"coverImage": {
 		"url": "/img/majors/vino/cover.jpg",
 		"alt": "Presentation picture of Vino"
@@ -17,14 +15,30 @@
 
 
 
-	"relatedLinks": [{
+	"relatedContent": [{
 		"name": "Collaborators",
-		"links": [{
+		"items": [{
 			"name": "Pierre-Emmanuel Moëc",
 			"url": "http://pierre-emmanuelm.com"
 		}, {
 			"name": "Manon Lequillec",
 			"url": "http://www.manonlequillec.com"
+		}]
+	}, {
+		"name": "Medias",
+		"items": [{
+			"name": "Dossier de synthèse",
+			"url": "#"
+		}, {
+			"name": "Poster",
+			"url": "#"
+		}]
+	}, {
+		"name": "Outils utilisés",
+		"items": [{
+			"name": "Arduino"
+		}, {
+			"name": "Photoshop"
 		}]
 	}],
 
@@ -32,77 +46,83 @@
 
 	"content": [{
 		"type": "text",
-		"paragraphs": [
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
-			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-		]
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"En combinant plusieurs capteurs, ce petit boitier récupère de multiples informations sur la vigne (conductivité du sol, taux de précipitation, luminosité, pression de la sève...etc) pour ensuite les transmettre sur le smartphone du vigneron afin de l'avertir des éventuels dangers que pourraient encourir ses cultures.",
+				"Le dispositif est alimenté grâce à un panneau solaire présent sur le boitier principal et l'envoi de donnée s'effectue par bluetooth 4.0 (LE) dès que l'énergie est suffisante et que le smartphone se trouve à proximité. En installant plusieurs boitiers dans la vigne, on peut comparer l'évolution des différentes parcelles de vigne."
+			]
+		}]
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/vino/1.jpg",
-		"caption": "Holalala c'est une belle caption. Je parle beaucoup vous savez c'est cool d'être ici et de tester ça.",
-		"alt": "Hello Hello"
+		"url": "/img/majors/vino/object_1.jpg",
+		"caption": "Vino analyse l'état de la plante pour prévoir les éventuels problèmes. Son design épuré s'intègre parfaitement à la vigne.",
+		"alt": "Photo de l'objet connecté et d'un plant de vigne"
 	}, {
 		"type": "text",
-		"paragraphs": [
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
-			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-		]
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"Nous avons construit le prototype à partir d'une étude de terrain, et à partir des contraintes technique du projet : Le boitier principal devait être placé en hauteur, afin de recevoir la lumière et donc l'énergie; L'eau de pluie devait être récupéré sur une aire fixe, le panneau solaire, légèrement incliné, qui fait donc office d'entonnoir."
+			]
+		}]
 	}, {
 		"type": "image",
 		"size": "medium",
-		"url": "/img/majors/vino/2.jpg",
+		"url": "/img/majors/vino/rough.jpg",
 		"caption": "This is a fucking caption bitch.",
 		"alt": "Hello Hello"
 	}, {
 		"type": "text",
-		"paragraphs": [
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
-			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
-			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-		]
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"Les maladies du bois figurent parmi les problèmes les plus inquiétants que connaissent les viticulteurs. Aujourd’hui ces vignes sont traitées seulement lorsque que la maladie est identifiée visuellement. Grâce à Vino, les viticulteurs peuvent suivre la croissance des vignes au fil du temps et anticiper l’arrivée des maladies sur des zones bien précises de leur exploitation, et éviter leur propagation."
+			]
+		}]
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/vino/3.jpg",
+		"url": "/img/majors/vino/object_3.jpg",
 		"caption": "This is a fucking caption bitch.",
 		"alt": "Hello Hello"
 	}, {
 		"type": "text",
-		"paragraphs": [
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
-			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
-			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-		]
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"Concernant la pression de la sève dans la plante, elle nous donne un indicateur direct de la consommation d’eau dans la plante : si la sève monte lentement, la plante a besoin d’eau. On peut alors régler parfaitement l'apport hydrique, faire des économies, mais aussi améliorer la qualité du vin."
+			]
+		}]
 	}, {
 		"type": "image",
-		"size": "medium",
-		"url": "/img/majors/vino/4.jpg",
-		"caption": "This is a fucking caption bitch.",
+		"size": "small",
+		"url": "/img/majors/vino/object_2.jpg",
 		"alt": "Hello Hello"
 	}, {
 		"type": "text",
-		"paragraphs": [
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
-			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
-			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-		]
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"Aussi, pour lutter contre les problèmes de gel dans certaines zones de France au printemps, on pourrait détecter les baisses de température et la montée de la sève en mars afin d’avertir le vigneron pour mettre en place un système d'antigel par aspersion d'eau.",
+				"Toutes les informations réceptionnées sont ensuite accessible via une application mobile."
+			]
+		}]
 	}, {
 		"type": "image",
 		"size": "large",
-		"url": "/img/1080x720.jpg",
+		"url": "/img/majors/vino/app.jpg",
 		"caption": "Holalala c'est une belle caption. Je parle beaucoup vous savez c'est cool d'être ici et de tester ça.",
 		"alt": "Hello Hello"
 	}, {
 		"type": "text",
-		"paragraphs": [
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
-			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae.",
-			"Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quaerat deserunt earum vitae doloremque esse nisi necessitatibus, veniam rem provident eius ad vel officia commodi cupiditate, repudiandae recusandae. Repudiandae, accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-		]
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"Dans un autre temps, nous avons songé à rendre le système autonome en lui permettant de gérer l’ouverture de l’eau, d’enclencher le système de dégel ou aussi de déployer un traitement contre une maladie rencontrée.",
+				"Finalement, les données récoltées chez chacun des vignerons pourront être recoupées pour instaurer une entraide entre ceux-ci, afin que la propagation des maladies ne s’effectue pas d’un domaine à l’autre et que les diverses techniques de culture puissent s’échanger entre vigneron. Ces données peuvent aussi être réutilisées par des entreprises d’études météorologiques pour affiner leurs résultats."
+			]
+		}]
 	}]
 }

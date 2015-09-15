@@ -31,19 +31,19 @@
 		"title": "Follow me",
 		"linkedin": {
 			"url": "#",
-			"title": "On LinkedIn"
+			"title": "on LinkedIn"
 		},
 		"github": {
 			"url": "#",
-			"title": "On Github"
+			"title": "on Github"
 		},
 		"twitter": {
 			"url": "#",
-			"title": "On Twitter"
+			"title": "on Twitter"
 		},
 		"soundcloud": {
 			"url": "#",
-			"title": "On Soundcloud"
+			"title": "on Soundcloud"
 		}
 	},
 	"resume": {

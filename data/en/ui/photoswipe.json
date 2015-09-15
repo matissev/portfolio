@@ -1,7 +1,7 @@
 {
 	"close": "Close (Esc)",
 	"previous": "Previous (arrow left)",
-	"next": "Close (Esc)",
+	"next": "Next (arrow right)",
 	"share": "Share",
 	"zoom": "Zoom in/out",
 	"fullscreen": "Toggle fullscreen"

@@ -1,18 +1,157 @@
 {
 	"title": "Feed Me Crystals",
-	"subtitle": "Holographic arena game",
+	"subtitle": "Jeu d’arène multijoueur",
 	"tags": [
-		"sound",
-		"interaction",
-		"3D",
-		"graphism"
+		"son",
+		"jeu 3D",
+		"graphisme"
 	],
 	"date": "2015-01",
-	"explicitDate": "January 2015",
-	"lead": "Quisque eu diam at tellus auctor euismod. Ut dapibus, justo et iaculis dictum, felis justo condimentum ipsum, in auctor sem erat non lectus.",
-	"content": "This is the content",
+	"explicitDate": "Janvier 2015",
+	"lead": "Original et immersif, Feed Me Crystals est un jeu dont le but est de récupérer le maximum de cristaux avant le temps imparti, tout en évitant de les perdre en route. Ce projet, combinant sound design et univers graphique intègre un gameplay simple mais amusant, taillé avant tout pour les bosses de rire.",
 	"coverImage": {
-		"url": "/img/1080x720.jpg",
-		"alt": "My cool cover image"
-	}
+		"url": "/img/majors/feed-me-crystals/cover.jpg",
+		"alt": "Image de présentation de Feed Me Crystals"
+	},
+
+
+
+	"relatedContent": [{
+		"name": "Collaborateurs",
+		"items": [{
+			"name": "Pierre-Emmanuel Moëc",
+			"url": "http://pierre-emmanuelm.com"
+		}]
+	}, {
+		"name": "Medias",
+		"items": [{
+			"name": "Dossier de présentation",
+			"url": "medias/feed-me-crystals/presentation.pdf"
+		}]
+	}, {
+		"name": "Outils utilisés",
+		"items": [{
+			"name": "3ds Max"
+		}, {
+			"name": "Ableton Live"
+		}, {
+			"name": "Unity 5"
+		}, {
+			"name": "Photoshop"
+		}]
+
+	}],
+
+
+
+	"content": [{
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"Le jeu comprend deux personnages qui s’entraident face à de méchants rats. Le but étant de récolter une certaine quantité de minéraux sans les perdre bien entendu. Pour cela les personnages doivent activer une pompe qui fait fonctionner les engrenages et ainsi faire tomber les minéraux du plafond et donc les rendre accessibles, récoltables. Pour faire fonctionner cette pompe, les deux joueurs doivent sauter successivement sur les passerelles aux chaque extremités de celle-ci.",
+				"Une fois récupérés, il faut les stocker dans un réservoir et le remplir le plus rapidement possible. Des obstacles sont là pour entraver la progression des joueurs :<br>- Des rats ennemis peuvent vous voler vos crystaux.<br>- Des chariots passent sur les rails et peuvent vous rentrer dedans et vous faire perdre des cristaux (un peu comme dans Sonic)<br>- Les engrenages au sol tournent dans des sens différents et vous font perdre vos repères et le contrôle des personnages.<br>- L’eau vous fait aller moins vite."
+			]
+		}]
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/feed-me-crystals/map_rough.jpg",
+		"caption": "Feed Me Crystals comprend un univers proche du steampunk fait de pierre et de crystaux, rempli de machines d'extraction de minerai.",
+		"alt": "Dessins primaires du décor"
+	}, {
+		"type": "image",
+		"size": "medium",
+		"url": "/img/majors/feed-me-crystals/map.jpg",
+		"caption": "L'arène comporte plusieurs éléments ayant chacun un but précis. L'ambiance sombre permet aussi de perdre les joueurs dans le décor.",
+		"alt": "Rendu 3D du décor"
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"Bien sûr, la partie s’accélère au fur et à mesure que les joueurs remplissent la cuve (plus de rats, engrenages et chariots plus rapides, des cristaux qui apparaissent à des endroits de plus en plus aléatoires). Pour riposter contre les rats, les deux protagonistes doivent se rejoindre pour effectuer une attaque commune : Glork attrape La Foreuse par les mains et les ennemis sont éliminés par les forets présents aux pieds de La Foreuse. Un mode un joueur peut aussi être imaginable. Dans celui-ci, le joueur aurait un joystick par pouce et chacun controllerait un personnage, cela ajoutant ainsi de la difficulté."
+			]
+		}, {
+			"type": "paragraph",
+			"title": "La Foreuse",
+			"paragraphs": [
+				"«La Foreuse» est un personnage entreprenant, cupide et sournois. Un pilleur de mines, doté de deux gros forets pour se défendre avec l’aide de «Glork» qui le porte. C’est un explorateur qui aime l’argent et qui ne manquerait pas une occasion pour s’en procurer."
+			]
+		}]
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/feed-me-crystals/la_foreuse_rough.jpg",
+		"caption": "Les dessins primaires ont été très importants dans le développement de la personnalité des personnages. La Foreuse à été inspiré par plusieurs jeu de <abbr=\"Role-Playing Game\">RPG</abbr>.",
+		"alt": "Dessins primaires du personnage de La Foreuse"
+	}, {
+		"type": "image",
+		"size": "large",
+		"url": "/img/majors/feed-me-crystals/la_foreuse.jpg",
+		"alt": "Rendu 3D du personnage de La Foreuse"
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"title": "Glork",
+			"paragraphs": [
+				"«Glork» est un personnage timide et naïf demeurant sur le lieu du jeu. Il est corpulent et doté d’une grande force du fait de sa composition rocheuse. Il peut se rétracter sur lui même pour former un bloc compacte. Il entre également en interaction avec le personnage «La Foreuse» pour pouvoir se défendre contre ses assaillants."
+			]
+		}]
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/feed-me-crystals/glork_rough.jpg",
+		"caption": "Pour dessiner Glork, nous avons pris exemple sur des cristaux présents dans certaines grottes.",
+		"alt": "Dessins primaires du personnage Glork"
+	}, {
+		"type": "image",
+		"size": "large",
+		"url": "/img/majors/feed-me-crystals/glork.jpg",
+		"alt": "Rendu 3D du personnage Glork"
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"title": "Les rats",
+			"paragraphs": [
+				"Les rats, véritables parasites dans ce lieu. Ils vivent de tout mais sont particulièrement agressifs et attirés par les objets brillants (notamment les cristaux du jeu). Ils sont armés d'un lance-roquette sur le dos et peuvent attaquer au corps-à-corps ou à distance."
+			]
+		}]
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/feed-me-crystals/rat_rough.jpg",
+		"caption": "This is Rat, the ennemy.",
+		"alt": "Les rats ont un équipements vert et orange, un peu militaire. Leurs yeux rouges et leur pelage crasseux en font de bons ennemis."
+	}, {
+		"type": "image",
+		"size": "large",
+		"url": "/img/majors/feed-me-crystals/rat.jpg",
+		"alt": "Rendu 3D des rats"
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"title": "Cinématique",
+			"paragraphs": [
+				"La cinématique d'introduction démarre le jeu et fait office de synopsis. Nous l'avons dessiné sous forme de storyboard. Chaque vignette est décrite ci-dessous.",
+				"1. La Foreuse, premier personnage du jeu, entre dans une grotte à la recherche de cristaux.<br>2. En s’approchant d’un bloc de cristal pas comme les autres, il découvre Glork, autochtone de la mine et deuxième personnage du jeu.<br>3. La Foreuse explique qu’il cherche des cristaux pour s’enrichir, alors que Glork en cherche pour se nourrir.<br>4. Glork lui indique une zone où se situe un gisement important.<br>5,6. Avancée des personnages et travelling caméra pour découvrir le décor.<br>7, 8. Les protagonistes rencontrent les rats, les ennemis des joueurs.<br>9. Le jeu commence."
+			]
+		}]
+	}, {
+		"type": "image",
+		"size": "medium",
+		"url": "/img/majors/feed-me-crystals/storyboard.jpg",
+		"alt": "Storyboard de la cinématique d'introduction"
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"Dans un second temps, nous développerons des bruitages et composerons la musique du jeu. Les bruitages vont probablement faire état de l'univers mécanique et souterain. La musique sera quant à elle inspiré de jazz gypsy (comme Caravan de Duke Ellington par exemple) et de musique tzigane, faisant référence au voyage, aux trésors, à la découverte et suscitera une atmosphère en quelque sorte mystique."
+			]
+		}]
+	}]
 }

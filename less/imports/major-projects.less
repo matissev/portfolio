@@ -1,4 +1,4 @@
-.majors aside.related-links {
+.majors aside.related-content {
 	.calculate-width(2, 2, false, false);
 	width: @width;
 	float: left;
@@ -16,7 +16,7 @@
 		margin-bottom: 13px;
 
 		&:not(:first-of-type) {
-			margin-top: 15px;
+			margin-top: 25px;
 		}
 	}
 
@@ -33,7 +33,7 @@
 }
 
 .majors .small-media,
-.majors .text-content,
+.majors .text-major,
 .majors .lead-in-article,
 .majors footer {
 	.calculate-width(8, 7, false, false);
@@ -46,13 +46,13 @@
 .majors .lead-in-article,
 .majors footer {
 	margin: 0;
-	margin-bottom: 46px;
+	margin-bottom: 100px;
 	clear: both;
 }
 
 .majors .small-media,
 .majors .medium-media,
-.majors .text-content,
+.majors .text-major,
 .majors .lead-in-article,
 .majors footer {
 	margin-right: @margin;
@@ -60,6 +60,7 @@
 }
 
 .majors .lead-in-article {
+	margin-bottom: 60px;
 	.calculate-width(3, 3, false, false);
 	text-indent: 20px;
 	font-size: @font-size-l;
@@ -68,15 +69,59 @@
 	margin-left: @width;
 }
 
-.majors .text-content {
-	column-count: 2;
-	column-gap: 27px;
-	text-indent: 20px;
-	line-height: 22px;
-	margin-bottom: 54px;
+.majors .text-major {
+	margin-bottom: 70px;
+
+	h3 {
+		margin-bottom: 10px;
+	}
+
+	.paragraphs, h3 {
+		text-indent: 20px;
+	}
+
+	.paragraphs {
+		column-count: 2;
+		column-gap: 27px;
+		line-height: 22px;
+	}
+
+	.paragraphs + h3 {
+		margin-top: 25px;
+	}
 
 	p {
 		margin: 0;
+	}
+
+	ul, ol {
+		box-sizing: border-box;
+		margin-top: 30px;
+		margin-bottom: 0;
+		padding-left: 20px;
+		list-style: none;
+
+		li {
+			margin-bottom: 5px;
+		}
+	}
+
+	ul {
+		li:before {
+			content: '- ';
+		}
+	}
+
+	ol {
+		counter-reset: item;
+
+		li {
+			counter-increment: item;
+
+			&:before {
+				content: counter(item) ' - ';
+			}
+		}
 	}
 }
 
@@ -98,9 +143,10 @@
 		width: @width;
 		display: inline-block;
 		font-style: italic;
+		line-height: 22px;
 	}
 
-	.video-wrapper {
+	.video-wrapper, .audio-wrapper {
 		width: 100%;
 		display: inline-block;
 		height: 0;
@@ -110,6 +156,10 @@
 			width: 100%;
 			height: 100%;
 		}
+	}
+
+	.audio-wrapper {
+		padding-bottom: 38%;
 	}
 }
 
@@ -128,7 +178,7 @@
 	direction: rtl;
 	white-space: nowrap;
 
-	img, .video-wrapper {
+	img, .video-wrapper, .audio-wrapper {
 		.calculate-width(8, 7, 11, 10);
 		width: @width;
 	}
@@ -185,6 +235,9 @@
 
 	.close-article-button {
 		display: inline-block;
-		margin-top: 40px;
+
+		&:before {
+			content: "X ";
+		}
 	}
 }

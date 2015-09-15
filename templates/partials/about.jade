@@ -1,34 +1,34 @@
 section.about.hidden
 	.icon-close.about-close-button
 	.about-container
-		h2 #{about.title}
+		h2 !{about.title}
 		.about-content
 			form.contact-form(action='/mail.php' onsubmit='return validateForm(this);' autocomplete='on')
-				h3 #{about.form.title}
+				h3 !{about.form.title}
 				label(for='name')
-					span #{about.form.name.label}
+					span !{about.form.name.label}
 					input#name(placeholder=about.form.name.placeholder name='requiredfullname' type='text' value='' required)
 				label(for='email')
-					span #{about.form.email.label}
+					span !{about.form.email.label}
 					input#email(placeholder=about.form.email.placeholder name='requiredemail' type='email' value='' required)
 				label(for='subject')
-					span #{about.form.subject.label}
+					span !{about.form.subject.label}
 					input#subject(placeholder=about.form.subject.placeholder name='requiredsubject' type='text' value='' required)
 				label(for='message')
-					span #{about.form.message.label}
+					span !{about.form.message.label}
 					textarea#message(placeholder=about.form.message.placeholder name='requiredmessage' required)
 				button(type='submit')
-					span.button-text #{about.form.buttonText}
+					span.button-text !{about.form.buttonText}
 					.mail-loader
 				.result-box
-					p.result-message.success #{about.form.resultMessages.success}
-					p.result-message.error.invalid-email #{about.form.resultMessages.invalidEmail}
-					p.result-message.error.missing-fields #{about.form.resultMessages.missingFields}
-					p.result-message.error.invalid-caracters #{about.form.resultMessages.invalidCaracters}
-					p.result-message.failure #{about.form.resultMessages.failure}
+					p.result-message.success !{about.form.resultMessages.success}
+					p.result-message.error.invalid-email !{about.form.resultMessages.invalidEmail}
+					p.result-message.error.missing-fields !{about.form.resultMessages.missingFields}
+					p.result-message.error.invalid-caracters !{about.form.resultMessages.invalidCaracters}
+					p.result-message.failure !{about.form.resultMessages.failure}
 
 			.social-links
-				h3 #{about.social.title}
+				h3 !{about.social.title}
 				.links-container
 					a.icon-linkedin(href=about.social.linkedin.url title=about.social.linkedin.title)
 					a.icon-github(href=about.social.github.url title=about.social.github.title)
@@ -36,5 +36,5 @@ section.about.hidden
 					a.icon-twitter(href=about.social.twitter.url title=about.social.twitter.title)
 
 			.resume
-				h3 #{about.resume.title}
+				h3 !{about.resume.title}
 				a.icon-download-resume(href=about.resume.link)

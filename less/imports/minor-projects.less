@@ -7,7 +7,6 @@
 .minor-project {
 	display: inline-block;
 	box-sizing: border-box;
-	border: 1px solid @colorA;
 	background: fade(@colorB, 10%);
 	margin-bottom: 28px;
 
@@ -18,10 +17,18 @@
 		img, iframe {
 			display: block;
 			width: 100%;
+			outline-offset: -1px;
+			outline: fade(@colorB, 10%) solid;
+			outline-width: 1px;
+		}
+
+		&.audio-player iframe {
+			position: relative;
+			left: 1px;
 		}
 
 		&:not(:last-child) {
-			border-bottom: 1px solid @colorA;
+			border-bottom: 2px solid @colorA;
 		}
 	}
 
@@ -67,7 +74,7 @@
 			margin-top: -22.5px;
 			border-radius: 100%;
 			opacity: 0;
-			background: @colorB;
+			background: fade(@colorB, 70%);
 			transition: opacity 0.2s ease-in;
 
 			.icon-gallery {
@@ -83,11 +90,11 @@
 				left: 21px;
 				text-align: center;
 				background: @colorA;
-				color: @colorB;
+				color: fade(@colorB, 80%);
 				width: 13px;
 				height: 13px;
 				border-radius: 100%;
-				font: normal @font-size-xs @heading-text;
+				font: bold @font-size-xs @heading-text;
 
 				.number-of-photos {
 					position: relative;

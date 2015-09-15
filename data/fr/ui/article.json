@@ -1,0 +1,14 @@
+{
+	"header": {
+		"moreText": "Lire la suite..."
+	},
+	"footer": {
+		"share": {
+			"header": "Partager",
+			"facebookTitle": "sur Facebook",
+			"twitterTitle": "sur Twitter"
+		},
+		"closeArticleText": "Fermer l’article",
+		"backToSiteText": "Retourner sur le site"
+	}
+}

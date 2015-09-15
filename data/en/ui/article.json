@@ -4,9 +4,9 @@
 	},
 	"footer": {
 		"share": {
-			"header": "Share This",
-			"facebookTitle": "On Facebook",
-			"twitterTitle": "On Twitter"
+			"header": "Share this",
+			"facebookTitle": "on Facebook",
+			"twitterTitle": "on Twitter"
 		},
 		"closeArticleText": "Close the article",
 		"backToSiteText": "Go back to the website"

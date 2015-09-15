@@ -2,20 +2,21 @@
 
 nav.on-home.nav
 	svg.nav-toggle-button(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21 9" xml:space="preserve")
-		polygon(points="20,1 10.5,8 1,1")
+		polygon.stroke(points="20,1 10.5,8 1,1" stroke-width="2px")
+		polygon.triangle(points="20,1 10.5,8 1,1")
 
 	.nav-links
-		a.link(href="#home") #{nav.home}
-		.link.worklink #{nav.work}
+		a.link(href="#home") !{nav.home}
+		.link.worklink !{nav.work}
 
 		.worktab
 			each project in projects.majors
 				- projectIndex++;
-				a.link(href="#project"+projectIndex) #{project.title}
-			a.link(href="#other") #{nav.others}
+				a.link(href="#project"+projectIndex) !{project.title}
+			a.link(href="#other") !{nav.others}
 		
 		span.about-nav-block
-			a.link.about-open-button(href="#about") #{nav.about}
+			a.link.about-open-button(href="#about") !{nav.about}
 
 .page-switches
 	button.up-button 
