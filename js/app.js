@@ -28,6 +28,7 @@ function afterSectionLoad(anchorLink, index) {
 
 	if (index === 2 || index === 3 || index === 4 || index === 5) {
 		removeClass(nav, 'on-home');
+		parallax.disable();
 	}
 }
 
@@ -62,6 +63,7 @@ function onSectionLeave(index, nextIndex, direction) {
 	if (nextIndex === 1) {
 		updateNav.onHome();
 		navOpened = false;
+		parallax.enable();
 
 		removeClass(nav, 'on-minors');
 		removeClass(nav, 'on-majors');

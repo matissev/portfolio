@@ -1,0 +1,32 @@
+{
+	"title": "Leaflet",
+	"date": "2013-11",
+	"explicitDate": "November 2013",
+	"content": [{
+		"type": "gallery",
+		"thumbnail": {
+			"url": "/img/minors/leaflet/thumbnail.jpg",
+			"alt": "Thumbnail of the leaflet image gallery"
+		},
+		"images": [{
+			"url": "/img/minors/leaflet/leaflet_1.jpg",
+			"caption": "Three declensions of the leaflet by thematic.",
+			"size": "2880x1920"
+		}, {
+			"url": "/img/minors/leaflet/leaflet_2.jpg",
+			"caption": "The leaflet after complete opening.",
+			"size": "2880x1920"
+		}, {
+			"url": "/img/minors/leaflet/leaflet_3.jpg",
+			"caption": "The information is revealed little by little as the leaflet opens.",
+			"size": "1024x680"
+		}, {
+			"url": "/img/minors/leaflet/leaflet_4.png",
+			"caption": "The two sides of the leaflet (A4).",
+			"size": "1024x680"
+		}]
+	}, {
+		"type": "text",
+		"text": "I had to create a leaflet for a small fictive library. The difficulty of this project remained in the prioritization of the information but also in the graphical treatment deployed to adapt the leaflet in a collection. The typefaces used are Bembo and Helvetica, for the date and the headings. Finally, the composition had to be slightly unusual without seeming too much unbuilt to show the innovating side of this library."
+	}]
+}

@@ -6,11 +6,11 @@
 		"service"
 	],
 	"date": "2015-05",
-	"explicitDate": "Mai 2015",
-	"lead": "Les facteurs de pertes de production d'une vigne sont importants : maladies, stress hydrique, climat... Vino est un objet connecté permettant d'observer l'évolution des plants afin de prévenir des complications, tout en économisant des ressources.",
+	"explicitDate": "May 2015",
+	"lead": "The production loss factors of a vineyard are many : diseases, hydric stress, weather... Vino is a connected object allowing to observe the evolution of the plants in order to prevent the complications, while saving ressources.",
 	"coverImage": {
 		"url": "/img/majors/vino/cover.jpg",
-		"alt": "Presentation picture of Vino"
+		"alt": "Cover picture of Vino"
 	},
 
 
@@ -27,14 +27,14 @@
 	}, {
 		"name": "Medias",
 		"items": [{
-			"name": "Dossier de synthèse",
+			"name": "Report",
 			"url": "#"
 		}, {
 			"name": "Poster",
 			"url": "#"
 		}]
 	}, {
-		"name": "Outils utilisés",
+		"name": "Tools used",
 		"items": [{
 			"name": "Arduino"
 		}, {
@@ -49,79 +49,81 @@
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"En combinant plusieurs capteurs, ce petit boitier récupère de multiples informations sur la vigne (conductivité du sol, taux de précipitation, luminosité, pression de la sève...etc) pour ensuite les transmettre sur le smartphone du vigneron afin de l'avertir des éventuels dangers que pourraient encourir ses cultures.",
-				"Le dispositif est alimenté grâce à un panneau solaire présent sur le boitier principal et l'envoi de donnée s'effectue par bluetooth 4.0 (LE) dès que l'énergie est suffisante et que le smartphone se trouve à proximité. En installant plusieurs boitiers dans la vigne, on peut comparer l'évolution des différentes parcelles de vigne."
+				"By combining multiple sensors, this little box gathers various informations on the vineyard (soil moisture, precipitation rate, luminosity, sap pressure...etc) and then transmit it to the smartphone of the winegrower so as to notify him/her of the eventual danger that his/here crops might incur.",
+				"The device is powered by a solar panel present on the main box and the informations are transmitted by bluetooth 4.0 (LE) once the stored energy is sufficient and the smartphone is nearby. If multiple devices are installed in the vineyard you can compare the evolution of the different vineyard plots."
 			]
 		}]
 	}, {
 		"type": "image",
 		"size": "small",
 		"url": "/img/majors/vino/object_1.jpg",
-		"caption": "Vino analyse l'état de la plante pour prévoir les éventuels problèmes. Son design épuré s'intègre parfaitement à la vigne.",
-		"alt": "Photo de l'objet connecté et d'un plant de vigne"
+		"caption": "Vino analyse the condition of the plant to prevent the eventual problems. Its refined design perfectly fits in a vineyard.",
+		"alt": "Photo of the connected object and a vine stock"
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"Nous avons construit le prototype à partir d'une étude de terrain, et à partir des contraintes technique du projet : Le boitier principal devait être placé en hauteur, afin de recevoir la lumière et donc l'énergie; L'eau de pluie devait être récupéré sur une aire fixe, le panneau solaire, légèrement incliné, qui fait donc office d'entonnoir."
+				"We designed and built the prototype from a field study to identity the technical constraints of the project : the main box had to be put high enough to catch the light and so the energy (the top of the vineyard stakes seemed to be a good spot); The rainwater had to be collected on a defined area (the solar panel, slighly inclined, serves as a funnel); A unit on the trunk was needed to make measurements on the soil."
 			]
 		}]
 	}, {
 		"type": "image",
 		"size": "medium",
 		"url": "/img/majors/vino/rough.jpg",
-		"caption": "This is a fucking caption bitch.",
-		"alt": "Hello Hello"
+		"caption": "The product is designed to adapt as much as possible to the vineyard while being very discreet and compact.",
+		"alt": "Drawing of the prototype with an overall view, a side view, a front view and details on the product"
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"Les maladies du bois figurent parmi les problèmes les plus inquiétants que connaissent les viticulteurs. Aujourd’hui ces vignes sont traitées seulement lorsque que la maladie est identifiée visuellement. Grâce à Vino, les viticulteurs peuvent suivre la croissance des vignes au fil du temps et anticiper l’arrivée des maladies sur des zones bien précises de leur exploitation, et éviter leur propagation."
+				"The wood diseases are among the most worrying problems that the vinegrowers know. Today those vineyards are treated only when the sickness is visually identified. Thanks to Vino, the vinegrowers can monitor the crops growth over time and anticipate the arrival of the disease on very precise zones of their field, and avoid the spreading."
 			]
 		}]
 	}, {
 		"type": "image",
 		"size": "small",
 		"url": "/img/majors/vino/object_3.jpg",
-		"caption": "This is a fucking caption bitch.",
-		"alt": "Hello Hello"
+		"caption": "The probe records informations concerning the soil such as its conductivity (salinity, amount of minerals), its humidity level, its pH (prevents from the necrosis)...etc.",
+		"alt": "Photo of the soil sensor right next to the trunk"
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"Concernant la pression de la sève dans la plante, elle nous donne un indicateur direct de la consommation d’eau dans la plante : si la sève monte lentement, la plante a besoin d’eau. On peut alors régler parfaitement l'apport hydrique, faire des économies, mais aussi améliorer la qualité du vin."
+				"Concerning the sap pressure, it gives us a direct indicator of the plant's water consumption : if the sap is moving up slowly, the crop needs water. Therefore you can set the water intake perfectly and save ressources while improving the wine quality.",
+				"This fonctionnality has not been experienced on the prototype but must be implemented on the final product. The mechanism is simple : The trunk is heated and the device records the temperatures after and before. Thus, the more the gap between the temperatures is raised, the more the crop is irrigated."
 			]
 		}]
 	}, {
 		"type": "image",
 		"size": "small",
 		"url": "/img/majors/vino/object_2.jpg",
-		"alt": "Hello Hello"
+		"alt": "Close-up photo of the product"
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"Aussi, pour lutter contre les problèmes de gel dans certaines zones de France au printemps, on pourrait détecter les baisses de température et la montée de la sève en mars afin d’avertir le vigneron pour mettre en place un système d'antigel par aspersion d'eau.",
-				"Toutes les informations réceptionnées sont ensuite accessible via une application mobile."
+				"Also, in order to fight against the frost in certain regions of France in Spring, the device could detect the temperature drop and the rise of the sap in March so as to notify the winegrower to set up a water spraying antifreeze system or antifreeze towers (for example).",
+				"All these received informations are then available via a mobile app. This app displays the condition of the vineyard according to the different plots. Also, you can follow the evolution of the vineyard over time and compare the days, the weeks, the months but also the differences with the previous year."
 			]
 		}]
 	}, {
 		"type": "image",
 		"size": "large",
 		"url": "/img/majors/vino/app.jpg",
-		"caption": "Holalala c'est une belle caption. Je parle beaucoup vous savez c'est cool d'être ici et de tester ça.",
-		"alt": "Hello Hello"
+		"caption": "The app allows the winegrower to be notified in case of a problem and also check the stored data.",
+		"alt": "Screenshots of the Vino mobile app"
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"Dans un autre temps, nous avons songé à rendre le système autonome en lui permettant de gérer l’ouverture de l’eau, d’enclencher le système de dégel ou aussi de déployer un traitement contre une maladie rencontrée.",
-				"Finalement, les données récoltées chez chacun des vignerons pourront être recoupées pour instaurer une entraide entre ceux-ci, afin que la propagation des maladies ne s’effectue pas d’un domaine à l’autre et que les diverses techniques de culture puissent s’échanger entre vigneron. Ces données peuvent aussi être réutilisées par des entreprises d’études météorologiques pour affiner leurs résultats."
+				"In a second step, we though about making the device stand-alone and allow it to manage the water flow, to turn on the antifreeze system or again to deploy a treatment against a disease.",
+				"Finally, the stored data of every vineyard could be linked to grant help, so that spreads of diseases do not happen between two estates and that the various cultivation techniques can be shared between winegrowers. In this way, it a all supportive community that could be set up. This data could also be used by weather analysis companies in order to sharpen their results.",
+				"For more information, you can check the <a href=\"/media/majors/vino/synthese.pdf\" target=\"_blank\">report</a> of the project."
 			]
 		}]
 	}]

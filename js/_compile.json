@@ -11,10 +11,13 @@
 		"libs/photoswipe/dist/photoswipe.js",
 		"libs/smooth-scroll/dist/js/smooth-scroll.js",
 		"libs/video.js/dist/video-js/video.js",
+		"libs/parallax/deploy/parallax.js",
 		
 		"js/elements.js",
 		"js/utilities.js",
 		"js/toggles.js",
+
+		"js/cover.js",
 		"js/nav.js",
 		"js/about.js",
 		"js/major-projects-roll.js",

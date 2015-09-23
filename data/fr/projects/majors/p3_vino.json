@@ -85,7 +85,7 @@
 		"type": "image",
 		"size": "small",
 		"url": "/img/majors/vino/object_3.jpg",
-		"caption": "La sonde de Vino permet d’enregistrer des informations concernant le sol comme la conductivité de celui-ci (richesse en minéraux), son taux d’humidité, son pH (prévient de la nécrose)...etc",
+		"caption": "La sonde de Vino permet d’enregistrer des informations concernant le sol comme la conductivité de celui-ci (richesse en minéraux), son taux d’humidité, son pH (prévient de la nécrose)...etc.",
 		"alt": "Photo de la sonde au sol de l’objet planté à la base d’un tronc de vigne"
 	}, {
 		"type": "text",

@@ -1,0 +1,30 @@
+{
+	"title": "Dessins",
+	"content": [{
+		"type": "gallery",
+		"thumbnail": {
+			"url": "/img/minors/drawings/thumbnail.jpg",
+			"alt": "Miniature de la gallerie des dessins"
+		},
+		"images": [{
+			"url": "/img/minors/drawings/drawings_1.jpg",
+			"caption": "Travail de peinture sur les contrastes de couleurs",
+			"size": "2880x1920"
+		}, {
+			"url": "/img/minors/drawings/drawings_2.jpg",
+			"caption": "Dessin (rough) d'un modèle de perceuse",
+			"size": "2880x1920"
+		}, {
+			"url": "/img/minors/drawings/drawings_3.jpg",
+			"caption": "Croquis à l'encre de Chine",
+			"size": "1024x680"
+		}, {
+			"url": "/img/minors/drawings/drawings_4.jpg",
+			"caption": "Travail sur le reflet avec deux verres et une carafe.",
+			"size": "1024x680"
+		}]
+	}, {
+		"type": "text",
+		"text": "Voilà plusieurs dessins et peintures que j’ai réalisé. Tous sont très différents et utilisent des techniques diverses (travail sur la couleur, le volume, l’outil, les textures et les effets)."
+	}]
+}

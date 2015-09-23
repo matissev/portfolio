@@ -23,7 +23,7 @@
 			"url": "http://pierre-emmanuelm.com"
 		}]
 	}, {
-		"name": "Medias",
+		"name": "Médias",
 		"items": [{
 			"name": "Dossier de présentation",
 			"url": "medias/feed-me-crystals/presentation.pdf"
@@ -50,7 +50,7 @@
 			"type": "paragraph",
 			"paragraphs": [
 				"Le jeu comprend deux personnages qui s’entraident face à de méchants rats. Le but étant de récolter une certaine quantité de minéraux sans les perdre bien entendu. Pour cela les personnages doivent activer une pompe qui fait fonctionner les engrenages et ainsi faire tomber les minéraux du plafond et donc les rendre accessibles, récoltables. Pour faire fonctionner cette pompe, les deux joueurs doivent sauter successivement sur les passerelles aux chaque extremités de celle-ci.",
-				"Une fois récupérés, il faut les stocker dans un réservoir et le remplir le plus rapidement possible. Des obstacles sont là pour entraver la progression des joueurs :<br>- Des rats ennemis peuvent vous voler vos crystaux.<br>- Des chariots passent sur les rails et peuvent vous rentrer dedans et vous faire perdre des cristaux (un peu comme dans Sonic)<br>- Les engrenages au sol tournent dans des sens différents et vous font perdre vos repères et le contrôle des personnages.<br>- L’eau vous fait aller moins vite."
+				"Une fois récupérés, il faut les stocker dans un réservoir et le remplir le plus rapidement possible. Des obstacles sont là pour entraver la progression des joueurs :<br>- Des rats ennemis peuvent vous voler vos crystaux.<br>- Des chariots passent sur les rails et peuvent vous rentrer dedans et vous faire perdre des cristaux (un peu comme dans Sonic)<br>- Les engrenages au sol tournent dans des sens différents et vous font perdre vos repères et le contrôle des personnages.<br>- L’eau vous fait aller moins vite."
 			]
 		}]
 	}, {
@@ -123,8 +123,8 @@
 		"type": "image",
 		"size": "small",
 		"url": "/img/majors/feed-me-crystals/rat_rough.jpg",
-		"caption": "This is Rat, the ennemy.",
-		"alt": "Les rats ont un équipements vert et orange, un peu militaire. Leurs yeux rouges et leur pelage crasseux en font de bons ennemis."
+		"caption": "Les rats ont un équipements vert et orange, un peu militaire. Leurs yeux rouges et leur pelage crasseux en font de bons ennemis.",
+		"alt": "This is Rat, the ennemy."
 	}, {
 		"type": "image",
 		"size": "large",

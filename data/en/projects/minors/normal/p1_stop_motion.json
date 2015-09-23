@@ -1,0 +1,35 @@
+{
+	"title": "Stop motion",
+	"date": "2014-01",
+	"explicitDate": "January 2014",
+	"content": [{
+		"type": "video",
+		"url": "https://www.youtube.com/embed/RlBtqiq_5EE"
+	}, {
+		"type": "text",
+		"text": "We had one week to shoot a short stop-motion video by groups of four on the subject of our choice, thus building the decor so as to produce the images. The photos were taken with the software DragonFrame and the video editing was done with Final Cut Pro. For the paper sheet, we used small lengths of wire to maintain it over the floor. These wires have been then erased in post production with Photoshop."
+	}, {
+		"type": "gallery",
+		"thumbnail": {
+			"url": "/img/minors/stop-motion/thumbnail.jpg",
+			"alt": "Thumbnail of the stop motion image gallery"
+		},
+		"images": [{
+			"url": "/img/minors/stop-motion/stop_motion_1.jpg",
+			"caption": "Making of the decor.",
+			"size": "2880x1920"
+		}, {
+			"url": "/img/minors/stop-motion/stop_motion_2.jpg",
+			"caption": "Making of the decor.",
+			"size": "2880x1920"
+		}, {
+			"url": "/img/minors/stop-motion/stop_motion_3.jpg",
+			"caption": "Installation before the shooting.",
+			"size": "1024x680"
+		}, {
+			"url": "/img/minors/stop-motion/stop_motion_4.jpg",
+			"caption": "Shooting and animation.",
+			"size": "1024x680"
+		}]
+	}]
+}

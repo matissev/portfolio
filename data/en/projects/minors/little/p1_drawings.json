@@ -1,0 +1,30 @@
+{
+	"title": "Drawings",
+	"content": [{
+		"type": "gallery",
+		"thumbnail": {
+			"url": "/img/minors/drawings/thumbnail.jpg",
+			"alt": "Thumbnail of the drawings image gallery"
+		},
+		"images": [{
+			"url": "/img/minors/drawings/drawings_1.jpg",
+			"caption": "Painting work on the color contrasts.",
+			"size": "2880x1920"
+		}, {
+			"url": "/img/minors/drawings/drawings_2.jpg",
+			"caption": "Rough drawing of a type of drill.",
+			"size": "2880x1920"
+		}, {
+			"url": "/img/minors/drawings/drawings_3.jpg",
+			"caption": "Chinese ink sketch.",
+			"size": "1024x680"
+		}, {
+			"url": "/img/minors/drawings/drawings_4.jpg",
+			"caption": "Work on reflections with two glasses and a carafe.",
+			"size": "1024x680"
+		}]
+	}, {
+		"type": "text",
+		"text": "Here are several drawings and paintings I did. Each one of them are very different and use diverse technics (work on the color, the volume, the tool used, the textures and the effects)."
+	}]
+}

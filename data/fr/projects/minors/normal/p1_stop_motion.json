@@ -2,33 +2,34 @@
 	"title": "Stop-Motion",
 	"date": "2014-01",
 	"explicitDate": "Janvier 2014",
-	"videoUrl": "https://www.youtube.com/embed/RlBtqiq_5EE",
-	"text": "Nous avions une semaine pour réaliser un court stop-motion par groupe de quatre sur le sujet de notre choix et ainsi construire le décor pour ensuite produire les images. Les photos ont été prises à l’aide du logiciel Dragon Frame et le montage avec Final Cut Pro. Pour ce qui est de la feuille de papier qui s’envole, nous avons utilisé des morceaux de fil de fer afin de la maintenir au dessus du décor. Ces fils de fer ont ensuite été effacés en post-production à l’aide de Photoshop.",
-	"gallery": {
+	"content": [{
+		"type": "video",
+		"url": "https://www.youtube.com/embed/RlBtqiq_5EE"
+	}, {
+		"type": "text",
+		"text": "Nous avions une semaine pour réaliser un court stop-motion par groupe de quatre sur le sujet de notre choix et ainsi construire le décor pour ensuite produire les images. Les photos ont été prises à l’aide du logiciel Dragon Frame et le montage avec Final Cut Pro. Pour ce qui est de la feuille de papier qui s’envole, nous avons utilisé des morceaux de fil de fer afin de la maintenir au dessus du décor. Ces fils de fer ont ensuite été effacés en post-production à l’aide de Photoshop."
+	}, {
+		"type": "gallery",
 		"thumbnail": {
 			"url": "/img/minors/stop-motion/thumbnail.jpg",
-			"alt": "Miniature de la gallerie de Stop-Motion"
+			"alt": "Miniature de la gallerie du stop motion"
 		},
-		"images": [
-		{
+		"images": [{
 			"url": "/img/minors/stop-motion/stop_motion_1.jpg",
-			"caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptas doloribus maiores est illum similique et minima, tenetur aliquam eos nisi.",
+			"caption": "Construction du décor.",
 			"size": "2880x1920"
-		},
-		{
+		}, {
 			"url": "/img/minors/stop-motion/stop_motion_2.jpg",
-			"caption": "Long image description 2",
+			"caption": "Construction du décor.",
 			"size": "2880x1920"
-		},
-		{
+		}, {
 			"url": "/img/minors/stop-motion/stop_motion_3.jpg",
-			"caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptas doloribus maiores est illum similique et minima, tenetur aliquam eos nisi.",
+			"caption": "Installation pour la prise de vue.",
 			"size": "1024x680"
-		},
-		{
+		}, {
 			"url": "/img/minors/stop-motion/stop_motion_4.jpg",
-			"caption": "Long image description 2",
+			"caption": "Prise de vue et animation.",
 			"size": "1024x680"
 		}]
-	}
+	}]
 }
