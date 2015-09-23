@@ -34,6 +34,7 @@ each minorProject in minorProjects
 					.article-media.text
 						header
 							h3 !{minorProject.title}
-							time(datetime=minorProject.date) !{minorProject.explicitDate}
+							if minorProject.date
+								time(datetime=minorProject.date) !{minorProject.explicitDate}
 						if media.text
 							p !{media.text}

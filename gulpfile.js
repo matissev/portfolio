@@ -61,13 +61,26 @@ gulp.task('clean', function (callback) {
 });
 
 
+/* ____________________________________________________________________________________ UTILITIES */
+
+gulp.task('validator', ['json'], function() {
+	return gulp.src('static/**/*.jade')
+		.pipe(jade({
+			basedir: './',
+			pretty: true,
+			data: JSON.parse(fs.readFileSync('data/data.json', { encoding: 'utf8' }))
+		}))
+		.pipe(htmlvalidator())
+		.pipe(gulp.dest('build'));
+});
+
+
 /* ____________________________________________________________________________________ WATCH */
 
 gulp.task('jade', function() {
 	return gulp.src(['static/**/*.jade'])
 		.pipe(plumber({errorHandler: onError}))
 		.pipe(jade({
-			// pretty: true,
 			basedir: './',
 			data: JSON.parse(fs.readFileSync('data/data.json', { encoding: 'utf8' }))
 		}))
@@ -88,14 +101,6 @@ gulp.task('less', function(){
 
 gulp.task('js', function(){
 	var scripts = JSON.parse(fs.readFileSync('js/_compile.json', { encoding: 'utf8' }));
-
-	// return gulp.src(scripts.src)
-	// 	.pipe(plumber({errorHandler: onError}))
-	// 	.pipe(sourcemaps.init())
-	// 	.pipe(concat(scripts.name))
-	// 	.pipe(sourcemaps.write())
-	// 	.pipe(gulp.dest('build/js'))
-	// 	.pipe(reload({stream:true}));
 
 	return scripts.forEach(function(obj){
 		return gulp.src(obj.src)
