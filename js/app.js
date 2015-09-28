@@ -14,10 +14,7 @@ function afterSectionLoad(anchorLink, index) {
 	/* Stick projects on the top on #projects(1,2,3) */
 
 	if (index === 2 || index === 3 || index === 4) {
-		addClass(nav, 'on-majors');
-		for(i = 0; i <= majorProjects.length; i++) {
-			addClass(majorProjects[i], 'on-majors');
-		}
+		addClass(document.body, 'on-majors');
 	}
 
 	if (index === 1) {
@@ -28,14 +25,14 @@ function afterSectionLoad(anchorLink, index) {
 	/* Unfold nav on #projects(1,2,3) and #other */
 
 	if (index === 2 || index === 3 || index === 4 || index === 5) {
-		removeClass(nav, 'on-home');
+		removeClass(document.body, 'on-home');
 		parallax.disable();
 	}
 
 	if (index === 5) {
-		addClass(minorProjects, 'on-minors');
+		addClass(document.body, 'on-minors');
 	} else {
-		removeClass(minorProjects, 'on-minors');
+		removeClass(document.body, 'on-minors');
 	}
 }
 
@@ -53,17 +50,15 @@ function onSectionLeave(index, nextIndex, direction) {
 	/* Unstick projects off the top and change nav color on #projects(1,2,3) */
 
 	if ((index !== 1 && index !== 5) && (nextIndex == 1 || nextIndex == 5)) {
-		for(i = 0; i <= majorProjects.length; i++) {
-			removeClass(majorProjects[i], 'on-majors');
-		}
+		removeClass(document.body, 'on-majors');
 	}
 
 
 	/* Nav color change */
 
 	if (nextIndex === 5) {
-		addClass(nav, 'on-minors');
-		removeClass(nav, 'on-majors');
+		addClass(document.body, 'on-minors');
+		removeClass(document.body, 'on-majors');
 
 	}
 
@@ -72,16 +67,14 @@ function onSectionLeave(index, nextIndex, direction) {
 		navOpened = false;
 		parallax.enable();
 
-		removeClass(nav, 'on-minors');
-		removeClass(nav, 'on-majors');
-		addClass(nav, 'on-home');
+		removeClass(document.body, 'on-minors');
+		removeClass(document.body, 'on-majors');
+		addClass(document.body, 'on-home');
 
 	}
 
 	if (index === 5 && direction === 'up' && nextIndex !== 1) {
-		removeClass(nav, 'on-minors');
-		addClass(nav, 'on-majors');
-
+		removeClass(document.body, 'on-minors');
 	}
 
 	if (index === 1 && direction === 'down') {
@@ -92,12 +85,19 @@ function onSectionLeave(index, nextIndex, direction) {
 
 	if (nextIndex === 2) {
 		updateMajorProjectsRoll.onFirst();
-
+		addClass(document.querySelector('.major-understudy1'), 'active');
+		removeClass(document.querySelector('.major-understudy2'), 'active');
+		removeClass(document.querySelector('.major-understudy3'), 'active');
 	} else if (nextIndex === 3) {
 		updateMajorProjectsRoll.onSecond();
-
+		addClass(document.querySelector('.major-understudy2'), 'active');
+		removeClass(document.querySelector('.major-understudy1'), 'active');
+		removeClass(document.querySelector('.major-understudy3'), 'active');
 	} else if (nextIndex === 4) {
 		updateMajorProjectsRoll.onThird();
+		addClass(document.querySelector('.major-understudy3'), 'active');
+		removeClass(document.querySelector('.major-understudy1'), 'active');
+		removeClass(document.querySelector('.major-understudy2'), 'active');
 	}
 
 
@@ -115,17 +115,28 @@ function onSectionLeave(index, nextIndex, direction) {
 $(document).ready(function() {
 	var autoScroll = isMobile.any ? false : true;
 
-	var understudyElements = document.querySelectorAll('.majors .project-details, .majors .tags');
-	var majorsUnderstudy = document.querySelector('.majorsUnderstudy');
-	for (i = 0; i < understudyElements.length; i++)
-		majorsUnderstudy.appendChild(understudyElements[i]);
+	var majorsUnderstudy = document.querySelector('.majors-understudy');
+	var understudyElements = null;
+	var understudyContainer = null;
+
+	for (i = 0; i < majorProjects.length; i++) {
+		understudyElements = majorProjects[i].querySelectorAll('.majors .project-details, .majors .tags');
+		understudyContainer = document.createElement('div');
+		addClass(understudyContainer, 'major-understudy major-understudy' + (i + 1));
+		for (u = 0; u < understudyElements.length; u++)
+			understudyContainer.appendChild(understudyElements[u].cloneNode(true));
+		majorsUnderstudy.appendChild(understudyContainer);
+	}
+
+	majorProjectButtonUnderstudy = document.querySelectorAll('.major-understudy .read-more');
+	majorProjectsUnderstudy = document.querySelectorAll('.major-understudy');
 
 	$('#fullpage').fullpage({
 		verticalCentered: false,
 		loopTop: false,
 		loopBottom: false,
 		scrollBar: false,
-		css3: false,
+		css3: true,
 		recordHistory: false,
 		autoScrolling: autoScroll,
 		scrollingSpeed: slideTransitionDuration,

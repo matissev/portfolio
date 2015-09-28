@@ -12,7 +12,11 @@
 		overflow: hidden;
 
 		img {
+			position: relative;
+			transform: translate3d(0,0,0);
 			backface-visibility: hidden;
+			perspective: 1000;
+			transform-style: preserve-3d;
 			pointer-events: none;
 			position: absolute;
 			top: -9999%;
@@ -31,31 +35,6 @@
 		margin-bottom: 52px;
 	}
 
-	.major-projects, .tags {
-		.assistive-hide();
-	}
-
-	&.on-majors {
-		position: static;
-
-		.tags, .project-details {
-			position: fixed;
-			margin-top: 0;
-		}
-	}
-
-	&.active .project-details, &.active .tags {
-		z-index: 4;
-	}
-
-	&:not(.active).on-majors .project-details {
-		background: transparent;
-
-		.read-more {
-			.assistive-hide();
-		}
-	}
-
 	&.opened {
 		overflow: scroll;
 
@@ -70,18 +49,58 @@
 	}
 }
 
-.majorsUnderstudy .project-details {
+.on-majors .majors {
+	.project-details, .tags {
+		.assistive-hide();
+	}
+}
+
+.majors-understudy {
+	backface-visibility: hidden;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+	top: 0;
+	left: 0;
+
+	.major-understudy {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.on-majors .majors-understudy {
+	display: block;
+}
+
+.major-understudy.active {
+	.project-details, .tags {
+		z-index: 4;
+	}
+}
+
+.on-majors .major-understudy:not(.active) .project-details {
+	background: transparent;
+
+	.read-more {
+		.assistive-hide();
+	}
+}
+
+.majors .project-details, .majors-understudy .project-details {
 	.calculate-width(3, 4, false, false);
 	top: 59px;
 	width: @width;
 	left: @margin + @column;
 	padding: 29px @gutter 25px @gutter;
-	z-index: 2;
+	z-index: 3;
+	position: absolute;
 	box-sizing: border-box;
 	backface-visibility: hidden;
-	position: absolute;
 	background: fade(@colorB, 50%);
 	transition: width 0.2s ease-out;
+	transform: translate3d(0,0,0);
 
 	h2, time, .lead, .read-more {
 		float: left;
@@ -136,7 +155,7 @@
 
 }
 
-.majorsUnderstudy .tags {
+.majors .tags, .majors-understudy .tags {
 	.calculate-width(7, 6, false, false);
 	top: 59px;
 	width: @width;
@@ -146,6 +165,7 @@
 	font: @font-size-xs @heading-text;
 	color: @colorA;
 	transition: width 0.2s ease-out;
+	transform: translate3d(0,0,0);
 
 	ul.tag-list {
 		& {
@@ -200,7 +220,7 @@
 	}
 }
 
-.majorsUnderstudy .major-project1 {
+.major-project1 .project-details, .major-understudy1 .project-details {
 	h2 .subtitle {
 		color: @color1-a;
 	}
@@ -210,7 +230,7 @@
 	}
 }
 
-.majorsUnderstudy .major-project2 {
+.major-project2 .project-details, .major-understudy2 .project-details {
 	h2 .subtitle {
 		color: @color2-a;
 	}
@@ -220,7 +240,7 @@
 	}
 }
 
-.majorsUnderstudy .major-project3 {
+.major-project3 .project-details, .major-understudy3 .project-details {
 	h2 .subtitle {
 		color: @color3-a;
 	}

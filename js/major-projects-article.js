@@ -20,14 +20,14 @@ updateMajorProjectsArticle = {
 			easing: 'easeOutQuart',
 			begin: function() {
 				for (i = 0; i < majorProjects.length; i++) {
-					removeClass(majorProjects[i], 'on-majors');
+					removeClass(document.body, 'on-majors');
 				}
 				
 				addClass(majorProjects[openedMajorProjectIndex], 'opened');
 
-				$.Velocity.hook($(majorProjectClass + '.project-details'), 'scaleY', '0.999999999');
+				$.Velocity.hook($(majorProject + '.project-details'), 'scaleY', '0.999999999');
 				$.Velocity.hook($(majorProjectClass + '.cover-image'), 'scaleY', '0.999999999');
-				$.Velocity.hook($(majorProjectClass + '.project-details'), 'height', maxProjectDetailsHeight + 'px');
+				$.Velocity.hook($(majorProject + '.project-details'), 'height', maxProjectDetailsHeight + 'px');
 			},
 			complete: function() {
 				addClass(majorProjects[openedMajorProjectIndex], 'opened-layout');
@@ -109,7 +109,7 @@ updateMajorProjectsArticle = {
 
 				removeClass(majorProjects[index], 'opened');
 				for (i = 0; i < majorProjects.length; i++) {
-					addClass(majorProjects[i], 'on-majors');
+					addClass(document.body, 'on-majors');
 				}
 
 				$.fn.fullpage.setAllowScrolling(true);

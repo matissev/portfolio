@@ -17,19 +17,17 @@ It uses gulp to build up the output folder
 
 ### Todo
 
-- active class after section load on major (project-detail transparency bug fix)
-- Retina images via picturefill.js
-- Ajax article
 - Responsive
-- Share buttons
+- Ajax article
+- Retina images via picturefill.js
 - Audio Player
 - Video Player
-
 - Page switch buttons
-- CSS3 translates
+- Share buttons
 
 ### Done
 
+- ~~CSS3 translates~~
 - ~~Next Article Button (or close?)~~
 - ~~Fix bug on about open when on projects~~
 - ~~PHP mail without redirection (with AJAX)~~

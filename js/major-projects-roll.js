@@ -2,65 +2,65 @@ updateMajorProjectsRoll = {
 	onFirst: function(overrideDuration) {
 		currentDuration = overrideDuration ? overrideDuration : slideTransitionDuration;
 
-		rotateAndShow($('.tags1, .major-project1 time'), currentDuration);
+		rotateAndShow($('.tags1, .major-understudy1 time'), currentDuration);
 
-		changeHeight($('.majors .project-details'), currentDuration, 0);
+		changeHeight($('.majors-understudy .project-details'), currentDuration, 0);
 
 		rotateAndHideBottom($('.tags2, .tags3'), 30, currentDuration);
-		rotateAndHideBottom($('.major-project2 time, .major-project3 time'), 90, currentDuration);
+		rotateAndHideBottom($('.major-understudy2 time, .major-understudy3 time'), 90, currentDuration);
 
-		translateAndShow($('.major-project1 h2, .major-project1 .lead'), currentDuration);
-		translateAndHideBottom($('.major-project2 h2, .major-project2 .lead, .major-project3 h2, .major-project3 .lead'), currentDuration);
+		translateAndShow($('.major-understudy1 h2, .major-understudy1 .lead'), currentDuration);
+		translateAndHideBottom($('.major-understudy2 h2, .major-understudy2 .lead, .major-understudy3 h2, .major-understudy3 .lead'), currentDuration);
 	},
 
 	onSecond: function(overrideDuration) {
 		currentDuration = overrideDuration ? overrideDuration : slideTransitionDuration;
 
-		rotateAndShow($('.tags2, .major-project2 time'), currentDuration);
+		rotateAndShow($('.tags2, .major-understudy2 time'), currentDuration);
 
-		changeHeight($('.majors .project-details'), currentDuration, 1);
+		changeHeight($('.majors-understudy .project-details'), currentDuration, 1);
 
 		rotateAndHideTop($('.tags1'), 30, currentDuration);
 		rotateAndHideBottom($('.tags3'), 30, currentDuration);
 
-		rotateAndHideTop($('.major-project1 time'), 90, currentDuration);
-		rotateAndHideBottom($('.major-project3 time'), 90, currentDuration);
+		rotateAndHideTop($('.major-understudy1 time'), 90, currentDuration);
+		rotateAndHideBottom($('.major-understudy3 time'), 90, currentDuration);
 
-		translateAndShow($('.major-project2 h2, .major-project2 .lead'), currentDuration);
-		translateAndHideTop($('.major-project1 h2, .major-project1 .lead'), currentDuration);
-		translateAndHideBottom($('.major-project3 h2, .major-project3 .lead'), currentDuration);
+		translateAndShow($('.major-understudy2 h2, .major-understudy2 .lead'), currentDuration);
+		translateAndHideTop($('.major-understudy1 h2, .major-understudy1 .lead'), currentDuration);
+		translateAndHideBottom($('.major-understudy3 h2, .major-understudy3 .lead'), currentDuration);
 	},
 
 	onThird: function(overrideDuration) {
 		currentDuration = overrideDuration ? overrideDuration : slideTransitionDuration;
 
-		rotateAndShow($('.tags3, .major-project3 time, .major-project3 time small'), currentDuration);
+		rotateAndShow($('.tags3, .major-understudy3 time, .major-understudy3 time small'), currentDuration);
 
-		changeHeight($('.majors .project-details'), currentDuration, 2);
+		changeHeight($('.majors-understudy .project-details'), currentDuration, 2);
 
 		rotateAndHideTop($('.tags1, .tags2'), 30, currentDuration);
-		rotateAndHideTop($('.major-project1 time, .major-project2 time'), 90, currentDuration);
+		rotateAndHideTop($('.major-understudy1 time, .major-understudy2 time'), 90, currentDuration);
 
-		translateAndShow($('.major-project3 h2, .major-project3 .lead'), currentDuration);
-		translateAndHideTop($('.major-project1 h2, .major-project1 .lead, .major-project2 h2, .major-project2 .lead'), currentDuration);
+		translateAndShow($('.major-understudy3 h2, .major-understudy3 .lead'), currentDuration);
+		translateAndHideTop($('.major-understudy1 h2, .major-understudy1 .lead, .major-understudy2 h2, .major-understudy2 .lead'), currentDuration);
 	},
 
 	show: function(overrideDuration, overrideDelay) {
 		currentDuration = overrideDuration ? overrideDuration : slideTransitionDuration;
 
 		if (overrideDuration === 0) {
-			$.Velocity.hook($('.majors .project-details, .majors .tags, .minor-projects-container'), 'opacity', 1);
-			$.Velocity.hook($('.majors .project-details, .majors .tags, .minor-projects-container'), 'display', 'block');
+			$.Velocity.hook($('.majors-understudy .project-details, .majors-understudy .tags, .minor-projects-container'), 'opacity', 1);
+			$.Velocity.hook($('.majors-understudy .project-details, .majors-understudy .tags, .minor-projects-container'), 'display', 'block');
 		} else {
 			currentDelay = overrideDelay ? overrideDelay : 250;
-			showProjects($('.majors .project-details, .majors .tags, .minor-projects-container'), currentDuration, currentDelay);
+			showProjects($('.majors-understudy .project-details, .majors-understudy .tags, .minor-projects-container'), currentDuration, currentDelay);
 		}
 	},
 
 	hide: function(overrideDuration) {
 		currentDuration = overrideDuration ? overrideDuration : slideTransitionDuration;
 
-		hideProjects($('.majors .project-details, .majors .tags, .minor-projects-container'), currentDuration);
+		hideProjects($('.majors-understudy .project-details, .majors-understudy .tags, .minor-projects-container'), currentDuration);
 	}
 };
 
@@ -162,7 +162,7 @@ function hideProjects(ele, d) {
 }
 
 function changeHeight(ele, d, index) {
-	var majorProjectClass = '.major-project' + (index + 1) + ' ';
+	var majorProjectClass = '.major-understudy' + (index + 1) + ' ';
 
 	ele.velocity({
 		height: getProjectDetailsHeight(index, 'max')

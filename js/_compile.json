@@ -10,7 +10,6 @@
 		
 		"js/elements.js",
 		"js/utilities.js",
-		"js/toggles.js",
 
 		"js/cover.js",
 		"js/nav.js",
@@ -21,7 +20,9 @@
 		"js/app.js",
 		"js/photoswipe-options.js",
 		"js/photoswipe-domparser.js",
-		"js/mail.js"
+		"js/mail.js",
+
+		"js/toggles.js"
 	]
 }, {
 	"name": "picture-polyfill.js",
