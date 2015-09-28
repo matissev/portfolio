@@ -49,8 +49,8 @@ updateMajorProjectsRoll = {
 		currentDuration = overrideDuration ? overrideDuration : slideTransitionDuration;
 
 		if (overrideDuration === 0) {
-			$.Velocity.hook($('.majors .project-details, .majors .tags, .minor-projects-container'), "opacity", 1);
-			$.Velocity.hook($('.majors .project-details, .majors .tags, .minor-projects-container'), "display", "block");
+			$.Velocity.hook($('.majors .project-details, .majors .tags, .minor-projects-container'), 'opacity', 1);
+			$.Velocity.hook($('.majors .project-details, .majors .tags, .minor-projects-container'), 'display', 'block');
 		} else {
 			currentDelay = overrideDelay ? overrideDelay : 250;
 			showProjects($('.majors .project-details, .majors .tags, .minor-projects-container'), currentDuration, currentDelay);
@@ -65,7 +65,7 @@ updateMajorProjectsRoll = {
 };
 
 function rotateAndShow(ele, d) {
-	if ($.Velocity.hook(ele, "rotateX") !== 0) {
+	if ($.Velocity.hook(ele, 'rotateX') !== 0) {
 		ele.velocity({
 			rotateX: 0,
 			opacity: 1
@@ -77,7 +77,7 @@ function rotateAndShow(ele, d) {
 }
 
 function rotateAndHideTop(ele, angle, d) {
-	if ($.Velocity.hook(ele, "rotateX") !== -angle) {
+	if ($.Velocity.hook(ele, 'rotateX') !== -angle) {
 		ele.velocity({
 			rotateX: -angle,
 			opacity: 0
@@ -89,7 +89,7 @@ function rotateAndHideTop(ele, angle, d) {
 }
 
 function rotateAndHideBottom(ele, angle, d) {
-	if ($.Velocity.hook(ele, "rotateX") !== angle) {
+	if ($.Velocity.hook(ele, 'rotateX') !== angle) {
 		ele.velocity({
 			rotateX: angle,
 			opacity: 0
@@ -101,7 +101,7 @@ function rotateAndHideBottom(ele, angle, d) {
 }
 
 function translateAndShow(ele, d) {
-	if ($.Velocity.hook(ele, "translateY") !== 0) {
+	if ($.Velocity.hook(ele, 'translateY') !== 0) {
 		ele.velocity({
 			translateY: 0,
 			opacity: 1
@@ -113,7 +113,7 @@ function translateAndShow(ele, d) {
 }
 
 function translateAndHideTop(ele, d) {
-	if ($.Velocity.hook(ele, "translateY") !== -20) {
+	if ($.Velocity.hook(ele, 'translateY') !== -20) {
 		ele.velocity({
 			translateY: -20,
 			opacity: 0
@@ -125,7 +125,7 @@ function translateAndHideTop(ele, d) {
 }
 
 function translateAndHideBottom(ele, d) {
-	if ($.Velocity.hook(ele, "translateY") !== 20) {
+	if ($.Velocity.hook(ele, 'translateY') !== 20) {
 		ele.velocity({
 			translateY: 20,
 			opacity: 0
@@ -137,7 +137,7 @@ function translateAndHideBottom(ele, d) {
 }
 
 function showProjects(ele, duration, delay) {
-	if ($.Velocity.hook(ele, "opacity") !== 1) {
+	if ($.Velocity.hook(ele, 'opacity') !== 1) {
 		ele.velocity({
 			opacity: 1
 		}, {
@@ -150,7 +150,7 @@ function showProjects(ele, duration, delay) {
 }
 
 function hideProjects(ele, d) {
-	if ($.Velocity.hook(ele, "opacity") !== 0) {
+	if ($.Velocity.hook(ele, 'opacity') !== 0) {
 		ele.velocity({
 			opacity: 0
 		}, {

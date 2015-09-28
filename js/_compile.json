@@ -1,16 +1,11 @@
 [{
 	"name": "script.js",
 	"src": [
-		"js/loader.js",
-
 		"libs/isMobile/isMobile.js",
-		"libs/retina.js/dist/retina.js",
 		"libs/jquery/dist/jquery.js",
 		"libs/fullpage.js/jquery.fullPage.js",
 		"libs/velocity/velocity.js",
 		"libs/photoswipe/dist/photoswipe.js",
-		"libs/smooth-scroll/dist/js/smooth-scroll.js",
-		"libs/video.js/dist/video-js/video.js",
 		"libs/parallax/deploy/parallax.js",
 		
 		"js/elements.js",
@@ -33,5 +28,11 @@
 	"src": [
 		"js/picture-element.js",
 		"libs/picturefill/picturefill.js"
+	]
+}, {
+	"name": "loader.js",
+	"src": [
+		"libs/PACE/pace.js",
+		"js/loader.js"
 	]
 }]

@@ -1,67 +1,67 @@
-p.lead-in-article
-	if (template === 'article')
-		| !{project.lead}
+//- p.lead-in-article
+//- 	if (template === 'article')
+//- 		| !{project.lead}
 
-if project.relatedContent
-	aside.related-content
-		dl
-			each list in project.relatedContent
-				dt !{list.name}
-				each item in list.items
-					if item.url
-						dd #[a(href=item.url target="_blank") !{item.name}]
-					else
-						dd !{item.name}
+//- if project.relatedContent
+//- 	aside.related-content
+//- 		dl
+//- 			each list in project.relatedContent
+//- 				dt !{list.name}
+//- 				each item in list.items
+//- 					if item.url
+//- 						dd #[a(href=item.url target="_blank") !{item.name}]
+//- 					else
+//- 						dd !{item.name}
 
 
-if project.content
-	each media in project.content
-		case media.type
-			when 'text'
-				.text-major
-					each element in media.elements
-						if element.title
-							h3 !{element.title}
-						case element.type
-							when 'paragraph'
-								.paragraphs
-									each paragraph in element.paragraphs
-										p !{paragraph}
-							when 'list'
-								if element.title
-									h3 !{element.title}
-								if element.nature === 'ordered'
-									ol
-										each item in element.items
-											li !{item}
-								else if element.nature === 'unordered'
-									ul
-										each item in element.items
-											li !{item}
-			when 'image'
-				figure(class=media.size + "-media")
-					a(href=media.url target="_blank")
-						img(src=media.url alt=media.alt)
-					if media.caption
-						figcaption !{media.caption}
-			when 'video'
-				figure(class=media.size + "-media")
-					.video-wrapper
-						iframe(src=media.url+"?rel=0&amp;showinfo=0" allowfullscreen)
-					if media.caption
-						figcaption !{media.caption}
-			when 'audio'
-				figure(class=media.size + "-media")
-					.audio-wrapper
-						iframe(src=media.url+"&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true")
-					if media.caption
-						figcaption !{media.caption}
-footer
-	//- section.share-this
-	//- 	h3.footer-title !{ui.article.footer.share.header}
-	//- 	a.icon-facebook-share(href="#" title=ui.article.footer.share.facebookTitle)
-	//- 	a.icon-twitter-share(href="#" title=ui.article.footer.share.twitterTitle)
-	if (template === 'layout')
-		a.close-article-button(href="#") !{ui.article.footer.closeArticleText}
-	else if (template === 'article')
-		a.close-article-button(href="index.html") !{ui.article.footer.backToSiteText}
+//- if project.content
+//- 	each media in project.content
+//- 		case media.type
+//- 			when 'text'
+//- 				.text-major
+//- 					each element in media.elements
+//- 						if element.title
+//- 							h3 !{element.title}
+//- 						case element.type
+//- 							when 'paragraph'
+//- 								.paragraphs
+//- 									each paragraph in element.paragraphs
+//- 										p !{paragraph}
+//- 							when 'list'
+//- 								if element.title
+//- 									h3 !{element.title}
+//- 								if element.nature === 'ordered'
+//- 									ol
+//- 										each item in element.items
+//- 											li !{item}
+//- 								else if element.nature === 'unordered'
+//- 									ul
+//- 										each item in element.items
+//- 											li !{item}
+//- 			when 'image'
+//- 				figure(class=media.size + "-media")
+//- 					a(href=media.url target="_blank")
+//- 						img(src=media.url alt=media.alt)
+//- 					if media.caption
+//- 						figcaption !{media.caption}
+//- 			when 'video'
+//- 				figure(class=media.size + "-media")
+//- 					.video-wrapper
+//- 						iframe(src=media.url+"?rel=0&amp;showinfo=0" allowfullscreen)
+//- 					if media.caption
+//- 						figcaption !{media.caption}
+//- 			when 'audio'
+//- 				figure(class=media.size + "-media")
+//- 					.audio-wrapper
+//- 						iframe(src=media.url+"&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true")
+//- 					if media.caption
+//- 						figcaption !{media.caption}
+//- footer
+//- 	//- section.share-this
+//- 	//- 	h3.footer-title !{ui.article.footer.share.header}
+//- 	//- 	a.icon-facebook-share(href="#" title=ui.article.footer.share.facebookTitle)
+//- 	//- 	a.icon-twitter-share(href="#" title=ui.article.footer.share.twitterTitle)
+//- 	if (template === 'layout')
+//- 		a.close-article-button(href="#") !{ui.article.footer.closeArticleText}
+//- 	else if (template === 'article')
+//- 		a.close-article-button(href="index.html") !{ui.article.footer.backToSiteText}

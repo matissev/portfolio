@@ -31,7 +31,7 @@ function validateForm(form) {
 
 function ajaxPost(form, savedResults) {
     var url = form.action,
-        xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP"),
+        xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP'),
         params = [],
         response;
 
@@ -59,8 +59,8 @@ function ajaxPost(form, savedResults) {
     };
 
     // Opening the connection
-    xhr.open("POST", url, true);
-    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    xhr.open('POST', url, true);
+    xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
 
     //All preparations are clear, send the request!
     xhr.send(params);

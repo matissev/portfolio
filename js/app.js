@@ -1,6 +1,7 @@
 /* --------------------- LAYOUT CHANGES BY SECTIONS */
 
 fullpageIndex = 1;
+numberOfItems = $('#fullpage .section').length;
 
 function afterSectionLoad(anchorLink, index) {
 	var loadedSection = $(this);
@@ -29,6 +30,12 @@ function afterSectionLoad(anchorLink, index) {
 	if (index === 2 || index === 3 || index === 4 || index === 5) {
 		removeClass(nav, 'on-home');
 		parallax.disable();
+	}
+
+	if (index === 5) {
+		addClass(minorProjects, 'on-minors');
+	} else {
+		removeClass(minorProjects, 'on-minors');
 	}
 }
 
@@ -107,6 +114,11 @@ function onSectionLeave(index, nextIndex, direction) {
 
 $(document).ready(function() {
 	var autoScroll = isMobile.any ? false : true;
+
+	var understudyElements = document.querySelectorAll('.majors .project-details, .majors .tags');
+	var majorsUnderstudy = document.querySelector('.majorsUnderstudy');
+	for (i = 0; i < understudyElements.length; i++)
+		majorsUnderstudy.appendChild(understudyElements[i]);
 
 	$('#fullpage').fullpage({
 		verticalCentered: false,

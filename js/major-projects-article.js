@@ -5,7 +5,7 @@ updateMajorProjectsArticle = {
 		currentDuration = overrideDuration ? overrideDuration : slideTransitionDuration;
 		var majorProjectClass = '.major-project' + (openedMajorProjectIndex + 1) + ' ';
 
-		majorProjects[openedMajorProjectIndex].addEventListener("scroll", articleScrollHandler, false);
+		majorProjects[openedMajorProjectIndex].addEventListener('scroll', articleScrollHandler, false);
 
 		maxProjectDetailsHeight = getProjectDetailsHeight(openedMajorProjectIndex, 'max');
 		minProjectDetailsHeight = getProjectDetailsHeight(openedMajorProjectIndex, 'min');
@@ -24,11 +24,13 @@ updateMajorProjectsArticle = {
 				}
 				
 				addClass(majorProjects[openedMajorProjectIndex], 'opened');
+
 				$.Velocity.hook($(majorProjectClass + '.project-details'), 'scaleY', '0.999999999');
 				$.Velocity.hook($(majorProjectClass + '.cover-image'), 'scaleY', '0.999999999');
 				$.Velocity.hook($(majorProjectClass + '.project-details'), 'height', maxProjectDetailsHeight + 'px');
 			},
 			complete: function() {
+				addClass(majorProjects[openedMajorProjectIndex], 'opened-layout');
 				majorProjects[openedMajorProjectIndex].querySelector('.project-details').removeAttribute('style');
 				majorProjects[openedMajorProjectIndex].querySelector('.cover-image').removeAttribute('style');
 			}
@@ -80,7 +82,7 @@ updateMajorProjectsArticle = {
 			duration: currentDuration,
 			easing: 'easeOutQuart',
 			begin: function() {
-				majorProjects[openedMajorProjectIndex].removeEventListener("scroll", articleScrollHandler, false);
+				majorProjects[openedMajorProjectIndex].removeEventListener('scroll', articleScrollHandler, false);
 				var majorProjectHeaderHeight = majorProjects[index].querySelector('header').offsetHeight;
 				var scrolledHeight = offsetScroll - majorProjectHeaderHeight;
 				if (scrolledHeight > 0)
@@ -91,6 +93,7 @@ updateMajorProjectsArticle = {
 				majorProjects[index].style.pointerEvents = 'none';
 
 				removeClass(nav, 'change-color');
+				removeClass(majorProjects[openedMajorProjectIndex], 'opened-layout');
 
 				$.Velocity.hook($(majorProjectClass + '.project-details'), 'scaleY', '0.999999999');
 				$.Velocity.hook($(majorProjectClass + '.cover-image'), 'scaleY', '0.999999999');
@@ -172,15 +175,23 @@ function getProjectDetailsHeight(index, mode) {
 
 	containerElement.borderTop = window.getComputedStyle(containerElement).getPropertyValue('border-top');
 	containerElement.borderTop = parseInt(containerElement.borderTop, 10);
+	containerElement.borderTop = containerElement.borderTop ? containerElement.borderTop : 0;
 	containerElement.borderBottom = window.getComputedStyle(containerElement).getPropertyValue('border-bottom');
 	containerElement.borderBottom = parseInt(containerElement.borderBottom, 10);
+	containerElement.borderBottom = containerElement.borderBottom ? containerElement.borderBottom : 0;
 
 	containerElement.paddingTop = window.getComputedStyle(containerElement).getPropertyValue('padding-top');
 	containerElement.paddingTop = parseInt(containerElement.paddingTop, 10);
+	containerElement.paddingTop = containerElement.paddingTop ? containerElement.paddingTop : 0;
 	containerElement.paddingBottom = window.getComputedStyle(containerElement).getPropertyValue('padding-bottom');
 	containerElement.paddingBottom = parseInt(containerElement.paddingBottom, 10);
+	containerElement.paddingBottom = containerElement.paddingBottom ? containerElement.paddingBottom : 0;
 
 	totalSize = totalSize + containerElement.paddingTop + containerElement.paddingBottom + containerElement.borderTop + containerElement.borderBottom;
+
+	var test;
+
+	test = containerElement.paddingTop;
 
 	return totalSize;
 }
