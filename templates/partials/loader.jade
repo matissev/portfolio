@@ -1,6 +1,12 @@
+
+.loader
+	p #{loader.loading}
+
 noscript.nojs-message
 	p #{loader.noscript}
 
-.loader
-	.bubble
-	.bubble
+<!--[if lt IE 8 ]>
+<div class="outdated-browser" aria-hidden="true">
+<p>#{loader.outdated}</p>
+</div>
+<![endif]-->

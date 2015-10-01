@@ -1,0 +1,132 @@
+
+/* TABLETS PORTRAIT */
+@media screen and (max-width: 768px), screen and (max-device-width: 768px) {
+
+	.home #parallax-cover .layer img {
+		top: 17%;
+		height: 70%;
+	}
+
+	.majors, .majors-understudy {
+		.project-details {
+			.calculate-width(9, 10, false, false);
+			width: @width;
+			left: @margin + @column * 2 + @gutter;
+		}
+
+		.tags {
+			display: none!important;
+		}
+	}
+
+	.majors {
+		aside.related-content,
+		.lead-in-article,
+		.text-major,
+		.small-media,
+		.medium-media,
+		footer {
+			.calculate-width(9, 8, false, false);
+			width: @width;
+			margin: 0 (@margin + @column + @gutter) 46px 0;
+			float: right;
+		}
+
+		footer {
+			text-align: center;
+		}
+
+		aside.related-content dd {
+			margin-left: 20px;
+		}
+
+		.small-media,
+		.medium-media,
+		.large-media {
+			white-space: normal;
+			direction: ltr;
+
+			img {
+				width: 100%;
+			}
+
+			figcaption {
+				margin: 15px 0 0 0;
+				width: 100%;
+				clear: both;
+				text-align: center;
+			}
+
+			.video-wrapper, .audio-wrapper {
+				width: 100%;
+			}
+		}
+
+		.large-media figcaption {
+			&{
+				.calculate-width(9, 8, false, false);
+				width: @width;
+			}
+
+			&{
+				.calculate-width(2, 2, false, false);
+				margin-left: @width + @margin;
+			}
+		}
+
+
+	}
+
+	section.minors {
+		.minor-projects-container {
+			.calculate-width(9, 10, false, false);
+			width: @width;
+			margin-right: @margin + @column;
+		}
+
+		.little-minor-projects-column, .normal-minor-projects-column {
+			width: 100%;
+
+			.minor-project {
+				width: 100%;
+				margin-right: 0;
+			}
+		}
+	}
+
+	section.about {
+		.contact-form {
+			input {
+				.calculate-width(8, 7, 11, 10);
+				width: @width;
+			}
+
+			button {
+				.calculate-width(3, 2, 11, 10);
+				width: @width;	
+			}
+		}
+
+		.about-content {
+			width: 100%;
+			border: none;
+
+			h3 {
+				padding-left: 0;
+			}
+		}
+
+		.social-links a {
+			&:not(:last-of-type) {
+				margin-right: 3%;
+			}
+
+			margin: 0 3%;
+		}
+
+		.social-links, .resume {
+			.calculate-width(5, 4, 11, 10);
+			width: @width;
+		}
+	}
+}

@@ -11,11 +11,17 @@ section.about {
 	background: fade(@colorB, 70%);
 
 	.about-container {
-		.calculate-width(11, 10, false, false);
-		width: @width;
-		position: relative;
-		float: right;
-		margin-right: @margin;
+		z-index: 1;
+		box-sizing: border-box;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: scroll;
+		height: 100%;
+		padding-right: @margin;
+		padding-left: @margin + @gutter + @column;
+		padding-top: 59px;
 
 		h2 {
 			.calculate-width(2, 1, 11, 10);
@@ -29,18 +35,21 @@ section.about {
 	}
 
 	.icon-close {
-		position: relative;
-		top: -5px;
+		z-index: 2;
+		position: absolute;
+		top: 56px;
+		left: @margin;
 		float: left;
-		margin-left: @margin;
 		cursor: pointer;
 	}
 }
 
 .about .about-content {
+	box-sizing: border-box;
 	.calculate-width(9, 8, 11, 10);
 	width: @width;
 	float: right;
+	height: 100%;
 	border-top: 1px solid @colorA;
 	padding-top: 114px;
 	font: normal @font-size-l @heading-text;
@@ -70,6 +79,7 @@ section.about {
 	}
 
 	input, textarea {
+		border-radius: 0;
 		padding: 0 15px;
 		color: @colorB;
 		transition: border-left 0.2s ease-out 0.1s, background 0.4s ease;

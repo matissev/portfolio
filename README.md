@@ -17,8 +17,12 @@ It uses gulp to build up the output folder
 
 ### Todo
 
-- Responsive
-- Ajax article
+- nav open and scroll bug on safari (on HOME)
+- mail icon .about responsive desktop
+
+- Delete close article button
+- More browsers in outdated browsers (js lib)
+- Pace.js loader
 - Retina images via picturefill.js
 - Audio Player
 - Video Player
@@ -27,6 +31,11 @@ It uses gulp to build up the output folder
 
 ### Done
 
+- ~~"Upgrade your browser" message~~
+- ~~"Enable javascript" message~~
+- ~~Active nav links~~
+- ~~Responsive~~
+- ~~Ajax article~~
 - ~~CSS3 translates~~
 - ~~Next Article Button (or close?)~~
 - ~~Fix bug on about open when on projects~~

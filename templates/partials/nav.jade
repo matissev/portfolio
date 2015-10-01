@@ -1,27 +1,35 @@
 - var projectIndex = 0;
 
-nav.on-home.nav
-	svg.nav-toggle-button(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21 9" xml:space="preserve")
-		polygon.stroke(points="20,1 10.5,8 1,1" stroke-width="2px")
-		polygon.triangle(points="20,1 10.5,8 1,1")
+nav.nav.on-home
+	if template === 'layout'
+		svg.nav-toggle-button(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21 9" xml:space="preserve")
+			polygon.stroke(points="20,1 10.5,8 1,1" stroke-width="2px")
+			polygon.triangle(points="20,1 10.5,8 1,1")
 
-	.nav-links
-		a.link(href="#home") !{nav.home}
-		.link.worklink !{nav.work}
+	if template === 'article'
+		a(href="index.html")
+			svg.nav-toggle-button(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21 9" xml:space="preserve")
+				polygon.stroke(points="20,1 10.5,8 1,1" stroke-width="2px")
+				polygon.triangle(points="20,1 10.5,8 1,1")
 
-		.worktab
+
+	if template === 'layout'
+		.nav-links
+			a.link.home-link.active(href="#home") !{nav.home}
+
 			each project in projects.majors
 				- projectIndex++;
 				a.link(href="#project"+projectIndex) !{project.title}
-			a.link(href="#other") !{nav.others}
-		
-		span.about-nav-block
-			a.link.about-open-button(href="#about") !{nav.about}
 
-.page-switches
-	button.up-button 
-		svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 74 19" xml:space="preserve")
-			polyline(style="fill:none;stroke-miterlimit:10;" points="1,17 37,2 73,17 ")
-	button.down-button
-		svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 74 19" xml:space="preserve")
-			polyline(style="fill:none;stroke-miterlimit:10;" points="73,2 37,17 1,2 ")
+			a.link.other-link(href="#other") !{nav.others}
+			
+			span.about-nav-block
+				a.link.about-open-button(href="#about") !{nav.about}
+
+//- .page-switches
+//- 	button.up-button 
+//- 		svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 74 19" xml:space="preserve")
+//- 			polyline(style="fill:none;stroke-miterlimit:10;" points="1,17 37,2 73,17 ")
+//- 	button.down-button
+//- 		svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 74 19" xml:space="preserve")
+//- 			polyline(style="fill:none;stroke-miterlimit:10;" points="73,2 37,17 1,2 ")

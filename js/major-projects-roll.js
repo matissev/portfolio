@@ -50,7 +50,7 @@ updateMajorProjectsRoll = {
 
 		if (overrideDuration === 0) {
 			$.Velocity.hook($('.majors-understudy .project-details, .majors-understudy .tags, .minor-projects-container'), 'opacity', 1);
-			$.Velocity.hook($('.majors-understudy .project-details, .majors-understudy .tags, .minor-projects-container'), 'display', 'block');
+			$.Velocity.hook($('.majors-understudy .project-details, .majors-understudy .tags, .minor-projects-container'), 'visibility', 'visible');
 		} else {
 			currentDelay = overrideDelay ? overrideDelay : 250;
 			showProjects($('.majors-understudy .project-details, .majors-understudy .tags, .minor-projects-container'), currentDuration, currentDelay);
@@ -174,8 +174,8 @@ function changeHeight(ele, d, index) {
 			$.Velocity.hook($(majorProjectClass + '.project-details .read-more'), 'bottom', '25px');
 		},
 		complete: function() {
-			majorProjects[index].querySelector('.project-details').removeAttribute('style');
-			majorProjects[index].querySelector('.project-details .read-more').removeAttribute('style');
+			majorProjectsUnderstudy[index].querySelector('.project-details').removeAttribute('style');
+			majorProjectsUnderstudy[index].querySelector('.project-details .read-more').removeAttribute('style');
 		},
 		duration: d/2
 	});

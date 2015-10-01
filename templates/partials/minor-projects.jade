@@ -1,40 +1,40 @@
-//- each minorProject in minorProjects
-//- 	article.minor-project
-//- 		each media in minorProject.content
-//- 			case media.type
-//- 				when 'gallery'
-//- 					.article-media.gallery(itemscope='' itemtype='http://schema.org/ImageGallery')
-//- 						- var i = 0;
-//- 						each image in media.images
-//- 							- i++;
-//- 							figure(itemprop='associatedMedia' itemscope='' itemtype='http://schema.org/ImageObject')
-//- 								a(href=image.url data-size=image.size itemprop='contentUrl')
-//- 									if i === 1
-//- 										img.thumbnail(src=media.thumbnail.url alt=media.thumbnail.alt)
-//- 										.gallery-toggle
-//- 											.icon-gallery
-//- 											.photos-indicator #[span.number-of-photos !{media.images.length}]
-//- 												span.label
-//- 													if media.images.length > 1
-//- 														|  !{ui.minors.availablePhotosText.plural}
-//- 													else
-//- 														|  !{ui.minors.availablePhotosText.singular}
-//- 								if image.caption
-//- 									figcaption(itemprop='caption description') !{image.caption}
+each minorProject in minorProjects
+	article.minor-project
+		each media in minorProject.content
+			case media.type
+				when 'gallery'
+					.article-media.gallery(itemscope='' itemtype='http://schema.org/ImageGallery')
+						- var i = 0;
+						each image in media.images
+							- i++;
+							figure(itemprop='associatedMedia' itemscope='' itemtype='http://schema.org/ImageObject')
+								a(href=image.url data-size=image.size itemprop='contentUrl')
+									if i === 1
+										img.thumbnail(src=media.thumbnail.url alt=media.thumbnail.alt)
+										.gallery-toggle
+											.icon-gallery
+											.photos-indicator #[span.number-of-photos !{media.images.length}]
+												span.label
+													if media.images.length > 1
+														|  !{ui.minors.availablePhotosText.plural}
+													else
+														|  !{ui.minors.availablePhotosText.singular}
+								if image.caption
+									figcaption(itemprop='caption description') !{image.caption}
 
-//- 				when 'audio'
-//- 					.article-media.audio-player
-//- 						iframe(src=media.url+"&auto_play=false&hide_related=true&theme_color=FFFFFF&show_comments=false&show_user=false&show_reposts=false&visual=true&download=false&sharing=false")
+				when 'audio'
+					.article-media.audio-player
+						iframe(src=media.url+"&auto_play=false&hide_related=true&theme_color=FFFFFF&show_comments=false&show_user=false&show_reposts=false&visual=true&download=false&sharing=false")
 
-//- 				when 'video'
-//- 					.article-media.video-player
-//- 						iframe(src=media.url+"?rel=0&amp;showinfo=0" allowfullscreen)
+				when 'video'
+					.article-media.video-player
+						iframe(src=media.url+"?rel=0&amp;showinfo=0" allowfullscreen)
 
-//- 				when 'text'
-//- 					.article-media.text
-//- 						header
-//- 							h3 !{minorProject.title}
-//- 							if minorProject.date
-//- 								time(datetime=minorProject.date) !{minorProject.explicitDate}
-//- 						if media.text
-//- 							p !{media.text}
+				when 'text'
+					.article-media.text
+						header
+							h3 !{minorProject.title}
+							if minorProject.date
+								time(datetime=minorProject.date) !{minorProject.explicitDate}
+						if media.text
+							p !{media.text}

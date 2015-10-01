@@ -1,17 +1,33 @@
-section.section.home
-	header
+header.section.home
+	.home-header
 		h1
-			span.name !{main.name}
-			small.activity !{main.activity}
+			if template === 'layout'
+				span.name !{main.name}
+				span.activity !{main.activity}
+
+			if template === 'article'
+				a(href="index.html")
+					span.name !{main.name}
+					span.activity !{main.activity}
 
 		span.language
 			each language in languages
 				if language.abbr === languages.selected
 					abbr(title=language.name) !{language.abbr}
 				else
-					a(href=language.url)
+					- var languageLink;
+					if template === 'article'
+						- var projectNameClass;
+						each project in majorProjects
+							- projectNameClass = project.title.replace(/\s+/g, '-').toLowerCase();
+						- languageLink = language.url + projectNameClass + ".html";
+					else if template === 'layout'
+						- languageLink = language.url + "index.html";
+
+					a(href=languageLink)
 						abbr(title=language.name) !{language.abbr}
 
-	ul(id="parallax-cover")
-		each layer in ui.cover
-			li.layer(data-depth=layer.depth) #[img(alt=layer.alt src=layer.url)]
+	if template === 'layout'
+		ul(id="parallax-cover")
+			each layer in ui.cover
+				li.layer(data-depth=layer.depth) #[img(alt=layer.alt src=layer.url)]

@@ -32,7 +32,7 @@ function scrollHandler(){
 function detectScrollOnTop(e) {
     var force = normalizeWheel(e);
 
-    if (5 > -force.pixelY) {
+    if (10 > -force.pixelY) {
       wheelState = 'cooled';
     }
 

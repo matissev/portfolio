@@ -2,8 +2,6 @@
 	position: relative;
 	overflow: hidden;
 	vertical-align: middle;
-	-ms-overflow-style: -ms-autohiding-scrollbar;
-	-webkit-overflow-scrolling: touch;
 
 	.cover-image {
 		position: relative;
@@ -12,7 +10,6 @@
 		overflow: hidden;
 
 		img {
-			position: relative;
 			transform: translate3d(0,0,0);
 			backface-visibility: hidden;
 			perspective: 1000;
@@ -21,6 +18,7 @@
 			position: absolute;
 			top: -9999%;
 			bottom: -9999%;
+
 			left: -9999%;
 			right: -9999%;
 			margin: auto;
@@ -36,6 +34,8 @@
 	}
 
 	&.opened {
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+		-webkit-overflow-scrolling: touch;
 		overflow: scroll;
 
 		.cover-image:after {
@@ -72,6 +72,10 @@
 
 .on-majors .majors-understudy {
 	display: block;
+}
+
+.majors:not(.choosed) .project-details, .majors:not(.choosed) .tags {
+	visibility: hidden;
 }
 
 .major-understudy.active {
@@ -135,6 +139,7 @@
 			clear: both;
 			float: left;
 			display: inline-block;
+			width: 100%;
 			font-size: @font-size-xl;
 		}
 	}
@@ -220,32 +225,32 @@
 	}
 }
 
-.major-project1 .project-details, .major-understudy1 .project-details {
-	h2 .subtitle {
+.majors.broadcaster, .major-understudy1 {
+	.project-details h2 .subtitle {
 		color: @color1-a;
 	}
 
 	.lead-in-article {
-		color: @color1-b
+		color: @color1-b;
 	}
 }
 
-.major-project2 .project-details, .major-understudy2 .project-details {
-	h2 .subtitle {
+.majors.feed-me-crystals, .major-understudy2 {
+	.project-details h2 .subtitle {
 		color: @color2-a;
 	}
 
 	.lead-in-article {
-		color: @color2-b
+		color: @color2-b;
 	}
 }
 
-.major-project3 .project-details, .major-understudy3 .project-details {
-	h2 .subtitle {
+.majors.vino, .major-understudy3 {
+	.project-details h2 .subtitle {
 		color: @color3-a;
 	}
 
 	.lead-in-article {
-		color: @color3-b
+		color: @color3-b;
 	}
 }

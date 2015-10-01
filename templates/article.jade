@@ -3,6 +3,7 @@
 - var ui = data.ui;
 
 - var projects = data.projects;
+- var nav = ui.nav;
 - var majorProjects = projects.majors;
 
 - var storedProject;
@@ -25,7 +26,7 @@ doctype html
 html(lang=lang)
 	head
 		include partials/head
-		+head()
-			link(rel="stylesheet" type="text/css" href="/css/article.css")
 	body
+		include partials/home
+		include partials/nav
 		include partials/majors

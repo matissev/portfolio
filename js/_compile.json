@@ -11,18 +11,22 @@
 		"js/elements.js",
 		"js/utilities.js",
 
-		"js/cover.js",
-		"js/nav.js",
-		"js/about.js",
-		"js/major-projects-roll.js",
-		"js/major-projects-article.js",
 		"js/section-scroll.js",
 		"js/app.js",
+
+		"js/page-switch.js",
+		"js/major-projects-roll.js",
+		"js/major-projects-article.js",
+		"js/nav.js",
+		"js/about.js",
+
+		"js/cover.js",
 		"js/photoswipe-options.js",
 		"js/photoswipe-domparser.js",
 		"js/mail.js",
 
-		"js/toggles.js"
+		"js/toggles.js",
+		"js/ajax.js"
 	]
 }, {
 	"name": "picture-polyfill.js",
@@ -31,9 +35,14 @@
 		"libs/picturefill/picturefill.js"
 	]
 }, {
+	"name": "article.js",
+	"src": [
+		"js/utilities.js",
+		"js/article.js"
+	]
+}, {
 	"name": "loader.js",
 	"src": [
-		"libs/PACE/pace.js",
 		"js/loader.js"
 	]
 }]

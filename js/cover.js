@@ -1,8 +1,12 @@
-var parallaxCover = document.getElementById('parallax-cover');
+$(document).ready(function() {
+	var parallaxCover = document.getElementById('parallax-cover');
 
-var parallax = new Parallax(parallaxCover, {
-	invertX: true,
-	invertY: true,
-	scalarX: 3,
-	scalarY: 3,
+	parallax = new Parallax(parallaxCover, {
+		calibrateX: mobileDevice,
+		calibrateY: mobileDevice,
+		invertX: !mobileDevice,
+		invertY: !mobileDevice,
+		scalarX: mobileDevice ? 10 : 3,
+		scalarY: mobileDevice ? 10 : 3,
+	});
 });

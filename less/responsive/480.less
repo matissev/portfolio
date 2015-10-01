@@ -1,0 +1,161 @@
+
+/* SMARTPHONES LANDSCAPE */
+// @media only screen and (max-width: 480px), only screen and (max-width: 768px) and (orientation: landscape) {
+@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
+
+	header.home {
+		.home-header {
+			text-align: center;
+			margin-top: 35px;
+		}
+
+		.home-header h1 {
+			text-align: center;
+			float: none;
+			font-size: @font-size-xl * 0.9;
+
+			.activity {
+				width: 100%;
+				line-height: 20px;
+				font-size: @font-size-l;
+			}
+		}
+
+		#parallax-cover .layer img {
+			top: 26%;
+			left: 0%;
+		}
+
+		.home-header .language {
+			width: 100%;
+			clear: both;
+			float: left;
+			font-size: @font-size-l;
+			margin-top: 20px;
+
+			abbr {
+				margin: 0 15px 0 0;
+			}
+
+			a abbr {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.nav {
+		.assistive-hide();
+	}
+
+	.majors, .major-understudy {
+
+		.project-details {
+			.calculate-width(12, 11, false, false);
+			top: 30px;
+			left: @margin;
+			width: @width;
+			position: absolute;
+			margin-top: 0;
+
+			.lead {
+				display: none!important;
+				margin: 0!important;
+			}
+
+			h2 {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.majors {
+		aside.related-content,
+		.lead-in-article,
+		.text-major,
+		.small-media,
+		.medium-media,
+		footer {
+			.calculate-width(12, 11, false, false);
+			width: @width;
+			margin: 0 0 46px @margin;
+			float: left;
+		}
+
+		aside.related-content {
+			font-size: @font-size-m;
+		}
+
+		.small-media,
+		.medium-media,
+		.large-media {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+
+	section.minors {
+		.minor-projects-container {
+			.calculate-width(12, 11, false, false);
+			width: @width;
+			margin-left: @margin;
+			margin-right: 0;
+			float: left;
+
+			h2 {
+				float: none;
+				width: 80%;
+				margin: 0 auto;
+				text-align: center;
+			}
+		}
+
+		.normal-minor-projects-column {
+			margin-top: 50px;
+		}
+
+		.normal-minor-projects-column:not(:nth-child(-n+5)), .little-minor-projects-column {
+			display: none;
+		}
+	}
+
+	section.about {
+		.about-container {
+			padding-left: @margin;
+			h2 {
+				width: 100%;
+				text-align: center;
+			}
+
+			h3 {
+				text-align: center;
+			}
+		}
+
+		.contact-form {
+			margin-bottom: 60px;
+
+			input {
+				width: 100%;
+			}
+
+			button {
+				display: block;
+				margin: 0 auto;
+				float: none;
+			}
+		}
+
+		.social-links, .resume {
+			width: 100%;
+			margin: 0 0 60px 0;
+		}
+
+		.social-links a {
+			&:not(:last-of-type) {
+				margin-right: 10%;
+			}
+
+			margin: 10px 3%;
+		}
+	}
+}

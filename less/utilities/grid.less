@@ -1,0 +1,28 @@
+/* Grid style */
+
+.grid {
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0 @margin;
+	z-index: 1000;
+
+	.grid-gutter, .grid-column {
+		height: 100%;
+		display: inline-block;
+		float: left;
+	}
+
+	.grid-gutter {
+		width: @gutter;
+	}
+
+	.grid-column {
+		width: @column;
+		background: blue;
+		opacity: 0.3;
+	}
+}

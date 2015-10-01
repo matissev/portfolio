@@ -2,15 +2,21 @@
 
 each project in majorProjects
 	- i++;
-	article.section.majors(class="major-project"+i)
+
+	- var projectNameClass = project.title;
+	- projectNameClass = projectNameClass.replace(/\s+/g, '-').toLowerCase();
+	- var majorClass = template === "layout" ? "major-project" + i : "";
+	- majorClass = majorClass + " " + projectNameClass;
+	
+	article.section.majors(class=majorClass)
 		header
-			.project-details(class="project-details"+i)
+			.project-details(class=majorClass)
 				time(datetime=project.date) !{project.explicitDate}
 				h2 !{project.title}
 					span.subtitle !{project.subtitle}
 				if (template === 'layout')
 					p.lead !{project.lead}
-					a.read-more(href="#") !{ui.article.header.moreText}
+					a.read-more(href=project.url) !{ui.article.header.moreText}
 
 			aside.tags(class="tags"+i)
 				ul.tag-list(class='tags'+i)

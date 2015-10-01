@@ -20,7 +20,6 @@ doctype html
 html(lang=lang)
 	head
 		include partials/head
-		+head()
 	body
 		include partials/loader
 		include partials/nav
@@ -29,8 +28,7 @@ html(lang=lang)
 			include partials/home
 			include partials/majors
 			include partials/minors
-
-		include partials/about
+			include partials/about
 
 		.majors-understudy(aria-hidden="true")
 

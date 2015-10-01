@@ -1,14 +1,16 @@
-mixin head
-	title !{main.name} | !{main.activity}
-	meta(charset="utf-8")
-	if block
-		block
-	else
-		link(rel="stylesheet" type="text/css" href="/css/loader.css")
-		link(rel="stylesheet" type="text/css" href="/css/style.css")
-	script(type="text/javascript" src="/js/script.js" async)
-	script(type="text/javascript" src="/js/loader.js" async)
-	script(type="text/javascript" src="/js/picture-polyfill.js" async)
-	link(rel="icon" href="img/favicon.ico")
-	meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')
-	meta(name="description" content=main.description)
+title !{main.name} | !{main.activity}
+meta(charset="utf-8")
+
+if template === 'layout'
+	link(rel="stylesheet" type="text/css" href="/css/loader.css")
+	link(rel="stylesheet" type="text/css" href="/css/style.css")
+	script(type="text/javascript" src="/js/script.js" defer)
+	script(type="text/javascript" src="/js/picture-polyfill.js" defer)
+
+if template === 'article'
+	link(rel="stylesheet" type="text/css" href="/css/article.css")
+	script(type="text/javascript" src="/js/article.js" defer)
+
+link(rel="icon" href="img/favicon.ico")
+meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')
+meta(name="description" content=main.description)

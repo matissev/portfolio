@@ -20,7 +20,7 @@ section.about.hidden
 				button(type='submit')
 					span.button-text !{about.form.buttonText}
 					span.mail-loader
-				.result-box
+				.result-box(aria-hidden="true")
 					p.result-message.success !{about.form.resultMessages.success}
 					p.result-message.error.invalid-email !{about.form.resultMessages.invalidEmail}
 					p.result-message.error.missing-fields !{about.form.resultMessages.missingFields}

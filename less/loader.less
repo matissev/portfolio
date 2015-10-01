@@ -1,43 +1,42 @@
-noscript.nojs-message {
+
+.loader, .nojs-message, .outdated {
 	position: fixed;
 	width: 100%;
 	height: 100%;
+	top: 0;
+	left: 0;
 	background: white;
+
+	p {
+		position: absolute;
+		display: inline-block;
+		width: 100%;
+		top: 50%;
+		margin: 0;
+		margin-top: -20px;
+		text-align: center;
+	}
+}
+
+.nojs-message {
+	z-index: 8;
+}
+
+.outdated {
+	display: none;
 	z-index: 7;
 }
 
 .loader {
 	opacity: 1;
-	// display: none;
-	position: fixed;
-	background: white;
 	z-index: 6;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 	transition: opacity 0.5s ease-in;
 	transform: translate3D(0,0,0);
 	backface-visibility: hidden;
+	perspective: 1000;
 
-	.bubble {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		margin-left: -20px;
-		margin-top: -20px;
-		width: 15px;
-		height: 15px;
-		border-radius: 100%;
-		background: black;
-
-		&:nth-child(1) {
-			animation: loading 1s ease infinite;
-		}
-
-		&:nth-child(2) {
-			animation: loading 1s ease infinite reverse;
-		}
+	p {
+		animation: loading 0.5s ease-in-out infinite alternate;
 	}
 
 	&.hide {
@@ -51,9 +50,6 @@ noscript.nojs-message {
 }
 
 @keyframes loading {
-	0% { transform: translate3D(0, 0, 0) scale(0.7); }
-	25% { transform: translate3D(30px, 0, 0) scale(1); }
-	50% { transform: translate3D(0px, 0, 0) scale(0.7); }
-	75% { transform: translate3D(-30px, 0, 0) scale(1); }
-	100% { transform: translate3D(0, 0, 0) scale(0.7); }
+	0% { opacity: 1; }
+	100% { opacity: 0.5; }
 }

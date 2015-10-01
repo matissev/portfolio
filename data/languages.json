@@ -1,9 +1,9 @@
 [{
 	"name": "English",
 	"abbr": "en",
-	"url": "/index.html"
+	"url": "/"
 }, {
 	"name": "Français",
 	"abbr": "fr",
-	"url": "/fr/index.html"
+	"url": "/fr/"
 }]

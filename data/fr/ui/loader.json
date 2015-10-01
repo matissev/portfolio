@@ -1,3 +1,5 @@
 {
-	"noscript": "Veuillez activer javascript pour afficher cette page."
+	"loading": "Chargement de la page...",
+	"noscript": "Veuillez activer javascript pour afficher cette page.",
+	"outdated": "Veuillez mettre à jour votre navigateur pour afficher cette page."
 }

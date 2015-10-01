@@ -48,19 +48,25 @@ $(document).ready(function() {
 	openedMajorProjectIndex = null;
 
 	function majorProjectToggle(i) {
-		majorProjectButton[i].addEventListener('click', function() {
+		majorProjectButtonUnderstudy[i].addEventListener('click', function(event) {
+			event.preventDefault();
 			openedMajorProjectIndex = i;
 			updateMajorProjectsArticle.open();
+			return false;
 		}, false);
 
-		majorProjectButtonUnderstudy[i].addEventListener('click', function() {
+		majorProjectButton[i].addEventListener('click', function(event) {
+			event.preventDefault();
 			openedMajorProjectIndex = i;
 			updateMajorProjectsArticle.open();
+			return false;
 		}, false);
 	}
 
-	for (i = 0; i < majorProjectButton.length; i++) {
-		majorProjectToggle(i);
+	if (!mobileDevice) {
+		for (i = 0; i < majorProjectButton.length; i++) {
+			majorProjectToggle(i);
+		}
 	}
 
 
@@ -77,9 +83,19 @@ $(document).ready(function() {
 	}
 
 
-	/* --------------------- WORK LINK */
+	/* --------------------- CLOSE NAV TOGGLE */
 
-	worklink.onclick = function() {
-		window.location.hash = 'project1';
-	};
+	function closeNav(i) {
+		navLinks[i].addEventListener('click', function() {
+			if (fullpageIndex !== 1) {
+				updateNav.close(300);
+				updateMajorProjectsRoll.show(300);
+				navOpened = false;
+			}
+		}, false);
+	}
+
+	for (i = 0; i < closeArticleButton.length; i++) {
+		closeNav(i);
+	}
 });

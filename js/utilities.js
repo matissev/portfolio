@@ -36,13 +36,13 @@ function isFirefox() {
 /* Font Fix */
 
 if (isSafari()) {
-    addClass(body, 'safari-font-fix');
+    addClass(document.body, 'safari-font-fix');
 }
 
 if (isChrome()) {
-    addClass(body, 'chrome-font-fix');
+    addClass(document.body, 'chrome-font-fix');
 }
 
 if (isFirefox()) {
-    addClass(body, 'moz-font-fix');
+    addClass(document.body, 'moz-font-fix');
 }

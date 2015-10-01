@@ -10,8 +10,8 @@ var gulp = require('gulp'),
 	run = require('gulp-run'),
 
 	jade = require('gulp-jade'),
-	htmlvalidator = require('gulp-w3cjs'),
 	htmlmin = require('gulp-minify-html'),
+	htmlvalidator = require('gulp-w3cjs'),
 
 	less = require('gulp-less'),
 	cssmin = require('gulp-minify-css'),
@@ -24,9 +24,15 @@ var gulp = require('gulp'),
 	jsonTree = require("gulp-json-tree"),
 	replace = require('gulp-replace'),
 
+	sitemap = require('gulp-sitemap'),
+
 	imagemin = require('gulp-imagemin'),
-	spritesheet = require('gulp-svg-sprite');
+	spritesheet = require('gulp-svg-sprite'),
 	svg2png = require('gulp-svg2png');
+
+
+var siteInfos = JSON.parse(fs.readFileSync('bower.json', { encoding: 'utf8' }));
+
 
 /* ____________________________________________________________________________________ SERVER */
 
@@ -114,7 +120,7 @@ gulp.task('js', function(){
 });
 
 gulp.task('php', function(){
-	return gulp.src(['**/*.php', '!node_modules/**/*.php', '!build/**/*.php', '!libs/**/*.php'])
+	return gulp.src(['server/**/*.*', 'server/**/.*'])
 		.pipe(gulp.dest('build'));
 });
 
@@ -167,7 +173,7 @@ gulp.task('spritesheet', function() {
 					"bust": false,
 					"render": {
 						"less": {
-							"dest": "../../less/imports/sprite"
+							"dest": "../../less/utilities/sprite"
 						}
 					}
 				}
@@ -199,7 +205,7 @@ gulp.task('default', ['make'], function() {
 	gulp.watch('less/**/*.less', ['less']);
 	gulp.watch(['js/**/*.js', 'js/_compile.json'], ['js']);
 	gulp.watch(['data/**/*.json', '!data/data.json'], ['json']);
-	gulp.watch(['**/*.php', '!node_modules/**/*.php', '!build/**/*.php', '!libs/**/*.php'], ['php']);
+	gulp.watch(['server/**/*.*', 'server/**/.*'], ['php']);
 });
 
 
@@ -252,6 +258,14 @@ gulp.task('js-dist', function() {
     });
 });
 
+gulp.task('sitemap', function(){
+    gulp.src('build/**/*.html')
+        .pipe(sitemap({
+            siteUrl: siteInfos.homepage
+        }))
+        .pipe(gulp.dest('./build'));
+});
+
 gulp.task('images-dist', function(){
 	return gulp.src(['img/**/*', '!img/sprite/**/*', '!img/sprite'])
 		.pipe(imagemin({
@@ -287,6 +301,7 @@ gulp.task('dist', function(callback) {
 		'clean',
 		'json',
 		['less-dist', 'jade-dist', 'js-dist', 'optimize-images', 'fonts', 'medias', 'php'],
+		'sitemap',
 		'done',
 	callback);
 });

@@ -1,146 +1,47 @@
+
 /* Libraries and helpers */
 
 @import (less) "../libs/normalize.css/normalize.css";
 @import (less) "../libs/fullpage.js/jquery.fullPage.css";
 @import (less) "../libs/photoswipe/dist/photoswipe.css";
-@import "imports/photoswipe";
-@import "imports/video-js";
+@import "libs/photoswipe";
+@import "libs/video-js";
 
-@import "imports/fonts";
-@import "imports/sprite";
-@import "imports/utilities";
-
-.svg-common() {
-	background: url(../img/sprite.svg) no-repeat;
-	background-size: 141px 132px;
-}
-
-
-/* Grid */
-/* 5% | (5.575% | 2.1%) * 11 | 5.575% | 5% */
-
-@margin : 5%;
-@gutter : 2.1%;
-@column : 5.575%;
-
-
-/* Colors */
-
-@colorA : white;
-@colorB : black;
-
-@color-success : limegreen;
-@color-error : orange;
-@color-failure : red;
-
-@color1-a : #f2183d; /* OLD COLOR : 414753 */ /* H2 SMALL COLOR */
-@color1-b : desaturate(darken(@color1-a, 35%), 20%); /* CURRENT TEXT COLOR */
-
-@color2-a : #13ff84; /* OLD COLOR : 414753 */ /* H2 SMALL COLOR */
-@color2-b : desaturate(darken(@color2-a, 40%), 40%); /* CURRENT TEXT COLOR */
-
-@color3-a : #8580ff; /* OLD COLOR : 414753 */ /* H2 SMALL COLOR */
-@color3-b : desaturate(darken(@color3-a, 60%), 35%); /* CURRENT TEXT COLOR */
-
-
-/* Fonts */
-
-@heading-text : lekton, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-@current-text : aller, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-@font-size-xs : 12px;
-@font-size-s : 13px;
-@font-size-m : 15px;
-@font-size-l : 18px;
-@font-size-xl : 30px;
-
-.font-rendering() {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
-	font-smooth: always;
-}
-
-
-/* General styles */
-
-body {
-	font: normal @font-size-s @current-text;
-	color: @colorB;
-}
-
-h1, h2, h3, h4, h5 {
-	margin: 0;
-}
-
-h1, h2 {
-	font: bold @font-size-l @heading-text;
-}
-
-h2 {
-	font-size: @font-size-xl;
-}
-
-h3, h4, h5 {
-	font: bold @font-size-l @current-text;
-	font-size: @font-size-s;
-}
-
-a {
-	color: @colorB;
-}
-
-abbr[title] {
-	border-bottom: none;
-}
-
-section.home, section.minors, section.about {
-	padding-top: 59px;
-}
-
-iframe {
-	border: none;
-	overflow: hidden;
-}
-
-/* Grid style */
-
-.grid {
-	display: none;
-	pointer-events: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	padding: 0 @margin;
-	z-index: 1000;
-
-	.grid-gutter, .grid-column {
-		height: 100%;
-		display: inline-block;
-		float: left;
-	}
-
-	.grid-gutter {
-		width: @gutter;
-	}
-
-	.grid-column {
-		width: @column;
-		background: blue;
-		opacity: 0.3;
-	}
-}
+@import "utilities/fonts";
+@import "utilities/sprite";
+@import "utilities/mixins";
+@import "utilities/variables";
 
 
 /* Styles imports */
 
-@import "imports/home";
-@import "imports/nav";
-@import "imports/majors";
-@import "imports/major-projects";
-@import "imports/minors";
-@import "imports/minor-projects";
-@import "imports/about";
-@import "imports/mobile";
+@import "partials/home";
+@import "partials/nav";
+@import "partials/majors";
+@import "partials/major-projects";
+@import "partials/minors";
+@import "partials/minor-projects";
+@import "partials/about";
+
+
+/* Responsive */
+
+@import "responsive/1024";
+@import "responsive/768";
+@import "responsive/480";
+@import "responsive/320";
+@import "responsive/mobile";
+
+
+/* Dev tools */
+
+@import "utilities/grid";
+@import "utilities/media-queries";
+
+.grid {
+	display: none;
+}
+
+.media-queries {
+	display: none;
+}

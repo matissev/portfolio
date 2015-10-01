@@ -26,10 +26,6 @@
 			position: relative;
 			left: 1px;
 		}
-
-		&:not(:last-child) {
-			// border-bottom: 2px solid @colorA;
-		}
 	}
 
 	.text {
@@ -55,6 +51,9 @@
 
 	.gallery {
 		position: relative;
+		backface-visibility: hidden;
+		perspective: 1000;
+		transform: translate3d(0,0,0);
 
 		figcaption {
 			.assistive-hide()

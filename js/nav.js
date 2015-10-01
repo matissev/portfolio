@@ -1,5 +1,3 @@
-slideTransitionDuration = 600;
-
 /* Put nav links margin in cache */
 navLinksMarginBottom = $.Velocity.hook($('.nav-links .link'), 'marginBottom');
 navAboutPaddingTop = $.Velocity.hook($('.nav-links .about-nav-block'), 'paddingTop');
@@ -18,7 +16,7 @@ updateNav = {
 			}, {
 				duration: currentDuration,
 				display: 'block',
-				delay: 200
+				queue: false
 			});
 		}
 
@@ -29,7 +27,7 @@ updateNav = {
 				marginBottom: navLinksMarginBottom
 			}, {
 				duration: currentDuration,
-				delay: 200
+				queue: false
 			});
 			
 			$('.nav-links .about-nav-block').velocity('finish');
@@ -37,7 +35,7 @@ updateNav = {
 				paddingTop: navAboutPaddingTop
 			}, {
 				duration: currentDuration,
-				delay: 200
+				queue: false
 			});
 		}
 
@@ -48,7 +46,7 @@ updateNav = {
 				rotateX: 180
 			}, {
 				duration: currentDuration,
-				delay: 200
+				queue: false
 			});
 		}
 	},
@@ -62,7 +60,8 @@ updateNav = {
 				opacity: 0
 			}, {
 				duration: currentDuration,
-				display: 'none'
+				display: 'none',
+				queue: false
 			});
 		}
 
@@ -71,13 +70,15 @@ updateNav = {
 			$('.nav-links .link').velocity({
 				marginBottom: 10
 			}, {
-				duration: currentDuration
+				duration: currentDuration,
+				queue: false
 			});
 
 			$('.nav-links .about-nav-block').velocity({
 				paddingTop: 10
 			}, {
-				duration: currentDuration
+				duration: currentDuration,
+				queue: false
 			});
 		}
 
@@ -87,6 +88,7 @@ updateNav = {
 				rotateX: 0
 			}, {
 				duration: currentDuration,
+				queue: false
 			});
 		}
 	},
@@ -101,16 +103,20 @@ updateNav = {
 			$('.nav-links').velocity({
 				translateY: 0
 			}, {
-				duration: currentDuration,
-				display: 'block'	
+				duration: currentDuration/2,
+				delay: currentDuration/2,
+				display: 'block',
+				queue: false
 			});
 		} else {
 			$('.nav-links').velocity({
 				opacity: 1,
 				translateY: 0
 			}, {
-				duration: currentDuration,
-				display: 'block'	
+				duration: currentDuration/2,
+				delay: currentDuration/2,
+				display: 'block',
+				queue: false	
 			});
 		}
 
@@ -120,7 +126,9 @@ updateNav = {
 			$('.nav').velocity({
 				translateY: 0
 			}, {
-				duration: currentDuration	
+				duration: currentDuration/2,
+				delay: currentDuration/2,
+				queue: false
 			});
 		}
 
@@ -131,8 +139,10 @@ updateNav = {
 				opacity: 0,
 				rotateX: 0
 			}, {
-				duration: currentDuration,
-				display: 'none'
+				duration: currentDuration/2,
+				delay: currentDuration/2,
+				display: 'none',
+				queue: false
 			});
 		}
 
@@ -142,14 +152,18 @@ updateNav = {
 			$('.nav-links .link').velocity({
 				marginBottom: navLinksMarginBottom
 			}, {
-				duration: currentDuration
+				duration: currentDuration/2,
+				delay: currentDuration/2,
+				queue: false
 			});
 
 			$('.nav-links .about-nav-block').velocity('finish');
 			$('.nav-links .about-nav-block').velocity({
 				paddingTop: navAboutPaddingTop
 			}, {
-				duration: currentDuration
+				duration: currentDuration/2,
+				delay: currentDuration/2,
+				queue: false
 			});
 		}
 	},
@@ -163,8 +177,9 @@ updateNav = {
 				opacity: 0,
 				translateY: 30
 			}, {
-				duration: currentDuration,
-				display: 'none'
+				duration: currentDuration/2,
+				display: 'none',
+				queue: false
 			});
 		}
 
@@ -173,7 +188,8 @@ updateNav = {
 			$('.nav').velocity({
 				translateY: -82
 			}, {
-				duration: currentDuration
+				duration: currentDuration/2,
+				queue: false
 			});
 		}
 
@@ -182,8 +198,9 @@ updateNav = {
 			$('.nav-toggle-button').velocity({
 				opacity: 1
 			}, {
-				duration: currentDuration,
-				display: 'block'
+				duration: currentDuration/2,
+				display: 'block',
+				queue: false
 			});
 		}
 
@@ -192,13 +209,15 @@ updateNav = {
 			$('.nav-links .link').velocity({
 				marginBottom: 10
 			}, {
-				duration: currentDuration
+				duration: currentDuration/2,
+				queue: false
 			});
 
 			$('.nav-links .about-nav-block').velocity({
 				paddingTop: 10
 			}, {
-				duration: currentDuration
+				duration: currentDuration/2,
+				queue: false
 			});
 		}
 	}

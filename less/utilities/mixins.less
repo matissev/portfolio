@@ -12,6 +12,19 @@
 }
 
 
+// Kill highlight
+
+.no-highlight() {
+    &::selection {
+        background: transparent;
+    }
+
+    &::-moz-selection {
+        background: transparent;
+    }
+}
+
+
 // Hide with accessibility support
 
 .assistive-hide() {

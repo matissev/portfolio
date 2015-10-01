@@ -1,3 +1,5 @@
 {
-	"noscript": "Please enable javascript to display this web page."
+	"loading": "Loading page...",
+	"noscript": "Please enable javascript to display this web page.",
+	"outdated": "Please upgrade your browser to display this web page."
 }

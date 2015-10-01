@@ -1,0 +1,56 @@
+
+body.mobile {
+	#fullpage {
+		overflow-x: hidden;
+	}
+
+	.majors-understudy {
+		display: none;
+	}
+
+	.majors:not(.choosed) .project-details {
+		visibility: visible;
+	}
+
+	&.on-majors {
+		.majors .project-details {
+			.assistive-show();
+			position: absolute;
+		}
+	}
+
+	.minors {
+		max-height: auto;
+		height: auto!important;
+	}
+
+	:not(.on-minors) section.minors {
+		overflow: auto;
+	}
+
+	section.about {
+		height: auto;
+		opacity: 1;
+		position: static;
+
+		.contact-form input, .contact-form button {
+			height: 40px;
+		}
+
+		.icon-close {
+			.assistive-hide();
+		}
+
+		.about-container {
+			position: static;
+			overflow: auto;
+		}
+
+		.about-content, .about-container {
+			display: block;
+			height: auto;
+		}
+
+		.clearfix();
+	}
+}

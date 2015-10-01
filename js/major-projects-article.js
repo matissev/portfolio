@@ -10,9 +10,6 @@ updateMajorProjectsArticle = {
 		maxProjectDetailsHeight = getProjectDetailsHeight(openedMajorProjectIndex, 'max');
 		minProjectDetailsHeight = getProjectDetailsHeight(openedMajorProjectIndex, 'min');
 
-		var leadText = majorProjects[openedMajorProjectIndex].querySelector('.lead').innerHTML;
-		majorProjects[openedMajorProjectIndex].querySelector('.lead-in-article').innerHTML = leadText;
-
 		$(majorProjectClass + 'header').velocity({
 			height: '66.666%'
 		}, {
@@ -25,9 +22,9 @@ updateMajorProjectsArticle = {
 				
 				addClass(majorProjects[openedMajorProjectIndex], 'opened');
 
-				$.Velocity.hook($(majorProject + '.project-details'), 'scaleY', '0.999999999');
+				$.Velocity.hook($(majorProjectClass + '.project-details'), 'scaleY', '0.999999999');
 				$.Velocity.hook($(majorProjectClass + '.cover-image'), 'scaleY', '0.999999999');
-				$.Velocity.hook($(majorProject + '.project-details'), 'height', maxProjectDetailsHeight + 'px');
+				$.Velocity.hook($(majorProjectClass + '.project-details'), 'height', maxProjectDetailsHeight + 'px');
 			},
 			complete: function() {
 				addClass(majorProjects[openedMajorProjectIndex], 'opened-layout');

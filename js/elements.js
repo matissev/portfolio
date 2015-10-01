@@ -3,7 +3,7 @@
 body = document.querySelector('body');
 
 nav = document.querySelector('.nav');
-worklink = document.querySelector('.worklink');
+navLinks = document.querySelectorAll('.nav-links .link');
 navToggleButton = document.querySelector('.nav-toggle-button');
 
 minorProjects = document.querySelector('.minors');

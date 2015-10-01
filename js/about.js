@@ -9,7 +9,8 @@ updateAbout = {
 			delay: 150,
 			begin: function() {
 				removeClass(aboutPage, 'hidden');
-			}
+			},
+			queue: false
 		});
 
 
@@ -26,11 +27,12 @@ updateAbout = {
 			opacity: 1,
 		}, {
 			duration: currentDuration,
-			delay: 300
+			delay: 300,
+			queue: false
 		});
 
 
-		$('section.home header, .nav-toggle-button, .minor-projects-container, .majors .project-details, .majors .tags').velocity({
+		$('header.home .home-header, .nav, .minor-projects-container, .majors .project-details, .majors .tags').velocity({
 			opacity: 0
 		}, {
 			duration: currentDuration,
@@ -39,7 +41,8 @@ updateAbout = {
 				for (i = 0; i < hiddenElementsOnAbout.length; i++) {
 					addClass(hiddenElementsOnAbout[i], 'hidden');
 				}
-			}
+			},
+			queue: false
 		});
 	},
 
@@ -53,7 +56,8 @@ updateAbout = {
 			delay: 150,
 			complete: function() {
 				addClass(aboutPage, 'hidden');
-			}
+			},
+			queue: false
 		});
 
 		$('.about-close-button').velocity({
@@ -68,9 +72,10 @@ updateAbout = {
 			opacity: 0,
 		}, {
 			duration: currentDuration,
+			queue: false
 		});
 
-		$('section.home header, .nav-toggle-button, .minor-projects-container, .majors .project-details, .majors .tags').velocity({
+		$('header.home .home-header, .nav, .minor-projects-container, .majors .project-details, .majors .tags').velocity({
 			opacity: 1
 		}, {
 			duration: currentDuration,
@@ -80,7 +85,8 @@ updateAbout = {
 				for (i = 0; i < hiddenElementsOnAbout.length; i++) {
 					removeClass(hiddenElementsOnAbout[i], 'hidden');
 				}
-			}
+			},
+			queue: false
 		});
 	}
 };
