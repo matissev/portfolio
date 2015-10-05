@@ -1,6 +1,8 @@
 {
 	"title": "Broadcaster",
+	"lowercase": "broadcaster",
 	"subtitle": "Agrégateur d’intérêts",
+	"description": "Broadcaster est un service de partage d'intérêts vous permettant de découvrir des artistes, films ou des évènements que vos amis vous ont recommandé.",
 	"tags": [
 		"son",
 		"service",
@@ -13,18 +15,15 @@
 		"url": "/img/majors/broadcaster/cover.jpg",
 		"alt": "Image de présentation de Broadcaster"
 	},
-	"url": "broadcaster.html",
 
 
 
 	"relatedContent": [{
 		"name": "Médias",
 		"items": [{
-			"name": "Support",
-			"url": "medias/broadcaster/support.pdf"
-		}, {
-			"name": "Identité Graphique",
-			"url": "#"
+			"name": "Dossier de présentation",
+			"url": "medias/broadcaster/broadcaster-presentation.pdf",
+			"microdata": "associatedMedia"
 		}]
 	}, {
 		"name": "Outils utilisés",

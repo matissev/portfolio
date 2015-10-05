@@ -15,19 +15,19 @@
 			"alt": "Thumbnail of the stop motion image gallery"
 		},
 		"images": [{
-			"url": "/img/minors/stop-motion/stop_motion_1.jpg",
+			"url": "/img/minors/stop-motion/stop-motion-1.jpg",
 			"caption": "Making of the decor.",
 			"size": "2880x1920"
 		}, {
-			"url": "/img/minors/stop-motion/stop_motion_2.jpg",
+			"url": "/img/minors/stop-motion/stop-motion-2.jpg",
 			"caption": "Making of the decor.",
 			"size": "2880x1920"
 		}, {
-			"url": "/img/minors/stop-motion/stop_motion_3.jpg",
+			"url": "/img/minors/stop-motion/stop-motion-3.jpg",
 			"caption": "Installation before the shooting.",
 			"size": "1024x680"
 		}, {
-			"url": "/img/minors/stop-motion/stop_motion_4.jpg",
+			"url": "/img/minors/stop-motion/stop-motion-4.jpg",
 			"caption": "Shooting and animating.",
 			"size": "1024x680"
 		}]

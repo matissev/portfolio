@@ -1,4 +1,4 @@
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function(event) {
 	var parallaxCover = document.getElementById('parallax-cover');
 
 	parallax = new Parallax(parallaxCover, {
@@ -9,4 +9,4 @@ $(document).ready(function() {
 		scalarX: mobileDevice ? 10 : 3,
 		scalarY: mobileDevice ? 10 : 3,
 	});
-});
+}, false);

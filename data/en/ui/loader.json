@@ -1,5 +1,5 @@
 {
 	"loading": "Loading page...",
-	"noscript": "Please enable javascript to display this web page.",
-	"outdated": "Please upgrade your browser to display this web page."
+	"noscript": "Please <a href=\"http://enable-javascript.com/en/\" target=\"_blank\">enable javascript</a> to display this web page.",
+	"outdated": "Please <a href=\"https://www.google.com/intl/en/chrome/browser/desktop/\" target=\"_blank\">upgrade your browser</a> to display this web page."
 }

@@ -1,14 +1,18 @@
 header.section.home
 	.home-header
-		h1
+		h1(itemprop="name headline")
 			if template === 'layout'
-				span.name !{main.name}
-				span.activity !{main.activity}
-
+				span.name(itemprop="author creator") !{main.name}&nbsp;
+				span.activity(itemprop="genre") !{main.activity}
+				meta(itemprop="primaryImageOfPage" content="/img/cover.jpg")
 			if template === 'article'
 				a(href="index.html")
-					span.name !{main.name}
-					span.activity !{main.activity}
+					span.name(itemprop="author creator") !{main.name}&nbsp;
+					span.activity(itemprop="genre") !{main.activity}
+				meta(itemprop="primaryImageOfPage" content=storedProject.coverImage.url)
+
+		meta(itemprop="genre" content="design")
+		meta(itemprop="learningResourceType" content="portfolio")
 
 		span.language
 			each language in languages
@@ -17,10 +21,7 @@ header.section.home
 				else
 					- var languageLink;
 					if template === 'article'
-						- var projectNameClass;
-						each project in majorProjects
-							- projectNameClass = project.title.replace(/\s+/g, '-').toLowerCase();
-						- languageLink = language.url + projectNameClass + ".html";
+						- languageLink = language.url + storedProject.lowercase + ".html";
 					else if template === 'layout'
 						- languageLink = language.url + "index.html";
 
@@ -28,6 +29,7 @@ header.section.home
 						abbr(title=language.name) !{language.abbr}
 
 	if template === 'layout'
+		p.hidden(itemprop="description") #{main.description}
 		ul(id="parallax-cover")
 			each layer in ui.cover
 				li.layer(data-depth=layer.depth) #[img(alt=layer.alt src=layer.url)]

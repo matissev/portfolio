@@ -17,9 +17,11 @@ It uses gulp to build up the output folder
 
 ### Todo
 
-- nav open and scroll bug on safari (on HOME)
-- mail icon .about responsive desktop
+- Firefox .major-understudy hide
 
+- mail icon .about responsive desktop + anchor jump on mobile
+- Delete jquery
+- nav open and scroll bug on safari (on HOME)
 - Delete close article button
 - More browsers in outdated browsers (js lib)
 - Pace.js loader
@@ -31,6 +33,7 @@ It uses gulp to build up the output folder
 
 ### Done
 
+- ~~Iframes height and soundcloud playlists~~
 - ~~"Upgrade your browser" message~~
 - ~~"Enable javascript" message~~
 - ~~Active nav links~~

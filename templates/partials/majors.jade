@@ -2,27 +2,30 @@
 
 each project in majorProjects
 	- i++;
-
-	- var projectNameClass = project.title;
-	- projectNameClass = projectNameClass.replace(/\s+/g, '-').toLowerCase();
-	- var majorClass = template === "layout" ? "major-project" + i : "";
-	- majorClass = majorClass + " " + projectNameClass;
 	
-	article.section.majors(class=majorClass)
+	article.section.majors(class=project.lowercase+" major-project"+i itemscope itemtype="http://schema.org/CreativeWork")
 		header
-			.project-details(class=majorClass)
-				time(datetime=project.date) !{project.explicitDate}
-				h2 !{project.title}
+			.project-details(class=project.lowercase)
+				time(itemprop="dateCreated" datetime=project.date) !{project.explicitDate}
+				h2(itemprop="headline")
+					span(itemprop="name") !{project.title}
+					<br> 
 					span.subtitle !{project.subtitle}
 				if (template === 'layout')
-					p.lead !{project.lead}
-					a.read-more(href=project.url) !{ui.article.header.moreText}
+					p.lead(itemprop="description") !{project.lead}
+					a.read-more(href=project.lowercase+".html" itemprop="url") !{ui.article.header.moreText}
 
 			aside.tags(class="tags"+i)
-				ul.tag-list(class='tags'+i)
+				dl.tag-list(class='tags'+i)
+					dt.hidden !{ui.majors.tags}
+					- var tags = "";
 					each tag in project.tags
-						li #[strong !{tag}]
+						dd #[strong !{tag}]
+						- tags += (tag + " ")
+				meta(itemprop="genre" content=tags)
 
-			div.cover-image #[img(alt=project.coverImage.alt src=project.coverImage.url)]
-
-		include major-projects
+			div.cover-image
+				img(alt=project.coverImage.alt src=project.coverImage.url)
+		
+		if template === 'article'
+			include major-projects

@@ -1,41 +1,41 @@
 [{
 	"url": "/img/cover/back.png",
 	"depth": "0.44",
-	"alt": ""
+	"alt": "Dos du personnage de l'animation de présentation"
 }, {
 	"url": "/img/cover/neck.png",
 	"depth": "0.51",
-	"alt": ""
+	"alt": "Cou du personnage de l'animation de présentation"
 }, {
 	"url": "/img/cover/tee.png",
 	"depth": "0.44",
-	"alt": ""
+	"alt": "Tee-shirt du personnage de l'animation de présentation"
 }, {
 	"url": "/img/cover/face.png",
 	"depth": "0.59",
-	"alt": ""
+	"alt": "Visage du personnage de l'animation de présentation"
 }, {
 	"url": "/img/cover/fairing2.png",
 	"depth": "0.66",
-	"alt": ""
+	"alt": "Premier circuit imprimé du personnage de l'animation de présentation"
 }, {
 	"url": "/img/cover/fairing1.png",
 	"depth": "0.74",
-	"alt": ""
+	"alt": "Deuxième circuit imprimé du personnage de l'animation de présentation"
 }, {
 	"url": "/img/cover/head.png",
 	"depth": "0.51",
-	"alt": ""
+	"alt": "Crâne du personnage de l'animation de présentation"
 }, {
 	"url": "/img/cover/jawscrew.png",
 	"depth": "0.74",
-	"alt": ""
+	"alt": "Vis de la machoire du personnage de l'animation de présentation"
 }, {
 	"url": "/img/cover/nose.png",
 	"depth": "0.77",
-	"alt": ""
+	"alt": "Nez du personnage de l'animation de présentation"
 }, {
 	"url": "/img/cover/hair.png",
 	"depth": "0.87",
-	"alt": ""
+	"alt": "Cheveux du personnage de l'animation de présentation"
 }]

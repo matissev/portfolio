@@ -33,16 +33,16 @@ function onSectionLeave(index, nextIndex, direction) {
 	fullpageIndex = nextIndex;
 
 	for (i = 0; i <= navLinks.length; i++) {
-		removeClass(navLinks[i], 'active');
+		removeClass(navLinks[i], 'targeted');
 		if (i + 1 === nextIndex) {
-			addClass(navLinks[i], 'active');
+			addClass(navLinks[i], 'targeted');
 		}
 	}
 
-	if ((index !== 1 && index !== 5) && (nextIndex == 1 || nextIndex == 5)) {
+	if ((index !== 1 && index !== 5) && (nextIndex === 1 || nextIndex === 5)) {
 		removeClass(document.body, 'on-majors');
 	}
-
+	
 	if (index === 5 && direction === 'up') {
 		reenableScroll();
 		removeClass(document.body, 'on-minors');
@@ -60,6 +60,13 @@ function onSectionLeave(index, nextIndex, direction) {
 		updateNav.onProjects();
 	}
 
+	//safari 9 dirty translate fix
+	if (index === 2 && direction === 'up') {
+		addClass(document.querySelector('#fullpage'), 'force-translate');
+	} else {
+		removeClass(document.querySelector('#fullpage'), 'force-translate');
+	}
+
 	if (nextIndex === 1) {
 		updateNav.onHome();
 		navOpened = false;
@@ -69,27 +76,27 @@ function onSectionLeave(index, nextIndex, direction) {
 
 	} else if (nextIndex === 2) {
 		updateMajorProjectsRoll.onFirst();
-		addClass(document.querySelector('.major-understudy1'), 'active');
+		addClass(document.querySelector('.major-understudy1'), 'choosed');
 		addClass(document.querySelector('.major-project1'), 'choosed');
-		removeClass(document.querySelector('.major-understudy2'), 'active');
+		removeClass(document.querySelector('.major-understudy2'), 'choosed');
 		removeClass(document.querySelector('.major-project2'), 'choosed');
-		removeClass(document.querySelector('.major-understudy3'), 'active');
+		removeClass(document.querySelector('.major-understudy3'), 'choosed');
 		removeClass(document.querySelector('.major-project3'), 'choosed');
 	} else if (nextIndex === 3) {
 		updateMajorProjectsRoll.onSecond();
-		addClass(document.querySelector('.major-understudy2'), 'active');
+		addClass(document.querySelector('.major-understudy2'), 'choosed');
 		addClass(document.querySelector('.major-project2'), 'choosed');
-		removeClass(document.querySelector('.major-understudy1'), 'active');
+		removeClass(document.querySelector('.major-understudy1'), 'choosed');
 		removeClass(document.querySelector('.major-project1'), 'choosed');
-		removeClass(document.querySelector('.major-understudy3'), 'active');
+		removeClass(document.querySelector('.major-understudy3'), 'choosed');
 		removeClass(document.querySelector('.major-project3'), 'choosed');
 	} else if (nextIndex === 4) {
 		updateMajorProjectsRoll.onThird();
-		addClass(document.querySelector('.major-understudy3'), 'active');
+		addClass(document.querySelector('.major-understudy3'), 'choosed');
 		addClass(document.querySelector('.major-project3'), 'choosed');
-		removeClass(document.querySelector('.major-understudy1'), 'active');
+		removeClass(document.querySelector('.major-understudy1'), 'choosed');
 		removeClass(document.querySelector('.major-project1'), 'choosed');
-		removeClass(document.querySelector('.major-understudy2'), 'active');
+		removeClass(document.querySelector('.major-understudy2'), 'choosed');
 		removeClass(document.querySelector('.major-project2'), 'choosed');
 	} else if (nextIndex === 5) {
 		addClass(nav, 'change-color');

@@ -1,4 +1,4 @@
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function(event) {
 	/* --------------------- NAV TOGGLE */
 
 	navOpened = false;
@@ -70,8 +70,27 @@ $(document).ready(function() {
 	}
 
 
-	var closeArticleButton = document.querySelectorAll('.close-article-button');
+	/* --------------------- CLOSE NAV TOGGLE */
 
+	function closeNav(i) {
+		navLinks[i].addEventListener('click', function() {
+			if (fullpageIndex !== 1 && hasClass(navLinks[i], 'targeted')) {
+				updateNav.close(300);
+				updateMajorProjectsRoll.show(300);
+				navOpened = false;
+			}
+		}, false);
+	}
+
+	for (i = 0; i < navLinks.length; i++) {
+		closeNav(i);
+	}
+}, false);
+
+
+/* --------------------- CLOSE ARTICLE TOGGLE */
+
+function attachArticleCloseEvent(closeArticleButton) {
 	function closeArticleToggle(i) {
 		closeArticleButton[i].addEventListener('click', function() {
 			updateMajorProjectsArticle.close();
@@ -81,21 +100,4 @@ $(document).ready(function() {
 	for (i = 0; i < closeArticleButton.length; i++) {
 		closeArticleToggle(i);
 	}
-
-
-	/* --------------------- CLOSE NAV TOGGLE */
-
-	function closeNav(i) {
-		navLinks[i].addEventListener('click', function() {
-			if (fullpageIndex !== 1) {
-				updateNav.close(300);
-				updateMajorProjectsRoll.show(300);
-				navOpened = false;
-			}
-		}, false);
-	}
-
-	for (i = 0; i < closeArticleButton.length; i++) {
-		closeNav(i);
-	}
-});
+}

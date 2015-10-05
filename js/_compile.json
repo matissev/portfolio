@@ -26,7 +26,8 @@
 		"js/mail.js",
 
 		"js/toggles.js",
-		"js/ajax.js"
+		"js/ajax.js",
+		"js/analytics.js"
 	]
 }, {
 	"name": "picture-polyfill.js",
@@ -38,7 +39,8 @@
 	"name": "article.js",
 	"src": [
 		"js/utilities.js",
-		"js/article.js"
+		"js/article.js",
+		"js/analytics.js"
 	]
 }, {
 	"name": "loader.js",

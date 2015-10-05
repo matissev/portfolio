@@ -20,12 +20,12 @@ doctype html
 html(lang=lang)
 	head
 		include partials/head
-	body
+	body(itemscope itemtype="http://schema.org/WebPage")
 		include partials/loader
-		include partials/nav
 
 		#fullpage
 			include partials/home
+			include partials/nav
 			include partials/majors
 			include partials/minors
 			include partials/about
@@ -33,7 +33,10 @@ html(lang=lang)
 		.majors-understudy(aria-hidden="true")
 
 		include partials/photoswipe
-		include partials/scripts
 
 		include helpers/media-queries
 		include helpers/grid
+
+		- var stylesheetsInBodyTag = true;
+		include partials/styles
+		include partials/scripts

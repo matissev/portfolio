@@ -21,10 +21,11 @@ var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify'),
 
-	jsonTree = require("gulp-json-tree"),
+	jsonTree = require('gulp-json-tree'),
 	replace = require('gulp-replace'),
 
 	sitemap = require('gulp-sitemap'),
+	gzip = require('gulp-gzip'),
 
 	imagemin = require('gulp-imagemin'),
 	spritesheet = require('gulp-svg-sprite'),
@@ -41,8 +42,8 @@ gulp.task('server', function() {
 		server: {
 			baseDir: 'build'
 		},
-		host: "0.0.0.0",
-		port: "8000",
+		host: '0.0.0.0',
+		port: '8000',
 		notify: false
 	});
 });
@@ -76,7 +77,7 @@ gulp.task('validator', ['json'], function() {
 			pretty: true,
 			data: JSON.parse(fs.readFileSync('data/data.json', { encoding: 'utf8' }))
 		}))
-		.pipe(htmlvalidator())
+		// .pipe(htmlvalidator())
 		.pipe(gulp.dest('build'));
 });
 
@@ -84,7 +85,7 @@ gulp.task('validator', ['json'], function() {
 /* ____________________________________________________________________________________ WATCH */
 
 gulp.task('jade', function() {
-	return gulp.src(['static/**/*.jade'])
+	return gulp.src('static/**/*.jade')
 		.pipe(plumber({errorHandler: onError}))
 		.pipe(jade({
 			basedir: './',
@@ -92,6 +93,23 @@ gulp.task('jade', function() {
 		}))
 		.pipe(gulp.dest('build'))
 		.pipe(reload({stream:true}));
+});
+
+gulp.task('json', function(){
+	return gulp.src(['data/**/*.json', '!data/data.json'])
+		.pipe(plumber({errorHandler: onError}))
+		.pipe(jsonTree({
+			filename: 'data.json'
+		}))
+		.pipe(replace('.json', ''))
+		.pipe(gulp.dest('data'));
+});
+
+gulp.task('data', function(callback) {
+	sequence(
+		'json',
+		'jade',
+	callback);
 });
 
 gulp.task('less', function(){
@@ -124,23 +142,13 @@ gulp.task('php', function(){
 		.pipe(gulp.dest('build'));
 });
 
-gulp.task('json', function(){
-	return gulp.src(['data/**/*.json', '!data/data.json'])
-		.pipe(plumber({errorHandler: onError}))
-		.pipe(jsonTree({
-			filename: 'data.json'
-		}))
-		.pipe(replace('.json', ''))
-		.pipe(gulp.dest('data'));
-});
-
 gulp.task('medias', function(){
 	return gulp.src(['medias/**/*'])
 		.pipe(gulp.dest('build/medias'));
 });
 
 gulp.task('fonts', function(){
-	return gulp.src(['fonts/**/*'])
+	return gulp.src('fonts/**/*')
 		.pipe(gulp.dest('build/fonts'));
 });
 
@@ -153,27 +161,27 @@ gulp.task('spritesheet', function() {
 	return gulp.src('img/sprite/**/*.svg', {cwd: '.'})
 		.pipe(plumber())
 		.pipe(spritesheet({
-			"svg": {
-				"xmlDeclaration": false,
-				"doctypeDeclaration": false,
-				"namespaceIDs": false,
-				"dimensionAttributes": false
+			'svg': {
+				'xmlDeclaration': false,
+				'doctypeDeclaration': false,
+				'namespaceIDs': false,
+				'dimensionAttributes': false
 			},
-			"shape": {
-				"id": {
-					"whitespace": '_'
+			'shape': {
+				'id': {
+					'whitespace': '_'
 				}
 			},
-			"mode": {
-				"css": {
-					"dest": "build/css",
-					"prefix": ".icon-%s",
-					"dimensions": true,
-					"sprite": "../img/sprite.svg",
-					"bust": false,
-					"render": {
-						"less": {
-							"dest": "../../less/utilities/sprite"
+			'mode': {
+				'css': {
+					'dest': 'build/css',
+					'prefix': '.icon-%s',
+					'dimensions': true,
+					'sprite': '../img/sprite.svg',
+					'bust': false,
+					'render': {
+						'less': {
+							'dest': '../../less/utilities/sprite'
 						}
 					}
 				}
@@ -204,7 +212,7 @@ gulp.task('default', ['make'], function() {
 	gulp.watch(['static/**/*.jade', 'templates/**/*.jade', 'data/data.json'], ['jade']);
 	gulp.watch('less/**/*.less', ['less']);
 	gulp.watch(['js/**/*.js', 'js/_compile.json'], ['js']);
-	gulp.watch(['data/**/*.json', '!data/data.json'], ['json']);
+	gulp.watch(['data/**/*.json', '!data/data.json'], ['data']);
 	gulp.watch(['server/**/*.*', 'server/**/.*'], ['php']);
 });
 
@@ -220,10 +228,11 @@ gulp.task('less-dist', ['spritesheet'], function(){
 			keepSpecialComments: 0,
 			roundingPrecision: -1
 		}))
+		.pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
 		.pipe(gulp.dest('build/css'));
 });
 
-gulp.task('jade-dist', function() {
+gulp.task('jade-dist', ['json'], function() {
 	return gulp.src('static/**/*.jade')
 		.pipe(jade({
 			basedir: './',
@@ -244,6 +253,7 @@ gulp.task('jade-dist', function() {
 			minifyCSS: true,
 			collapseWhitespace: true
 		}))
+		.pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
 		.pipe(gulp.dest('build'));
 });
 
@@ -254,16 +264,26 @@ gulp.task('js-dist', function() {
 		return gulp.src(obj.src)
 			.pipe(concat(obj.name))
 			.pipe(uglify())
+			.pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
 			.pipe(gulp.dest('build/js'));
     });
 });
 
 gulp.task('sitemap', function(){
-    gulp.src('build/**/*.html')
+    gulp.src('build/**/*.html.gz')
         .pipe(sitemap({
             siteUrl: siteInfos.homepage
         }))
+        .pipe(replace('.html.gz', '.html'))
+        .pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
         .pipe(gulp.dest('./build'));
+});
+
+gulp.task('fonts-dist', function(){
+	return gulp.src(['fonts/**/*'])
+		.pipe(gulpif('*.svg', gzip({ gzipOptions: { level: 9, memLevel: 1} })))
+		.pipe(gulpif('*.ttf', gzip({ gzipOptions: { level: 9, memLevel: 1} })))
+		.pipe(gulp.dest('build/fonts'));
 });
 
 gulp.task('images-dist', function(){
@@ -278,6 +298,7 @@ gulp.task('images-dist', function(){
 				{ removeEmptyAttrs: true }
 			]
 		}))
+		.pipe(gulpif('*.svg', gzip({ gzipOptions: { level: 9, memLevel: 1} })))
 		.pipe(gulp.dest('build/img'));
 });
 
@@ -296,12 +317,28 @@ gulp.task('done', function() {
 		}));
 });
 
+gulp.task('gzip-spritesheet', function(callback) {
+	gulp.src('build/img/sprite.svg')
+		.pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
+		.pipe(gulp.dest('build/img'));
+	return del(['build/img/sprite.svg'], callback);
+});
+
 gulp.task('dist', function(callback) {
 	sequence(
 		'clean',
 		'json',
-		['less-dist', 'jade-dist', 'js-dist', 'optimize-images', 'fonts', 'medias', 'php'],
-		'sitemap',
+		['less-dist', 'jade-dist', 'js-dist', 'optimize-images', 'fonts-dist', 'medias', 'php'],
+		['sitemap', 'gzip-spritesheet'],
+		'done',
+	callback);
+});
+
+gulp.task('code', function(callback) {
+	sequence(
+		'clean',
+		['less-dist', 'jade-dist', 'js-dist', 'php'],
+		['sitemap', 'gzip-spritesheet'],
 		'done',
 	callback);
 });

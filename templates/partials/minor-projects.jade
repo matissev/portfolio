@@ -1,16 +1,16 @@
 each minorProject in minorProjects
-	article.minor-project
+	article.minor-project(itemscope itemtype="http://schema.org/CreativeWork")
 		each media in minorProject.content
 			case media.type
 				when 'gallery'
-					.article-media.gallery(itemscope='' itemtype='http://schema.org/ImageGallery')
+					.article-media.gallery(itemscope itemtype='http://schema.org/ImageGallery')
 						- var i = 0;
 						each image in media.images
 							- i++;
-							figure(itemprop='associatedMedia' itemscope='' itemtype='http://schema.org/ImageObject')
+							figure(itemprop='associatedMedia' itemscope itemtype='http://schema.org/ImageObject')
 								a(href=image.url data-size=image.size itemprop='contentUrl')
 									if i === 1
-										img.thumbnail(src=media.thumbnail.url alt=media.thumbnail.alt)
+										img.thumbnail(src=media.thumbnail.url itemprop="thumbnail" alt=media.thumbnail.alt)
 										.gallery-toggle
 											.icon-gallery
 											.photos-indicator #[span.number-of-photos !{media.images.length}]
@@ -23,18 +23,18 @@ each minorProject in minorProjects
 									figcaption(itemprop='caption description') !{image.caption}
 
 				when 'audio'
-					.article-media.audio-player
-						iframe(src=media.url+"&auto_play=false&hide_related=true&theme_color=FFFFFF&show_comments=false&show_user=false&show_reposts=false&visual=true&download=false&sharing=false")
+					.article-media.audio-player(itemprop="audio" itemscope itemtype="http://schema.org/AudioObject" class=(media.playlist === "true" ? "playlist" : undefined))
+						iframe(itemprop="embedUrl" src=media.url+"&auto_play=false&hide_related=true&theme_color=FFFFFF&show_comments=false&show_user=false&show_reposts=false&visual=true&download=false&sharing=false")
 
 				when 'video'
-					.article-media.video-player
-						iframe(src=media.url+"?rel=0&amp;showinfo=0" allowfullscreen)
+					.article-media.video-player(itemprop="video" itemscope itemtype="http://schema.org/VideoObject")
+						iframe(itemprop="embedUrl" src=media.url+"?rel=0&amp;showinfo=0" allowfullscreen)
 
 				when 'text'
 					.article-media.text
 						header
-							h3 !{minorProject.title}
+							h3(itemprop="headline name") !{minorProject.title}
 							if minorProject.date
-								time(datetime=minorProject.date) !{minorProject.explicitDate}
+								time(datetime=minorProject.date itemprop="dateCreated") !{minorProject.explicitDate}
 						if media.text
-							p !{media.text}
+							p(itemprop="description text") !{media.text}

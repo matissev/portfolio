@@ -9,19 +9,19 @@
 			"alt": "Miniature de la gallerie du dépliant"
 		},
 		"images": [{
-			"url": "/img/minors/leaflet/leaflet_1.jpg",
+			"url": "/img/minors/leaflet/leaflet-1.jpg",
 			"caption": "Trois déclinaisons par thématique du dépliant.",
 			"size": "2880x1920"
 		}, {
-			"url": "/img/minors/leaflet/leaflet_2.jpg",
+			"url": "/img/minors/leaflet/leaflet-2.jpg",
 			"caption": "Le dépliant après ouverture totale.",
 			"size": "2880x1920"
 		}, {
-			"url": "/img/minors/leaflet/leaflet_3.jpg",
+			"url": "/img/minors/leaflet/leaflet-3.jpg",
 			"caption": "L'information se dévoile progressivement au fur et à mesure du dépliage.",
 			"size": "1024x680"
 		}, {
-			"url": "/img/minors/leaflet/leaflet_4.png",
+			"url": "/img/minors/leaflet/leaflet-4.png",
 			"caption": "Les deux faces du dépliant (A4)",
 			"size": "1024x680"
 		}]

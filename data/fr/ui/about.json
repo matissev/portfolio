@@ -30,24 +30,24 @@
 	"social": {
 		"title": "Suivez-moi",
 		"linkedin": {
-			"url": "#",
+			"url": "https://fr.linkedin.com/in/matissev",
 			"title": "sur LinkedIn"
 		},
 		"github": {
-			"url": "#",
+			"url": "https://github.com/matissev",
 			"title": "sur Github"
 		},
 		"twitter": {
-			"url": "#",
+			"url": "https://twitter.com/matissevrignaud",
 			"title": "sur Twitter"
 		},
 		"soundcloud": {
-			"url": "#",
+			"url": "https://soundcloud.com/sweetsweats",
 			"title": "sur Soundcloud"
 		}
 	},
 	"resume": {
-		"title": "Téléchargez mon <abbr title=\"Curriculum vitæ\">CV</abbr>",
-		"link": "#"
+		"title": "Téléchargez mon <abbr itemprop=\"name\" title=\"Curriculum vitæ\">CV</abbr>",
+		"link": "medias/matisse-vrignaud-cv.pdf"
 	}
 }

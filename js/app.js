@@ -1,10 +1,10 @@
 /* --------------------- FULLPAGE INITIALIZE */
 
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function(event) {
 	slideTransitionDuration = 600;
 
 	mobileDevice = isMobile.any;
-	var fixedElements = null;
+	var fixedElements = '.nav';
 
 
 	if (mobileDevice) {
@@ -12,7 +12,7 @@ $(document).ready(function() {
 		removeClass(aboutPage, 'hidden');
 
 	} else {
-		fixedElements = '.about';
+		fixedElements += ', .about';
 		var majorsUnderstudy = document.querySelector('.majors-understudy');
 		var understudyElements = null;
 		var understudyContainer = null;
@@ -49,4 +49,4 @@ $(document).ready(function() {
 			onSectionLeave(index, nextIndex, direction);
 		}
 	});
-});
+}, false);

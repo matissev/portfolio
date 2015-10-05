@@ -1,6 +1,8 @@
 {
 	"title": "Vino",
+	"lowercase": "vino",
 	"subtitle": "Vineyard activity watcher",
+	"description": "Vino is a connected object designed to improve the condition of the vineyard during its evolution by preventing diseases, hydric stress, weather...etc",
 	"tags": [
 		"connected object",
 		"service"
@@ -12,7 +14,6 @@
 		"url": "/img/majors/vino/cover.jpg",
 		"alt": "Cover picture of Vino"
 	},
-	"url": "vino.html",
 
 
 
@@ -20,19 +21,23 @@
 		"name": "Collaborators",
 		"items": [{
 			"name": "Pierre-Emmanuel Moëc",
-			"url": "http://pierre-emmanuelm.com"
+			"url": "http://pierre-emmanuelm.com",
+			"microdata": "contributor"
 		}, {
 			"name": "Manon Lequillec",
-			"url": "http://www.manonlequillec.com"
+			"url": "http://www.manonlequillec.com",
+			"microdata": "contributor"
 		}]
 	}, {
 		"name": "Medias",
 		"items": [{
-			"name": "Report",
-			"url": "#"
+			"name": "Presentation file (French)",
+			"url": "/medias/vino/vino-presentation.pdf",
+			"microdata": "associatedMedia"
 		}, {
 			"name": "Poster",
-			"url": "#"
+			"url": "/medias/vino/vibo-poster.pdf",
+			"microdata": "associatedMedia"
 		}]
 	}, {
 		"name": "Tools used",
@@ -57,7 +62,7 @@
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/vino/object_1.jpg",
+		"url": "/img/majors/vino/object-1.jpg",
 		"caption": "Vino analyse the condition of the plant to prevent the eventual problems. Its refined design perfectly fits in a vineyard.",
 		"alt": "Photo of the connected object and a vine stock"
 	}, {
@@ -85,7 +90,7 @@
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/vino/object_3.jpg",
+		"url": "/img/majors/vino/object-3.jpg",
 		"caption": "The probe records informations concerning the soil such as its conductivity (salinity, amount of minerals), its humidity level, its pH (prevents from the necrosis)...etc.",
 		"alt": "Photo of the soil sensor right next to the trunk"
 	}, {
@@ -100,7 +105,7 @@
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/vino/object_2.jpg",
+		"url": "/img/majors/vino/object-2.jpg",
 		"alt": "Close-up photo of the product"
 	}, {
 		"type": "text",
@@ -124,7 +129,7 @@
 			"paragraphs": [
 				"In a second step, we though about making the device stand-alone and allow it to manage the water flow, to turn on the antifreeze system or again to deploy a treatment against a disease.",
 				"Finally, the stored data of every vineyard could be linked to grant help, so that spreads of diseases do not happen between two estates and that the various cultivation techniques can be shared between winegrowers. In this way, it a all supportive community that could be set up. This data could also be used by weather analysis companies in order to sharpen their results.",
-				"For more information, you can check the <a href=\"/media/majors/vino/synthese.pdf\" target=\"_blank\">report</a> of the project."
+				"For more information, you can check the <a href=\"/medias/majors/vino/presentation.pdf\" target=\"_blank\">presentation file</a> of the project."
 			]
 		}]
 	}]

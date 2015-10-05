@@ -1,6 +1,8 @@
 {
 	"title": "Feed Me Crystals",
+	"lowercase": "feed-me-crystals",
 	"subtitle": "Multiplayer arena game",
+	"description": "Feed Me Crystals is a multiplayer game with a strong universe combining sound and graphic design. Go get as much gems as you can before the time runs out!",
 	"tags": [
 		"sound",
 		"3D game",
@@ -13,7 +15,6 @@
 		"url": "/img/majors/feed-me-crystals/cover.jpg",
 		"alt": "Cover picture of Feed Me Crystals"
 	},
-	"url": "feed-me-crystals.html",
 
 
 
@@ -21,13 +22,15 @@
 		"name": "Collaborators",
 		"items": [{
 			"name": "Pierre-Emmanuel Moëc",
-			"url": "http://pierre-emmanuelm.com"
+			"url": "http://pierre-emmanuelm.com",
+			"microdata": "contributor"
 		}]
 	}, {
 		"name": "Medias",
 		"items": [{
-			"name": "Report",
-			"url": "medias/feed-me-crystals/presentation.pdf"
+			"name": "Presentation file (French)",
+			"url": "medias/feed-me-crystals/feed-me-crystals-presentation.pdf",
+			"microdata": "associatedMedia"
 		}]
 	}, {
 		"name": "Tools used",
@@ -57,7 +60,7 @@
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/feed-me-crystals/map_rough.jpg",
+		"url": "/img/majors/feed-me-crystals/map-rough.jpg",
 		"caption": "Feed Me Crystals includes a world close to the steampunk aesthetic, made of stones and crystals, full of mineral extraction machines.",
 		"alt": "Preliminary drawings of the decor"
 	}, {
@@ -83,13 +86,13 @@
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/feed-me-crystals/la_foreuse_rough.jpg",
+		"url": "/img/majors/feed-me-crystals/la-foreuse-rough.jpg",
 		"caption": "The preliminary drawings have been very important in the characters' personnality enlightenment. La Foreuse has been inspired by various <abbr title=\"Role-Playing Game\">RPG</abbr> games.",
 		"alt": "Preliminary drawings of the character La Foreuse"
 	}, {
 		"type": "image",
 		"size": "large",
-		"url": "/img/majors/feed-me-crystals/la_foreuse.jpg",
+		"url": "/img/majors/feed-me-crystals/la-foreuse.jpg",
 		"alt": "3D render of the character La Foreuse"
 	}, {
 		"type": "text",
@@ -103,7 +106,7 @@
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/feed-me-crystals/glork_rough.jpg",
+		"url": "/img/majors/feed-me-crystals/glork-rough.jpg",
 		"caption": "We inspired ourselves with crystals from specific caves to draw Glork.",
 		"alt": "Preliminary drawings of the character Glork"
 	}, {
@@ -123,7 +126,7 @@
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/feed-me-crystals/rat_rough.jpg",
+		"url": "/img/majors/feed-me-crystals/rat-rough.jpg",
 		"caption": "The rats have a slightly military green and orange gear. Their red eyes and their dirty fur makes them good enemies.",
 		"alt": "Preliminary drawings of the rats"
 	}, {

@@ -1,0 +1,17 @@
+if stylesheetsInBodyTag
+	<!--[if !IE]> -->
+else
+	<!--[if IE]>
+
+
+if template === 'layout'
+	link(rel="stylesheet" property='stylesheet' type="text/css" href="/css/loader.css")
+	link(rel="stylesheet" property='stylesheet' type="text/css" href="/css/style.css")
+if template === 'article'
+	link(rel="stylesheet" property='stylesheet' type="text/css" href="/css/article.css")
+
+
+if stylesheetsInBodyTag
+	<!-- <![endif]-->
+else
+	<![endif]-->

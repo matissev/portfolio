@@ -1,16 +1,49 @@
-title !{main.name} | !{main.activity}
 meta(charset="utf-8")
+meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')
+meta(name="robots" content="NOODP")
+
+- var stylesheetsInBodyTag = false;
 
 if template === 'layout'
-	link(rel="stylesheet" type="text/css" href="/css/loader.css")
-	link(rel="stylesheet" type="text/css" href="/css/style.css")
+	title !{main.name} | !{main.activity}
+	meta(name="description" content=main.description)
+
 	script(type="text/javascript" src="/js/script.js" defer)
-	script(type="text/javascript" src="/js/picture-polyfill.js" defer)
+	script(type="text/javascript" src="/js/loader.js" defer)
+	//- script(type="text/javascript" src="/js/picture-polyfill.js" defer)
+
+	include styles
+	
+	each language in languages
+		if language.abbr === languages.selected
+			meta(property="og:title" content=main.name + " | " + main.activity)
+			meta(property="og:description" content=main.description)
+			meta(property="og:type" content="website")
+			meta(property="og:url" content=main.domainName+language.url)
+			meta(property="og:image" content=main.domainName+main.coverImageUrl)
+
+		else if language.abbr !== languages.selected
+			link(rel="alternate" hreflang=language.abbr href=language.url)
 
 if template === 'article'
-	link(rel="stylesheet" type="text/css" href="/css/article.css")
+	title !{main.name} | !{storedProject.title}, !{storedProject.subtitle.toLowerCase()}
+	meta(name="description" content=storedProject.description)
+
 	script(type="text/javascript" src="/js/article.js" defer)
 
-link(rel="icon" href="img/favicon.ico")
-meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')
-meta(name="description" content=main.description)
+	include styles
+
+	each language in languages
+		if language.abbr === languages.selected
+			meta(property="og:title" content=storedProject.title + ", " + storedProject.subtitle.toLowerCase())
+			meta(property="og:description" content=storedProject.description)
+			meta(property="og:type" content="article")
+			meta(property="og:url" content=main.domainName+language.url+storedProject.lowercase+".html")
+			meta(property="og:image" content=main.domainName+storedProject.coverImage.url)
+
+		else if language.abbr !== languages.selected
+			link(rel="alternate" hreflang=language.abbr href=language.url+storedProject.lowercase+".html")
+
+link(rel="icon" type="image/png" href=main.domainName+"/img/favicon-16x16.png" sizes="16x16")
+link(rel="icon" type="image/png" href=main.domainName+"/img/favicon-32x32.png" sizes="32x32")
+link(rel="shortcut icon" href=main.domainName+"/img/favicon.ico" type="image/x-icon")

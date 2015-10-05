@@ -7,19 +7,19 @@
 			"alt": "Miniature de la gallerie des dessins"
 		},
 		"images": [{
-			"url": "/img/minors/drawings/drawings_1.jpg",
+			"url": "/img/minors/drawings/drawings-1.jpg",
 			"caption": "Travail de peinture sur les contrastes de couleurs",
 			"size": "2880x1920"
 		}, {
-			"url": "/img/minors/drawings/drawings_2.jpg",
+			"url": "/img/minors/drawings/drawings-2.jpg",
 			"caption": "Dessin (rough) d'un modèle de perceuse",
 			"size": "2880x1920"
 		}, {
-			"url": "/img/minors/drawings/drawings_3.jpg",
+			"url": "/img/minors/drawings/drawings-3.jpg",
 			"caption": "Croquis à l'encre de Chine",
 			"size": "1024x680"
 		}, {
-			"url": "/img/minors/drawings/drawings_4.jpg",
+			"url": "/img/minors/drawings/drawings-4.jpg",
 			"caption": "Travail sur le reflet avec deux verres et une carafe.",
 			"size": "1024x680"
 		}]

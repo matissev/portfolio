@@ -1,6 +1,8 @@
 {
 	"title": "Broadcaster",
+	"lowercase": "broadcaster",
 	"subtitle": "Interest areas feeder",
+	"description": "Broadcaster is an interest sharing service allowing you to discover artists, movies or events which your friends have recommended for you.",
 	"tags": [
 		"sound",
 		"service",
@@ -13,18 +15,15 @@
 		"url": "/img/majors/broadcaster/cover.jpg",
 		"alt": "Cover picture of Broadcaster"
 	},
-	"url": "broadcaster.html",
 
 
 
 	"relatedContent": [{
 		"name": "Medias",
 		"items": [{
-			"name": "Report",
-			"url": "medias/broadcaster/support.pdf"
-		}, {
-			"name": "Graphic identity",
-			"url": "#"
+			"name": "Presentation file (French)",
+			"url": "medias/broadcaster/broadcaster-presentation.pdf",
+			"microdata": "associatedMedia"
 		}]
 	}, {
 		"name": "Tools used",

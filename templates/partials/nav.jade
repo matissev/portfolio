@@ -1,6 +1,6 @@
 - var projectIndex = 0;
 
-nav.nav.on-home
+nav.nav(itemprop="breadcrumb")
 	if template === 'layout'
 		svg.nav-toggle-button(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21 9" xml:space="preserve")
 			polygon.stroke(points="20,1 10.5,8 1,1" stroke-width="2px")
@@ -8,6 +8,7 @@ nav.nav.on-home
 
 	if template === 'article'
 		a(href="index.html")
+			p.hidden !{ui.article.footer.backToSiteText}&nbsp;
 			svg.nav-toggle-button(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21 9" xml:space="preserve")
 				polygon.stroke(points="20,1 10.5,8 1,1" stroke-width="2px")
 				polygon.triangle(points="20,1 10.5,8 1,1")
@@ -15,16 +16,16 @@ nav.nav.on-home
 
 	if template === 'layout'
 		.nav-links
-			a.link.home-link.active(href="#home") !{nav.home}
+			a.link.home-link.targeted(href="#home") !{nav.home}&nbsp;
 
 			each project in projects.majors
 				- projectIndex++;
-				a.link(href="#project"+projectIndex) !{project.title}
+				a.link(href="#project"+projectIndex) !{project.title}&nbsp;
 
-			a.link.other-link(href="#other") !{nav.others}
+			a.link.other-link(href="#other") !{nav.others}&nbsp;
 			
 			span.about-nav-block
-				a.link.about-open-button(href="#about") !{nav.about}
+				a.link.about-open-button(href="#about") !{nav.about}&nbsp;
 
 //- .page-switches
 //- 	button.up-button 

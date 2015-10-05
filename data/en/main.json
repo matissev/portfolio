@@ -1,5 +1,7 @@
 {
+	"domainName": "http://matissev.com",
 	"name": "Matisse Vrignaud",
-	"activity": "sound and interaction",
-	"description": "Hola"
+	"activity": "sound & interaction",
+	"description": "Freelance interaction designer based in Nantes (France) and making websites, connected objects, sound design and visual identities.",
+	"coverImageUrl": "/img/cover.jpg"
 }

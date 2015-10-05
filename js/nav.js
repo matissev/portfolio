@@ -1,6 +1,10 @@
 /* Put nav links margin in cache */
-navLinksMarginBottom = $.Velocity.hook($('.nav-links .link'), 'marginBottom');
-navAboutPaddingTop = $.Velocity.hook($('.nav-links .about-nav-block'), 'paddingTop');
+document.onreadystatechange = function () {
+	if (document.readyState == 'complete') {
+		navLinksMarginBottom = window.getComputedStyle(document.querySelector('.nav-links .link')).getPropertyValue('margin-bottom');
+		navAboutPaddingTop = window.getComputedStyle(document.querySelector('.nav-links .about-nav-block')).getPropertyValue('padding-top');
+	}
+};
 
 updateNav = {
 	open: function(overrideDuration) {

@@ -9,19 +9,19 @@
 			"alt": "Thumbnail of the leaflet image gallery"
 		},
 		"images": [{
-			"url": "/img/minors/leaflet/leaflet_1.jpg",
+			"url": "/img/minors/leaflet/leaflet-1.jpg",
 			"caption": "Three declensions of the leaflet by thematic.",
 			"size": "2880x1920"
 		}, {
-			"url": "/img/minors/leaflet/leaflet_2.jpg",
+			"url": "/img/minors/leaflet/leaflet-2.jpg",
 			"caption": "The leaflet after complete opening.",
 			"size": "2880x1920"
 		}, {
-			"url": "/img/minors/leaflet/leaflet_3.jpg",
+			"url": "/img/minors/leaflet/leaflet-3.jpg",
 			"caption": "The information is revealed little by little as the leaflet opens.",
 			"size": "1024x680"
 		}, {
-			"url": "/img/minors/leaflet/leaflet_4.png",
+			"url": "/img/minors/leaflet/leaflet-4.png",
 			"caption": "The two sides of the leaflet (A4).",
 			"size": "1024x680"
 		}]

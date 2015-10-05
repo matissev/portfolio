@@ -1,6 +1,8 @@
 {
 	"title": "Feed Me Crystals",
+	"lowercase": "feed-me-crystals",
 	"subtitle": "Jeu d’arène multijoueur",
+	"description": "Feed Me Crystals est un jeu multijoueur à l'univers fort mêlant design sonore et graphisme. Récupérez donc le maximum de crystaux avant la fin temps imparti!",
 	"tags": [
 		"son",
 		"jeu 3D",
@@ -13,7 +15,6 @@
 		"url": "/img/majors/feed-me-crystals/cover.jpg",
 		"alt": "Image de présentation de Feed Me Crystals"
 	},
-	"url": "feed-me-crystals.html",
 
 
 
@@ -21,13 +22,15 @@
 		"name": "Collaborateurs",
 		"items": [{
 			"name": "Pierre-Emmanuel Moëc",
-			"url": "http://pierre-emmanuelm.com"
+			"url": "http://pierre-emmanuelm.com",
+			"microdata": "contributor"
 		}]
 	}, {
 		"name": "Médias",
 		"items": [{
 			"name": "Dossier de présentation",
-			"url": "medias/feed-me-crystals/presentation.pdf"
+			"url": "medias/feed-me-crystals/feed-me-crystals-presentation.pdf",
+			"microdata": "associatedMedia"
 		}]
 	}, {
 		"name": "Outils utilisés",
@@ -57,7 +60,7 @@
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/feed-me-crystals/map_rough.jpg",
+		"url": "/img/majors/feed-me-crystals/map-rough.jpg",
 		"caption": "Feed Me Crystals comprend un univers proche du steampunk fait de pierre et de crystaux, rempli de machines d'extraction de minerai.",
 		"alt": "Dessins primaires du décor"
 	}, {
@@ -83,13 +86,13 @@
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/feed-me-crystals/la_foreuse_rough.jpg",
+		"url": "/img/majors/feed-me-crystals/la-foreuse-rough.jpg",
 		"caption": "Les dessins primaires ont été très importants dans le développement de la personnalité des personnages. La Foreuse à été inspiré par plusieurs jeu de <abbr title=\"Role-Playing Game\">RPG</abbr>.",
 		"alt": "Dessins primaires du personnage de La Foreuse"
 	}, {
 		"type": "image",
 		"size": "large",
-		"url": "/img/majors/feed-me-crystals/la_foreuse.jpg",
+		"url": "/img/majors/feed-me-crystals/la-foreuse.jpg",
 		"alt": "Rendu 3D du personnage de La Foreuse"
 	}, {
 		"type": "text",
@@ -103,7 +106,7 @@
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/feed-me-crystals/glork_rough.jpg",
+		"url": "/img/majors/feed-me-crystals/glork-rough.jpg",
 		"caption": "Pour dessiner Glork, nous avons pris exemple sur des cristaux présents dans certaines grottes.",
 		"alt": "Dessins primaires du personnage Glork"
 	}, {
@@ -123,7 +126,7 @@
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/feed-me-crystals/rat_rough.jpg",
+		"url": "/img/majors/feed-me-crystals/rat-rough.jpg",
 		"caption": "Les rats ont un équipements vert et orange, un peu militaire. Leurs yeux rouges et leur pelage crasseux en font de bons ennemis.",
 		"alt": "This is Rat, the ennemy."
 	}, {

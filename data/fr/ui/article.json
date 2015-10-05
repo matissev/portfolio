@@ -5,8 +5,14 @@
 	"footer": {
 		"share": {
 			"header": "Partager",
-			"facebookTitle": "sur Facebook",
-			"twitterTitle": "sur Twitter"
+			"facebook": {
+				"title": "sur Facebook",
+				"url": "https://www.facebook.com/sharer/sharer.php?u=matissev.com/"
+			},
+			"twitter": {
+				"title": "sur Twitter",
+				"url": "https://twitter.com/home?status=matissev.com/"
+			}
 		},
 		"closeArticleText": "Fermer l’article",
 		"backToSiteText": "Retourner sur le site"

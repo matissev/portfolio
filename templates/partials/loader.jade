@@ -1,12 +1,11 @@
 
-.loader
-	p #{loader.loading}
+.loader(aria-hidden="true")
+	p !{loader.loading}
 
-noscript.nojs-message
-	p #{loader.noscript}
+noscript.nojs-message(aria-hidden="true")
+	p !{loader.noscript}
 
 <!--[if lt IE 8 ]>
-<div class="outdated-browser" aria-hidden="true">
-<p>#{loader.outdated}</p>
-</div>
+div(class="outdated" aria-hidden="true")
+	p !{loader.outdated}
 <![endif]-->

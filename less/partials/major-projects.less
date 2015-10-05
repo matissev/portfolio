@@ -161,7 +161,8 @@
 	}
 
 	.audio-wrapper {
-		padding-bottom: 38%;
+		height: 350px;
+		padding-bottom: 0;
 	}
 }
 
@@ -240,10 +241,14 @@
 
 	.share-this a {
 		display: inline-block;
-		margin-right: 12px;
+
+		&:first-of-type {
+			margin-right: 20px;
+		}
 	}
 
-	.close-article-button {
+	.close-article-button, .back-to-site-button {
+		margin-top: 80px;
 		display: inline-block;
 		cursor: pointer;
 		text-decoration: underline;

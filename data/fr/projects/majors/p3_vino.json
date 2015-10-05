@@ -1,6 +1,8 @@
 {
 	"title": "Vino",
+	"lowercase": "vino",
 	"subtitle": "Protecteur de la vigne",
+	"description": "Vino est un objet connecté conçu pour améliorer l'état de la vigne au cours de son évolution en prévenant maladies, stress hydrique, climat...etc",
 	"tags": [
 		"objet connecté",
 		"service"
@@ -12,7 +14,6 @@
 		"url": "/img/majors/vino/cover.jpg",
 		"alt": "Image de présentation de Vino"
 	},
-	"url": "vino.html",
 
 
 
@@ -20,19 +21,23 @@
 		"name": "Collaborateurs",
 		"items": [{
 			"name": "Pierre-Emmanuel Moëc",
-			"url": "http://pierre-emmanuelm.com"
+			"url": "http://pierre-emmanuelm.com",
+			"microdata": "contributor"
 		}, {
 			"name": "Manon Lequillec",
-			"url": "http://www.manonlequillec.com"
+			"url": "http://www.manonlequillec.com",
+			"microdata": "contributor"
 		}]
 	}, {
 		"name": "Médias",
 		"items": [{
 			"name": "Dossier de synthèse",
-			"url": "#"
+			"url": "/medias/vino/vino-presentation.pdf",
+			"microdata": "associatedMedia"
 		}, {
 			"name": "Poster",
-			"url": "#"
+			"url": "/medias/vino/vino-poster.pdf",
+			"microdata": "associatedMedia"
 		}]
 	}, {
 		"name": "Outils utilisés",
@@ -57,7 +62,7 @@
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/vino/object_1.jpg",
+		"url": "/img/majors/vino/object-1.jpg",
 		"caption": "Vino analyse l’état de la plante pour prévoir les éventuels problèmes. Son design épuré s’intègre parfaitement à la vigne.",
 		"alt": "Photo de l’objet connecté et d’un plant de vigne"
 	}, {
@@ -85,7 +90,7 @@
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/vino/object_3.jpg",
+		"url": "/img/majors/vino/object-3.jpg",
 		"caption": "La sonde de Vino permet d’enregistrer des informations concernant le sol comme la conductivité de celui-ci (richesse en minéraux), son taux d’humidité, son pH (prévient de la nécrose)...etc.",
 		"alt": "Photo de la sonde au sol de l’objet planté à la base d’un tronc de vigne"
 	}, {
@@ -100,7 +105,7 @@
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/vino/object_2.jpg",
+		"url": "/img/majors/vino/object-2.jpg",
 		"alt": "Photo de l’objet en gros plan"
 	}, {
 		"type": "text",
@@ -124,7 +129,7 @@
 			"paragraphs": [
 				"Dans un autre temps, nous avons songé à rendre le système autonome en lui permettant de gérer l’ouverture de l’eau, d’enclencher le système de dégel mais aussi déployer un traitement contre une maladie rencontrée.",
 				"Finalement, les données récoltées chez chacun des vignerons pourront être recoupées pour instaurer une entraide entre ceux-ci, afin que la propagation des maladies ne s’effectue pas d’un domaine à l’autre et que les diverses techniques de culture puissent s’échanger entre vigneron. Ainsi, c’est tout un réseau d’entraide qui pourrait être déployé. Ces données peuvent aussi être réutilisées par des entreprises d’études météorologiques pour affiner leurs résultats.",
-				"Pour plus d’information, vous pouvez consulter le <a href=\"/media/majors/vino/synthese.pdf\" target=\"_blank\">dossier de synthèse</a> du projet."
+				"Pour plus d’information, vous pouvez consulter le <a href=\"/medias/majors/vino/presentation.pdf\" target=\"_blank\">dossier de synthèse</a> du projet."
 			]
 		}]
 	}]

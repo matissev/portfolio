@@ -22,15 +22,20 @@ function load(url, callback) {
 	xhr.send('');
 }
 
-// Our simplified "load" function accepts a URL and CALLBACK parameter.
+// Our simplified 'load' function accepts a URL and CALLBACK parameter.
 window.addEventListener('load', function (event) {
 	function injectMajor(url, index) {
 		load(url, function(xhr){
-			var xmlDoc = document.implementation.createHTMLDocument("example");
+			var xmlDoc = document.implementation.createHTMLDocument('ajaxdoc');
 			xmlDoc.documentElement.innerHTML = xhr.responseText;
 			
 			var content = xmlDoc.documentElement.querySelector('.major-content');
-			majorProjects[index].insertBefore(content, majorProjects[index].querySelector('footer'));
+			majorProjects[index].appendChild(content);
+
+			if (index === 2) {
+				closeArticleButton = document.querySelectorAll('.close-article-button');
+				attachArticleCloseEvent(closeArticleButton);
+			}
 		});
 	}
 	

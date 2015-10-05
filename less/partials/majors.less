@@ -78,13 +78,13 @@
 	visibility: hidden;
 }
 
-.major-understudy.active {
+.major-understudy.choosed {
 	.project-details, .tags {
 		z-index: 4;
 	}
 }
 
-.on-majors .major-understudy:not(.active) .project-details {
+.on-majors .major-understudy:not(.choosed) .project-details {
 	background: transparent;
 
 	.read-more {
@@ -136,8 +136,6 @@
 			backface-visibility: hidden;
 			font-weight: normal;
 			margin: 0;
-			clear: both;
-			float: left;
 			display: inline-block;
 			width: 100%;
 			font-size: @font-size-xl;
@@ -172,7 +170,7 @@
 	transition: width 0.2s ease-out;
 	transform: translate3d(0,0,0);
 
-	ul.tag-list {
+	dl.tag-list {
 		& {
 			.calculate-width(3, 2, 7, 6);
 			width: @width;
@@ -190,7 +188,8 @@
 		list-style: none;
 		padding: 0;
 
-		li {
+		dd {
+			margin-left: 0;
 			display: inline;
 
 			strong {
