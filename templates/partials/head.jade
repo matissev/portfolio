@@ -8,22 +8,43 @@ if template === 'layout'
 	title !{main.name} | !{main.activity}
 	meta(name="description" content=main.description)
 
+	script(type="text/javascript" src="/js/loader.js" async)
 	script(type="text/javascript" src="/js/script.js" defer)
-	script(type="text/javascript" src="/js/loader.js" defer)
 	//- script(type="text/javascript" src="/js/picture-polyfill.js" defer)
 
 	include styles
+
+	style
+		| .loader, .nojs-message, .outdated {
+		| 	position: fixed;
+		| 	width: 100%;
+		| 	height: 100%;
+		| 	top: 0;
+		| 	left: 0;
+		| 	z-index: 6;
+		| 	background: white;
+		| }
+		| 
+		| .loader p, .nojs-message p, .outdated p {
+		| 	position: absolute;
+		| 	display: inline-block;
+		| 	width: 100%;
+		| 	top: 50%;
+		| 	margin: 0;
+		| 	margin-top: -20px;
+		| 	text-align: center;
+		| }
 	
 	each language in languages
-		if language.abbr === languages.selected
+		if language.abbr === selectedLanguage.abbr
 			meta(property="og:title" content=main.name + " | " + main.activity)
 			meta(property="og:description" content=main.description)
 			meta(property="og:type" content="website")
-			meta(property="og:url" content=main.domainName+language.url)
+			meta(property="og:url" content=main.domainName+language.url+".html")
 			meta(property="og:image" content=main.domainName+main.coverImageUrl)
 
-		else if language.abbr !== languages.selected
-			link(rel="alternate" hreflang=language.abbr href=language.url)
+		else if language.abbr !== selectedLanguage.abbr
+			link(rel="alternate" hreflang=language.abbr href=main.domainName+language.url+".html")
 
 if template === 'article'
 	title !{main.name} | !{storedProject.title}, !{storedProject.subtitle.toLowerCase()}
@@ -34,15 +55,15 @@ if template === 'article'
 	include styles
 
 	each language in languages
-		if language.abbr === languages.selected
+		if language.abbr === selectedLanguage.abbr
 			meta(property="og:title" content=storedProject.title + ", " + storedProject.subtitle.toLowerCase())
 			meta(property="og:description" content=storedProject.description)
 			meta(property="og:type" content="article")
 			meta(property="og:url" content=main.domainName+language.url+storedProject.lowercase+".html")
 			meta(property="og:image" content=main.domainName+storedProject.coverImage.url)
 
-		else if language.abbr !== languages.selected
-			link(rel="alternate" hreflang=language.abbr href=language.url+storedProject.lowercase+".html")
+		else if language.abbr !== selectedLanguage.abbr
+			link(rel="alternate" hreflang=language.abbr href=main.domainName+language.url+storedProject.lowercase+".html")
 
 link(rel="icon" type="image/png" href=main.domainName+"/img/favicon-16x16.png" sizes="16x16")
 link(rel="icon" type="image/png" href=main.domainName+"/img/favicon-32x32.png" sizes="32x32")

@@ -17,7 +17,7 @@ It uses gulp to build up the output folder
 
 ### Todo
 
-- Firefox .major-understudy hide
+- home animation svg images
 
 - mail icon .about responsive desktop + anchor jump on mobile
 - Delete jquery
@@ -33,6 +33,8 @@ It uses gulp to build up the output folder
 
 ### Done
 
+- ~~clear margin in major projects on the right of relatedContent~~
+- ~~Firefox .major-understudy hide~~
 - ~~Iframes height and soundcloud playlists~~
 - ~~"Upgrade your browser" message~~
 - ~~"Enable javascript" message~~
@@ -52,8 +54,3 @@ It uses gulp to build up the output folder
 - ~~Cover image scale 1.000001 on height transition (or 0.999999)~~
 - ~~Project-details height transition bug on nav scroll~~
 - ~~Tags space after dash~~
-
-
-For the fluid article Roll :
-- Add begin and complete functions on changeHeight to put back the height to auto.
-- Add a velocity function with begin and complete functions on .read-more to put it in position:absolute and then back in the flow (after the animation).

@@ -1,5 +1,5 @@
 {
-	"title": "Stop Motion",
+	"title": "Stop-Motion",
 	"date": "2014-01",
 	"explicitDate": "Janvier 2014",
 	"content": [{
@@ -7,12 +7,12 @@
 		"url": "https://www.youtube.com/embed/RlBtqiq_5EE"
 	}, {
 		"type": "text",
-		"text": "Nous avions une semaine pour réaliser un court stop motion par groupe de quatre sur le sujet de notre choix et ainsi construire le décor pour ensuite produire les images. Les photos ont été prises à l’aide du logiciel Dragon Frame et le montage avec Final Cut Pro. Pour ce qui est de la feuille de papier qui s’envole, nous avons utilisé des morceaux de fil de fer afin de la maintenir au dessus du décor. Ces fils de fer ont ensuite été effacés en post-production à l’aide de Photoshop."
+		"text": "Nous avions une semaine pour réaliser un court stop-motion par groupe de quatre sur le sujet de notre choix et ainsi construire le décor pour ensuite produire les images. Les photos ont été prises à l’aide du logiciel Dragon Frame et le montage avec Final Cut Pro. Pour ce qui est de la feuille de papier qui s’envole, nous avons utilisé des morceaux de fil de fer afin de la maintenir au dessus du décor. Ces fils de fer ont ensuite été effacés en post-production à l’aide de Photoshop."
 	}, {
 		"type": "gallery",
 		"thumbnail": {
 			"url": "/img/minors/stop-motion/thumbnail.jpg",
-			"alt": "Miniature de la gallerie du stop motion"
+			"alt": "Miniature de la galerie du stop motion"
 		},
 		"images": [{
 			"url": "/img/minors/stop-motion/stop-motion-1.jpg",

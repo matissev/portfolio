@@ -17,13 +17,13 @@
 
 - var template = 'article';
 
-- var lang = null;
+- var selectedLanguage = null;
 each language in languages
 	if language.abbr === languages.selected
-		- lang = language.abbr;
+		- selectedLanguage = language;
 
 doctype html
-html(lang=lang)
+html(lang=selectedLanguage.abbr)
 	head
 		include partials/head
 	body(itemscope itemtype="http://schema.org/WebPage")

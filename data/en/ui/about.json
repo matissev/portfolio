@@ -16,15 +16,15 @@
 		},
 		"message": {
 			"label": "Message",
-			"placeholder": "Leave your message here..."	
+			"placeholder": "Leave your message here…"	
 		},
 		"buttonText": "Send",
 		"resultMessages": {
 			"success": "Your message has been sent, thank you.",
-			"failure": "Error : Your message could not be sent, please try again later.",
-			"invalidEmail": "Error : Please enter a valid email address.",
-			"invalidCaracters": "Error : Email contains invalid characters.",
-			"missingFields": "Error : Every field is required"
+			"failure": "Error&#8239;: Your message could not be sent, please try again later.",
+			"invalidEmail": "Error&#8239;: Please enter a valid email address.",
+			"invalidCaracters": "Error&#8239;: Your email contains invalid characters.",
+			"missingFields": "Error&#8239;: All fields are required."
 		}
 	},
 	"social": {
@@ -47,7 +47,7 @@
 		}
 	},
 	"resume": {
-		"title": "Download my <span itemprop=\"name\">resume</span>",
-		"link": "medias/matisse-vrignaud-resume.pdf"
+		"title": "Download my <span itemprop=\"name\">résumé</span>",
+		"link": "/medias/matisse-vrignaud-resume.pdf"
 	}
 }

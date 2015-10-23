@@ -20,6 +20,37 @@ nav {
 		line-height: 6px;
 		clear: both;
 
+		&.targeted {
+			opacity: 0.5;
+
+			&:before {
+				content: "\25BA";
+				font-size: 8px;
+				position: absolute;
+				left: -12px;
+				top: -1px;
+				margin-right: 5px;
+				opacity: 0;
+				opacity: 1;
+			}
+		}
+
+		&:before {
+			content: "-";
+			font-weight: bold;
+			font-size: 8px;
+			position: absolute;
+			left: -12px;
+			top: -1px;
+			margin-right: 5px;
+			opacity: 0;
+		}
+
+		&:hover:before {
+			opacity: 1;
+			transition: opacity 0.2s ease-in;
+		}
+
 		&:not(:last-child) {
 			margin-bottom: 22px;
 		}
@@ -121,18 +152,5 @@ nav.change-color {
 		&:first-child {
 			margin-bottom: 70px;
 		}
-	}
-}
-
-.link.targeted {
-	opacity: 0.5;
-
-	&:before {
-		content: "\25BA";
-		font-size: 8px;
-		position: absolute;
-		left: -12px;
-		top: -1px;
-		margin-right: 5px;
 	}
 }

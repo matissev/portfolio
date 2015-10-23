@@ -1,41 +1,41 @@
 [{
 	"url": "/img/cover/back.png",
 	"depth": "0.44",
-	"alt": "Back of the animated presentation's character"
+	"alt": "Back of the animated presentation character"
 }, {
 	"url": "/img/cover/neck.png",
 	"depth": "0.51",
-	"alt": "Neck of the animated presentation's character"
+	"alt": "Neck of the animated presentation character"
 }, {
 	"url": "/img/cover/tee.png",
 	"depth": "0.44",
-	"alt": "T-shirt of the animated presentation's character"
+	"alt": "T-shirt of the animated presentation character"
 }, {
 	"url": "/img/cover/face.png",
 	"depth": "0.59",
-	"alt": "Face of the animated presentation's character"
+	"alt": "Face of the animated presentation character"
 }, {
 	"url": "/img/cover/fairing2.png",
 	"depth": "0.66",
-	"alt": "First circuit board of the animated presentation's character"
+	"alt": "First circuit board of the animated presentation character"
 }, {
 	"url": "/img/cover/fairing1.png",
 	"depth": "0.74",
-	"alt": "Second circuit board of the animated presentation's character"
+	"alt": "Second circuit board of the animated presentation character"
 }, {
 	"url": "/img/cover/head.png",
 	"depth": "0.51",
-	"alt": "Head of the animated presentation's character"
+	"alt": "Head of the animated presentation character"
 }, {
 	"url": "/img/cover/jawscrew.png",
 	"depth": "0.74",
-	"alt": "Jaw's screw of the animated presentation's character"
+	"alt": "Jaw screw of the animated presentation character"
 }, {
 	"url": "/img/cover/nose.png",
 	"depth": "0.77",
-	"alt": "Nose of the animated presentation's character"
+	"alt": "Nose of the animated presentation character"
 }, {
 	"url": "/img/cover/hair.png",
 	"depth": "0.87",
-	"alt": "Hair of the animated presentation's character"
+	"alt": "Hair of the animated presentation character"
 }]

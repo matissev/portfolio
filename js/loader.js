@@ -1,8 +1,6 @@
-window.location.hash = '';
 
-document.addEventListener('DOMContentLoaded', function(event) {
-	document.querySelector('.loader').style.display = 'block';
-});
+document.querySelector('.loader').style.display = 'block';
+window.location.hash = '';
 
 window.addEventListener('load', function (event) {
 	window.setTimeout(function() {

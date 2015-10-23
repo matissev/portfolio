@@ -10,7 +10,7 @@
 	],
 	"date": "2015-01",
 	"explicitDate": "January 2015",
-	"lead": "Original and immersive, Feed Me Crystals is a game in which the goal is to catch the maximum of crystals before the time runs out, while avoiding to loose them on the way. This project, combining sound design and graphic environment include a simple but fun gameplay, made above all to catch a good laugh.",
+	"lead": "Original and immersive, Feed Me Crystals is a game in which the goal is to catch the as much crystals as you can before the time runs out, while avoiding to loose them on the way. This project, combining sound design and graphical environment includes a simple but fun gameplay, made above all to catch a good laugh.",
 	"coverImage": {
 		"url": "/img/majors/feed-me-crystals/cover.jpg",
 		"alt": "Cover picture of Feed Me Crystals"
@@ -53,8 +53,8 @@
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"The game includes two characters who help each other against mean rats. The goal is to catch a defined amount of crystals without loosing them of course. For this purpose, the characters must activate a pump which makes the gearings turn and therefore make the crystals fall from the roof for them to be reachable, collectable. For the pump to work the two players need to jump successively on the trays on both ends of it.",
-				"Once collected, you will need to store these in a tank and fill it as quickly as possible. Obstacles are here to slow you down :<br>- Enemy rats can steal crystals from you.<br>- Wagons roll on the rails and can hit you and make you loose your crystals (a bit like in Sonic).<br>- The gearings in the ground turn in opposite ways, and make you loose your reference points and so your caracter's control.<br>- The water slows you down."
+				"The game includes two characters who help each other against mean rats. The goal is to catch a defined amount of crystals without loosing them of course. For this purpose, the characters must activate a pump which makes the gearings turn and therefore make the crystals fall from the roof for them to be reachable, collectable. For the pump to work, the two players need to jump successively on the trays on both ends of it.",
+				"Once collected, you will need to store these in a tank and fill it as quickly as possible. Obstacles are here to slow you down&#8239;:<br>&ndash;&nbsp;Enemy rats can steal crystals from you.<br>&ndash;&nbsp;Wagons roll on the rails and can hit you, making you loose your crystals (a bit like in Sonic).<br>&ndash;&nbsp;The gearings in the ground turn in opposite ways and make you loose your reference points and so the control of your caracter.<br>&ndash;&nbsp;The water slows you down."
 			]
 		}]
 	}, {
@@ -67,33 +67,33 @@
 		"type": "image",
 		"size": "medium",
 		"url": "/img/majors/feed-me-crystals/map.jpg",
-		"caption": "The arena involves multiple elements which all have a precise purpose. The dark atmosphere serves also to loose the players in the setting.",
-		"alt": "3D render of the decor"
+		"caption": "The arena involves multiple elements which all have a precise purpose. Also, the dark atmosphere serves to loose the players in the setting.",
+		"alt": "3D rendering of the decor"
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"Of course, the game accelerates as players fill the tank (more rats appear, wagons and gearings faster, crystals wich appear in more random places). To fight back, the two protagonists must join to perform a common strike : Glork catches La Foreuse by the hands and the enemies are eliminated with the drills on the feet of La Foreuse. A one player mode can also be invented : the player would have one joystick per thumb which would control one character. This would add difficulty to the game."
+				"Of course, the game accelerates as players fill the tank (more rats appear, wagons and gearings roll faster, crystals fall on more random places). To fight back, the two protagonists must join to perform a common strike&#8239;: Glork catches La Foreuse by the hands and the enemies are eliminated thanks to the drills on La Foreuse’s feet. A one player mode can also be invented&#8239;: the player would have one joystick per thumb which would control one character. This would add difficulty to the game."
 			]
 		}, {
 			"type": "paragraph",
 			"title": "La Foreuse",
 			"paragraphs": [
-				"“La Foreuse” is an undertaking, greedy and vicious character, a mine plunder, endowed by two big drills to defend himself (with the help of Glork). He is an explorer who likes wealth and who would not miss a opportunity to make money."
+				"“La Foreuse” is an undertaking, greedy and vicious character, a mine plunder, endowed with two big drills to defend himself (with the help of Glork). He is an explorer who likes wealth and who would not miss a opportunity to make money."
 			]
 		}]
 	}, {
 		"type": "image",
 		"size": "small",
 		"url": "/img/majors/feed-me-crystals/la-foreuse-rough.jpg",
-		"caption": "The preliminary drawings have been very important in the characters' personnality enlightenment. La Foreuse has been inspired by various <abbr title=\"Role-Playing Game\">RPG</abbr> games.",
+		"caption": "The preliminary drawings have been very important in the characters’ personnality enlightenment. La Foreuse has been inspired by various <abbr title=\"Role-Playing Game\">RPG</abbr> games.",
 		"alt": "Preliminary drawings of the character La Foreuse"
 	}, {
 		"type": "image",
 		"size": "large",
 		"url": "/img/majors/feed-me-crystals/la-foreuse.jpg",
-		"alt": "3D render of the character La Foreuse"
+		"alt": "3D rendering of the character La Foreuse"
 	}, {
 		"type": "text",
 		"elements": [{
@@ -113,7 +113,7 @@
 		"type": "image",
 		"size": "large",
 		"url": "/img/majors/feed-me-crystals/glork.jpg",
-		"alt": "3D render of the character Glork"
+		"alt": "3D rendering of the character Glork"
 	}, {
 		"type": "text",
 		"elements": [{
@@ -133,15 +133,15 @@
 		"type": "image",
 		"size": "large",
 		"url": "/img/majors/feed-me-crystals/rat.jpg",
-		"alt": "3D render of the rats"
+		"alt": "3D rendering of the rats"
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
 			"title": "Kinematics",
 			"paragraphs": [
-				"The kinematics of introduction starts the game and acts as a synopsis. We drew in the form of a storyboard. Each frame is described below.",
-				"1. La Foreuse, first character of the game, come in a cave searching for crystals.<br>2. While approaching a crystal block different from the others, he discover Glork, native of the cave and second character of the game.<br>3. The drill explains that he is searching for crystals to get rich, while Glork search them to feed.<br>4. Glork shows him a locatin where there is an important deposit.<br>5,6. The characters are moving forward. Camera travelling showing the scenery.<br>7, 8. The protagonists meet the rats, the enemies of the players.<br>9. The game begins."
+				"The kinematics of introduction start the game and act as a synopsis. We drew it in the form of a storyboard. Each frame is described below.",
+				"1.&nbsp;La Foreuse, first character of the game, comes in a cave searching for crystals.<br>2.&nbsp;While approaching a crystal block different from the others, he discovers Glork, native of the cave and second character of the game.<br>3.&nbsp;The drill explains that he is searching for crystals to get rich, while Glork searches them to feed.<br>4.&nbsp;Glork shows him a location where there is an important mineral deposit.<br>5,&nbsp;6.&nbsp;The characters are moving forward. Camera travelling showing the scenery.<br>7,&nbsp;8.&nbsp;The protagonists meet the rats, the enemies of the players.<br>9.&nbsp;The game begins."
 			]
 		}]
 	}, {
@@ -154,7 +154,7 @@
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"In a second step, we will record sound effects and compose the music of the game. The sound effects will probably reflect the mechanical scenery and the underground universe of the game. Regarding the music, it will probably be inspired by gyspy jazz (like Caravan by Duke Elligton for example) and tzigane music, refering to travels, treasures, discovery, and will bring a kind of mystical atmosphere."
+				"In a second step, I will record sound effects and compose the music of the game. The sound effects will probably reflect the mechanical scenery and the underground universe of the game. Regarding the music, it will be inspired by gyspy jazz (like Caravan by Duke Elligton for example) and tzigane music, refering to travels, treasures, discovery and will bring a kind of mystical atmosphere."
 			]
 		}]
 	}]

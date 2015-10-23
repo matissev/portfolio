@@ -6,7 +6,7 @@
 		"type": "gallery",
 		"thumbnail": {
 			"url": "/img/minors/leaflet/thumbnail.jpg",
-			"alt": "Miniature de la gallerie du dépliant"
+			"alt": "Miniature de la galerie du dépliant"
 		},
 		"images": [{
 			"url": "/img/minors/leaflet/leaflet-1.jpg",
@@ -18,15 +18,15 @@
 			"size": "2880x1920"
 		}, {
 			"url": "/img/minors/leaflet/leaflet-3.jpg",
-			"caption": "L'information se dévoile progressivement au fur et à mesure du dépliage.",
+			"caption": "L’information se dévoile progressivement au fur et à mesure du dépliage.",
 			"size": "1024x680"
 		}, {
 			"url": "/img/minors/leaflet/leaflet-4.png",
-			"caption": "Les deux faces du dépliant (A4)",
+			"caption": "Les deux faces du dépliant (A4).",
 			"size": "1024x680"
 		}]
 	}, {
 		"type": "text",
-		"text": "J'ai dû concevoir un dépliant pour une petite médiathèque fictive. La difficulté de ce projet résidait surtout dans la hiérarchisation de l'information mais aussi dans le traitement graphique mis en oeuvre pour pouvoir décliner le dépliant en collection. Les polices de caractère utilisée sont la Bembo et l’Helvetica, pour la date et les titrages. Finalement, la composition se devait d’être légèrement décalée sans sembler trop déstructurée afin de montrer le côté innovant de cette médiathèque."
+		"text": "J’ai dû concevoir un dépliant pour une petite médiathèque fictive. La difficulté de ce projet résidait surtout dans la hiérarchisation de l’information mais aussi dans le traitement graphique mis en oeuvre pour pouvoir décliner le dépliant en collection. Les polices de caractère utilisées sont la Bembo et l’Helvetica, pour la date et les titrages. Finalement, la composition se devait d’être légèrement décalée sans sembler trop déstructurée afin de montrer le côté innovant de cette médiathèque."
 	}]
 }

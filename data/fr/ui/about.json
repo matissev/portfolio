@@ -16,15 +16,15 @@
 		},
 		"message": {
 			"label": "Message",
-			"placeholder": "Laissez votre message ici..."	
+			"placeholder": "Laissez votre message ici…"
 		},
 		"buttonText": "Envoyer",
 		"resultMessages": {
 			"success": "Votre message a été envoyé, merci.",
-			"failure": "Erreur : Votre message n’a pas pu être envoyé, veuillez réessayer plus tard.",
-			"invalidEmail": "Erreur : Veuillez entrer une adresse email valide.",
-			"invalidCaracters": "Erreur : L’email contient des caractères invalides.",
-			"missingFields": "Erreur : Tous les champs sont requis."
+			"failure": "Erreur&nbsp;: Votre message n’a pas pu être envoyé, veuillez réessayer plus tard.",
+			"invalidEmail": "Erreur&nbsp;: Veuillez entrer une adresse email valide.",
+			"invalidCaracters": "Erreur&nbsp;: L’email contient des caractères invalides.",
+			"missingFields": "Erreur&nbsp;: Tous les champs sont requis."
 		}
 	},
 	"social": {
@@ -48,6 +48,6 @@
 	},
 	"resume": {
 		"title": "Téléchargez mon <abbr itemprop=\"name\" title=\"Curriculum vitæ\">CV</abbr>",
-		"link": "medias/matisse-vrignaud-cv.pdf"
+		"link": "/medias/matisse-vrignaud-cv.pdf"
 	}
 }

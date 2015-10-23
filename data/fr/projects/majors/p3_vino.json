@@ -2,14 +2,14 @@
 	"title": "Vino",
 	"lowercase": "vino",
 	"subtitle": "Protecteur de la vigne",
-	"description": "Vino est un objet connecté conçu pour améliorer l'état de la vigne au cours de son évolution en prévenant maladies, stress hydrique, climat...etc",
+	"description": "Vino est un objet connecté conçu pour améliorer l’état de la vigne au cours de son évolution en prévenant maladies, stress hydrique, climat, etc..",
 	"tags": [
 		"objet connecté",
 		"service"
 	],
 	"date": "2015-05",
 	"explicitDate": "Mai 2015",
-	"lead": "Les facteurs de pertes de production d’une vigne sont importants : maladies, stress hydrique, climat... Vino est un objet connecté permettant d’observer l’évolution des plants afin de prévenir des complications, tout en économisant des ressources.",
+	"lead": "Les facteurs de perte de production d’une vigne sont importants&nbsp;: maladies, stress hydrique, météo… Vino est un objet connecté permettant d’observer l’évolution des plants afin de prévenir des complications, tout en économisant des ressources.",
 	"coverImage": {
 		"url": "/img/majors/vino/cover.jpg",
 		"alt": "Image de présentation de Vino"
@@ -55,8 +55,8 @@
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"En combinant plusieurs capteurs, ce petit boitier récupère de multiples informations sur la vigne (conductivité du sol, taux de précipitation, luminosité, pression de la sève...etc) pour ensuite les transmettre sur le smartphone du vigneron afin de l’avertir des éventuels dangers que pourraient encourir ses cultures. Nous avons utilisé Arduino pour réaliser ce prototype.",
-				"Le dispositif est alimenté grâce à un panneau solaire présent sur le boitier principal et l’envoi de donnée s’effectue par bluetooth 4.0 (LE) dès que l’énergie accumulée est suffisante et que le smartphone se trouve à proximité. En installant plusieurs boitiers dans la vigne, on peut comparer l’évolution des différentes parcelles de vigne."
+				"En combinant plusieurs capteurs, ce petit boitier récupère de multiples informations sur la vigne (conductivité du sol, taux de précipitation, luminosité, pression de la sève, etc.) pour ensuite les transmettre sur le smartphone du vigneron afin de l’avertir des éventuels dangers que pourraient encourir ses cultures. Nous avons utilisé Arduino pour réaliser ce prototype.",
+				"Le dispositif est alimenté grâce à un panneau solaire présent sur le boitier principal et l’envoi de données s’effectue par bluetooth 4.0 (LE) dès que l’énergie accumulée est suffisante et que le smartphone se trouve à proximité. En installant plusieurs boitiers dans la vigne, on peut comparer l’évolution des différentes parcelles de vigne."
 			]
 		}]
 	}, {
@@ -69,8 +69,9 @@
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
+			"title": "Le prototype",
 			"paragraphs": [
-				"Nous avons dessiné et construit le prototype à partir d’une étude de terrain pour identifier les contraintes technique du projet : Le boitier principal devait être placé en hauteur, afin de recevoir la lumière et donc l’énergie (le sommet des piquets de vignes semblaient être un endroit convenable); L’eau de pluie devait être récupéré sur une aire définie (le panneau solaire, légèrement incliné fait donc office d’entonnoir); Un boitier situé à la base de la plante était nécessaire pour effectuer des mesures sur l’état du sol."
+				"Nous avons dessiné et construit le prototype à partir d’une étude de terrain pour identifier les contraintes techniques du projet&nbsp;: Le boitier principal devait être placé en hauteur, afin de recevoir la lumière et donc l’énergie (le sommet des piquets de vigne semblait être un endroit convenable)&#8239;; L’eau de pluie devait être récupérée sur une aire définie (le panneau solaire, légèrement incliné fait donc office d’entonnoir)&#8239;; Un boitier situé à la base de la plante était nécessaire pour effectuer des mesures sur l’état du sol."
 			]
 		}]
 	}, {
@@ -83,23 +84,25 @@
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
+			"title": "La maladie",
 			"paragraphs": [
-				"Les maladies du bois figurent parmi les problèmes les plus inquiétants que connaissent les viticulteurs. Aujourd’hui ces vignes sont traitées seulement lorsque que la maladie est identifiée visuellement. Grâce à Vino, les viticulteurs peuvent suivre la croissance des vignes au fil du temps et anticiper l’arrivée des maladies sur des zones bien précises de leur exploitation, et éviter leur propagation."
+				"Les maladies du bois figurent parmi les problèmes les plus inquiétants que connaissent les viticulteurs. Aujourd’hui ces vignes ne sont traitées seulement que lorsque que la maladie est identifiée visuellement. Grâce à Vino, les viticulteurs peuvent suivre la croissance des vignes au fil du temps,  anticiper l’arrivée des maladies sur des zones bien précises de leur exploitation et éviter leur propagation."
 			]
 		}]
 	}, {
 		"type": "image",
 		"size": "small",
 		"url": "/img/majors/vino/object-3.jpg",
-		"caption": "La sonde de Vino permet d’enregistrer des informations concernant le sol comme la conductivité de celui-ci (richesse en minéraux), son taux d’humidité, son pH (prévient de la nécrose)...etc.",
-		"alt": "Photo de la sonde au sol de l’objet planté à la base d’un tronc de vigne"
+		"caption": "La sonde de Vino permet d’enregistrer des informations concernant le sol comme la conductivité de celui-ci (richesse en minéraux), son taux d’humidité, son pH (prévient de la nécrose), etc..",
+		"alt": "Photo de la sonde au sol, plantée à la base d’un tronc de vigne"
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
+			"title": "Pression de la sève et stress hydrique",
 			"paragraphs": [
-				"Concernant la pression de la sève dans la plante, elle nous donne un indicateur direct de la consommation d’eau de la plante : si la sève monte lentement, la plante a besoin d’eau. On peut alors régler parfaitement l’apport hydrique, faire des économies, mais aussi améliorer la qualité du vin.",
-				"Cette fonctionnalité n’a pas été expérimentée sur le prototype mais doit d’être implémentée dans le produit final. Le fonctionnement est simple : On chauffe le tronc de la plante et on mesure sa température avant et après. Ainsi, plus la différence entre les températures avant et après chauffage est importante, plus la pression de la sève est élevée, plus la plante est irriguée."
+				"Concernant la pression de la sève dans la plante, elle nous donne un indicateur direct de la consommation d’eau de la plante&nbsp;: si la sève monte lentement, la plante a besoin d’eau. On peut alors régler parfaitement l’apport hydrique, faire des économies, mais aussi améliorer la qualité du vin.",
+				"Cette fonctionnalité n’a pas été expérimentée sur le prototype mais doit d’être implémentée dans le produit final. Le fonctionnement est simple&nbsp;: On chauffe le tronc de la plante et on mesure sa température avant et après. Ainsi, plus la différence entre les températures enregistrées avant et après chauffage est importante, plus la pression de la sève est élevée, plus la plante est irriguée."
 			]
 		}]
 	}, {
@@ -111,25 +114,26 @@
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
+			"title": "Le gel et le suivi de la vigne",
 			"paragraphs": [
-				"Aussi, pour lutter contre les problèmes de gel dans certaines zones de France au printemps, on pourrait détecter les baisses de température et la montée de la sève en mars afin d’avertir le vigneron pour mettre en place un système d’antigel par aspersion d’eau ou grâce à des tours anti-gel par exemple.",
-				"Toutes les informations réceptionnées sont ensuite accessible via une application mobile. Cette application fait état de la vigne selon les différentes parcelles. Aussi, on peut suivre l’évolution de la vigne dans le temps et comparer les jours, les semaines, les mois, mais aussi les différences par rapport à l’année précédente."
+				"Aussi, pour lutter contre les problèmes de gel dans certaines zones de France au printemps, on pourrait détecter les baisses de température et la montée de la sève en mars afin d’avertir le vigneron pour mettre en place un système d’antigel par aspersion d’eau ou grâce à des tours antigel par exemple.",
+				"Toutes les informations réceptionnées sont ensuite accessibles via une application mobile. Cette application fait état de la vigne selon les différentes parcelles. Aussi, on peut suivre l’évolution de la vigne dans le temps et comparer les jours, les semaines, les mois, mais aussi les différences par rapport à l’année précédente."
 			]
 		}]
 	}, {
 		"type": "image",
 		"size": "large",
 		"url": "/img/majors/vino/app.jpg",
-		"caption": "L’application permet d’être notifié lors d’un problème et de consulter les données enregistrées.",
+		"caption": "L’application permet d’être notifiée lors d’un problème et de consulter les données enregistrées.",
 		"alt": "Captures d’écran de l’application mobile Vino"
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"Dans un autre temps, nous avons songé à rendre le système autonome en lui permettant de gérer l’ouverture de l’eau, d’enclencher le système de dégel mais aussi déployer un traitement contre une maladie rencontrée.",
+				"Dans un autre temps, nous avons songé à rendre le système autonome en lui permettant de gérer l’ouverture de l’eau, d’enclencher le système de dégel mais aussi de déployer un traitement contre une maladie rencontrée.",
 				"Finalement, les données récoltées chez chacun des vignerons pourront être recoupées pour instaurer une entraide entre ceux-ci, afin que la propagation des maladies ne s’effectue pas d’un domaine à l’autre et que les diverses techniques de culture puissent s’échanger entre vigneron. Ainsi, c’est tout un réseau d’entraide qui pourrait être déployé. Ces données peuvent aussi être réutilisées par des entreprises d’études météorologiques pour affiner leurs résultats.",
-				"Pour plus d’information, vous pouvez consulter le <a href=\"/medias/majors/vino/presentation.pdf\" target=\"_blank\">dossier de synthèse</a> du projet."
+				"Pour plus d’information, vous pouvez consulter le <a href=\"/media/majors/vino/vino-presentation.pdf\" target=\"_blank\">dossier de synthèse</a> du projet."
 			]
 		}]
 	}]

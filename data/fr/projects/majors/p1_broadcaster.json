@@ -2,7 +2,7 @@
 	"title": "Broadcaster",
 	"lowercase": "broadcaster",
 	"subtitle": "Agrégateur d’intérêts",
-	"description": "Broadcaster est un service de partage d'intérêts vous permettant de découvrir des artistes, films ou des évènements que vos amis vous ont recommandé.",
+	"description": "Broadcaster est un service de partage d’intérêts vous permettant de découvrir des artistes, des films ou des événements que vos amis vous ont recommandés.",
 	"tags": [
 		"son",
 		"service",
@@ -10,7 +10,7 @@
 	],
 	"date": "2015-03",
 	"explicitDate": "Mars 2015",
-	"lead": "On vous a parlé de films, de musiques, d’évènements, mais c’était quoi déjà..? Broadcaster est un service vous permettant de récolter tout ces centres d’intérêts et de les lire plus tard sur une radio personnalisée.",
+	"lead": "On vous a parlé d’un film, de musique, d’un événement à venir, mais c’était quoi déjà&#8239;? Broadcaster est un service web vous permettant de récolter tous ces centres d’intérêts et de les lire plus tard sur une radio personnalisée.",
 	"coverImage": {
 		"url": "/img/majors/broadcaster/cover.jpg",
 		"alt": "Image de présentation de Broadcaster"
@@ -43,8 +43,8 @@
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"Le principe est simple : lorsque vos amis vous parlent d’un artiste qu’ils apprécient, d’un évènement qui se passe bientôt, ils vous l’envoie via leur smartphone et vous le recevez sur votre radio personnalisée.",
-				"Sur celle-ci, vous retrouverez des émissions construites à partir des centres d’intérêts que vos amis vous ont envoyés. Ainsi, vous pourrez trouvez en plus du morceau favori de votre ami(e) une interview de l’artiste, un résumé de ses prochaines dates de concerts ainsi qu’une petite biographie. Enfin, vous pourrez écouter tout ça en audio, en faisant tout autre chose."
+				"Le principe est simple&nbsp;: lorsque vos amis vous parlent d’un artiste qu’ils apprécient, d’un événement qui se passe bientôt, ils peuvent vous l’envoyer via leur smartphone et vous recevrez le programme audio correspondant sur votre radio personnalisée.",
+				"Sur celle-ci, vous retrouverez des émissions construites à partir des centres d’intérêts que vos amis vous ont envoyés. Ainsi, vous pourrez trouver en plus du morceau favori de votre ami(e) une interview de l’artiste, un résumé de ses prochaines dates de concert ainsi qu’une petite biographie. Enfin, vous pourrez écouter tout ça en audio, en faisant tout autre chose."
 			]
 		}]
 	}, {
@@ -59,25 +59,34 @@
 			"type": "paragraph",
 			"paragraphs": [
 				"Pour les films, même chose, on pourra entendre une bande-annonce audio comme on les trouve sur les radios, un résumé des prochaines séances dans les cinémas à proximité, mais aussi le casting et les critiques de la presse.",
-				"Au niveau des évènements, on pourra entendre une description, une adresse, une date et un prix, ainsi que des médias relatifs comme des clip audios récupérés sur le site de l’évènement.",
-				"Finalement, il serait intéressant de pouvoir lire des articles de presse ou sur le web mais pour l’instant les technologies de synthèse vocale n’ont pas l’expressivité nécessaire.",
+				"Au niveau des événements, on pourra entendre une description, une adresse, une date et un prix, ainsi que des médias relatifs comme des clips audio récupérés sur le site de l’événement.",
+				"Finalement, il serait intéressant de pouvoir lire des articles de presse ou sur le web mais pour l’instant les technologies de synthèse vocale n’ont pas l’expressivité nécessaire."
+			]
+		}]
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"title": "L’application mobile",
+			"paragraphs": [
 				"L’interface de l’application se concentre sur quelques fonctionnalités : partager un centre d’intérêt avec un ou des ami(s) (Émettre) ou écouter les émissions récupérées (Broadcast). On trouve aussi en premier écran des émissions susceptibles d’être intéressantes, déterminées par leur localisation (évènements), leur similitudes avec d’autres émissions déjà écoutés (articles) ou en fonction des goûts de l’utilisateurs (musique, film).",
-				"Imaginons que vous discutiez avec un ami d’un film que vous n’avez pas vu. Si vous avez tout les deux Broadcaster, votre ami pourra partager le centre d’intérêt correspondant à ce film vers votre flux. Alors, chacun d’entre vous doit avoir ouvert l’application sur son téléphone. Ainsi, lorsque votre ami doit choisir un destinataire, vous apparaitrez automatiquement dans la liste, puisque vous être à proximité l’un de l’autre (voir vidéo ci-dessous). Ensuite, il pourra sélectionner le(s) centre(s) d’intérêt à partager. Ceux si sont triés par pertinence, et en haut de la liste on trouve des sujets relatifs au dernière pages web visités, aux dernières émissions récupérées... etc. Lorsque le partage est effectué, vous êtes notifié sur votre téléphone."
+				"Imaginons que vous discutiez avec un ami d’un film que vous n’avez pas vu. Si vous avez tous les deux Broadcaster, votre ami pourra partager le centre d’intérêt correspondant à ce film vers votre flux. Alors, chacun d’entre vous doit avoir ouvert l’application sur son téléphone. Ainsi, lorsque votre ami doit choisir un destinataire, vous apparaîtrez automatiquement dans la liste, puisque vous êtes à proximité l’un de l’autre (voir vidéo ci-dessous). Ensuite, il pourra sélectionner le(s) centre(s) d’intérêt à partager. Ceux-ci sont triés par pertinence et en haut de la liste on trouve des sujets relatifs aux dernières pages web visitées, aux dernières émissions récupérées, etc.. Lorsque le partage est effectué, vous êtes notifié sur votre téléphone."
 			]
 		}]
 	}, {
 		"type": "video",
 		"size": "medium",
 		"url": "https://www.youtube.com/embed/skBI_0EWASc",
-		"caption": "L’application mobile se concentre sur l’envoi et la lecture des centres d’intérêts."
+		"caption": "Le design de l’application mobile se concentre sur l’envoi et la lecture des centres d’intérêt."
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
+			"title": "L’interface web",
 			"paragraphs": [
-				"Le site web va quant à lui se concentrer sur la découverte et l’écoute (vidéo ci-dessous). Sur la page principale, on peut accéder aux évènements se passant près de chez soi, aux programmes populaires, et aux artistes, articles et films susceptibles de nous plairent.",
-				"Dans l’onglet consacré à l’écoute (Broadcast) on retrouve notre flux comportant les émissions des centres d’intérêt récupérés ça et là. On peut ajouter une émission en favoris et aussi retrouver celles que l’on a déjà écouté. En développant le lecteur (bouton en haut à droite), on accède à ses contrôles avancés. Ainsi, on peut découvrir les contrôles vocaux du lecteur et lire un média d’une émission en particulier.",
-				"Finalement, dans les réglages (Settings), on accède aux paramètres du compte. Dans celle-ci, nous pouvons aussi relier Broadcaster à nos différents services de streaming, à Shazam (pour récupérer les morceaux identifiés), mais aussi Last.fm, Soundiiz, Youtube et Soundcloud. Les services de streaming permettrons de profiter d’une meilleure qualité sonore, d’accéder à ses playlists et de réduire les publicités. Dans la dernière partie, on peut personnaliser notre propre jingle."
+				"Le site web va quant à lui se concentrer sur la découverte et l’écoute (vidéo ci-dessous). Sur la page principale, on peut accéder aux événements se passant près de chez soi, aux programmes populaires ainsi qu’aux artistes, articles et films susceptibles de nous plairent.",
+				"Dans l’onglet consacré à l’écoute (Broadcast) on retrouve notre flux comportant les émissions des centres d’intérêt récupérés ça et là. On peut ajouter une émission aux favoris et aussi retrouver celles que l’on a déjà écoutées. En développant le lecteur (bouton en haut à droite), on accède à nos contrôles avancés. Ainsi, on peut découvrir les contrôles vocaux du lecteur et lire un média d’une émission en particulier.",
+				"Finalement, dans les réglages (Settings), on accède aux paramètres du compte. Sur cette page, nous pouvons relier Broadcaster à différents services de streaming, à Shazam (pour récupérer les morceaux identifiés), mais aussi Last.fm, Soundiiz, Youtube et Soundcloud. Les services de streaming permettront de profiter d’une meilleure qualité sonore, d’accéder à ses playlists et de réduire les publicités. Dans la dernière partie, on peut personnaliser notre propre jingle."
 			]
 		}]
 	}, {
@@ -89,22 +98,24 @@
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
+			"title": "L’identité sonore",
 			"paragraphs": [
-				"Le traitement du son est tout particulier dans ce projet. En effet, si l’interface est en partie graphique, elle est aussi sonore. Pour signifier les changements d’émissions, de média et de destinateur, une identité sonore à été conçue pour informer l’utilisateur sur ce qu’il va entendre ensuite.",
-				"Les trois clips audio ci-dessous montrent trois instants différents. En premier, le lancement de la lecture du flux. On peut donc entendre l’audio logo de Broadcaster avec l’annonce suivit du morceau «Inner city blues» de Marvin Gaye présent à la suite dans le flux. En deuxième, on entend l’annonce du destinateur de l’émission ainsi que sont lieu et sa date d’ajout. Le troisième clip illustre le changement d’émission par l’utilisateur, c’est pourquoi on entend la bande-annonce de «Mad Max» succédant le jingle d’échange des programmes. Enfin, le quatrième clip comporte la fin de la bande-annonce et le jingle correspondant aux bulletins d’information (on entend l’émission d’infos de la BBC)."
+				"Le traitement du son est tout particulier dans ce projet. En effet, si l’interface est en partie graphique, elle a aussi fait l’objet d’un design sonore&nbsp;: pour signifier les changements d’émissions, de médias, des éléments audio ont été conçus pour informer l’utilisateur de ce qu’il va entendre ensuite.",
+				"Les trois clips audio ci-dessous montrent trois instants différents. En premier, le lancement de la lecture du flux. On peut donc entendre l’audio logo de Broadcaster suivi de l’annonce du nom et l’émission puis le morceau «&nbsp;Inner city blues&nbsp;» de Marvin Gaye présent à la suite dans le flux. En deuxième, on entend l’annonce de l’expéditeur de l’émission ainsi que le lieu et la date d’ajout du média. Le troisième clip illustre le changement d’émission par l’utilisateur, c’est pourquoi on entend la bande-annonce de «&nbsp;Mad Max&nbsp;» succédant le jingle d’échange des programmes. Enfin, le quatrième clip comporte la fin de la bande-annonce et le jingle correspondant aux bulletins d’information (on entend l’émission d’infos de la BBC)."
 			]
 		}]
 	}, {
 		"type": "audio",
 		"size": "small",
 		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/144745963%3Fsecret_token%3Ds-wt2V1",
-		"caption": "Les jingles audio sont conçuent pour signifier les changements de lecture."
+		"caption": "Les jingles audio sont conçus pour signifier les changements de lecture."
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
+			"title": "L’extension pour navigateur",
 			"paragraphs": [
-				"Afin de récupérer les centres d’intérêt de l’utilisateur, une extension web (pour navigateur) permet d’analyser les pages web visitées et d’ajouter des articles au flux pour une lecture future. Aussi, l’extension fait office de lecteur, ce qui permet de quitter la page web de Broadcaster pour continuer à écouter le flux. En cliquant sur le logo de Broadcaster, on retrouve le site."
+				"Afin de récupérer les centres d’intérêt de l’utilisateur, une extension pour navigateur web permet d’analyser les pages web visitées et d’ajouter des articles au flux pour une lecture future. Aussi, l’extension fait office de lecteur, ce qui permet de quitter la page web de Broadcaster pour continuer à écouter le flux. En cliquant sur le logo de Broadcaster, on retrouve le site."
 			]
 		}]
 	}, {
@@ -118,7 +129,7 @@
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"Ce projet est donc une vaste exploration de l’utilisation de l’audio comme support d’information et une reflexion sur son usage possible, sa discrétion et son esthétisme. À noter : ce projet n’a pas été développé et a été imaginé dans le cadre de mes études."
+				"Ce projet est donc une vaste exploration de l’utilisation de l’audio comme support d’information et une reflexion sur son usage possible, sa discrétion et son esthétisme. À noter&nbsp;: ce projet n’a pas été développé et a été imaginé dans le cadre de mes études."
 			]
 		}]
 	}]

@@ -1,7 +1,7 @@
 {
-	"close": "Fermer (Esc)",
-	"previous": "Précédente (flèche gauche)",
-	"next": "Suivante (flèche droite)",
+	"close": "Fermer (Esc.)",
+	"previous": "Précédent (flèche gauche)",
+	"next": "Suivant (flèche droite)",
 	"share": "Partager",
 	"zoom": "Zoom/Dézoom",
 	"fullscreen": "Plein écran"

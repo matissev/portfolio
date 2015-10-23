@@ -11,13 +11,13 @@
 
 - var template = 'layout';
 
-- var lang = null;
+- var selectedLanguage = null;
 each language in languages
 	if language.abbr === languages.selected
-		- lang = language.abbr;
+		- selectedLanguage = language;
 
 doctype html
-html(lang=lang)
+html(lang=selectedLanguage.abbr)
 	head
 		include partials/head
 	body(itemscope itemtype="http://schema.org/WebPage")
@@ -34,7 +34,7 @@ html(lang=lang)
 
 		include partials/photoswipe
 
-		include helpers/media-queries
+		//- include helpers/media-queries
 		include helpers/grid
 
 		- var stylesheetsInBodyTag = true;

@@ -16,16 +16,16 @@ header.section.home
 
 		span.language
 			each language in languages
-				if language.abbr === languages.selected
+				if language.abbr === selectedLanguage.abbr
 					abbr(title=language.name) !{language.abbr}
 				else
 					- var languageLink;
 					if template === 'article'
-						- languageLink = language.url + storedProject.lowercase + ".html";
+						- languageLink = language.url + storedProject.lowercase;
 					else if template === 'layout'
-						- languageLink = language.url + "index.html";
+						- languageLink = language.url;
 
-					a(href=languageLink)
+					a(href=languageLink+"index.html")
 						abbr(title=language.name) !{language.abbr}
 
 	if template === 'layout'

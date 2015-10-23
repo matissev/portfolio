@@ -2,14 +2,14 @@
 	"title": "Vino",
 	"lowercase": "vino",
 	"subtitle": "Vineyard activity watcher",
-	"description": "Vino is a connected object designed to improve the condition of the vineyard during its evolution by preventing diseases, hydric stress, weather...etc",
+	"description": "Vino is a connected object designed to improve the condition of the vineyard during its evolution by preventing diseases, hydric stress, weather, etc..",
 	"tags": [
 		"connected object",
 		"service"
 	],
 	"date": "2015-05",
 	"explicitDate": "May 2015",
-	"lead": "The production loss factors of a vineyard are many : diseases, hydric stress, weather... Vino is a connected object allowing to observe the evolution of the plants in order to prevent the complications, while saving ressources.",
+	"lead": "The production loss factors of a vineyard are many&#8239;: diseases, hydric stress, weather… Vino is a connected object allowing to observe the evolution of the plants in order to prevent the complications, while saving ressources.",
 	"coverImage": {
 		"url": "/img/majors/vino/cover.jpg",
 		"alt": "Cover picture of Vino"
@@ -55,22 +55,23 @@
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"By combining multiple sensors, this little box gathers various informations on the vineyard (soil moisture, precipitation rate, luminosity, sap pressure...etc) and then transmit it to the smartphone of the winegrower so as to notify him/her of the eventual danger that his/here crops might incur.",
-				"The device is powered by a solar panel present on the main box and the informations are transmitted by bluetooth 4.0 (LE) once the stored energy is sufficient and the smartphone is nearby. If multiple devices are installed in the vineyard you can compare the evolution of the different vineyard plots."
+				"By combining multiple sensors, this little box gathers different informations about the vineyard (soil moisture, precipitation rate, luminosity, sap pressure, etc.) and then transmits it to the smartphone of the winegrower so as to notify him/her of the potential dangers that his/here crops might incur.",
+				"The device is powered by a solar panel on the main box and the informations are transmitted by bluetooth 4.0 (LE) once the stored energy is sufficient and the smartphone is nearby. If multiple devices are installed in the vineyard you can compare the evolution of the various vineyard plots."
 			]
 		}]
 	}, {
 		"type": "image",
 		"size": "small",
 		"url": "/img/majors/vino/object-1.jpg",
-		"caption": "Vino analyse the condition of the plant to prevent the eventual problems. Its refined design perfectly fits in a vineyard.",
+		"caption": "Vino analyzes the condition of the plant to prevent the potential problems. Its refined design perfectly fits in a vineyard.",
 		"alt": "Photo of the connected object and a vine stock"
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
+			"title": "The prototype",
 			"paragraphs": [
-				"We designed and built the prototype from a field study to identity the technical constraints of the project : the main box had to be put high enough to catch the light and so the energy (the top of the vineyard stakes seemed to be a good spot); The rainwater had to be collected on a defined area (the solar panel, slighly inclined, serves as a funnel); A unit on the trunk was needed to make measurements on the soil."
+				"We designed and built the prototype from a field study to identify the technical constraints of the project&#8239;: the main box had to be put high enough to catch the light and so the energy (the top of the vineyard stakes seemed to be a good spot); The rainwater had to be collected on a defined area (the solar panel, slighly inclined, serves as a funnel); A unit on the trunk was needed to make measurements on the soil."
 			]
 		}]
 	}, {
@@ -78,28 +79,30 @@
 		"size": "medium",
 		"url": "/img/majors/vino/rough.jpg",
 		"caption": "The product is designed to adapt as much as possible to the vineyard while being very discreet and compact.",
-		"alt": "Drawing of the prototype with an overall view, a side view, a front view and details on the product"
+		"alt": "Drawing of the prototype with an overall view, a side view, a front view and details of the product"
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
+			"title": "The sickness",
 			"paragraphs": [
-				"The wood diseases are among the most worrying problems that the vinegrowers know. Today those vineyards are treated only when the sickness is visually identified. Thanks to Vino, the vinegrowers can monitor the crops growth over time and anticipate the arrival of the disease on very precise zones of their field, and avoid the spreading."
+				"The wood diseases are among the most worrying problems that the vinegrowers know. Today those vineyards are treated only when the sickness is visually identified. Thanks to Vino, the vinegrowers can monitor the crops growth over time and anticipate the arrival of the disease on very precise zones of their field and avoid the spreading."
 			]
 		}]
 	}, {
 		"type": "image",
 		"size": "small",
 		"url": "/img/majors/vino/object-3.jpg",
-		"caption": "The probe records informations concerning the soil such as its conductivity (salinity, amount of minerals), its humidity level, its pH (prevents from the necrosis)...etc.",
+		"caption": "The probe records informations concerning the soil such as its conductivity (salinity, amount of minerals), its humidity level, its pH (prevents from the necrosis), etc..",
 		"alt": "Photo of the soil sensor right next to the trunk"
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
+			"title": "Sap pressure and hydric stress",
 			"paragraphs": [
-				"Concerning the sap pressure, it gives us a direct indicator of the plant's water consumption : if the sap is moving up slowly, the crop needs water. Therefore you can set the water intake perfectly and save ressources while improving the wine quality.",
-				"This fonctionnality has not been experienced on the prototype but must be implemented on the final product. The mechanism is simple : The trunk is heated and the device records the temperatures after and before. Thus, the more the gap between the temperatures is raised, the more the crop is irrigated."
+				"Concerning the sap pressure, it gives us a direct indicator of the plant’s water consumption&#8239;: if the sap is moving up slowly, the crop needs water. Therefore you can set the water intake perfectly and save ressources while improving the wine quality.",
+				"This fonctionnality has not been experienced on the prototype but must be implemented on the final product. The mechanism is simple&#8239;: The trunk is heated and the device records the temperatures after and before. Thus, the more the difference between the temperatures is raised, the more the crop is irrigated."
 			]
 		}]
 	}, {
@@ -111,9 +114,10 @@
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
+			"title": "The frost and the vineyard monitoring",
 			"paragraphs": [
-				"Also, in order to fight against the frost in certain regions of France in Spring, the device could detect the temperature drop and the rise of the sap in March so as to notify the winegrower to set up a water spraying antifreeze system or antifreeze towers (for example).",
-				"All these received informations are then available via a mobile app. This app displays the condition of the vineyard according to the different plots. Also, you can follow the evolution of the vineyard over time and compare the days, the weeks, the months but also the differences with the previous year."
+				"Also, in order to fight against the frost in some regions of France in Spring, the device could detect the temperature drop and the rise of the sap in March so as to notify the winegrower to set up a water spraying antifreeze system or antifreeze towers (for example).",
+				"All these received informations are then available via a mobile app. This app displays the condition of the vineyard according to the various plots. Also, you can follow the evolution of the vineyard over time and compare the days, the weeks, the months but also the differences with the previous year."
 			]
 		}]
 	}, {
@@ -127,9 +131,9 @@
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"In a second step, we though about making the device stand-alone and allow it to manage the water flow, to turn on the antifreeze system or again to deploy a treatment against a disease.",
-				"Finally, the stored data of every vineyard could be linked to grant help, so that spreads of diseases do not happen between two estates and that the various cultivation techniques can be shared between winegrowers. In this way, it a all supportive community that could be set up. This data could also be used by weather analysis companies in order to sharpen their results.",
-				"For more information, you can check the <a href=\"/medias/majors/vino/presentation.pdf\" target=\"_blank\">presentation file</a> of the project."
+				"In a second step, we though about making the device stand-alone, allowing it to manage the water flow, to turn on the antifreeze system or again to deploy a treatment against a disease.",
+				"Finally, the stored data of every vineyard could be linked to establish a helping relationship, so that spreads of diseases would not happen between two estates and that the different cultivation techniques could be shared between winegrowers. In this way, this is a all supportive community that could be set up. This data could also be used by weather analysis companies in order to sharpen their results.",
+				"For more information, you can check the <a href=\"/media/majors/vino/vino-presentation.pdf\" target=\"_blank\">presentation file</a> of the project (in French)."
 			]
 		}]
 	}]

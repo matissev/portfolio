@@ -35,6 +35,6 @@ section.about.hidden
 					a.icon-soundcloud(href=about.social.soundcloud.url title=about.social.soundcloud.title itemprop="relatedLink")
 					a.icon-twitter(href=about.social.twitter.url title=about.social.twitter.title itemprop="relatedLink")
 
-			//- .resume(itemprop="associatedMedia" itemscope itemtype="http://schema.org/MediaObject")
-			//- 	h3 !{about.resume.title}
-			//- 	a.icon-download-resume(href=about.resume.link itemprop="relatedLink")
+			.resume(itemprop="associatedMedia" itemscope itemtype="http://schema.org/MediaObject")
+				h3 !{about.resume.title}
+				a.icon-download-resume(href=about.resume.link target="_blank" itemprop="relatedLink")

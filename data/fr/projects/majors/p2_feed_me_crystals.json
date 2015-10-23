@@ -2,7 +2,7 @@
 	"title": "Feed Me Crystals",
 	"lowercase": "feed-me-crystals",
 	"subtitle": "Jeu d’arène multijoueur",
-	"description": "Feed Me Crystals est un jeu multijoueur à l'univers fort mêlant design sonore et graphisme. Récupérez donc le maximum de crystaux avant la fin temps imparti!",
+	"description": "Feed Me Crystals est un jeu multijoueur à l’univers fort mêlant design sonore et graphisme. Récupérez le maximum de cristaux avant la fin du temps imparti&#8239;!",
 	"tags": [
 		"son",
 		"jeu 3D",
@@ -53,41 +53,41 @@
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"Le jeu comprend deux personnages qui s’entraident face à de méchants rats. Le but étant de récolter une certaine quantité de minéraux sans les perdre bien entendu. Pour cela les personnages doivent activer une pompe qui fait fonctionner les engrenages et ainsi faire tomber les minéraux du plafond et donc les rendre accessibles, récoltables. Pour faire fonctionner cette pompe, les deux joueurs doivent sauter successivement sur les passerelles aux chaque extremités de celle-ci.",
-				"Une fois récupérés, il faut les stocker dans un réservoir et le remplir le plus rapidement possible. Des obstacles sont là pour entraver la progression des joueurs :<br>- Des rats ennemis peuvent vous voler vos crystaux.<br>- Des chariots passent sur les rails et peuvent vous rentrer dedans et vous faire perdre des cristaux (un peu comme dans Sonic)<br>- Les engrenages au sol tournent dans des sens différents et vous font perdre vos repères et le contrôle des personnages.<br>- L’eau vous fait aller moins vite."
+				"Le jeu comprend deux personnages qui s’entraident face à de méchants rats. Le but étant de récolter une certaine quantité de minéraux sans les perdre bien entendu. Pour cela les personnages doivent activer une pompe faisant tomber les minéraux du plafond et donc les rendre accessibles, récoltables. Pour faire fonctionner cette pompe, les deux joueurs doivent sauter successivement sur les passerelles à chaque extremité de celle-ci.",
+				"Une fois récupérés, il faut les stocker dans un réservoir et le remplir le plus rapidement possible. Des obstacles sont là pour entraver la progression des joueurs&nbsp;:<br>&ndash;&nbsp;Des rats ennemis peuvent vous voler vos cristaux.<br>&ndash;&nbsp;Des chariots passent sur les rails et peuvent vous rentrer dedans et vous faire perdre des cristaux (un peu comme dans Sonic).<br>&ndash;&nbsp;Les engrenages au sol tournent dans des sens différents et vous font perdre vos repères et le contrôle des personnages.<br>&ndash;&nbsp;L’eau vous fait aller moins vite."
 			]
 		}]
 	}, {
 		"type": "image",
 		"size": "small",
 		"url": "/img/majors/feed-me-crystals/map-rough.jpg",
-		"caption": "Feed Me Crystals comprend un univers proche du steampunk fait de pierre et de crystaux, rempli de machines d'extraction de minerai.",
+		"caption": "Feed Me Crystals comprend un univers proche du steampunk fait de pierres et de cristaux, rempli de machines d’extraction de minerai.",
 		"alt": "Dessins primaires du décor"
 	}, {
 		"type": "image",
 		"size": "medium",
 		"url": "/img/majors/feed-me-crystals/map.jpg",
-		"caption": "L'arène comporte plusieurs éléments ayant chacun un but précis. L'ambiance sombre permet aussi de perdre les joueurs dans le décor.",
+		"caption": "L’arène comporte plusieurs éléments ayant chacun un but précis. L’ambiance sombre permet quant à elle de perdre les joueurs dans le décor.",
 		"alt": "Rendu 3D du décor"
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"Bien sûr, la partie s’accélère au fur et à mesure que les joueurs remplissent la cuve (plus de rats, engrenages et chariots plus rapides, des cristaux qui apparaissent à des endroits de plus en plus aléatoires). Pour riposter contre les rats, les deux protagonistes doivent se rejoindre pour effectuer une attaque commune : Glork attrape La Foreuse par les mains et les ennemis sont éliminés par les forets présents aux pieds de La Foreuse. Un mode un joueur peut aussi être imaginable. Dans celui-ci, le joueur aurait un joystick par pouce et chacun controllerait un personnage, cela ajoutant ainsi de la difficulté."
+				"Bien sûr, la partie s’accélère au fur et à mesure du remplissage de la cuve (plus de rats, engrenages et chariots plus rapides, des cristaux qui apparaissent à des endroits de plus en plus aléatoires). Pour riposter contre les rats, les deux protagonistes doivent se rejoindre pour effectuer une attaque commune&nbsp;: Glork attrape La Foreuse par les mains et les ennemis sont éliminés par les forets présents aux pieds de La Foreuse. Un mode un joueur peut aussi être imaginable. Dans celui-ci, le joueur aurait un joystick par pouce et chacun contrôlerait un personnage, cela ajoutant ainsi de la difficulté."
 			]
 		}, {
 			"type": "paragraph",
 			"title": "La Foreuse",
 			"paragraphs": [
-				"«La Foreuse» est un personnage entreprenant, cupide et sournois. Un pilleur de mines, doté de deux gros forets pour se défendre avec l’aide de «Glork» qui le porte. C’est un explorateur qui aime l’argent et qui ne manquerait pas une occasion pour s’en procurer."
+				"«&nbsp;La Foreuse&nbsp;» est un personnage entreprenant, cupide et sournois, un pilleur de mines, doté de deux gros forets pour se défendre avec l’aide de «&nbsp;Glork&nbsp;» qui le porte. C’est un explorateur qui aime l’argent et qui ne manquerait pas une occasion pour s’en procurer."
 			]
 		}]
 	}, {
 		"type": "image",
 		"size": "small",
 		"url": "/img/majors/feed-me-crystals/la-foreuse-rough.jpg",
-		"caption": "Les dessins primaires ont été très importants dans le développement de la personnalité des personnages. La Foreuse à été inspiré par plusieurs jeu de <abbr title=\"Role-Playing Game\">RPG</abbr>.",
+		"caption": "Les dessins primaires ont été très importants dans le développement du caractère des personnages. La Foreuse à été inspirée par plusieurs jeu de <abbr title=\"Role-Playing Game\">RPG</abbr>.",
 		"alt": "Dessins primaires du personnage de La Foreuse"
 	}, {
 		"type": "image",
@@ -100,7 +100,7 @@
 			"type": "paragraph",
 			"title": "Glork",
 			"paragraphs": [
-				"«Glork» est un personnage timide et naïf demeurant sur le lieu du jeu. Il est corpulent et doté d’une grande force du fait de sa composition rocheuse. Il peut se rétracter sur lui même pour former un bloc compacte. Il entre également en interaction avec le personnage «La Foreuse» pour pouvoir se défendre contre ses assaillants."
+				"«&nbsp;Glork&nbsp;» est un personnage timide et naïf, un autochtone résidant à l’intérieur la grotte. Il est corpulent et doté d’une grande force du fait de sa composition rocheuse. Il peut se rétracter sur lui-même pour former un bloc compacte. Il entre également en interaction avec le personnage «&nbsp;La Foreuse&nbsp;» pour pouvoir se défendre contre ses assaillants."
 			]
 		}]
 	}, {
@@ -120,7 +120,7 @@
 			"type": "paragraph",
 			"title": "Les rats",
 			"paragraphs": [
-				"Les rats, véritables parasites dans ce lieu. Ils vivent de tout mais sont particulièrement agressifs et attirés par les objets brillants (notamment les cristaux du jeu). Ils sont armés d'un lance-roquette sur le dos et peuvent attaquer au corps-à-corps ou à distance."
+				"Les rats sont de véritables parasites dans ce jeu. Ils vivent de tout mais sont particulièrement agressifs et attirés par les objets brillants (notamment les cristaux du jeu). Ils sont armés d’un lance-roquette sur le dos et peuvent attaquer au corps-à-corps ou à distance."
 			]
 		}]
 	}, {
@@ -140,21 +140,21 @@
 			"type": "paragraph",
 			"title": "Cinématique",
 			"paragraphs": [
-				"La cinématique d'introduction démarre le jeu et fait office de synopsis. Nous l'avons dessiné sous forme de storyboard. Chaque vignette est décrite ci-dessous.",
-				"1. La Foreuse, premier personnage du jeu, entre dans une grotte à la recherche de cristaux.<br>2. En s’approchant d’un bloc de cristal pas comme les autres, il découvre Glork, autochtone de la mine et deuxième personnage du jeu.<br>3. La Foreuse explique qu’il cherche des cristaux pour s’enrichir, alors que Glork en cherche pour se nourrir.<br>4. Glork lui indique une zone où se situe un gisement important.<br>5,6. Avancée des personnages et travelling caméra pour découvrir le décor.<br>7, 8. Les protagonistes rencontrent les rats, les ennemis des joueurs.<br>9. Le jeu commence."
+				"La cinématique d’introduction démarre le jeu et fait office de synopsis. Nous l’avons dessiné sous forme de storyboard. Chaque vignette est décrite ci-dessous.",
+				"1.&nbsp;La Foreuse, premier personnage du jeu, entre dans une grotte à la recherche de cristaux.<br>2.&nbsp;En s’approchant d’un bloc de cristal pas comme les autres, il découvre Glork, autochtone de la mine et deuxième personnage du jeu.<br>3.&nbsp;La Foreuse explique qu’elle cherche des cristaux pour s’enrichir, alors que Glork en cherche pour se nourrir.<br>4.&nbsp;Glork lui indique une zone où se situe un gisement important.<br>5,&nbsp;6.&nbsp;Avancée des personnages et travelling caméra pour découvrir le décor.<br>7,&nbsp;8.&nbsp;Les protagonistes rencontrent les rats, les ennemis des joueurs.<br>9.&nbsp;Le jeu commence."
 			]
 		}]
 	}, {
 		"type": "image",
 		"size": "medium",
 		"url": "/img/majors/feed-me-crystals/storyboard.jpg",
-		"alt": "Storyboard de la cinématique d'introduction"
+		"alt": "Storyboard de la cinématique d’introduction"
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"Dans un second temps, nous développerons des bruitages et composerons la musique du jeu. Les bruitages vont probablement faire état de l'univers mécanique et souterain. La musique sera quant à elle inspiré de jazz gypsy (comme Caravan de Duke Ellington par exemple) et de musique tzigane, faisant référence au voyage, aux trésors, à la découverte et suscitera une atmosphère en quelque sorte mystique."
+				"Dans un second temps, je développerai des bruitages et composerai la musique du jeu. Les bruitages vont probablement faire état de l’univers mécanique et souterrain. La musique sera quant à elle inspirée de jazz manouche (comme Caravan de Duke Ellington par exemple) et de musique tzigane, faisant référence au voyage, aux trésors, à la découverte et suscitera une atmosphère en quelque sorte mystique."
 			]
 		}]
 	}]

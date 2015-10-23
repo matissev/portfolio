@@ -4,6 +4,7 @@
 	float: left;
 	margin-left: @margin + @column + @gutter;
 	font: normal @font-size-s @heading-text;
+	display: inline-block;
 
 	dl {
 		margin: 0;
@@ -47,7 +48,6 @@
 .majors footer {
 	margin: 0;
 	margin-bottom: 100px;
-	clear: both;
 }
 
 .majors .small-media,
@@ -71,6 +71,8 @@
 
 .majors .text-major {
 	margin-bottom: 70px;
+	orphans: 3;
+	widows: 3;
 
 	h3 {
 		margin-bottom: 10px;
@@ -174,7 +176,7 @@
 	}
 }
 
-.majors .small-media, .majors .medium-media {
+.majors .medium-media {
 	.calculate-width(11, 10, false, false);
 	width: @width;
 }
@@ -186,17 +188,24 @@
 }
 
 .majors .small-media {
+	display: inline-block;
 	direction: rtl;
 	white-space: nowrap;
 
 	img, .video-wrapper, .audio-wrapper {
-		.calculate-width(8, 7, 11, 10);
-		width: @width;
+		width: 100%;
 	}
 
 	figcaption {
-		.calculate-width(0, 1, 11, 10);
-		margin-right: @width;
+		& {
+			.calculate-width(3, 2, 8, 7);
+			width: @width;
+		}
+
+		& {
+			.calculate-width(0, 1, 8, 7);
+			margin-right: @width;
+		}
 		direction: ltr;
 		vertical-align: bottom;
 		text-align: right;
