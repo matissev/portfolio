@@ -291,7 +291,7 @@ gulp.task('images-dist', function(){
 		.pipe(imagemin({
 			multipass: true,
 			interlaced: true,
-			optimizationLevel: 7,
+			optimizationLevel: 9,
 			svgoPlugins: [
 				{ removeViewBox: true },
 				{ removeUselessStrokeAndFill: true },
