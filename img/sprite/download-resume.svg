@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 47 47" style="enable-background:new 0 0 47 47;" xml:space="preserve">
-<path style="fill:#FFFFFF;" d="M23.5,1C11.074,1,1,11.073,1,23.5S11.074,46,23.5,46C35.926,46,46,35.927,46,23.5S35.926,1,23.5,1z
-	 M24.513,34.974l-0.964,0.964L23.5,35.89l-0.049,0.049l-0.964-0.964l0.049-0.049l-9.594-9.594l0.555-0.964L22,33.279V12h2v21.279
-	l9.003-8.912l1.01,0.964l-9.571,9.594L24.513,34.974z"/>
+	 width="47px" height="47px" viewBox="0 0 47 47" enable-background="new 0 0 47 47" xml:space="preserve">
+<g>
+	<path fill="#FFFFFF" d="M23.5,1C11.1,1,1,11.1,1,23.5S11.1,46,23.5,46S46,35.9,46,23.5S35.9,1,23.5,1z M23.5,36.2L12.7,25.5
+		l1.5-1.5l8.3,8.3V11.8h2.1v20.4l8.3-8.3l1.5,1.5L23.5,36.2z"/>
+</g>
 </svg>
