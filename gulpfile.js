@@ -228,7 +228,7 @@ gulp.task('less-dist', ['spritesheet'], function(){
 			keepSpecialComments: 0,
 			roundingPrecision: -1
 		}))
-		.pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
+		//.pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
 		.pipe(gulp.dest('build/css'));
 });
 
@@ -253,7 +253,7 @@ gulp.task('jade-dist', ['json'], function() {
 			minifyCSS: true,
 			collapseWhitespace: true
 		}))
-		.pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
+		//.pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
 		.pipe(gulp.dest('build'));
 });
 
@@ -264,7 +264,7 @@ gulp.task('js-dist', function() {
 		return gulp.src(obj.src)
 			.pipe(concat(obj.name))
 			.pipe(uglify())
-			.pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
+			//.pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
 			.pipe(gulp.dest('build/js'));
     });
 });
@@ -275,14 +275,15 @@ gulp.task('sitemap', function(){
             siteUrl: siteInfos.homepage
         }))
         .pipe(replace('.html.gz', '.html'))
-        .pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
+        //.pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
         .pipe(gulp.dest('./build'));
 });
 
 gulp.task('fonts-dist', function(){
 	return gulp.src(['fonts/**/*'])
-		.pipe(gulpif('*.svg', gzip({ gzipOptions: { level: 9, memLevel: 1} })))
-		.pipe(gulpif('*.ttf', gzip({ gzipOptions: { level: 9, memLevel: 1} })))
+		//.pipe(gulpif('*.svg', gzip({ gzipOptions: { level: 9, memLevel: 1} })))
+		//.pipe(gulpif('*.ttf', gzip({ gzipOptions: { level: 9, memLevel: 1} })))
+		//.pipe(gulpif('*.woff2', gzip({ gzipOptions: { level: 9, memLevel: 1} })))
 		.pipe(gulp.dest('build/fonts'));
 });
 
@@ -298,7 +299,7 @@ gulp.task('images-dist', function(){
 				{ removeEmptyAttrs: true }
 			]
 		}))
-		.pipe(gulpif('*.svg', gzip({ gzipOptions: { level: 9, memLevel: 1} })))
+		//.pipe(gulpif('*.svg', gzip({ gzipOptions: { level: 9, memLevel: 1} })))
 		.pipe(gulp.dest('build/img'));
 });
 
@@ -319,7 +320,7 @@ gulp.task('done', function() {
 
 gulp.task('gzip-spritesheet', function(callback) {
 	gulp.src('build/img/sprite.svg')
-		.pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
+		//.pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
 		.pipe(gulp.dest('build/img'));
 	return del(['build/img/sprite.svg'], callback);
 });
@@ -338,7 +339,8 @@ gulp.task('code', function(callback) {
 	sequence(
 		'clean',
 		['less-dist', 'jade-dist', 'js-dist', 'php'],
-		['sitemap', 'gzip-spritesheet'],
+		['sitemap'],
+		//['sitemap', 'gzip-spritesheet'],
 		'done',
 	callback);
 });

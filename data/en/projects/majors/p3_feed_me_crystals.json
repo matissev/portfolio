@@ -10,7 +10,7 @@
 	],
 	"date": "2015-01",
 	"explicitDate": "January 2015",
-	"lead": "Original and immersive, Feed Me Crystals is a game in which the goal is to catch the as much crystals as you can before the time runs out, while avoiding to loose them on the way. This project, combining sound design and graphical environment includes a simple but fun gameplay, made above all to catch a good laugh.",
+	"lead": "Original and immersive, Feed Me Crystals is a game in which the goal is to catch as much crystals as you can before the time runs out, while avoiding to loose them on the way. This project, combining sound design and graphical environment includes a simple but fun gameplay, made above all to catch a good laugh.",
 	"coverImage": {
 		"url": "/img/majors/feed-me-crystals/cover.jpg",
 		"alt": "Cover picture of Feed Me Crystals"
@@ -22,7 +22,7 @@
 		"name": "Collaborators",
 		"items": [{
 			"name": "Pierre-Emmanuel Moëc",
-			"url": "http://pierre-emmanuelm.com",
+			"url": "https://www.linkedin.com/in/pierreemmanuelmoec",
 			"microdata": "contributor"
 		}]
 	}, {

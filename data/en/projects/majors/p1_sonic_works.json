@@ -1,0 +1,136 @@
+{
+	"title": "Sonic Works",
+	"lowercase": "sonic-works",
+	"subtitle": "Interest points aggregator",
+	"description": "Broadcaster is an interest sharing service allowing you to discover artists, movies or events which your friends have recommended for you.",
+	"tags": [
+		"sound",
+		"service",
+		"graphism"
+	],
+	"date": "2015-03",
+	"explicitDate": "March 2015",
+	"lead": "Someone talked to you about a movie, music, an event coming, but what was it again? Broadcaster is a web service allowing you to collect all those areas of interest and play them later on a personalized radio.",
+	"coverImage": {
+		"url": "/img/majors/broadcaster/cover.jpg",
+		"alt": "Cover picture of Broadcaster"
+	},
+
+
+
+	"relatedContent": [{
+		"name": "Medias",
+		"items": [{
+			"name": "Presentation file (French)",
+			"url": "medias/broadcaster/broadcaster-presentation.pdf",
+			"microdata": "associatedMedia"
+		}]
+	}, {
+		"name": "Tools used",
+		"items": [{
+			"name": "Illustrator"
+		}, {
+			"name": "After Effects"
+		}, {
+			"name": "Ableton Live"
+		}]
+	}],
+
+
+
+	"content": [{
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"The principle is simple&#8239;: when your friends talk to you about an artist who they like, an event happening soon, they can send it to you via their smartphone and you will receive the corresponding audio program on your personalized radio.",
+				"On this radio, you will find all the programs built from areas of interest your friends sent to you. Therefore, beside the favourite song of your friend you will be able to find an interview of the artist, a summary of his/her next tour dates as well as a small biography. Finally, you will be able to listen to all this while doing something completely different."
+			]
+		}]
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/broadcaster/mockup.jpg",
+		"caption": "Broadcaster is available on smartphones and laptops (app and web).",
+		"alt": "Mockup of a laptop and a smartphone on which Broadcaster is opened"
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"For the movies this is the same thing, we will be able to hear an audio trailer just like we find them on radios, a summary of the next cinema sessions nearby, but also the cast and the press reviews.",
+				"Concerning the events, we will be able to hear a description, an adress, a date and a price, as well as related medias such as video clips found on the website of the event.",
+				"Finally, it could be interesting to be allowed to read press articles or web articles but unfortunately the speech synthesis technologies have not the necessary expressivity yet."
+			]
+		}]
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"title": "The mobile app",
+			"paragraphs": [
+				"The application interface focuses on a few fonctionnalities&#8239;: share an area of interest with one or more friends (Emit) or play the collected programs (Broadcast). On the first screen we also find shows likely to be interesting, determined by their localisation (events), their similarities with shows already played (articles) or according of the user tastes (music, movies).",
+				"Imagine that you are chating with a friend about a movie you have not seen yet. If you both have Broadcaster your friend will be able to share the area of interest corresponding to this movie towards your feed. Then, each of you must have opened the app on his/her smartphone. So, when your friend picks a recipient, your account will immediately appear in the list because you are next to each other (see the video below). Then, he/she will be able to select the area(s) of interest to share. These are sorted by relevance and on the top of the list we can find subjects related to the web pages the user visited recently, or related to the last collected programs, etc.. When your sharing is complete, you are notified on your phone."
+			]
+		}]
+	}, {
+		"type": "video",
+		"size": "medium",
+		"url": "https://www.youtube.com/embed/skBI_0EWASc",
+		"caption": "The mobile app design focuses on sending and playing areas of interest."
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"title": "The web interface",
+			"paragraphs": [
+				"The website concentrates on discovering new programs and playing them (video below). On the main page you can have access to events happening nearby, to popular programs but also artists, articles and movies you will most likely enjoy.",
+				"In the tab dedicated to the listening (Broadcast) we find back our feed with the programs collected here and there. We can mark a program as a favourite and retreive those we already listened to. By opening the player (button on the top right corner) we have access to the advanced controls. Therefore, we can discover the voice control and play a media from a program in particular.",
+				"Finally, there is a tab for the account settings. In this one, you can link Broadcaster to different streaming services, to Shazam (in order to collect identified songs), but also Last.fm, Soundiiz, Youtube and Soundcloud. The streaming services will allow you to enjoy a better sound quality, to have access to your playlists and to reduce the adverts on the service. In the last part, you can personalize your custom jingle."
+			]
+		}]
+	}, {
+		"type": "video",
+		"size": "large",
+		"url": "https://www.youtube.com/embed/iZ9x1gbCohg",
+		"caption": "The website allows a more confortable listening as well as voice controls and an advance discovery."
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"title": "The sound identity",
+			"paragraphs": [
+				"The sound design remains very important in this project. In fact, if the interface is in part a graphical interface, it is also made of sounds&#8239;: I crafted a sound identity in order to sense the switch between programs, medias, senders and know what is coming next.",
+				"The three audio clips below show three different moments. The first one is when the user launches the playing of the feed. This is why we can hear the audio logo of Broadcaster followed by the song “Inner city blues” by Marvin Gaye on the top of the feed. On the second clip we hear the jingle of the sender of the program as well as the date and the location where it has been added. The third one illustrates the program switch (triggered by the user), which is why you can hear the trailer of “Mad Max” starting right after the “switching programs” jingle. Finally, in the last clip we can hear the end of the trailer and then the jingle corresponding to the news (we can hear the BBC news)."
+			]
+		}]
+	}, {
+		"type": "audio",
+		"size": "small",
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/144745963%3Fsecret_token%3Ds-wt2V1",
+		"caption": "The jingles are conceived to signify the playing changes."
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"title": "The browser extension",
+			"paragraphs": [
+				"In order to collect the user’s areas of interest, a browser extension can process the visited web pages and add articles to the feed for a further playing. Also, the extension can be used as a player, so you can leave the Broadcaster web page without stopping the sound. When you click on the Broadcaster logo, you find back the website."
+			]
+		}]
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/broadcaster/extension.jpg",
+		"caption": "The browser extension allows to add articles to the feed and manage the player.",
+		"alt": "Screenshot of the browser extension"
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"This project is a vast exploration of the usage of audio as an information medium and a reflexion on its possible usage, its discretion and aestheticism. Please note that this project has not been developed and has been designed as part of my studies."
+			]
+		}]
+	}]
+}

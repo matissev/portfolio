@@ -1,0 +1,101 @@
+{
+	"title": "Travaux Sonores",
+	"lowercase": "sonic-works",
+	"subtitle": "Productions diverses",
+	"description": "blabla",
+	"tags": [
+		"musique à l'image",
+		"illustration sonore"
+	],
+	"date": "2016-08",
+	"explicitDate": "Août 2016",
+	"lead": "blabla",
+	"coverImage": {
+		"url": "/img/majors/sonic-works/cover.jpg",
+		"alt": "Image de présentation des Travaux Sonores"
+	},
+
+
+
+	"relatedContent": [{
+		"name": "Collaborateurs",
+		"items": [{
+			"name": "Murielle Scalzo (Partons & Edgar)",
+			"url": "https://www.linkedin.com/in/murielle-scalzo-16b70696",
+			"microdata": "contributor"
+		}]
+	}, {
+		"name": "Outils utilisés",
+		"items": [{
+			"name": "Ableton Live"
+		}, {
+			"name": "Final Cut"
+		}]
+	}],
+
+
+
+	"content": [{
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"title": "Objet Sonore 1",
+			"paragraphs": [
+				"blabla"
+			]
+		}]
+	}, {
+		"type": "audio",
+		"size": "small",
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/295785285%3Fsecret_token%3Ds-wt2V1",
+		"caption": "The jingles are conceived to signify the playing changes."
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"title": "Musiques de courts-métrages de Murielle Scalzo",
+			"paragraphs": [
+				"Pour « Edgar », quelques extraits du film sont disponibles ci-dessous.",
+				"Dans « Partons », la musique devait illustrer un malaise entre deux personnes qui viennent de se rencontrer."
+			]
+		}]
+	}, {
+		"type": "video",
+		"size": "medium",
+		"url": "https://www.youtube.com/embed/Z99QK5Lbx30",
+		"caption": "Le design de l’application mobile se concentre sur l’envoi et la lecture des centres d’intérêt."
+	}, {
+		"type": "audio",
+		"size": "small",
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/270791424%3Fsecret_token%3Ds-wt2V1",
+		"caption": "The jingles are conceived to signify the playing changes."
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"title": "Illustration sonore d’un conte",
+			"paragraphs": [
+				"« Lechild » est un conte que j’ai écrit et illustré en école de design. Les contraintes étaient simples : l’univers se devait d’être noir, introspectif et un brin angoissant, dépeint par des saturations assez fortes, une réverbération légère et un arrangement fait de cuivres, et de guitares."
+			]
+		}]
+	}, {
+		"type": "audio",
+		"size": "small",
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/280031617%3Fsecret_token%3Ds-wt2V1",
+		"caption": "The jingles are conceived to signify the playing changes."
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"title": "Morceaux personnels",
+			"paragraphs": [
+				"« La prétention » est un morceau d’expérimentation dans un style que je n’avais pas l’habitude de traiter. « Sans-titre » fait quant à lui partie d’une série de morceaux que j’avais l’habitude de produire toute les semaines."
+			]
+		}]
+	}, {
+		"type": "audio",
+		"size": "small",
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/280032445%3Fsecret_token%3Ds-wt2V1",
+		"caption": "The jingles are conceived to signify the playing changes."
+	}]
+}
