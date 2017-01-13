@@ -71,3 +71,48 @@ header.home .home-header {
 		}
 	}
 }
+
+.home .news {
+	z-index: 5;
+	position: absolute;
+	text-align: left;
+	width: 2 * @gutter + 3 * @column;
+	bottom: 10vh;
+	right: @margin;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 7px 15px;
+	background: fade(@colorB, 50%);
+	color: @colorA;
+	border-radius: 2px;
+	transform: translateZ(0);
+	backface-visibility: hidden;
+	perspective: 1000;
+	transition: width 0.3s ease, padding 0.3s ease;
+
+	&:hover {
+		width: 2 * @gutter + 3 * @column + 2%;
+	}
+
+	&:before {
+		content: "";
+		.icon-news;
+		flex: none;
+		margin-right: 15px;
+	}
+
+	.text {
+		display: inline-block;
+		float: left;
+
+		strong {
+			margin-bottom: 10px;
+			display: inline-block;
+		}
+
+		span {
+			display: inline-block;
+		}
+	}
+}

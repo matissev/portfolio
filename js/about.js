@@ -32,7 +32,15 @@ updateAbout = {
 		});
 
 
-		$('header.home .home-header, .nav, .minor-projects-container, .majors .project-details, .majors .tags').velocity({
+		$('.news').velocity({
+			opacity: 0,
+		}, {
+			duration: currentDuration,
+			queue: false
+		});
+
+
+		$('header.home .home-header, .nav, .majors .project-details, .majors .tags').velocity({
 			opacity: 0
 		}, {
 			duration: currentDuration,
@@ -75,7 +83,25 @@ updateAbout = {
 			queue: false
 		});
 
-		$('header.home .home-header, .nav, .minor-projects-container, .majors .project-details, .majors .tags').velocity({
+
+		$('.minor-projects-container').velocity({
+			opacity: 1,
+			display: 'block'
+		}, {
+			duration: currentDuration,
+			delay: 300,
+			queue: false
+		});
+
+		$('.news').velocity({
+			opacity: 1,
+		}, {
+			duration: currentDuration,
+			delay: 300,
+			queue: false
+		});
+
+		$('header.home .home-header, .nav, .majors .project-details, .majors .tags').velocity({
 			opacity: 1
 		}, {
 			duration: currentDuration,

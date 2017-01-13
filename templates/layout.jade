@@ -8,6 +8,7 @@
 
 - var projects = data.projects;
 - var majorProjects = projects.majors;
+- var news = projects.news;
 
 - var template = 'layout';
 
@@ -34,7 +35,7 @@ html(lang=selectedLanguage.abbr)
 
 		include partials/photoswipe
 
-		//- include helpers/media-queries
+		include helpers/media-queries
 		include helpers/grid
 
 		- var stylesheetsInBodyTag = true;

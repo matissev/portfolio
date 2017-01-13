@@ -33,12 +33,19 @@
 			font-size: @font-size-l;
 			margin-top: 20px;
 
-			abbr {
-				margin: 0 15px 0 0;
+			& > abbr, a abbr {
+				margin: 0 8px 0 8px;
 			}
+		}
 
-			a abbr {
-				margin-right: 0;
+		.news {
+			width: 100% - 2 * @margin;
+			right: auto;
+			left: @margin;
+			transition: none!important;
+
+			&:hover {
+				width: 100% - 2 * @margin;
 			}
 		}
 	}

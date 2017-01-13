@@ -22,7 +22,7 @@
 		"name": "Medias",
 		"items": [{
 			"name": "Presentation file (French)",
-			"url": "medias/broadcaster/broadcaster-presentation.pdf",
+			"url": "/medias/broadcaster/broadcaster-presentation.pdf",
 			"microdata": "associatedMedia"
 		}]
 	}, {

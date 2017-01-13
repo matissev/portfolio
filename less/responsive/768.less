@@ -1,10 +1,20 @@
 
 /* TABLETS PORTRAIT */
 @media screen and (max-width: 768px), screen and (max-device-width: 768px) {
-
 	.home #parallax-cover .layer img {
 		top: 17%;
 		height: 70%;
+	}
+
+	.home .news {
+		width: 4 * @gutter + 5 * @column;
+		right: auto;
+		left: @margin;
+		bottom: 20px;
+
+		&:hover {
+			width: 4 * @gutter + 5 * @column + 2%;
+		}
 	}
 
 	.majors, .majors-understudy {

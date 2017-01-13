@@ -29,7 +29,7 @@
 		"name": "Médias",
 		"items": [{
 			"name": "Dossier de présentation",
-			"url": "medias/feed-me-crystals/feed-me-crystals-presentation.pdf",
+			"url": "/medias/feed-me-crystals/feed-me-crystals-presentation.pdf",
 			"microdata": "associatedMedia"
 		}]
 	}, {

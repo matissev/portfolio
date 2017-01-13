@@ -3,6 +3,7 @@ var gulp = require('gulp'),
 
 	server = require('browser-sync'),
 	del = require('del'),
+	watch = require('gulp-watch'),
 	sequence = require('run-sequence'),
 	plumber = require('gulp-plumber'),
 	notify = require('gulp-notify'),
@@ -138,7 +139,7 @@ gulp.task('js', function(){
 });
 
 gulp.task('php', function(){
-	return gulp.src(['server/**/*.*', 'server/**/.*'])
+	return gulp.src(['server/**/*.*', 'server/**/.*', 'server/.*/**'])
 		.pipe(gulp.dest('build'));
 });
 
@@ -270,11 +271,10 @@ gulp.task('js-dist', function() {
 });
 
 gulp.task('sitemap', function(){
-    gulp.src('build/**/*.html.gz')
+    gulp.src('build/**/*.html')
         .pipe(sitemap({
             siteUrl: siteInfos.homepage
         }))
-        .pipe(replace('.html.gz', '.html'))
         //.pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
         .pipe(gulp.dest('./build'));
 });
@@ -320,7 +320,7 @@ gulp.task('done', function() {
 
 gulp.task('gzip-spritesheet', function(callback) {
 	gulp.src('build/img/sprite.svg')
-		//.pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
+		.pipe(gzip({ gzipOptions: { level: 9, memLevel: 1} }))
 		.pipe(gulp.dest('build/img'));
 	return del(['build/img/sprite.svg'], callback);
 });
@@ -330,7 +330,8 @@ gulp.task('dist', function(callback) {
 		'clean',
 		'json',
 		['less-dist', 'jade-dist', 'js-dist', 'optimize-images', 'fonts-dist', 'medias', 'php'],
-		['sitemap', 'gzip-spritesheet'],
+		['sitemap'],
+		// ['sitemap', 'gzip-spritesheet'],
 		'done',
 	callback);
 });

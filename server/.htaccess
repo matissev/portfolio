@@ -31,14 +31,23 @@ RewriteEngine On
 RewriteBase /
 
 
-# Redirection from http://www to http://
-RewriteCond %{HTTP_HOST} ^www\.matissev\.com$
-RewriteRule ^/?$ "http\:\/\/matissev\.com\/" [R=301,L]
-
-
 # Forbid access from User-agent Libwww-perl
 RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
 RewriteRule .* ? [F,L]
+
+
+# Redirection from .html to no extension
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+
+RewriteCond %{HTTP_HOST} ^31\.170\.164\.138
+RewriteRule (.*) http://matissev.com/$1 [R=301,L]
+
+
+# Redirection from http://www to http://
+RewriteCond %{HTTP_HOST} ^www\.matissev\.com$
+RewriteRule ^/?$ "http\:\/\/matissev\.com\/" [R=301,L]
 
 
 # GZIP

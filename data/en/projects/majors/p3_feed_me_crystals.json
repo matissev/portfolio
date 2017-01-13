@@ -29,7 +29,7 @@
 		"name": "Medias",
 		"items": [{
 			"name": "Presentation file (French)",
-			"url": "medias/feed-me-crystals/feed-me-crystals-presentation.pdf",
+			"url": "/medias/feed-me-crystals/feed-me-crystals-presentation.pdf",
 			"microdata": "associatedMedia"
 		}]
 	}, {

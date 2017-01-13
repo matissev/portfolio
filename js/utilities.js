@@ -7,7 +7,7 @@ function hasClass(ele,cls) {
 function removeClass(element, className) {
     if (element && hasClass(element,className)) {
         var reg = new RegExp('(\\s|^)'+className+'(\\s|$)');
-        element.className=element.className.replace(reg,'');
+        element.className = ' ' + element.className.replace(reg,'') + ' ';
     }
 }
 

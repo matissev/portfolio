@@ -2,12 +2,12 @@ header.section.home
 	.home-header
 		h1(itemprop="name headline")
 			if template === 'layout'
-				span.name(itemprop="author creator") !{main.name}&nbsp;
+				span.name(itemprop="author creator") !{main.name}
 				span.activity(itemprop="genre") !{main.activity}
 				meta(itemprop="primaryImageOfPage" content="/img/cover.jpg")
 			if template === 'article'
 				a(href="index.html")
-					span.name(itemprop="author creator") !{main.name}&nbsp;
+					span.name(itemprop="author creator") !{main.name}
 					span.activity(itemprop="genre") !{main.activity}
 				meta(itemprop="primaryImageOfPage" content=storedProject.coverImage.url)
 
@@ -33,3 +33,8 @@ header.section.home
 		ul(id="parallax-cover")
 			each layer in ui.cover
 				li.layer(data-depth=layer.depth) #[img(alt=layer.alt src=layer.url)]
+		if news.title
+			a.news(href=news.link target="_blank")
+				p.text
+					strong !{news.title}
+					span !{news.text}

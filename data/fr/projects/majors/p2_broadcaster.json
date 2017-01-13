@@ -22,7 +22,7 @@
 		"name": "Médias",
 		"items": [{
 			"name": "Dossier de présentation",
-			"url": "medias/broadcaster/broadcaster-presentation.pdf",
+			"url": "/medias/broadcaster/broadcaster-presentation.pdf",
 			"microdata": "associatedMedia"
 		}]
 	}, {

@@ -16,4 +16,4 @@ aboutPage = document.querySelector('section.about');
 contactForm = document.querySelector('section.about .contact-form');
 aboutOpenButton = document.querySelector('.about-open-button');
 aboutCloseButton = document.querySelector('.about-close-button');
-hiddenElementsOnAbout = document.querySelectorAll('section.home header, nav, .minor-projects-container, .majors .project-details, .majors .tags');
+hiddenElementsOnAbout = document.querySelectorAll('section.home header, nav, .majors .project-details, .majors .tags');

@@ -44,7 +44,7 @@ if template === 'layout'
 			meta(property="og:image" content=main.domainName+main.coverImageUrl)
 
 		else if language.abbr !== selectedLanguage.abbr
-			link(rel="alternate" hreflang=language.abbr href=main.domainName+language.url+".html")
+			link(rel="alternate" hreflang=language.abbr href=main.domainName+language.url+"index.html")
 
 if template === 'article'
 	title !{main.name} | !{storedProject.title}, !{storedProject.subtitle.toLowerCase()}

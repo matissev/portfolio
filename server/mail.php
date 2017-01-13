@@ -1,6 +1,6 @@
 <?php
 
-$TO = "m.vrignaud@lecolededesign.com";
+$TO = "matisse.vrignaud@gmail.com";
 $name = $_REQUEST["requiredfullname"];
 $email = $_REQUEST["requiredemail"];
 $subject = $_REQUEST["requiredsubject"];
