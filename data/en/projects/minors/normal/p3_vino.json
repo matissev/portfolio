@@ -1,0 +1,36 @@
+{
+	"title": "Vino",
+	"date": "2015-05",
+	"explicitDate": "May 2015",
+	"content": [{
+		"type": "gallery",
+		"thumbnail": {
+			"url": "/img/minors/vino/thumbnail.jpg",
+			"alt": "Thumbnail of the Vino image gallery"
+		},
+		"images": [{
+			"url": "/img/minors/vino/object-1.jpg",
+			"caption": "Photo of the connected object and a vine stock.<br>Vino analyzes the condition of the plant to prevent the potential problems. Its refined design perfectly fits in a vineyard.",
+			"size": "2880x1920"
+		}, {
+			"url": "/img/minors/vino/rough.jpg",
+			"caption": "Drawing of the prototype with an overall view, a side view, a front view and details of the product.<br>The product is designed to adapt as much as possible to the vineyard while being very discreet and compact.",
+			"size": "2880x1920"
+		}, {
+			"url": "/img/minors/vino/object-3.jpg",
+			"caption": "Close-up photo of the product",
+			"size": "1024x680"
+		}, {
+			"url": "/img/minors/vino/object-2.jpg",
+			"caption": "Photo of the soil sensor right next to the trunk.<br>The probe records informations concerning the soil such as its conductivity (salinity, amount of minerals), its humidity level, its pH (prevents from the necrosis), etc..",
+			"size": "1024x680"
+		}, {
+			"url": "/img/minors/vino/app.jpg",
+			"caption": "Screenshots of the Vino mobile app.<br>The app allows the winegrower to be notified in case of a problem and also check the stored data.",
+			"size": "1024x680"
+		}]
+	}, {
+		"type": "text",
+		"text": "The production loss factors of a vineyard are many&#8239;: diseases, hydric stress, weather… Vino is a connected object allowing to observe the evolution of the plants in order to prevent the complications, while saving ressources. By combining multiple sensors, this little box gathers different informations about the vineyard (soil moisture, precipitation rate, luminosity, sap pressure, etc.) and then transmits it to the smartphone of the winegrower so as to notify him/her of the potential dangers that his/here crops might incur. The device is powered by a solar panel on the main box and the informations are transmitted by bluetooth 4.0 (LE) once the stored energy is sufficient and the smartphone is nearby. If multiple devices are installed in the vineyard you can compare the evolution of the various vineyard plots."
+	}]
+}

@@ -1,18 +1,18 @@
 {
-	"title": "Sonic Works",
-	"lowercase": "sonic-works",
+	"title": "Sound Works",
+	"lowercase": "sound-works",
 	"subtitle": "Various creations",
-	"description": "A collection of sonic creations, experimentations, personal music researches or also music for the image, all dealing with a medium or a particular aspect.",
+	"description": "A collection of sound creations, experimentations, personal music researches or also music for the image, all dealing with a medium or a particular aspect.",
 	"tags": [
 		"music for the image",
-		"sonic illustration"
+		"sound illustration"
 	],
 	"date": "2016-08",
 	"explicitDate": "August 2016",
-	"lead": "There are a thousand ways to produce a sound, and so there are a thousand possible meanings. Here is a collection of sonic experimentations, personal music researches or also music for the image all dealing with a medium or a particular aspect.",
+	"lead": "There are a thousand ways to produce a sound, and so there are a thousand possible meanings. Here is a collection of audio experimentations, personal music researches or also music for the image all dealing with a medium or a particular aspect.",
 	"coverImage": {
-		"url": "/img/majors/sonic-works/cover.jpg",
-		"alt": "Cover picture of the Sonic Works"
+		"url": "/img/majors/sound-works/cover.jpg",
+		"alt": "Cover picture of the Sound Works"
 	},
 
 
@@ -43,14 +43,14 @@
 			"type": "paragraph",
 			"title": "Sound Object 1",
 			"paragraphs": [
-				"The kind of sonic experimentation aims to find original textures and interesting composition ideas for the potential needs of an other project.",
+				"This kind of sound experimentation aims to find original textures and interesting composition ideas for the potential needs of an other project.",
 				"Every sound in this “sound object” come from personal recordings and simple synthesis. The transformations are mainly done with the <abbr title=\"Groupe de Recherches Musicales\">GRM</abbr> Tools."
 			]
 		}]
 	}, {
 		"type": "audio",
 		"size": "small",
-		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296374080%3Fsecret_token%3Ds-wt2V1",
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/294715727%3Fsecret_token%3Ds-wt2V1",
 		"caption": "Most of the sounds have been recorded, only two of them come from oscillators."
 	}, {
 		"type": "text",
@@ -75,7 +75,7 @@
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
-			"title": "Sonic illustration of a tale",
+			"title": "Sound illustration of a tale",
 			"paragraphs": [
 				"“Lechild” is a tale that I wrote and illustrated when I was in design school. The constraints were simple&#8239;: The ambiance had to be dark, introspective and a bit anguishing, depicted by quite strong saturations, a slight reverb and an arrangement made of brass instruments and guitars."
 			]

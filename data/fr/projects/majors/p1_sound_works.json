@@ -1,6 +1,6 @@
 {
 	"title": "Travaux Sonores",
-	"lowercase": "sonic-works",
+	"lowercase": "sound-works",
 	"subtitle": "Productions diverses",
 	"description": "Une collection de créations sonores, expérimentations, recherches musicales personnelles ou encore musique à l'image traitant toutes d'un médium ou d'un aspect particulier.",
 	"tags": [
@@ -11,7 +11,7 @@
 	"explicitDate": "Août 2016",
 	"lead": "Il y a mille façons de produire un son, il y a alors mille significations possibles. Voilà une collection d'expérimentations sonores, recherches musicales personnelles ou encore musique à l'image traitant toutes d'un médium ou d'un aspect particulier.",
 	"coverImage": {
-		"url": "/img/majors/sonic-works/cover.jpg",
+		"url": "/img/majors/sound-works/cover.jpg",
 		"alt": "Image de présentation des Travaux Sonores"
 	},
 
@@ -50,7 +50,7 @@
 	}, {
 		"type": "audio",
 		"size": "small",
-		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296374080%3Fsecret_token%3Ds-wt2V1",
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/294715727%3Fsecret_token%3Ds-wt2V1",
 		"caption": "La majorité des sons sont enregistrés, seuls deux sons d'oscillateurs sont synthétiques."
 	}, {
 		"type": "text",

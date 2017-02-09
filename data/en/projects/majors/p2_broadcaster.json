@@ -98,9 +98,9 @@
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
-			"title": "The sonic identity",
+			"title": "The sound identity",
 			"paragraphs": [
-				"The sound design remains very important in this project. In fact, if the interface is in part a graphical interface, it is also made of sounds&#8239;: I crafted a sonic identity in order to sense the switch between programs, medias, senders and know what is coming next.",
+				"The sound design remains very important in this project. In fact, if the interface is in part a graphical interface, it is also made of sounds&#8239;: I crafted a sound identity in order to sense the switch between programs, medias, senders and know what is coming next.",
 				"The three audio clips below show three different moments. The first one is when the user launches the playing of the feed. This is why we can hear the audio logo of Broadcaster followed by the song “Inner city blues” by Marvin Gaye on the top of the feed. On the second clip we hear the jingle of the sender of the program as well as the date and the location where it has been added. The third one illustrates the program switch (triggered by the user), which is why you can hear the trailer of “Mad Max” starting right after the “switching programs” jingle. Finally, in the last clip we can hear the end of the trailer and then the jingle corresponding to the news (we can hear the BBC news)."
 			]
 		}]

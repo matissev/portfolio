@@ -1,0 +1,36 @@
+{
+	"title": "Vino",
+	"date": "2015-05",
+	"explicitDate": "Mai 2015",
+	"content": [{
+		"type": "gallery",
+		"thumbnail": {
+			"url": "/img/minors/vino/thumbnail.jpg",
+			"alt": "Miniature de la galerie de Vino"
+		},
+		"images": [{
+			"url": "/img/minors/vino/object-1.jpg",
+			"caption": "Photo de l’objet connecté et d’un plant de vigne.<br>Vino analyse l’état de la plante pour prévoir les éventuels problèmes. Son design épuré s’intègre parfaitement à la vigne.",
+			"size": "2880x1920"
+		}, {
+			"url": "/img/minors/vino/rough.jpg",
+			"caption": "Dessin du prototype avec une vue d’ensemble, une vue de côté, une vue de face et des détails sur le produit.<br>Le produit est dessiné de manière à s’adapter au maximum à la vigne étudiée tout en étant le plus discret et compact possible.",
+			"size": "2880x1920"
+		}, {
+			"url": "/img/minors/vino/object-3.jpg",
+			"caption": "Photo de l’objet en gros plan.",
+			"size": "1024x680"
+		}, {
+			"url": "/img/minors/vino/object-2.jpg",
+			"caption": "Photo de la sonde au sol, plantée à la base d’un tronc de vigne.<br>La sonde de Vino permet d’enregistrer des informations concernant le sol comme la conductivité de celui-ci (richesse en minéraux), son taux d’humidité, son pH (prévient de la nécrose), etc..",
+			"size": "1024x680"
+		}, {
+			"url": "/img/minors/vino/app.jpg",
+			"caption": "Captures d’écran de l’application mobile Vino.<br>L’application permet d’être notifiée lors d’un problème et de consulter les données enregistrées.",
+			"size": "1024x680"
+		}]
+	}, {
+		"type": "text",
+		"text": "Les facteurs de perte de production d’une vigne sont importants&nbsp;: maladies, stress hydrique, météo… Vino est un objet connecté permettant d’observer l’évolution des plants afin de prévenir des complications, tout en économisant des ressources. En combinant plusieurs capteurs, ce petit boitier récupère de multiples informations sur la vigne (conductivité du sol, taux de précipitation, luminosité, pression de la sève, etc.) pour ensuite les transmettre sur le smartphone du vigneron afin de l’avertir des éventuels dangers que pourraient encourir ses cultures. Nous avons utilisé Arduino pour réaliser ce prototype. Le dispositif est alimenté grâce à un panneau solaire présent sur le boitier principal et l’envoi de données s’effectue par bluetooth 4.0 (LE) dès que l’énergie accumulée est suffisante et que le smartphone se trouve à proximité. En installant plusieurs boitiers dans la vigne, on peut comparer l’évolution des différentes parcelles de vigne."
+	}]
+}
