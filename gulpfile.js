@@ -188,8 +188,8 @@ gulp.task('spritesheet', function() {
 				}
 			}
 		})).on('error', function(error){ console.log(error); })
-		.pipe(gulp.dest('.'))
-		.pipe(gulpif('*.svg', svg2png()))
+		// .pipe(gulp.dest('.'))
+		// .pipe(gulpif('*.svg', svg2png()))
 		.pipe(gulp.dest('.'));
 });
 

@@ -120,3 +120,131 @@
 		}
 	}
 }
+
+.minor-project .playerbitch {
+	font: normal @font-size-s @heading-text;
+	width: 100%;
+	margin: 0;
+
+	.timebar-container {
+		transform: translate3d(0,0,0);
+		white-space: nowrap;
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 3px;
+
+		&:hover input[type=range]::-webkit-slider-runnable-track, &:hover input[type=range]:before {
+			height: 10px;
+			transition: height 0.2s ease-in;
+		}
+
+		&:before {
+			position: absolute;
+			z-index: -1;
+			top: -10px;
+			left: -5%;
+			display: block;
+			content: "";
+			width: 110%;
+			height: 30px;
+		}
+
+		input[type=range] {
+			display: block;
+			width: 100%;
+			appearance: none;
+
+			&::-webkit-slider-thumb {
+				appearance: none;
+				display: block;
+				width: 3px;
+				height: 3px;
+				background: blue;
+			}
+
+			&:focus {
+				outline: none;
+			}
+
+			&::-webkit-slider-runnable-track {
+				width: 100%;
+				height: 3px;
+				transition: height 0.2s ease-out;
+			}
+
+			&:before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				content: "";
+				width: 20%;
+				height: 3px;
+				background: orange;
+				transition: height 0.2s ease-out;
+			}
+		}
+	}
+
+	.infos {
+		display: block;
+		height: 81px;
+		width: 100%;
+		background: green;
+		padding: 16px 31px;
+		box-sizing: border-box;
+
+		button {
+			padding: 0;
+			float: left;
+			display: inline-block;
+			border: none;
+			content: "";
+			.icon-play-sound;
+
+			.label {
+				.assistive-hide();
+			}
+		}
+
+		.text {
+			width: calc(100% - 50px);
+			background: yellow;
+			display: block;
+			float: left;
+			margin-left: 16px;
+			padding: 0;
+			overflow: hidden;
+
+			.artist, .player-name {
+				width: 100%;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+		}
+
+		.time {
+			width: 78px;
+			text-align: right;
+			background: red;
+			float: right;
+		}
+
+		.duration {
+			float: right;
+		}
+
+		.audio-source {
+			display: inline-block;
+			float: right;
+			clear: both;
+			.icon-link;
+		}
+	}
+
+	.tracklist {
+		display: block;
+		clear: both;
+	}
+}
