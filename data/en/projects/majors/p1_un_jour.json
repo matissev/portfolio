@@ -1,0 +1,88 @@
+{
+	"title": "Un jour je courirai moins",
+	"lowercase": "un-jour",
+	"subtitle": "Sound installation",
+	"description": "Made at the espace29, this sound and digital installation explores the limits between organic and mechanical motion through a system of rotating charcoals",
+	"tags": [
+		"digital art",
+		"generative sound composition"
+	],
+	"date": "2015-01",
+	"explicitDate": "August 2017",
+	"lead": "Made during a three-day residency, this sound and digital installation explores the limits between organic/intentioned and mechanical motions. This device presenting a serie of rotating charcoals and sound composition will be exhibited on December 15th 2017 at the espace29 in Bordeaux.",
+	"coverImage": {
+		"url": "/img/majors/un-jour/cover.jpg",
+		"alt": "Cover picture of the digital installation"
+	},
+
+
+
+	"relatedContent": [{
+		"name": "Collaborators",
+		"items": [{
+			"name": "Hina Razanamasy",
+			"microdata": "contributor"
+		}, {
+			"name": "Victoire Morin",
+			"microdata": "contributor"
+		}]
+	}, {
+		"name": "Tools used",
+		"items": [{
+			"name": "Arduino"
+		}, {
+			"name": "Max MSP"
+		}, {
+			"name": "Ableton Live"
+		}]
+	}],
+
+
+
+	"content": [{
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"This work, first thought and elaborated in Paris with the collective I am a member of, has been then produced during a three day residency, on July 31 and August 1st and 2nd 2017. At this stage, the owl project was already known."
+			]
+		}]
+	}, {
+		"type": "text",
+		"title": "The device",
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"On the pedestal made of medium wood, 5 metal stems support small motors driving charcoals of various sizes. These modules, arranged inequally on the canvas and presenting slight variations of form (height, width…) are moving at various speed.",
+				"The sound of the charcoals scratching on the board is then recorded, processed, amplified and played with a sound system nearby. At this sound others will be added to produce a generative composition echoing the rotations of the motors."
+			]
+		}]
+	}, {
+		"type": "video",
+		"size": "large",
+		"url": "https://www.youtube.com/embed/4A3k5_M5P88",
+		"caption": "Presentation video of the installation."
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/un-jour/IMG.jpg",
+		"caption": "CAPTION",
+		"alt": "CAPTION"
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/un-jour/IMG.jpg",
+		"caption": "CAPTION",
+		"alt": "CAPTION"
+	}, {
+		"type": "text",
+		"title": "Le sound of the masses",
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"The accumulation of round-trips, the many researches for a state of comfort, the incontrolled desir and its distant resolution produce a daily motion. This installation tries to illustrate some of its aspects. By playing with amplification and reverb effects, the composition tries to spark sensations of scaling and shrinking.",
+				"Still under development, the installation will be exhibited on December 15th at the espace29 in Bordeaux."
+			]
+		}]
+	}]
+}

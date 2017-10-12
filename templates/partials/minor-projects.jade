@@ -25,6 +25,25 @@ each minorProject in minorProjects
 				when 'audio'
 					.article-media.audio-player(itemprop="audio" itemscope itemtype="http://schema.org/AudioObject" class=(media.playlist === "true" ? "playlist" : undefined))
 						iframe(itemprop="embedUrl" src=media.url+"&auto_play=false&hide_related=true&theme_color=FFFFFF&show_comments=false&show_user=false&show_reposts=false&visual=true&download=false&sharing=false")
+					//- .playerbitch
+					//- 	.timebar-container
+					//- 		input(type="range" min="0" max="100" value="0")
+					//- 	.infos
+					//- 		button
+					//- 			span.label play/pause
+					//- 		.text
+					//- 			span.artist Sweet Sweats
+					//- 			figcaption.player-name Lechild
+					//- 		.time
+					//- 			span.elapsed 10:35
+					//- 			|  / 
+					//- 			span.duration 14:36
+					//- 			a.audio-source(href="http://example.com" target="_blank")
+					//- 	.tracklist
+					//- 		.track
+					//- 			span.name Xanax
+					//- 			span.duration 4:36
+
 
 				when 'video'
 					.article-media.video-player(itemprop="video" itemscope itemtype="http://schema.org/VideoObject")

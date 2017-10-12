@@ -1,0 +1,88 @@
+{
+	"title": "Un jour je courirai moins",
+	"lowercase": "un-jour",
+	"subtitle": "Installation sonore",
+	"description": "Réalisée à l’espace29, cette installation sonore et numérique explore la limite entre mouvement organique et mécanique grâce à un système de fusains en rotation",
+	"tags": [
+		"art numérique",
+		"composition sonore générative"
+	],
+	"date": "2017-08",
+	"explicitDate": "Août 2017",
+	"lead": "Réalisée lors d’une résidence de trois jours, cette installation sonore et numérique explore les limites entre mouvement organique/intentionné et mécanique. Le dispositif présentant une série de fusains en rotation et composition sonore sera exposé le 15 décembre 2017 à l’espace29 de Bordeaux.",
+	"coverImage": {
+		"url": "/img/majors/un-jour/cover.jpg",
+		"alt": "Image de présentation de l’installation numérique"
+	},
+
+
+
+	"relatedContent": [{
+		"name": "Collaborateurs",
+		"items": [{
+			"name": "Hina Razanamasy",
+			"microdata": "contributor"
+		}, {
+			"name": "Victoire Morin",
+			"microdata": "contributor"
+		}]
+	}, {
+		"name": "Outils utilisés",
+		"items": [{
+			"name": "Arduino"
+		}, {
+			"name": "Max MSP"
+		}, {
+			"name": "Ableton Live"
+		}]
+	}],
+
+
+
+	"content": [{
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"Ce travail, d’abord pensé et élaboré sur Paris avec le collectif dont je fais parti a ensuite été produit lors de trois jours de résidence, les 31 juillet, 1er et 2 août 2017. À ce stade, le projet était déjà entièrement formalisé."
+			]
+		}]
+	}, {
+		"type": "text",
+		"title": "Le dispositif",
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"Sur le socle en médium, 5 tiges en métal supportent de petits moteurs entrainant des fusains de différentes tailles. Ces modules disposés inégalement sur le support et présentant de légères variations de forme (hauteur, largeur…) se mouvent en rotation à des cadences différentes.",
+				"Le son du frottement des fusains sur le plateau est alors enregistré, traité, amplifié puis restitué par un système d’enceintes. À ce son s’en ajouteront d’autres pour ainsi produire une composition générative en écho avec les rotations des moteurs."
+			]
+		}]
+	}, {
+		"type": "video",
+		"size": "large",
+		"url": "https://www.youtube.com/embed/4A3k5_M5P88",
+		"caption": "Vidéo de présentation de l’installation."
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/un-jour/IMG.jpg",
+		"caption": "CAPTION",
+		"alt": "CAPTION"
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/un-jour/IMG.jpg",
+		"caption": "CAPTION",
+		"alt": "CAPTION"
+	}, {
+		"type": "text",
+		"title": "Le son des foules",
+		"elements": [{
+			"type": "paragraph",
+			"paragraphs": [
+				"L’accumulation des allers et retours, les recherches d’états de confort, le désir incontrôlé et sa résolution distante forment un mouvement quotidien. Cette installation tente d’en illustrer des aspects. En jouant sur les effets d’amplification et de réverbération, la composition permet de susciter des sensations d’agrandissement et de rétrécissement.",
+				"Encore en développement, l’installation sera en exposition le vendredi 15 décembre à l’espace29 à Bordeaux."
+			]
+		}]
+	}]
+}
