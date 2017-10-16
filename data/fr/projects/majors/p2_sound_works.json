@@ -2,14 +2,14 @@
 	"title": "Travaux sonores",
 	"lowercase": "sound-works",
 	"subtitle": "Productions diverses",
-	"description": "Une collection de créations sonores, expérimentations, recherches musicales personnelles ou encore musique à l'image traitant toutes d'un médium ou d'un aspect particulier.",
+	"description": "Une collection de créations sonores, expérimentations, recherches musicales personnelles ou encore musique à l’image traitant toutes d’un médium ou d’un aspect particulier.",
 	"tags": [
-		"musique à l'image",
+		"musique à l’image",
 		"illustration sonore"
 	],
 	"date": "2017-04",
 	"explicitDate": "Avril 2017",
-	"lead": "Il y a mille façons de produire un son, il y a alors mille significations possibles. Voilà une collection d'expérimentations sonores, recherches musicales personnelles ou encore musique à l'image traitant toutes d'un médium ou d'un aspect particulier.",
+	"lead": "Il y a mille façons de produire un son, il y a alors mille significations possibles. Voilà une collection d’expérimentations sonores, recherches musicales personnelles ou encore musique à l’image traitant toutes d’un médium ou d’un aspect particulier.",
 	"coverImage": {
 		"url": "/img/majors/sound-works/cover.jpg",
 		"alt": "Image de présentation des Travaux Sonores"
@@ -20,7 +20,7 @@
 	"relatedContent": [{
 		"name": "Collaborateurs",
 		"items": [{
-			"name": "Murielle Scalzo (Partons & Edgar)",
+			"name": "Murielle Scalzo (bande originale Partons)",
 			"url": "https://www.linkedin.com/in/murielle-scalzo-16b70696",
 			"microdata": "contributor"
 		}]
@@ -31,7 +31,7 @@
 		}, {
 			"name": "<abbr title=\"Groupe de Recherches Musicales\">GRM</abbr> Tools"
 		}, {
-			"name": "Final Cut"
+			"name": "Csound"
 		}]
 	}],
 
@@ -41,36 +41,61 @@
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
+			"title": "Une pièce avec Csound",
+			"paragraphs": [
+				"En mars 2017 j’étudiais à la fois à l’Université de Paris-Est et à l’INA-GRM. Durant ces études, on m’a demandé de composer quelque chose avec Csound seulement. Pour rendre l’exercice un peu plus intéressant j’ai choisi de travailler sur l’orgasme et j’ai appelé le morceau « La mort fane dans le phonème ». J’ai fait ça avant tout pour m’amuser, mais aussi et surtout pour me donner une direction, des contraintes et une esthétique.",
+				"Parce que la pièce devait être courte, j’ai choisi de travailler avec une forme simple (ABA). Les parties A sont presque identiques tandis que B est utilisée comme pont : la structure est presque symétrique. En plus de ça, l’atmosphère se devait d’être sombre et enivrante. Pour arriver à ce but, j’ai ajouté du stretch (modulation temps et fréquences) sur la voix et joué avec pour qu’elle sonne comme le visage d’une femme qui se déforme.",
+				"Les autres synthétiseurs dépeignent la propagation (bruit blanc et flanger) la chute (les quatres notes du début) et la rythmicité (un kick un peu poudreux)."
+			]
+		}]
+	}, {
+		"type": "audio",
+		"size": "small",
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/346734637%3Fsecret_token%3Ds-wt2V1",
+		"caption": "“La mort fane dans le phonème” est une pièce composée avec Csound."
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"title": "Développement de sons à l'Ensemble de Musique Interactive",
+			"paragraphs": [
+				"Lors de mon stage à l'EMI, J. Baboni Schilingi nous a donné comme exercice de produire certaines typologies de son sur des thématiques données. Ainsi dans cette playlist, vous trouverez des pads (en Do3), des booms et une séquence jeu glitch créée à partir de sons brefs."
+			]
+		}]
+	}, {
+		"type": "audio",
+		"size": "small",
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/360143742%3Fsecret_token%3Ds-wt2V1",
+		"caption": "Réaliser ce type d'exercice de style est une grande richesse : à la fois des matériaux sont récupérés et à la fois les techniques s'affinent."
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
 			"title": "Objet Sonore 1",
 			"paragraphs": [
-				"Ce genre d'expérimentation sonore a pour but de trouver des textures originales et des idées de composition intéressantes pour les besoins éventuels d'un autre projet.",
-				"Tous les sons présents dans cet objet viennent d'enregistrements personnels et de synthèse simple. Les transformations sont effectuées principalement à l'aide des <abbr title=\"Groupe de Recherches Musicales\">GRM</abbr> Tools."
+				"Ce genre d’expérimentation sonore a pour but de trouver des textures originales et des idées de composition intéressantes pour les besoins éventuels d’un autre projet.",
+				"Tous les sons présents dans cet objet viennent d’enregistrements personnels et de synthèse simple. Les transformations sont effectuées principalement à l’aide des <abbr title=\"Groupe de Recherches Musicales\">GRM</abbr> Tools."
 			]
 		}]
 	}, {
 		"type": "audio",
 		"size": "small",
 		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/294715727%3Fsecret_token%3Ds-wt2V1",
-		"caption": "La majorité des sons sont enregistrés, seuls deux sons d'oscillateurs sont synthétiques."
+		"caption": "La plupart des sons ont été enregistrés puis transformés."
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
-			"title": "Musiques de courts-métrages de Murielle Scalzo",
+			"title": "Pièce radiophonique",
 			"paragraphs": [
-				"Ces bandes sonores ont été réalisées pour deux courts-métrages étudiants. Pour «&nbsp;Edgar&nbsp;», quelques extraits du film sont disponibles ci-dessous. Dans «&nbsp;Partons&nbsp;», la musique devait illustrer un malaise entre deux personnes qui viennent de se rencontrer."
+				"Dernièrement, j'ai demandé à mon grand-père de me raconter la construction de sa maison sur la côte. J'enregistre la conversation, et il commence par évoquer des souvenirs d'enfance et ce qui l'a fait venir dans ce petit village. J'ai ensuite enregistré des sons sur place, du crépitement du feu à l'activité touristique du mois de février. Le tout ressemble à une petite phonographie, sans pour autant ne contenir aucune voix."
 			]
 		}]
 	}, {
-		"type": "video",
-		"size": "medium",
-		"url": "https://www.youtube.com/embed/Z99QK5Lbx30",
-		"caption": "Extraits du film «&nbsp;Edgar&nbsp;»."
-	}, {
 		"type": "audio",
 		"size": "small",
-		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/270791424%3Fsecret_token%3Ds-wt2V1",
-		"caption": "Extraits de la musique du film «&nbsp;Partons&nbsp;."
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/346984692%3Fsecret_token%3Ds-wt2V1",
+		"caption": "L'enregistrement m'a pris cinq jours."
 	}, {
 		"type": "text",
 		"elements": [{
@@ -84,7 +109,21 @@
 		"type": "audio",
 		"size": "small",
 		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/280031617%3Fsecret_token%3Ds-wt2V1",
-		"caption": "Extraits de trois pistes de l'album."
+		"caption": "Extraits de trois pistes de l’album."
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"title": "Musique de court-métrage de Murielle Scalzo",
+			"paragraphs": [
+				"Ce morceau a été réalisé pour un court-métrage étudiant. Dans «&nbsp;Partons&nbsp;», la musique devait illustrer un malaise entre deux personnes qui viennent de se rencontrer."
+			]
+		}]
+	}, {
+		"type": "audio",
+		"size": "small",
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/270791424%3Fsecret_token%3Ds-wt2V1",
+		"caption": "Extrait de la musique du film «&nbsp;Partons&nbsp;»."
 	}, {
 		"type": "text",
 		"elements": [{

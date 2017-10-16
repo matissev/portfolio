@@ -9,7 +9,7 @@
 	],
 	"date": "2015-01",
 	"explicitDate": "August 2017",
-	"lead": "Made during a three-day residency, this sound and digital installation explores the limits between organic/intentioned and mechanical motions. This device presenting a serie of rotating charcoals and sound composition will be exhibited on December 15th 2017 at the espace29 in Bordeaux.",
+	"lead": "Made during a three-day residency, this sound and digital installation explores the limits between organic/intentioned and mechanical motions. This device, presenting a serie of rotating charcoals and sound composition, will be exhibited on December 15th 2017 at the espace29 in Bordeaux.",
 	"coverImage": {
 		"url": "/img/majors/un-jour/cover.jpg",
 		"alt": "Cover picture of the digital installation"
@@ -44,45 +44,57 @@
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"This work, first thought and elaborated in Paris with the collective I am a member of, has been then produced during a three day residency, on July 31 and August 1st and 2nd 2017. At this stage, the owl project was already known."
+				"This work, first thought and elaborated in Paris with the collective I am a member of, has been then produced during a three day residency, on July 31, August 1st and 2nd 2017. At this point, the owl project was already known."
 			]
 		}]
 	}, {
 		"type": "text",
-		"title": "The device",
 		"elements": [{
 			"type": "paragraph",
+			"title": "The device",
 			"paragraphs": [
 				"On the pedestal made of medium wood, 5 metal stems support small motors driving charcoals of various sizes. These modules, arranged inequally on the canvas and presenting slight variations of form (height, width…) are moving at various speed.",
-				"The sound of the charcoals scratching on the board is then recorded, processed, amplified and played with a sound system nearby. At this sound others will be added to produce a generative composition echoing the rotations of the motors."
+				"The sound of the charcoals scratching on the board is then recorded, processed, amplified and played with a sound system nearby. To this sound others will be added to produce a generative composition echoing the rotations of the motors."
 			]
 		}]
 	}, {
 		"type": "video",
 		"size": "large",
-		"url": "https://www.youtube.com/embed/4A3k5_M5P88",
+		"url": "https://www.youtube.com/embed/HJliwXioKNg",
 		"caption": "Presentation video of the installation."
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/un-jour/IMG.jpg",
-		"caption": "CAPTION",
-		"alt": "CAPTION"
+		"url": "/img/majors/un-jour/un-jour-1.jpg",
+		"caption": "The different modules display singular aspects in a way that they can sometimes appear grotesque.",
+		"alt": "Three motorized modules still unfinished and disposed on the medium plank."
 	}, {
 		"type": "image",
 		"size": "small",
-		"url": "/img/majors/un-jour/IMG.jpg",
-		"caption": "CAPTION",
-		"alt": "CAPTION"
+		"url": "/img/majors/un-jour/un-jour-2.jpg",
+		"caption": "Each motor is tied to a charcoal with pieces of hangers. These are flattened on a side, then drilled, and finally attached together with small brass screws.",
+		"alt": "Close-up photo of a single motorized module"
 	}, {
 		"type": "text",
-		"title": "Le sound of the masses",
 		"elements": [{
 			"type": "paragraph",
+			"title": "Le sound of the masses",
 			"paragraphs": [
 				"The accumulation of round-trips, the many researches for a state of comfort, the incontrolled desir and its distant resolution produce a daily motion. This installation tries to illustrate some of its aspects. By playing with amplification and reverb effects, the composition tries to spark sensations of scaling and shrinking.",
 				"Still under development, the installation will be exhibited on December 15th at the espace29 in Bordeaux."
 			]
 		}]
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/un-jour/un-jour-3.jpg",
+		"caption": "A three-day residency implicates fast testing and remodeling. The third day was dedicated to controlling and adjusting the speeds.",
+		"alt": "A moment during the testing phase when the installation is still open and visible on the inside"
+	}, {
+		"type": "image",
+		"size": "small",
+		"url": "/img/majors/un-jour/un-jour-4.jpg",
+		"caption": "Our makeshift workbench.",
+		"alt": "Improvised workbench"
 	}]
 }

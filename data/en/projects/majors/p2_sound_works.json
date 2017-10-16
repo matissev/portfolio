@@ -9,7 +9,7 @@
 	],
 	"date": "2017-04",
 	"explicitDate": "April 2017",
-	"lead": "There are a thousand ways to produce a sound, and so there are a thousand possible meanings. Here is a collection of audio experimentations, personal music researches or also music for the image all dealing with a medium or a particular aspect.",
+	"lead": "There is a thousand ways to produce a sound, and so there is a thousand possible meanings. Here is a collection of audio experimentations, personal music researches or music for the image all dealing with a medium or a particular aspect.",
 	"coverImage": {
 		"url": "/img/majors/sound-works/cover.jpg",
 		"alt": "Cover picture of the Sound Works"
@@ -20,7 +20,7 @@
 	"relatedContent": [{
 		"name": "Collaborators",
 		"items": [{
-			"name": "Murielle Scalzo (Partons & Edgar)",
+			"name": "Murielle Scalzo (Partons soundtrack)",
 			"url": "https://www.linkedin.com/in/murielle-scalzo-16b70696",
 			"microdata": "contributor"
 		}]
@@ -31,7 +31,7 @@
 		}, {
 			"name": "<abbr title=\"Groupe de Recherches Musicales\">GRM</abbr> Tools"
 		}, {
-			"name": "Final Cut"
+			"name": "Csound"
 		}]
 	}],
 
@@ -41,36 +41,61 @@
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
-			"title": "Sound Object 1",
+			"title": "A piece with Csound",
 			"paragraphs": [
-				"This kind of sound experimentation aims to find original textures and interesting composition ideas for the potential needs of an other project.",
-				"Every sound in this “sound object” come from personal recordings and simple synthesis. The transformations are mainly done with the <abbr title=\"Groupe de Recherches Musicales\">GRM</abbr> Tools."
+				"In march 2017 I was studying both at the University of Paris East and at the INA-GRM. During these studies, I was asked to compose something with Csound only. In order to make the exercice a bit more interesting I chose to work on orgasm and called the song “La mort fane dans le phonème” which means “Death teds in the phoneme”. I did this firstly to entertain myself but also and mostly to give myself a direction, constraints and an aesthetic.",
+				"Because the piece had to be short, I chose to work with a simple form (ABA). A parts are almost identical while B is used as a bridge : the structure is almost symetrical. Moreover, the atmosphere had to be dark and intoxicating. To achieve this “goal”, I added a stretch modulation (pitch and time) on the voice and played with it, so that it sounds like a woman’s face distorting.",
+				"The other synths picture the propagation (white noise and flanger), the fall (the four notes at the beginning) and the rythmicity (a kick a bit dusty)."
+			]
+		}]
+	}, {
+		"type": "audio",
+		"size": "small",
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/346734637%3Fsecret_token%3Ds-wt2V1",
+		"caption": "“La mort fane dans le phonème” is a piece composed with Csound."
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"title": "Sound creation at the Interactive Musique Ensemble",
+			"paragraphs": [
+				"During my internship at the EMI, J. Baboni Schilingi asked me as an exercice to produce certain sound typology on given thematics. Thus in this playlist, you will find pads (in C3), booms and a glitch sound sequence made with shorts sounds."
+			]
+		}]
+	}, {
+		"type": "audio",
+		"size": "small",
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/360143742%3Fsecret_token%3Ds-wt2V1",
+		"caption": "Completing this kind of exercise is of a great experience wealth : materials are retrieved and technics are refined."
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
+			"title": "Sound Objects",
+			"paragraphs": [
+				"This kind of sound experimentations aims to find original textures and interesting composition ideas for the potential needs of an other project.",
+				"Each sound in this “sound object” come from personal recordings and simple synthesis. The transformations are mainly done with the <abbr title=\"Groupe de Recherches Musicales\">GRM</abbr> Tools."
 			]
 		}]
 	}, {
 		"type": "audio",
 		"size": "small",
 		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/294715727%3Fsecret_token%3Ds-wt2V1",
-		"caption": "Most of the sounds have been recorded, only two of them come from oscillators."
+		"caption": "Most of the sounds have been recorded and then transformed."
 	}, {
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
-			"title": "Music for two shorts movies of Murielle Scalzo",
+			"title": "Radiophonic piece",
 			"paragraphs": [
-				"These original soundtracks were made for two student short movies. For “Edgar”, a few film clips are available in the video below. In “Partons”, the music had to illustrate an unease between two people who just met."
+				"Lately, I asked my grandfather to tell me the story of the building of his coast house. I recorded the conversation, and he started to mention childhood memories and what brought him in this small village. I then recorded sounds in situ, from the crackling of the fire to the touristic activity in February. The whole thing sounds like a little phonography, without however contening absolutely no voices at all."
 			]
 		}]
 	}, {
-		"type": "video",
-		"size": "medium",
-		"url": "https://www.youtube.com/embed/Z99QK5Lbx30",
-		"caption": "Film clip of the movie “Edgar”."
-	}, {
 		"type": "audio",
 		"size": "small",
-		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/270791424%3Fsecret_token%3Ds-wt2V1",
-		"caption": "Music snippets of the movie “Partons”."
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/346984692%3Fsecret_token%3Ds-wt2V1",
+		"caption": "The recording took me five days."
 	}, {
 		"type": "text",
 		"elements": [{
@@ -89,9 +114,23 @@
 		"type": "text",
 		"elements": [{
 			"type": "paragraph",
+			"title": "Music for a short movie by Murielle Scalzo",
+			"paragraphs": [
+				"This sound was made for a student short movie. The music had to illustrate an unease between two people who just met."
+			]
+		}]
+	}, {
+		"type": "audio",
+		"size": "small",
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/270791424%3Fsecret_token%3Ds-wt2V1",
+		"caption": "Music snippet of the movie “Partons”."
+	}, {
+		"type": "text",
+		"elements": [{
+			"type": "paragraph",
 			"title": "Personal Songs",
 			"paragraphs": [
-				"“La prétention” is an experimentation song in a style that I was not used to try. “Sans-titre”, however, comes from a song serie that I used to make every week."
+				"“La prétention” is an experimental song in a style that I was not used to try. “Sans-titre”, however, comes from a song serie that I used to make every week."
 			]
 		}]
 	}, {

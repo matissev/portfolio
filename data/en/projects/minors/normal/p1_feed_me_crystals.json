@@ -1,0 +1,52 @@
+{
+	"title": "Feed me crystals",
+	"date": "2015-01",
+	"explicitDate": "January 2015",
+	"content": [{
+		"type": "gallery",
+		"thumbnail": {
+			"url": "/img/minors/feed-me-crystals/thumbnail.jpg",
+			"alt": "Thumbnail of the game Feed Me Crystals image gallery"
+		},
+		"images": [{
+			"url": "/img/minors/feed-me-crystals/map@2x.jpg",
+			"caption": "Feed Me Crystals includes a world close to the steampunk aesthetic, made of stones and crystals, full of mineral extraction machines.",
+			"size": "2880x1712"
+		}, {
+			"url": "/img/minors/feed-me-crystals/map-rough@2x.jpg",
+			"caption": "The arena involves multiple elements which all have a precise purpose. Also, the dark atmosphere serves to loose the players in the setting.",
+			"size": "2000x1414"
+		}, {
+			"url": "/img/minors/feed-me-crystals/la-foreuse-rough@2x.jpg",
+			"caption": "The preliminary drawings have been very important in the characters’ personnality enlightenment. La Foreuse has been inspired by various <abbr title=\"Role-Playing Game\">RPG</abbr> games.",
+			"size": "2880x2036"
+		}, {
+			"url": "/img/minors/feed-me-crystals/la-foreuse@2x.jpg",
+			"caption": "3D rendering of the character La Foreuse",
+			"size": "2880x1712"
+		}, {
+			"url": "/img/minors/feed-me-crystals/glork-rough@2x.jpg",
+			"caption": "We inspired ourselves with crystals from specific caves to draw Glork.",
+			"size": "2880x2036"
+		}, {
+			"url": "/img/minors/feed-me-crystals/glork@2x.jpg",
+			"caption": "3D rendering of the character Glork",
+			"size": "2880x1712"
+		}, {
+			"url": "/img/minors/feed-me-crystals/rat-rough@2x.jpg",
+			"caption": "The rats have a slightly military green and orange gear. Their red eyes and their dirty fur makes them good enemies.",
+			"size": "2880x2036"
+		}, {
+			"url": "/img/minors/feed-me-crystals/rat@2x.jpg",
+			"caption": "3D rendering of the rats",
+			"size": "2880x1712"
+		}, {
+			"url": "/img/minors/feed-me-crystals/storyboard@2x.jpg",
+			"caption": "Storyboard of the kinematics of introduction",
+			"size": "2880x1946"
+		}]
+	}, {
+		"type": "text",
+		"text": "Original and immersive, Feed Me Crystals is a game in which the goal is to catch as much crystals as you can before the time runs out, while avoiding to loose them on the way. This project, done in duo and combining sound design and graphical environment includes a simple but fun gameplay, made above all to catch a good laugh. The game includes two characters who help each other against mean rats. The characters must activate a pump which makes the gearings turn and therefore make the crystals fall from the roof for them to be reachable, collectable. For the pump to work, the two players need to jump successively on the trays on both ends of it. Once collected, you will need to store these in a tank and fill it as quickly as possible. Obstacles are here to slow you down&#8239;:<br>&ndash;&nbsp;Enemy rats can steal crystals from you.<br>&ndash;&nbsp;Wagons roll on the rails and can hit you, making you loose your crystals (a bit like Sonic).<br>&ndash;&nbsp;The gearings in the ground turn in opposite ways and make you loose your reference points and so the control of your caracter.<br>&ndash;&nbsp;The water slows you down."
+	}]
+}
