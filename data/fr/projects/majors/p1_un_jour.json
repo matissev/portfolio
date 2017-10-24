@@ -1,5 +1,5 @@
 {
-	"title": "Un jour je courirai moins",
+	"title": "Un jour je cou-rirai moins",
 	"lowercase": "un-jour",
 	"subtitle": "Installation sonore",
 	"description": "Réalisée à l’espace29, cette installation sonore et numérique explore la limite entre mouvement organique et mécanique grâce à un système de fusains en rotation",
@@ -44,7 +44,7 @@
 		"elements": [{
 			"type": "paragraph",
 			"paragraphs": [
-				"Ce travail, d’abord pensé et élaboré sur Paris avec le collectif dont je fais parti a ensuite été produit lors de trois jours de résidence, les 31 juillet, 1er et 2 août 2017. À ce stade, le projet était déjà entièrement formalisé."
+				"Ce travail, d’abord pensé et élaboré sur Paris avec le collectif dont je fais partie a ensuite été produit lors de trois jours de résidence, les 31 juillet, 1er et 2 août 2017. À ce stade, le projet était déjà entièrement formalisé."
 			]
 		}]
 	}, {
@@ -53,7 +53,7 @@
 			"type": "paragraph",
 			"title": "Le dispositif",
 			"paragraphs": [
-				"Sur le socle en médium, 5 tiges en métal supportent de petits moteurs entrainant des fusains de différentes tailles. Ces modules disposés inégalement sur le support et présentant de légères variations de forme (hauteur, largeur…) se mouvent en rotation à des cadences différentes.",
+				"Sur le socle en médium, 5 tiges en métal supportent de petits moteurs entrainant des fusains de différentes tailles. Ces modules, disposés inégalement sur le support et présentant de légères variations de forme (hauteur, largeur…), se mouvent en rotation à des cadences différentes.",
 				"Le son du frottement des fusains sur le plateau est alors enregistré, traité, amplifié puis restitué par un système d’enceintes. À ce son s’en ajouteront d’autres pour ainsi produire une composition générative en écho avec les rotations des moteurs."
 			]
 		}]
@@ -66,7 +66,7 @@
 		"type": "image",
 		"size": "small",
 		"url": "/img/majors/un-jour/un-jour-1.jpg",
-		"caption": "Les différents modules montrent des aspects singuliers de manière à ce qu'ils puissent apparaître grotesques.",
+		"caption": "Les différents modules montrent des aspects singuliers, de manière à ce qu'ils apparaissent grotesques.",
 		"alt": "Trois modules motorisés encore en chantier et disposés sur la plaque de médium."
 	}, {
 		"type": "image",
@@ -88,7 +88,7 @@
 		"type": "image",
 		"size": "small",
 		"url": "/img/majors/un-jour/un-jour-3.jpg",
-		"caption": "Une résidence de trois jours implique des tests et des remodelages rapides. Le troisième jour était dédié au control et à l'ajustement des vitesses.",
+		"caption": "Une résidence de trois jours implique des tests et des remodelages rapides. Le troisième jour était dédié au contrôle et à l'ajustement des vitesses.",
 		"alt": "Un instant durant la phase de test quand l'installation est toujours ouverte et visible à l'intérieur"
 	}, {
 		"type": "image",
